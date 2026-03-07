@@ -2,30 +2,22 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 
 const CASES = [
-  {
-    title: 'Payroll & staffing',
-    description: 'Cover labor before the busy season or when a big catering order lands.',
-  },
-  {
-    title: 'Inventory & supplies',
-    description: 'Stock up on food, beverage, or equipment without draining your account.',
-  },
-  {
-    title: 'Repairs & maintenance',
-    description: 'Fix the walk-in, replace the hood, or handle emergencies fast.',
-  },
-  {
-    title: 'Expansion & renovations',
-    description: 'Refresh the dining room, add a patio, or open a second location.',
-  },
+  { title: 'Payroll', description: 'Cover labor during slow weeks or when you need extra staff for a rush.' },
+  { title: 'Inventory purchases', description: 'Stock up before busy seasons, holidays, or large events.' },
+  { title: 'Equipment replacement', description: 'Replace or upgrade kitchen equipment when it fails or holds you back.' },
+  { title: 'Emergency repairs', description: 'Handle walk-in cooler, oven, fryer, or other breakdowns fast.' },
+  { title: 'Expansion / second location', description: 'Prepare for a new location or major renovation.' },
+  { title: 'Seasonal cash flow gaps', description: 'Bridge slow periods until traffic and sales pick up again.' },
+  { title: 'Marketing promotions', description: 'Fund campaigns or offers to bring in more customers.' },
+  { title: 'Outdoor dining upgrades', description: 'Improve patios, seating, or outdoor service capacity.' },
 ];
 
 export function UseCases() {
   return (
     <section className="landing-section use-cases">
-      <h2 className="section-title">Use your advance your way</h2>
+      <h2 className="section-title">Common Problems Restaurant Owners Face</h2>
       <p className="section-subtitle">
-        No restrictions on how you spend the funds. Here’s how other operators use them.
+        These are the situations that push restaurant owners to look for help. Knowing what others deal with can help you see whether your situation is similar and what options might exist.
       </p>
       <ul className="use-cases__grid">
         {CASES.map(({ title, description }) => (

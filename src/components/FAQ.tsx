@@ -8,7 +8,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="landing-section faq">
-      <h2 className="section-title">Frequently asked questions</h2>
+      <h2 className="section-title">Frequently Asked Questions</h2>
       <p className="section-subtitle">
         Quick answers to what restaurant owners ask most.
       </p>

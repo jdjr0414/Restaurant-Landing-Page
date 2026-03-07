@@ -36,6 +36,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -46,6 +47,7 @@ body {
   color: var(--color-ink);
   background: var(--color-cream);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 #root {
@@ -71,4 +73,25 @@ img {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+/* Touch targets: min 44px for tap areas (mobile) */
+@media (pointer: coarse) {
+  .btn,
+  .site-header__link,
+  .site-header__cta,
+  .footer__link,
+  .faq__question button,
+  .home-faq__question button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .site-header__link,
+  .footer__link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
 }

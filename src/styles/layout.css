@@ -1,0 +1,132 @@
+/* Fintech-style site header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-cream-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.site-header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.site-header__logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-ink);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.site-header__logo:hover {
+  color: var(--color-amber-dark);
+}
+
+.site-header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.site-header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.site-header__link {
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+}
+
+@media (min-width: 1280px) {
+  .site-header__inner {
+    max-width: 1400px;
+  }
+}
+
+.site-header__link:hover {
+  color: var(--color-ink);
+  background: var(--color-cream);
+}
+
+.site-header__cta {
+  flex-shrink: 0;
+  padding: var(--space-sm) var(--space-lg);
+  font-size: 0.9375rem;
+}
+
+.site-header__menu-btn {
+  display: none;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .site-header__nav {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-cream-dark);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-lg);
+    display: none;
+  }
+
+  .site-header__nav--open {
+    display: block;
+  }
+
+  .site-header__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-header__link {
+    display: block;
+    padding: var(--space-md);
+  }
+
+  .site-header__menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header__inner {
+    padding: var(--space-md);
+  }
+
+  .site-header__logo {
+    font-size: 1.125rem;
+  }
+
+  .site-header__cta {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.875rem;
+  }
+}

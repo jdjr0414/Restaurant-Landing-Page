@@ -4,27 +4,27 @@ import '../styles/landing.css';
 const STEPS = [
   {
     step: '1',
-    title: 'Apply in minutes',
-    description: 'Share basic business and revenue details. No lengthy paperwork—we use your sales data to assess fit.',
+    title: 'Tell us about your restaurant',
+    description: 'Share basic business and revenue details so providers can understand your needs and fit.',
   },
   {
     step: '2',
-    title: 'Get a same-day decision',
-    description: 'Our team reviews your application quickly. Most applicants get a decision within one business day.',
+    title: 'Review your options',
+    description: 'We present funding options tailored to your situation. No obligation to proceed.',
   },
   {
     step: '3',
-    title: 'Receive funds & repay flexibly',
-    description: 'Funds go to your account in as fast as 24–48 hours. Repay as a percentage of daily sales—slower days mean smaller payments.',
+    title: 'Receive funding and use it for business needs',
+    description: 'Once approved, funds go to your account quickly. Use them for payroll, inventory, equipment, or other operating needs.',
   },
 ];
 
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="landing-section how-it-works">
-      <h2 className="section-title">How it works</h2>
+      <h2 className="section-title">How a Restaurant Cash Advance Works</h2>
       <p className="section-subtitle">
-        Three steps from application to funding. No games, no surprises.
+        A simple process from application to funding. Many providers keep it straightforward so you can focus on your restaurant.
       </p>
       <ol className="how-it-works__list">
         {STEPS.map(({ step, title, description }) => (
