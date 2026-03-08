@@ -3,6 +3,8 @@ export interface BlogPostMeta {
   title: string;
   description: string;
   publishedDate: string;
+  /** Optional SEO title (e.g. "Topic: Costs, Fixes, and Funding Options"). Used for title tag when set. */
+  metaTitle?: string;
 }
 
 export const blogPosts: BlogPostMeta[] = [
@@ -90,7 +92,7 @@ export const blogPosts: BlogPostMeta[] = [
   { slug: 'restaurant-holiday-rush-preparation', title: 'Restaurant Holiday Rush Preparation: Funding the Build-Up', description: 'Stocking and staffing before the holiday rush—funding options.', publishedDate: '2025-10-18' },
   { slug: 'restaurant-slow-tuesday-cash-flow', title: 'Restaurant Slow Tuesday: Cash Flow When Weekdays Drag', description: 'When weekend revenue isn\'t enough to cover weekday gaps.', publishedDate: '2025-10-22' },
   { slug: 'restaurant-health-inspection-urgent-repairs', title: 'Restaurant Health Inspection: Urgent Repairs and Funding', description: 'When you need to fix issues fast after an inspection.', publishedDate: '2025-10-25' },
-  { slug: 'restaurant-refrigeration-emergency', title: 'Restaurant Refrigeration Emergency: What to Do', description: 'When coolers or freezers fail and you need funds fast.', publishedDate: '2025-10-28' },
+  { slug: 'restaurant-refrigeration-emergency', title: 'Restaurant Refrigeration Emergency: What to Do', description: 'Learn what to do if your restaurant refrigerator fails, repair costs, and how restaurant owners handle emergency expenses and funding.', publishedDate: '2025-10-28', metaTitle: 'Restaurant Refrigeration Emergency: What To Do & Cost Guide | Funding Options' },
   { slug: 'restaurant-hood-system-repair', title: 'Restaurant Hood System Repair and Financing', description: 'Ventilation and hood repairs—costs and funding options.', publishedDate: '2025-11-01' },
   { slug: 'restaurant-grease-trap-compliance', title: 'Restaurant Grease Trap Compliance and Costs', description: 'When compliance or upgrades require cash you don\'t have on hand.', publishedDate: '2025-11-05' },
   { slug: 'restaurant-employee-retention-cost', title: 'Restaurant Employee Retention: Payroll and Benefits Cost', description: 'Funding competitive wages and retention when labor is tight.', publishedDate: '2025-11-08' },

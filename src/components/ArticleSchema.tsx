@@ -16,6 +16,11 @@ export function ArticleSchema({ headline, description, datePublished, urlPath }:
     datePublished,
     dateModified: datePublished,
     url: `${SITE_URL}${urlPath}`,
+    publisher: {
+      '@type': 'Organization',
+      name: "Restaurant Owner's Guide",
+      url: SITE_URL,
+    },
   };
 
   return (

@@ -39,11 +39,17 @@ export function BlogPostPage() {
   const metaDesc = post.description.length > META_DESC_MAX
     ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'
     : post.description;
+  const titleTag = post.metaTitle ?? `${post.title} | Restaurant Owner's Guide`;
+  const breadcrumbItems = [
+    { name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' },
+    { name: 'Blog', path: '/blog' },
+    { name: post.title, path: `/blog/${post.slug}` },
+  ];
 
   return (
     <>
       <SeoHead
-        title={`${post.title} | Restaurant Owner's Guide`}
+        title={titleTag}
         description={metaDesc}
         canonicalPath={`/blog/${post.slug}`}
       />
@@ -53,12 +59,23 @@ export function BlogPostPage() {
         datePublished={post.publishedDate}
         urlPath={`/blog/${post.slug}`}
       />
-      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }, { name: post.title, path: `/blog/${post.slug}` }]} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <main className="page-main">
         <article className="article">
           <div className="article__inner">
+            <nav className="article__breadcrumb" aria-label="Breadcrumb">
+              {breadcrumbItems.map((item, i) => (
+                <span key={item.path}>
+                  {i > 0 && <span className="article__breadcrumb-sep" aria-hidden> / </span>}
+                  {i < breadcrumbItems.length - 1 ? (
+                    <Link to={item.path} className="article__breadcrumb-link">{item.name}</Link>
+                  ) : (
+                    <span className="article__breadcrumb-current">{item.name}</span>
+                  )}
+                </span>
+              ))}
+            </nav>
             <header className="article__header">
-              <Link to="/blog" className="article__back">Blog</Link>
               <h1 className="article__title">{post.title}</h1>
               <time className="article__date" dateTime={post.publishedDate}>
                 {new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -68,7 +85,14 @@ export function BlogPostPage() {
               {content}
             </div>
             <footer className="article__footer">
-              <p><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation →</a></p>
+              <div className="article__cta-block">
+                <p className="article__cta-lead">Emergency expenses like equipment failures can cost thousands. See if your restaurant qualifies for working capital.</p>
+                <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary article__cta-btn">
+                  Check Funding Options
+                </a>
+                <p className="article__cta-sub"><Link to="/restaurant-cash-advance">Restaurant cash advance and funding options</Link> — compare what fits your situation.</p>
+              </div>
+              <p className="article__footer-link"><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation →</a></p>
             </footer>
           </div>
         </article>

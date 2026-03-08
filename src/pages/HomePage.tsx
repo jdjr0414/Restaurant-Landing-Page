@@ -31,7 +31,6 @@ export function HomePage() {
               className="home-hero__image"
               width={1200}
               height={800}
-              fetchPriority="high"
             />
             <div className="home-hero__overlay" aria-hidden />
           </div>

@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <header className="hero hero--with-bg">
       <div className="hero__bg-wrap" aria-hidden>
-        <img src={HERO_IMAGE} alt="" className="hero__bg-img" fetchPriority="high" />
+        <img src={HERO_IMAGE} alt="" className="hero__bg-img" />
         <div className="hero__bg-overlay" />
       </div>
       <div className="hero__inner">

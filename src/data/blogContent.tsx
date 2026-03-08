@@ -269,6 +269,25 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
         <CtaBlock />
       </>
     ),
+  'restaurant-refrigeration-emergency': (
+    <>
+      <p>When your restaurant refrigerator or walk-in cooler fails, you need to act fast. Spoiled inventory and lost sales add up quickly. This guide covers what to do immediately, typical repair and replacement costs, and how restaurant owners often fund emergency refrigeration repairs.</p>
+      <h2>What to Do When Your Cooler or Freezer Fails</h2>
+      <p>Move perishables to backup refrigeration or a temporary unit if possible. Call a commercial refrigeration repair service right away—restaurant equipment specialists can often diagnose and sometimes repair on the same day. Document the failure and any lost product for insurance or tax purposes. If the unit is beyond repair, get quotes for replacement; lead times can be several days or weeks, so having a plan matters.</p>
+      <h2>How Much Emergency Refrigeration Repair or Replacement Costs</h2>
+      <p>Repairs can run from a few hundred dollars for a simple fix to several thousand for compressor or major component work. Full walk-in cooler or freezer replacement often costs tens of thousands, depending on size and specs. Many restaurant owners don’t have that cash on hand when an emergency hits.</p>
+      <h2>How Restaurants Handle Unexpected Equipment Expenses</h2>
+      <p>When revenue doesn’t line up with a large repair or replacement bill, owners often use working capital or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to cover the cost. Repayment tied to daily sales can make it easier to manage than a fixed loan payment. Emergency funding options can provide same-day or next-day decisions and funds in 24–48 hours so you can get back up and running.</p>
+      <h2>Funding Emergency Restaurant Refrigeration Repairs</h2>
+      <p>A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or other working capital product is commonly used for equipment emergencies. Funds are typically flexible-use, so you can pay the repair company or put a down payment on a new unit. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What should I do first if my restaurant fridge breaks?</h3>
+      <p>Secure perishables, call a commercial refrigeration repair service, and document the failure. If the unit can’t be repaired quickly, get replacement quotes and consider how you’ll fund the cost.</p>
+      <h3>Can I use restaurant funding for refrigeration repair or replacement?</h3>
+      <p>Yes. Many restaurant funding products are flexible-use and can be used for equipment repairs or replacement. <Link to="/restaurant-cash-advance">Restaurant cash advance and funding options</Link> can provide fast access when you need money in days, not weeks.</p>
+      <CtaBlock />
+    </>
+  ),
   };
 
   return contentMap[slug] ?? getGeneratedBlogContent(meta);
