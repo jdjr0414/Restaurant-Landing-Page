@@ -50,3 +50,18 @@ dist/
 ```
 
 Cloudflare Pages serves these so that `/restaurant-cash-advance` returns `dist/restaurant-cash-advance/index.html` with full prerendered HTML.
+
+## Troubleshooting: Still Seeing Empty `<div id="root"></div>`
+
+1. **Check build logs** — In Cloudflare dashboard: Workers & Pages → your project → Deployments → click the latest deployment → View build logs. Look for:
+   - `[prerender] Running SSR build and prerender...`
+   - `Prerendered 252 pages to dist/`
+   - If these are missing, the prerender step didn't run or failed.
+
+2. **Node version** — The project uses `.nvmrc` (Node 20). In Cloudflare Pages → Settings → Environment variables, add `NODE_VERSION` = `20` if builds fail or behave oddly.
+
+3. **Retry deployment** — Deployments → three dots on latest → Retry deployment.
+
+4. **Purge cache** — If the build succeeded but you still see old content: Caching → Purge everything (or wait for cache expiry).
+
+5. **Verify build command** — Settings → Builds & deployments → Build configuration must be exactly `npm run build` and output directory `dist`.
