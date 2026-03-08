@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
@@ -15,6 +16,7 @@ export function RestaurantWorkingCapitalPage() {
         description="Struggling with payroll, inventory, or seasonal gaps? Understand what restaurant working capital is and what options exist when revenue doesn’t line up with bills."
         canonicalPath="/restaurant-working-capital"
       />
+      <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Working Capital', path: '/restaurant-working-capital' }]} />
       <main className="page-main supporting-page">
         <div className="page-content">
           <h1 className="page-title">When You Need Restaurant Working Capital</h1>

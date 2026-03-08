@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
@@ -15,6 +16,7 @@ export function RestaurantFundingPage() {
         description="Facing a cash flow crunch or need to cover payroll, inventory, or equipment? Understand what restaurant funding options exist and when they might help."
         canonicalPath="/restaurant-funding"
       />
+      <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Funding Options', path: '/restaurant-funding' }]} />
       <main className="page-main supporting-page">
         <div className="page-content">
           <h1 className="page-title">Restaurant Funding Options When You’re Struggling</h1>

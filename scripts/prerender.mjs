@@ -21,9 +21,10 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
-function injectMeta(template, meta) {
+function injectMeta(template, meta, path) {
   const { title, description, canonicalPath } = meta;
   const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '' : canonicalPath}`;
+  const ogType = path.startsWith('/blog/') ? 'article' : 'website';
   let out = template;
 
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
@@ -45,7 +46,7 @@ function injectMeta(template, meta) {
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="${ogType}" />
     <meta property="og:image" content="${defaultOgImage}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
@@ -82,7 +83,7 @@ async function main() {
     if (!meta) continue;
 
     const { html } = render(path);
-    let pageHtml = injectMeta(template, meta);
+    let pageHtml = injectMeta(template, meta, path);
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
 
     const filePath = path === '/' ? join(distDir, 'index.html') : join(distDir, path, 'index.html');
