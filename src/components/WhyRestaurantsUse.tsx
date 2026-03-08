@@ -1,10 +1,14 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
+const SECTION_IMAGE = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80';
+
 export function WhyRestaurantsUse() {
   return (
     <section id="why-restaurants-struggle" className="landing-section why-restaurants">
-      <h2 className="section-title">Why Restaurants Run Into Cash Flow Problems</h2>
+      <div className="why-restaurants__layout">
+        <div className="why-restaurants__content">
+          <h2 className="section-title">Why Restaurants Run Into Cash Flow Problems</h2>
       <p className="section-subtitle">
         Restaurant owners often hit the same walls: revenue that doesn’t line up with when bills are due, seasonal dips, equipment breakdowns, and payroll that can’t wait. Understanding why this happens helps you see what options might fit your situation.
       </p>
@@ -17,6 +21,11 @@ export function WhyRestaurantsUse() {
         <li>Patio or dining room upgrades</li>
         <li>Bridge funding during delayed receivables</li>
       </ul>
+        </div>
+        <figure className="why-restaurants__figure">
+          <img src={SECTION_IMAGE} alt="Restaurant kitchen and staff during service - representing the daily pressures of running a food business" width={800} height={533} className="why-restaurants__img" />
+        </figure>
+      </div>
     </section>
   );
 }

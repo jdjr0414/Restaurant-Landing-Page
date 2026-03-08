@@ -1,4 +1,10 @@
 :root {
+  /* Trust & calm (psychology: blue = trust/security, green = safety/growth) */
+  --color-trust: #2c5282;
+  --color-trust-soft: #ebf4f8;
+  --color-calm: #276749;
+  --color-calm-soft: #f0fff4;
+  /* Core palette */
   --color-ink: #1a1a1c;
   --color-ink-muted: #4a4a4e;
   --color-cream: #f8f6f1;

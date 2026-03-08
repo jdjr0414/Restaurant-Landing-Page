@@ -2,9 +2,15 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 import { FIND_MATCH_URL } from '../config';
 
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
+
 export function Hero() {
   return (
-    <header className="hero">
+    <header className="hero hero--with-bg">
+      <div className="hero__bg-wrap" aria-hidden>
+        <img src={HERO_IMAGE} alt="" className="hero__bg-img" fetchPriority="high" />
+        <div className="hero__bg-overlay" />
+      </div>
       <div className="hero__inner">
         <h1 className="hero__title">Restaurant Cash Flow Problems? Get Clear on Your Options</h1>
         <p className="hero__subtitle">
@@ -24,6 +30,7 @@ export function Hero() {
           <li>Equipment and emergency costs</li>
           <li>Understanding your options</li>
         </ul>
+        <p className="hero__social-proof">Join other restaurant owners who've already explored their options—no obligation, just clarity.</p>
       </div>
     </header>
   );

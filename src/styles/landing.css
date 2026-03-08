@@ -86,6 +86,68 @@
   position: relative;
 }
 
+.hero--with-bg {
+  background: var(--color-ink);
+}
+
+.hero__bg-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+.hero__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 26, 28, 0.92) 0%, rgba(26, 26, 28, 0.5) 40%, rgba(26, 26, 28, 0.3) 100%);
+}
+
+.hero--with-bg .hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero--with-bg .hero__title,
+.hero--with-bg .hero__subtitle,
+.hero--with-bg .hero__trust-strip li {
+  color: var(--color-white);
+}
+
+.hero--with-bg .hero__subtitle {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero--with-bg .hero__trust-strip li::before {
+  color: var(--color-amber-light);
+}
+
+.hero--with-bg .btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero--with-bg .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.hero__social-proof {
+  margin: var(--space-lg) 0 0;
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+}
+
+.hero--with-bg .hero__social-proof {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 @media (max-width: 640px) {
   .hero {
     padding: var(--space-2xl) var(--space-md) var(--space-2xl);
@@ -161,10 +223,11 @@
   margin-right: var(--space-xs);
 }
 
-/* Trust bar */
+/* Trust bar: soft blue tint for trust/calm (color psychology) */
 .trust-bar {
   padding: var(--space-xl) var(--space-lg);
-  background: var(--color-white);
+  background: var(--color-trust-soft);
+  border-bottom: 1px solid rgba(44, 82, 130, 0.08);
   box-shadow: var(--shadow-sm);
 }
 
@@ -185,7 +248,7 @@
   display: block;
   font-family: var(--font-display);
   font-size: 1.5rem;
-  color: var(--color-amber-dark);
+  color: var(--color-trust);
   margin-bottom: var(--space-xs);
 }
 
@@ -203,13 +266,46 @@
 .trust-bar__pill {
   font-size: 0.9375rem;
   font-weight: 500;
-  color: var(--color-ink-muted);
-  background: var(--color-cream);
+  color: var(--color-trust);
+  background: var(--color-white);
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
+  border: 1px solid rgba(44, 82, 130, 0.12);
+  box-shadow: 0 1px 3px rgba(44, 82, 130, 0.06);
 }
 
 /* Why restaurants use */
+.why-restaurants__layout {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .why-restaurants__layout {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .why-restaurants__figure {
+    order: 2;
+  }
+}
+
+.why-restaurants__figure {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.why-restaurants__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
 .why-restaurants__list {
   margin: 0;
   padding: 0;
@@ -283,7 +379,21 @@
   color: var(--color-ink-muted);
 }
 
-/* When to explore options (replaces Why Axiant) */
+/* When to explore options: soft green background (psychology: safety, positive outcome) */
+.when-to-explore {
+  background: var(--color-calm-soft);
+  border-radius: var(--radius-lg);
+  margin: 0 var(--space-md);
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .when-to-explore {
+    margin: 0;
+    padding: var(--space-4xl) var(--space-xl);
+  }
+}
+
 .when-to-explore__grid {
   list-style: none;
   margin: 0 0 var(--space-2xl);
@@ -401,6 +511,20 @@
 }
 
 /* How it works */
+.how-it-works__figure {
+  margin: 0 0 var(--space-2xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.how-it-works__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .how-it-works__list {
   list-style: none;
   margin: 0;
@@ -451,6 +575,20 @@
 }
 
 /* Use cases */
+.use-cases__figure {
+  margin: 0 0 var(--space-2xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.use-cases__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .use-cases__grid {
   list-style: none;
   margin: 0;
@@ -559,7 +697,7 @@
 }
 
 .comparison__table td.comparison__us {
-  color: var(--color-success);
+  color: var(--color-calm);
   font-weight: 600;
 }
 
@@ -637,7 +775,7 @@
   content: '+';
   flex-shrink: 0;
   font-size: 1.25rem;
-  color: var(--color-amber);
+  color: var(--color-trust);
 }
 
 .faq__item--open .faq__question button::after {
@@ -652,12 +790,20 @@
   line-height: 1.65;
 }
 
-/* CTA */
+/* CTA: warm gradient for action, plus reassurance (psychology: reduce anxiety before commitment) */
 .cta {
   padding: var(--space-4xl) var(--space-lg);
   background: linear-gradient(135deg, var(--color-amber-dark) 0%, var(--color-amber) 100%);
   text-align: center;
 }
+
+.cta__reassurance {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 var(--space-sm);
+  font-style: italic;
+}
+
 
 @media (max-width: 640px) {
   .cta {
@@ -678,9 +824,55 @@
   }
 }
 
+.cta__layout {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .cta__layout {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3xl);
+  }
+}
+
 .cta__inner {
   max-width: 480px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .cta__inner {
+    margin: 0;
+  }
+}
+
+.cta__figure {
+  margin: 0;
+  flex-shrink: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .cta__figure {
+    max-width: 240px;
+  }
+}
+
+.cta__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .cta__title {

@@ -1,6 +1,8 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
+const HOW_IT_WORKS_IMAGE = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80';
+
 const STEPS = [
   {
     step: '1',
@@ -26,6 +28,9 @@ export function HowItWorks() {
       <p className="section-subtitle">
         A simple process from application to funding. Many providers keep it straightforward so you can focus on your restaurant.
       </p>
+      <figure className="how-it-works__figure">
+        <img src={HOW_IT_WORKS_IMAGE} alt="Team discussion and planning - a straightforward process from application to funding" width={800} height={533} className="how-it-works__img" />
+      </figure>
       <ol className="how-it-works__list">
         {STEPS.map(({ step, title, description }) => (
           <li key={step} className="how-it-works__item">
