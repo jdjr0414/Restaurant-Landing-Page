@@ -82,12 +82,14 @@ function getGeneratedBlogContent(meta: BlogPostMeta): ReactNode {
     const p1 = pick(pool, slug, 's' + s + 'a');
     const p2 = pick(pool, slug, 's' + s + 'b');
     const p3 = pick(pool, slug, 's' + s + 'c');
+    const p4 = pick(pool, slug, 's' + s + 'd');
     sections.push(
       <React.Fragment key={s}>
         <h2>{sectionTitles[s]}</h2>
         <p>{p1}</p>
         <p>{p2}</p>
         <p>{p3}</p>
+        <p>{p4}</p>
       </React.Fragment>
     );
   }
@@ -311,6 +313,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <p>Repayment tied to daily sales can make it easier to manage than a fixed loan payment. When business is slow, your payment is lower. When you're busy again after the repair, payments scale up. That flexibility is especially valuable after an emergency, when you may have already lost revenue from downtime and spoiled inventory. <Link to="/restaurant-funding">Restaurant funding options</Link> can provide same-day or next-day decisions and funds in 24–48 hours so you can get back up and running.</p>
       <h2>Funding Emergency Restaurant Refrigeration Repairs</h2>
       <p>A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or other <Link to="/restaurant-working-capital">working capital</Link> product is commonly used for equipment emergencies. Funds are typically flexible-use, so you can pay the repair company, cover a temporary rental, or put a down payment on a new unit. Many providers offer same-day or next-day decisions and funds in 24–48 hours—critical when you need to act fast.</p>
+      <p>Qualification usually focuses on your restaurant&apos;s revenue history and bank statements. Providers that work with restaurants understand that equipment failures happen and that you need to move quickly. Having recent statements and processing data ready can shorten the application process. Some providers can fund within a single business day when your paperwork is in order.</p>
       <h3>What to Expect</h3>
       <p>Not all applicants qualify; terms vary by provider. Lenders typically look at your restaurant's revenue history, bank statements, and sometimes card processing volume. Having your information ready can speed the process. If you're facing a refrigeration emergency and don't have the cash on hand, exploring your options early gives you time to compare and choose before committing to a repair or replacement.</p>
       <h2>Frequently Asked Questions</h2>

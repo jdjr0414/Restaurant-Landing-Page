@@ -72,10 +72,15 @@ The prerender script will:
 
 These are set in `scripts/prerender.mjs` via `injectMeta()`.
 
-## 5. Checklist for new posts
+## 5. Article word count (1200–1600 words)
+
+All articles—blog posts and topic pages—should be **1200–1600 words**. This provides enough depth for readers and search engines and avoids thin content. Generated blog content uses 7 sections with 4 paragraphs each. Custom content and topic pages should have 4–5+ sections with 2–3 paragraphs each.
+
+## 6. Checklist for new posts
 
 - [ ] Add entry to `blogPosts` in `src/data/blogPosts.ts`
 - [ ] Add content in `contentMap` in `src/data/blogContent.tsx` (or rely on generated content)
 - [ ] Include internal links to `/restaurant-cash-advance`, `/restaurant-working-capital`, `/restaurant-funding`
 - [ ] Add `faqItems` if the post has FAQs (for FAQ schema)
 - [ ] Run `npm run build` and check `dist/blog/your-slug/index.html`
+- [ ] Ensure content is 1200–1600 words

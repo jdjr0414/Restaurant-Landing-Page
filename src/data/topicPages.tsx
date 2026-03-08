@@ -32,6 +32,44 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Labor often runs 25–35% of revenue. Unlike inventory, you can&apos;t delay it without hurting your team and your reputation. When sales are uneven, restaurant payroll funding or working capital can bridge the gap until revenue catches up. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and other <Link to="/restaurant-funding">restaurant funding options</Link> are commonly used for exactly this.</p>
+            <p>Restaurant revenue is rarely even from week to week. Weekend rushes, holiday lulls, and seasonal swings create unpredictable cash flow. Meanwhile, payroll hits on a fixed schedule—every two weeks or twice a month. That timing mismatch is one of the main causes of restaurant payroll stress. Credit card deposits take 2–3 days to hit your account, so even a strong weekend may not fund Monday&apos;s payroll.</p>
+            <p>Missing payroll damages staff trust, can violate labor laws, and makes it harder to retain good employees. Once word gets out that you&apos;ve delayed wages, recruiting becomes harder and turnover spikes. That&apos;s why many owners treat payroll as non-negotiable and seek funding when a gap appears.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When Restaurant Payroll Gaps Happen',
+        content: (
+          <>
+            <p>Gaps often appear after a slow week, during a seasonal dip, or when an unexpected expense—a repair, a tax payment, a vendor bill—drains your account before payday. The biweekly payroll calendar doesn&apos;t align with when your busiest nights occur. A big weekend right after payday may leave you short when the next payday arrives.</p>
+            <p>New restaurants and those in seasonal markets face this more often. So do operators who&apos;ve recently expanded or taken on new costs. Understanding your revenue pattern and forecasting ahead can help you see gaps before they hit—and give you time to explore funding options before you&apos;re in crisis.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How Restaurant Payroll Funding Works',
+        content: (
+          <>
+            <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> products are typically flexible-use. Payroll is one of the most common uses. Many providers offer same-day or next-day decisions and funds in 24–48 hours—critical when payday is days away.</p>
+            <p>Repayment is often tied to your daily card sales. When revenue is low, your payment is lower; when business picks up, payments scale up. That flexibility can make it easier to manage than a fixed loan payment when your revenue fluctuates. Not all applicants qualify; terms vary by provider. But when you need to make payroll and don&apos;t have the cash, exploring your options is a practical step.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What to Look For in Payroll Funding',
+        content: (
+          <>
+            <p>Speed matters when payday is approaching. Look for options that offer fast decisions and funding within a few days. Compare repayment structure—sales-based repayment can ease the burden when business is slow. Some providers focus specifically on restaurants and understand the seasonal nature of your revenue.</p>
+            <p>Having a relationship or application on file before you need funds can speed things up when a gap appears. Don&apos;t wait until the day before payday to explore options; funding that takes 24–48 hours won&apos;t help if you start too late. Plan ahead when you can.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Planning Ahead for Payroll',
+        content: (
+          <>
+            <p>Building a cash reserve during busy periods helps. So does improving your cash flow forecast so you can see gaps before they hit. Review your payroll calendar against your typical revenue pattern. If you see a risky week coming—payday right after a slow period—plan in advance.</p>
+            <p>Some owners set up a small <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> line before the busy season so they have it available when needed. The goal is to never be caught off guard when payday arrives. When reserves aren&apos;t enough, knowing your restaurant funding options before you need them puts you in a better position to act quickly.</p>
             <CtaParagraph />
           </>
         ),
@@ -67,7 +105,35 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Why Seasonal Cash Flow Hurts Restaurants',
         content: (
           <>
-            <p>Revenue can swing 40–60% between peak and off-peak. Fixed costs don&apos;t. <Link to="/restaurant-working-capital">Restaurant working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> products can help you cover payroll and bills during slow months. Repayment that flexes with sales can make it easier to manage.</p>
+            <p>Revenue can swing 40–60% between peak and off-peak. Fixed costs don&apos;t. Rent, utilities, insurance, and minimum payroll stay the same whether you serve 50 or 50 customers. When traffic drops—after the holidays, during a slow summer, or in a quiet January—the gap between lower revenue and unchanged expenses is where many restaurant cash flow problems begin.</p>
+            <p>Restaurants in tourist areas, seasonal markets, or college towns feel this especially hard. But even in steady markets, weather, events, and local competition can create noticeable dips. Surviving a slow season requires planning, cost control, and sometimes a bridge to the next busy period.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Preparing Before the Slow Season',
+        content: (
+          <>
+            <p>Don&apos;t wait until traffic drops. Identify your slow periods from last year&apos;s data—January, post-holiday summer, or quiet weekdays. Start setting aside cash during your busiest months. Even a small reserve can reduce stress when revenue dips. If you know a slow period is coming and your account is thin, explore <Link to="/restaurant-funding">restaurant funding</Link> options before you need them.</p>
+            <p>Build reserves during busy periods. Trim non-essential costs. Renegotiate with suppliers if possible. And know your options: <Link to="/restaurant-working-capital">restaurant working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> products can help bridge the gap when you need cash before the next busy period. Stocking up before traffic returns often requires cash—explore <Link to="/restaurant-inventory-funding">restaurant inventory funding</Link> for more on bridging slow periods.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Using Restaurant Funding During Slow Seasons',
+        content: (
+          <>
+            <p>Many lenders focus on your revenue history over several months, not just the current slow period. If you have consistent sales over time, you may qualify for <Link to="/restaurant-funding">restaurant funding</Link> even during a dip. Repayment tied to sales means your payment flexes when revenue is low—which can make it easier to manage than a fixed loan payment.</p>
+            <p>Some providers specialize in restaurants and understand that January or August might be slow even for healthy businesses. They look at your annual or quarterly revenue pattern rather than a single slow month. That can make it possible to access <Link to="/restaurant-working-capital">working capital</Link> when you need it most—to cover rent, payroll, and utilities until traffic returns.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Cutting Costs Without Cutting Quality',
+        content: (
+          <>
+            <p>Reduce waste, optimize labor schedules, and trim non-essential spending. But don&apos;t cut so deep that you can&apos;t serve customers well when traffic returns. The goal is to survive the slow period and be ready for the next rush. Consider limited-time promotions or specials to draw in customers during slow weeks—happy hour, prix fixe menus, or weekday deals.</p>
+            <p>Track which costs are truly fixed versus adjustable. Labor can often be scaled with demand—fewer servers on slow nights, cross-training to reduce total headcount. Menu engineering can highlight high-margin items. And when cuts aren&apos;t enough, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or funding can bridge the gap until the next busy period.</p>
             <CtaParagraph />
           </>
         ),
@@ -193,7 +259,35 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Key Differences: Restaurant Cash Advance vs Loan',
         content: (
           <>
-            <p>Cash advance: often faster, repayment tied to sales. Loan: fixed payments, often lower rate for those who qualify. <Link to="/restaurant-cash-advance">Restaurant cash advance explained</Link> and <Link to="/restaurant-funding">restaurant funding options</Link> can help you decide.</p>
+            <p>A restaurant cash advance provides a lump sum upfront; you repay it as a percentage of your daily card sales or revenue. That structure means your payment flexes with sales—when business is slow, you pay less. Traditional loans typically have fixed monthly payments over a set term. Both can provide capital, but they work differently. <Link to="/restaurant-cash-advance">Restaurant cash advance explained</Link> and <Link to="/restaurant-funding">restaurant funding options</Link> can help you decide.</p>
+            <p>Cash advance: often faster approval and funding (often 24–48 hours), repayment tied to sales, qualification based on revenue history. Loan: fixed payments, often lower rate for those who qualify, longer application process, typically requires stronger credit and collateral.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When a Restaurant Cash Advance Makes Sense',
+        content: (
+          <>
+            <p>When you need money quickly—payroll due in days, equipment down, seasonal gap—a cash advance can provide faster access than a bank loan. When your revenue is uneven and you prefer repayment that flexes with sales, a cash advance may be easier to manage than a fixed loan payment. When your credit isn&apos;t strong enough for a traditional loan but your restaurant has consistent sales, many providers focus on revenue rather than credit.</p>
+            <p>Restaurant cash advances are commonly used for payroll, inventory, equipment repairs, seasonal bridges, and short-term growth needs. They&apos;re not ideal for very large, long-term projects where a bank loan might offer better terms—if you qualify.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When a Traditional Loan Makes Sense',
+        content: (
+          <>
+            <p>When you need a large amount for a long-term project—a second location, major remodel, or large equipment purchase—a traditional loan may offer lower rates and longer terms. When you have strong credit and time to wait for approval, a bank loan can be the right fit. When you prefer fixed monthly payments and a clear payoff date, a loan provides that structure.</p>
+            <p>Banks typically want several years of financials, strong credit, and sometimes collateral. The approval process can take weeks. If you can wait and you qualify, a loan may cost less over time. If you need funds now or don&apos;t meet bank criteria, a restaurant cash advance or working capital product may be more accessible.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Comparing Speed, Cost, and Qualification',
+        content: (
+          <>
+            <p>Speed: Cash advance often wins—same-day or next-day decisions, funds in 24–48 hours. Loans can take weeks. Cost: Loans often have lower rates for qualified borrowers. Cash advance uses factor rates and fees; total cost depends on your repayment speed. Qualification: Cash advance focuses on revenue and sales history; loans focus on credit and collateral.</p>
+            <p>Consider your timeline, how you prefer to repay, and what you qualify for. There&apos;s no single &quot;best&quot; option—only the one that fits your situation. For more detail, see <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> guides.</p>
             <CtaParagraph />
           </>
         ),

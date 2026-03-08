@@ -44,8 +44,9 @@ export function BlogIndexPage() {
         canonicalPath={canonicalPath}
       />
       <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Blog', path: '/blog' }]} />
-      <main className="page-main">
-        <div className="page-content">
+      <main className="page-main page-main--blog">
+        <div className="blog-index__layout">
+          <div className="blog-index__main">
           <nav className="blog-index__key-guides" aria-label="Key guides">
             <Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link>
             <span className="blog-index__key-sep" aria-hidden> · </span>
@@ -133,6 +134,20 @@ export function BlogIndexPage() {
             <p><strong>Facing cash flow problems or need to cover payroll, inventory, or equipment?</strong></p>
             <p>Read our guides on <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> first. When you&apos;re ready: <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">Check Funding Options</a> — no obligation.</p>
           </div>
+          </div>
+          <aside className="blog-index__sidebar" aria-label="Quick guides">
+            <div className="blog-index__sidebar-card">
+              <h3 className="blog-index__sidebar-title">Start here</h3>
+              <ul className="blog-index__sidebar-links">
+                <li><Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link></li>
+                <li><Link to="/restaurant-working-capital">Restaurant Working Capital</Link></li>
+                <li><Link to="/restaurant-funding">Restaurant Funding Options</Link></li>
+              </ul>
+            </div>
+            <div className="blog-index__sidebar-card blog-index__sidebar-card--trust">
+              <p className="blog-index__sidebar-p">Practical guides for restaurant owners. No fluff—just what you need to understand your options.</p>
+            </div>
+          </aside>
         </div>
       </main>
     </>

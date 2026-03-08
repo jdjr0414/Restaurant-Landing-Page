@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { ScrollToTop } from './components/ScrollToTop';
 import { SiteLayout } from './components/SiteLayout';
 import { RestaurantCashAdvancePage } from './pages/RestaurantCashAdvancePage';
 import { RestaurantWorkingCapitalPage } from './pages/RestaurantWorkingCapitalPage';
@@ -15,7 +16,9 @@ import { topicPagesConfig } from './data/topicPages';
 
 function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route element={<SiteLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/restaurant-cash-advance" element={<RestaurantCashAdvancePage />} />
@@ -33,6 +36,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
+    </>
   );
 }
 
