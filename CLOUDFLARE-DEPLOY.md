@@ -54,9 +54,10 @@ Cloudflare Pages serves these so that `/restaurant-cash-advance` returns `dist/r
 ## Troubleshooting: Still Seeing Empty `<div id="root"></div>`
 
 1. **Check build logs** — In Cloudflare dashboard: Workers & Pages → your project → Deployments → click the latest deployment → View build logs. Look for:
-   - `[prerender] Running SSR build and prerender...`
    - `Prerendered 252 pages to dist/`
-   - If these are missing, the prerender step didn't run or failed.
+   - `Wrote 252 URLs to ... sitemap.xml`
+   - Build should take ~30 seconds (not ~2 seconds). If it finishes in under 5 seconds, prerender likely didn't run.
+   - **Clear build cache** — Retry deployment and enable "Clear build cache" if available. Cached builds may skip prerender.
 
 2. **Node version** — The project uses `.nvmrc` (Node 20). In Cloudflare Pages → Settings → Environment variables, add `NODE_VERSION` = `20` if builds fail or behave oddly.
 
