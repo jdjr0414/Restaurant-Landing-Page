@@ -4,7 +4,7 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import { Footer } from './Footer';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL, SITE_NAME } from '../config';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
@@ -23,8 +23,8 @@ export function SiteLayout() {
     <>
       <header className="site-header">
         <div className="site-header__inner">
-          <Link to="/" className="site-header__logo">
-            Restaurant Owner&apos;s Guide
+          <Link to="/" className="site-header__logo" aria-label={SITE_NAME}>
+            <img src="/logo-horizontal.svg" alt="" width="240" height="40" className="site-header__logo-img" />
           </Link>
           <nav className={`site-header__nav ${mobileNavOpen ? 'site-header__nav--open' : ''}`} aria-label="Main">
             <ul className="site-header__list">
@@ -36,13 +36,13 @@ export function SiteLayout() {
                 </li>
               ))}
               <li className="site-header__cta-wrap">
-                <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary site-header__cta site-header__cta--mobile" onClick={() => setMobileNavOpen(false)}>
+                <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary site-header__cta site-header__cta--mobile" onClick={() => setMobileNavOpen(false)}>
                   Find options
                 </a>
               </li>
             </ul>
           </nav>
-          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary site-header__cta site-header__cta--desktop">
+          <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary site-header__cta site-header__cta--desktop">
             Find options
           </a>
           <button

@@ -3,6 +3,7 @@
  */
 import { getBlogPost, blogPosts, blogPostsSortedByDate } from './data/blogPosts';
 import { topicPagesConfig } from './data/topicPages';
+import { SITE_NAME } from './config';
 
 const POSTS_PER_PAGE = 12;
 
@@ -18,7 +19,7 @@ export interface PageMeta {
 
 const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
   '/': {
-    title: "Restaurant Cash Flow Problems? Get Answers & See Your Options | Restaurant Owner's Guide",
+    title: "Restaurant Cash Flow Problems? Get Answers & See Your Options | The Restaurant Owners Guide",
     description:
       "Running out of cash? Restaurant cash flow problems are the #1 reason restaurants fail. Learn why it happens, what restaurant funding and working capital options exist, and what to do next. Practical guide for restaurant owners.",
   },
@@ -53,7 +54,7 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
   },
   '/sitemap': {
-    title: "Sitemap | All Guides & Topics | Restaurant Owner's Guide",
+    title: "Sitemap | All Guides & Topics | The Restaurant Owners Guide",
     description:
       'Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need.',
   },
@@ -107,7 +108,7 @@ export function getMeta(path: string): PageMeta | null {
   if (blogMatch) {
     const post = getBlogPost(blogMatch[1]);
     if (!post) return null;
-    const title = post.metaTitle ?? `${post.title} | Restaurant Owner's Guide`;
+    const title = post.metaTitle ?? `${post.title} | ${SITE_NAME}`;
     const description =
       post.description.length > META_DESC_MAX
         ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'

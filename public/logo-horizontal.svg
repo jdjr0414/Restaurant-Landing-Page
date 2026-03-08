@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 52" width="400" height="52">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Outfit:wght@400;500&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Clean wordmark: professional typography only -->
+  <text x="0" y="34" font-family="'DM Serif Display', Georgia, serif" font-size="28" font-weight="400" fill="#1E3A5F">Restaurant Owner&apos;s Guide</text>
+  <text x="0" y="48" font-family="'Outfit', sans-serif" font-size="11" font-weight="400" fill="#1E3A5F" opacity="0.65">Cash Flow &amp; Funding Guides</text>
+</svg>

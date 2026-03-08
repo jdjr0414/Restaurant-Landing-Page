@@ -780,6 +780,17 @@
   text-decoration: underline;
 }
 
+.article__cta-external {
+  margin: var(--space-md) 0 0;
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+}
+
+.article__cta-external a {
+  color: var(--color-amber-dark);
+  text-decoration: underline;
+}
+
 .article__footer-link {
   margin: 0;
 }

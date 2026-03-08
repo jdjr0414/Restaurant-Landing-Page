@@ -56,7 +56,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Next Steps</h2>
-            <p>If you’re facing a cash flow problem or need to cover a specific expense, understanding your options is the first step. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+            <p>If you’re facing a cash flow problem or need to cover a specific expense, understanding your options is the first step. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.</p>
           </section>
         </div>
       </main>

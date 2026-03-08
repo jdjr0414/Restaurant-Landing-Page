@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, SITE_NAME } from '../config';
 import { topicPagesConfig } from '../data/topicPages';
 
 const MAIN_LINKS = [
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
         </div>
         <p className="footer__find-options">
-          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="footer__find-link">
+          <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="footer__find-link">
             Find funding options that may match your situation →
           </a>
         </p>
@@ -50,7 +50,7 @@ export function Footer() {
           </p>
         </div>
         <p className="footer__copy">
-          © {year} Restaurant Owner&apos;s Guide. Informational use only.
+          © {year} {SITE_NAME}. Informational use only.
         </p>
       </div>
     </footer>

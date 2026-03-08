@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPostMeta } from './blogPosts';
-import { FIND_MATCH_URL } from '../config';
 import React from 'react';
 import {
   hashStr,
@@ -42,12 +41,9 @@ export interface BlogSection {
   content: string | string[];
 }
 
+/** No longer used—blog CTAs consolidated to footer with read-guides-first messaging. */
 function CtaBlock() {
-  return (
-    <div className="article-cta">
-      <p><strong>Facing a cash flow crunch or need to cover payroll, inventory, or equipment?</strong> You can explore options that may match your situation. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may help</a>.</p>
-    </div>
-  );
+  return null;
 }
 
 const BODY_POOLS = [BODY_WHY, BODY_CHALLENGES, BODY_HOW_HELPS, BODY_WHAT_LOOK_FOR, BODY_TYPICAL_USES, BODY_WHAT_TO_EXPECT, BODY_NEXT_STEPS];
@@ -120,7 +116,7 @@ function getGeneratedBlogContent(meta: BlogPostMeta): ReactNode {
       <p>{faq0.a}</p>
       <h3>{faq1.q}</h3>
       <p>{faq1.a}</p>
-      <p>Not all applicants qualify; terms vary by provider and product. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <p>Not all applicants qualify; terms vary by provider and product.</p>
       <CtaBlock />
     </>
   );
@@ -134,7 +130,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h2>Why Restaurant Funding Matters</h2>
       <p>Whether you run a full-service restaurant, café, bar, food truck, or franchise, access to working capital can mean the difference between staying ahead of expenses and falling behind. A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or other funding can help you cover short-term needs without the long wait and strict requirements of traditional bank loans.</p>
       <h2>Next Steps</h2>
-      <p>If you're exploring options for your restaurant, you can compare what's out there and see what might fit. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <p>If you're exploring options for your restaurant, compare <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> to see what fits. Not all applicants qualify; terms vary by provider.</p>
       <CtaBlock />
     </>
   );
@@ -316,7 +312,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h2>Funding Emergency Restaurant Refrigeration Repairs</h2>
       <p>A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or other <Link to="/restaurant-working-capital">working capital</Link> product is commonly used for equipment emergencies. Funds are typically flexible-use, so you can pay the repair company, cover a temporary rental, or put a down payment on a new unit. Many providers offer same-day or next-day decisions and funds in 24–48 hours—critical when you need to act fast.</p>
       <h3>What to Expect</h3>
-      <p>Not all applicants qualify; terms vary by provider. Lenders typically look at your restaurant's revenue history, bank statements, and sometimes card processing volume. Having your information ready can speed the process. If you're facing a refrigeration emergency and don't have the cash on hand, exploring your options early gives you time to compare and choose before committing to a repair or replacement. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <p>Not all applicants qualify; terms vary by provider. Lenders typically look at your restaurant's revenue history, bank statements, and sometimes card processing volume. Having your information ready can speed the process. If you're facing a refrigeration emergency and don't have the cash on hand, exploring your options early gives you time to compare and choose before committing to a repair or replacement.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What should I do first if my restaurant fridge breaks?</h3>
       <p>Secure perishables, call a commercial refrigeration repair service, and document the failure. If the unit can't be repaired quickly, get replacement quotes and consider how you'll fund the cost.</p>
@@ -327,7 +323,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h3>How fast can I get funding for a refrigeration emergency?</h3>
       <p>Emergency funding options can provide same-day or next-day decisions and funds in 24–48 hours. Restaurant cash advance and working capital products are commonly used for equipment emergencies when you need to act fast.</p>
       <div className="article-cta article-cta--refrigeration">
-        <p><strong>Facing a refrigeration emergency?</strong> Equipment failures can cost thousands. See if your restaurant qualifies for working capital to cover repairs or replacement. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Check funding options</a>.</p>
+        <p><strong>Facing a refrigeration emergency?</strong> Equipment failures can cost thousands. Before exploring external options, compare our guides on <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> to understand what might fit your situation.</p>
       </div>
       <CtaBlock />
     </>

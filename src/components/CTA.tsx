@@ -15,7 +15,7 @@ export function CTA() {
             If you’re facing a cash flow crunch, payroll gap, or need to cover equipment or inventory, you can explore options that match your situation.
           </p>
           <p className="cta__reassurance">No obligation. Many restaurant owners take this step to see what fits. Most see their options in minutes.</p>
-          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary cta__btn">
+          <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary cta__btn">
             Find options that may help
           </a>
         </div>
@@ -25,7 +25,7 @@ export function CTA() {
         </div>
       </section>
       <div className="cta-sticky" aria-hidden>
-        <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary cta-sticky__btn">
+        <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary cta-sticky__btn">
           Find options that may help
         </a>
       </div>

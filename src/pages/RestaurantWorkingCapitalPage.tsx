@@ -62,7 +62,7 @@ export function RestaurantWorkingCapitalPage() {
 
           <section className="prose-block">
             <h2>Exploring Your Options</h2>
-            <p>If you’re facing a payroll gap, inventory crunch, or seasonal shortfall, understanding what’s available can help. Not all options fit every situation; terms and eligibility vary. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+            <p>If you’re facing a payroll gap, inventory crunch, or seasonal shortfall, understanding what’s available can help. Not all options fit every situation; terms and eligibility vary. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.</p>
           </section>
         </div>
       </main>

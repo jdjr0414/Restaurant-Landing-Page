@@ -27,7 +27,7 @@ export function WhenToExploreOptions() {
         </li>
       </ul>
       <p className="when-to-explore__cta">
-        <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+        <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">
           Find options that may help
         </a>
       </p>

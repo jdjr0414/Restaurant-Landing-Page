@@ -131,7 +131,7 @@ export function BlogIndexPage() {
 
           <div className="page-cta blog-index__cta">
             <p><strong>Facing cash flow problems or need to cover payroll, inventory, or equipment?</strong></p>
-            <p><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Check Funding Options</a> — no obligation. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and funding options</Link>.</p>
+            <p>Read our guides on <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> first. When you&apos;re ready: <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">Check Funding Options</a> — no obligation.</p>
           </div>
         </div>
       </main>

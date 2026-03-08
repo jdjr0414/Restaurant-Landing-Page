@@ -3,6 +3,12 @@
  */
 export const FIND_MATCH_URL = 'https://axiantpartners.com/match';
 
+/** rel attribute for all external Axiant links (sponsored disclosure, new tab). */
+export const AXIANT_LINK_REL = 'sponsored noopener noreferrer';
+
+/** Site/brand name for titles, footer, etc. */
+export const SITE_NAME = 'The Restaurant Owners Guide';
+
 /** Site URL for canonicals, OG, sitemap. Set VITE_SITE_URL in .env for production. */
 export const SITE_URL =
   (typeof import.meta !== 'undefined' && (import.meta as { env?: { VITE_SITE_URL?: string } }).env?.VITE_SITE_URL) ||

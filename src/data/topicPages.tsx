@@ -14,7 +14,7 @@ export interface TopicPageConfig {
 function CtaParagraph() {
   return (
     <p>
-      Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.
+      Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.
     </p>
   );
 }

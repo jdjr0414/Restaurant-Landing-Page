@@ -49,7 +49,7 @@ export function SmallBusinessFundingPage() {
 
           <section className="prose-block">
             <h2>Exploring Your Options</h2>
-            <p>If you need to cover payroll, inventory, equipment, or a short-term gap, understanding what’s available can help. Not all applicants qualify; terms vary. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+            <p>If you need to cover payroll, inventory, equipment, or a short-term gap, understanding what’s available can help. Not all applicants qualify; terms vary. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.</p>
           </section>
         </div>
       </main>

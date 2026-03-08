@@ -5,7 +5,7 @@ import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, SITE_NAME } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -40,7 +40,7 @@ export function BlogPostPage() {
   const metaDesc = post.description.length > META_DESC_MAX
     ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'
     : post.description;
-  const titleTag = post.metaTitle ?? `${post.title} | Restaurant Owner's Guide`;
+  const titleTag = post.metaTitle ?? `${post.title} | ${SITE_NAME}`;
   const breadcrumbItems = [
     { name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' },
     { name: 'Blog', path: '/blog' },
@@ -91,15 +91,14 @@ export function BlogPostPage() {
             </div>
             <footer className="article__footer">
               <div className="article__cta-block">
-                <p className="article__cta-lead">Emergency expenses like equipment failures can cost thousands. See if your restaurant qualifies for working capital.</p>
-                <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary article__cta-btn">
-                  Check Funding Options
-                </a>
+                <p className="article__cta-lead">Before exploring external options, read our guides to understand what might fit your situation.</p>
                 <p className="article__cta-sub">
-                  <Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, and <Link to="/restaurant-funding">funding options</Link> — compare what fits your situation.
+                  <Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> — compare speed, cost, and repayment.
+                </p>
+                <p className="article__cta-external">
+                  When you&apos;re ready to see what may match your situation: <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options</a>.
                 </p>
               </div>
-              <p className="article__footer-link"><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation →</a></p>
             </footer>
           </div>
         </article>

@@ -27,7 +27,7 @@ export function WhyAxiantPartners() {
         </li>
       </ul>
       <p className="why-axiant__about">
-        <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">See options that may match your situation</a> and learn how providers help restaurants access working capital.
+        <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">See options that may match your situation</a> and learn how providers help restaurants access working capital.
       </p>
     </section>
   );

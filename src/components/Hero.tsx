@@ -17,7 +17,7 @@ export function Hero() {
           Struggling with payroll gaps, seasonal slumps, equipment breakdowns, or bills that don’t line up with revenue? You’re not alone. This guide helps you understand what’s going on and what options exist—so you can decide your next step.
         </p>
         <div className="hero__actions">
-          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+          <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">
             Find options that may help
           </a>
           <a href="#why-restaurants-struggle" className="btn btn-secondary">
