@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.restaurantownersguide.com/sitemap.xml
-Sitemap: https://www.restaurantownersguide.com/sitemap

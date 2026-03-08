@@ -42,7 +42,7 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Struggling to cover payroll, inventory, or bills? Understand small business funding options and when they might help with cash flow gaps.",
   },
   '/blog': {
-    title: "Restaurant Cash Flow & Funding Blog | Tips & Guides",
+    title: "Restaurant Cash Flow & Funding Guides | Tips & Articles",
     description:
       'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
   },

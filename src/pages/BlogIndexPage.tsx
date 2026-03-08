@@ -12,7 +12,7 @@ export function BlogIndexPage() {
   return (
     <>
       <SeoHead
-        title="Restaurant Cash Flow & Funding Blog | Tips & Guides"
+        title="Restaurant Cash Flow & Funding Guides | Tips & Articles"
         description="Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners."
         canonicalPath="/blog"
       />
@@ -22,7 +22,7 @@ export function BlogIndexPage() {
           <p className="blog-index__hub">
             <Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link> — main guide to options and how they work.
           </p>
-          <h1 className="page-title">Restaurant Cash Flow &amp; Funding Blog</h1>
+          <h1 className="page-title">Restaurant Cash Flow &amp; Funding Guides</h1>
           <section className="blog-index__intro">
             <p className="page-lead">
               Restaurant cash flow problems are one of the leading reasons restaurants close—even when sales look good. Revenue comes in unevenly: busy weekends, slow Tuesdays, holiday rushes, and post-holiday slumps. Meanwhile, rent, payroll, and vendor payments hit on fixed schedules. That timing mismatch creates gaps that many owners need to bridge.
