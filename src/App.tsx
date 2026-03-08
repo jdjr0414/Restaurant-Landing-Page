@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { SiteLayout } from './components/SiteLayout';
 import { RestaurantCashAdvancePage } from './pages/RestaurantCashAdvancePage';
 import { RestaurantWorkingCapitalPage } from './pages/RestaurantWorkingCapitalPage';
@@ -10,6 +10,7 @@ import { BlogPostPage } from './pages/BlogPostPage';
 import { HomePage } from './pages/HomePage';
 import { TopicPage } from './pages/TopicPage';
 import { SitemapPage } from './pages/SitemapPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { topicPagesConfig } from './data/topicPages';
 
 function App() {
@@ -28,8 +29,8 @@ function App() {
         <Route path="/sitemap" element={<SitemapPage />} />
         <Route path="/blog" element={<BlogIndexPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
-      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

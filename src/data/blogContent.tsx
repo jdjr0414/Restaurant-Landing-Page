@@ -2,6 +2,23 @@ import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { BlogPostMeta } from './blogPosts';
 import { FIND_MATCH_URL } from '../config';
+import React from 'react';
+import {
+  hashStr,
+  pick,
+  topicFromSlug,
+  INTRO_LEADS,
+  INTRO_SECONDS,
+  SECTION_TITLE_TEMPLATES,
+  BODY_WHY,
+  BODY_CHALLENGES,
+  BODY_HOW_HELPS,
+  BODY_WHAT_LOOK_FOR,
+  BODY_TYPICAL_USES,
+  BODY_WHAT_TO_EXPECT,
+  BODY_NEXT_STEPS,
+  FAQ_PAIRS,
+} from './blogContentPools';
 
 export interface BlogSection {
   type: 'h2' | 'h3' | 'p' | 'ul';
@@ -13,6 +30,72 @@ function CtaBlock() {
     <div className="article-cta">
       <p><strong>Facing a cash flow crunch or need to cover payroll, inventory, or equipment?</strong> You can explore options that may match your situation. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may help</a>.</p>
     </div>
+  );
+}
+
+const BODY_POOLS = [BODY_WHY, BODY_CHALLENGES, BODY_HOW_HELPS, BODY_WHAT_LOOK_FOR, BODY_TYPICAL_USES, BODY_WHAT_TO_EXPECT, BODY_NEXT_STEPS];
+
+/** Generate a 1200+ word, unique article from pools to avoid cannibalization. */
+function getGeneratedBlogContent(meta: BlogPostMeta): ReactNode {
+  const slug = meta.slug;
+  const { type, state } = topicFromSlug(slug);
+  const topicDisplay = meta.title.length > 50 ? meta.title.split(' ').slice(0, 5).join(' ') : meta.title;
+  const stateDisplay = state || 'your area';
+
+  const intro1 = pick(INTRO_LEADS, slug, 'lead');
+  const intro2 = meta.description;
+  const intro3 = pick(INTRO_SECONDS, slug, 'second');
+
+  const sectionTitles: string[] = [];
+  const usedTitleIndices = new Set<number>();
+  for (let i = 0; i < 7; i++) {
+    let idx = (hashStr(slug + 'tit' + i) >>> 0) % SECTION_TITLE_TEMPLATES.length;
+    let attempts = 0;
+    while (usedTitleIndices.has(idx) && attempts < SECTION_TITLE_TEMPLATES.length) {
+      idx = (idx + 1) % SECTION_TITLE_TEMPLATES.length;
+      attempts++;
+    }
+    usedTitleIndices.add(idx);
+    const raw = SECTION_TITLE_TEMPLATES[idx]
+      .replace(/\{topic\}/g, topicDisplay)
+      .replace(/\{type\}/g, type)
+      .replace(/\{state\}/g, stateDisplay);
+    sectionTitles.push(raw);
+  }
+
+  const sections: ReactNode[] = [];
+  for (let s = 0; s < 7; s++) {
+    const pool = BODY_POOLS[s];
+    const p1 = pick(pool, slug, 's' + s + 'a');
+    const p2 = pick(pool, slug, 's' + s + 'b');
+    const p3 = pick(pool, slug, 's' + s + 'c');
+    sections.push(
+      <React.Fragment key={s}>
+        <h2>{sectionTitles[s]}</h2>
+        <p>{p1}</p>
+        <p>{p2}</p>
+        <p>{p3}</p>
+      </React.Fragment>
+    );
+  }
+
+  const faq0 = pick(FAQ_PAIRS, slug, 'faq0');
+  const faq1 = pick(FAQ_PAIRS, slug, 'faq1');
+
+  return (
+    <>
+      <p>{intro1}</p>
+      <p>{intro2}</p>
+      <p>{intro3}</p>
+      {sections}
+      <h2>Frequently Asked Questions</h2>
+      <h3>{faq0.q}</h3>
+      <p>{faq0.a}</p>
+      <h3>{faq1.q}</h3>
+      <p>{faq1.a}</p>
+      <p>Not all applicants qualify; terms vary by provider and product. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and other options are worth exploring when you need working capital. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <CtaBlock />
+    </>
   );
 }
 
@@ -28,7 +111,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <CtaBlock />
     </>
   );
-
+  void stub;
   const contentMap: Record<string, ReactNode> = {
     'how-restaurant-owners-use-working-capital': (
       <>
@@ -188,5 +271,5 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
     ),
   };
 
-  return contentMap[slug] ?? stub;
+  return contentMap[slug] ?? getGeneratedBlogContent(meta);
 }
