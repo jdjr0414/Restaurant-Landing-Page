@@ -253,6 +253,15 @@ export const blogPosts: BlogPostMeta[] = [
   { slug: 'restaurant-funding-all-states', title: 'Restaurant Funding in All 50 States', description: 'How restaurant and food truck funding works across the USA.', publishedDate: '2027-02-18' },
 ];
 
+/**
+ * Blog posts sorted by publish date descending (newest first).
+ * Used for display on the blog index. Automatically includes new posts when added.
+ * Sort is by publishedDate only—never by slug or title.
+ */
+export const blogPostsSortedByDate: BlogPostMeta[] = [...blogPosts].sort(
+  (a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+);
+
 export function getBlogPost(slug: string): BlogPostMeta | undefined {
   return blogPosts.find((p) => p.slug === slug);
 }

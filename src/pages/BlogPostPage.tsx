@@ -95,7 +95,9 @@ export function BlogPostPage() {
                 <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary article__cta-btn">
                   Check Funding Options
                 </a>
-                <p className="article__cta-sub"><Link to="/restaurant-cash-advance">Restaurant cash advance and funding options</Link> — compare what fits your situation.</p>
+                <p className="article__cta-sub">
+                  <Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, and <Link to="/restaurant-funding">funding options</Link> — compare what fits your situation.
+                </p>
               </div>
               <p className="article__footer-link"><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation →</a></p>
             </footer>

@@ -6,6 +6,7 @@ import React from 'react';
 import {
   hashStr,
   pick,
+  pickN,
   topicFromSlug,
   INTRO_LEADS,
   INTRO_SECONDS,
@@ -19,6 +20,22 @@ import {
   BODY_NEXT_STEPS,
   FAQ_PAIRS,
 } from './blogContentPools';
+
+/** Related links for contextual internal linking. Each post gets 2+ links to related blog/topic pages. */
+const RELATED_LINKS_POOL: { path: string; anchor: string }[] = [
+  { path: '/blog/restaurant-equipment-repair-cost', anchor: 'restaurant equipment repair costs' },
+  { path: '/restaurant-emergency-funding', anchor: 'restaurant emergency funding' },
+  { path: '/blog/restaurant-slow-season-survival', anchor: 'restaurant slow season survival' },
+  { path: '/restaurant-working-capital', anchor: 'restaurant working capital' },
+  { path: '/restaurant-inventory-funding', anchor: 'restaurant inventory funding' },
+  { path: '/blog/restaurant-refrigeration-emergency', anchor: 'restaurant refrigeration emergency' },
+  { path: '/blog/restaurant-payroll-gap', anchor: 'restaurant payroll funding' },
+  { path: '/restaurant-seasonal-cash-flow', anchor: 'restaurant seasonal cash flow' },
+  { path: '/blog/how-restaurants-handle-seasonal-cash-flow', anchor: 'seasonal cash flow' },
+  { path: '/blog/restaurant-cash-flow-mistakes', anchor: 'restaurant cash flow mistakes' },
+  { path: '/blog/restaurant-busy-season-preparation', anchor: 'busy season preparation' },
+  { path: '/restaurant-cash-advance-vs-loan', anchor: 'restaurant cash advance vs loan' },
+];
 
 export interface BlogSection {
   type: 'h2' | 'h3' | 'p' | 'ul';
@@ -81,6 +98,11 @@ function getGeneratedBlogContent(meta: BlogPostMeta): ReactNode {
 
   const faq0 = pick(FAQ_PAIRS, slug, 'faq0');
   const faq1 = pick(FAQ_PAIRS, slug, 'faq1');
+  const eligibleLinks = RELATED_LINKS_POOL.filter((r) => !r.path.includes(slug));
+  const pool = eligibleLinks.length >= 2 ? eligibleLinks : RELATED_LINKS_POOL;
+  const picked = pickN(pool, slug, 'related', 3);
+  const uniqueLinks = [...new Map(picked.map((r) => [r.path, r])).values()].slice(0, 2);
+  const [link1, link2] = uniqueLinks;
 
   return (
     <>
@@ -88,12 +110,17 @@ function getGeneratedBlogContent(meta: BlogPostMeta): ReactNode {
       <p>{intro2}</p>
       <p>{intro3}</p>
       {sections}
+      <p>
+        For more on related topics, see our guides on <Link to={link1.path}>{link1.anchor}</Link>
+        {link2 ? <> and <Link to={link2.path}>{link2.anchor}</Link></> : null}.
+        {' '}You can also explore <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> to compare what fits your situation.
+      </p>
       <h2>Frequently Asked Questions</h2>
       <h3>{faq0.q}</h3>
       <p>{faq0.a}</p>
       <h3>{faq1.q}</h3>
       <p>{faq1.a}</p>
-      <p>Not all applicants qualify; terms vary by provider and product. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and other options are worth exploring when you need working capital. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
+      <p>Not all applicants qualify; terms vary by provider and product. <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer">Find options that may match your situation</a>.</p>
       <CtaBlock />
     </>
   );
@@ -134,7 +161,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
         <h3>What can restaurant working capital be used for?</h3>
         <p>Common uses include payroll, inventory, equipment, repairs, seasonal cash flow, and growth initiatives. Use is typically flexible.</p>
         <h3>Is working capital the same as a loan?</h3>
-        <p>Not always. A restaurant cash advance is one form of working capital with different qualification and repayment than a traditional loan. <Link to="/restaurant-cash-advance">Compare restaurant cash advance vs loan</Link> to see what fits your situation.</p>
+        <p>Not always. A restaurant cash advance is one form of working capital with different qualification and repayment than a traditional loan. <Link to="/restaurant-cash-advance-vs-loan">Compare restaurant cash advance vs loan</Link> to see what fits your situation. For more on payroll and seasonal gaps, see <Link to="/blog/restaurant-payroll-gap">restaurant payroll funding</Link> and <Link to="/blog/restaurant-slow-season-survival">restaurant slow season survival</Link>.</p>
         <CtaBlock />
       </>
     ),
@@ -148,7 +175,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
         <h2>When Funding Makes Sense</h2>
         <p>When you need to cover payroll, restock before a busy period, or fix equipment quickly, <Link to="/restaurant-cash-advance">restaurant funding</Link> can be a practical solution. A restaurant cash advance or working capital product can provide fast access to funds when traditional loans are too slow or hard to qualify for.</p>
         <h2>Choosing the Right Option</h2>
-        <p>Not all funding is the same. Compare speed, cost, and repayment structure. For short-term gaps and flexible repayment, a cash advance may fit. For larger, longer-term needs, a loan might be better. Understanding your situation helps you choose.</p>
+        <p>Not all funding is the same. Compare speed, cost, and repayment structure. For short-term gaps and flexible repayment, a cash advance may fit. For larger, longer-term needs, a loan might be better. Understanding your situation helps you choose. For common pitfalls to avoid, see <Link to="/blog/restaurant-cash-flow-mistakes">restaurant cash flow mistakes</Link>. When equipment breaks, <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link> and funding options are worth knowing.</p>
         <h2>Frequently Asked Questions</h2>
         <h3>Why do restaurants have cash flow problems?</h3>
         <p>Revenue is often uneven due to seasonality, weather, and events. Costs like payroll and rent are more fixed. That mismatch creates cash flow challenges.</p>
@@ -169,7 +196,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
         <h2>Lines of Credit</h2>
         <p>A line of credit lets you draw funds as needed up to a limit. It can provide flexibility for ongoing working capital needs. Availability and terms vary by lender.</p>
         <h2>Comparing Your Options</h2>
-        <p>Consider speed, qualification requirements, repayment structure, and cost. For fast funding and sales-based repayment, a restaurant business cash advance is worth considering. For large, long-term projects, explore loans. <Link to="/restaurant-cash-advance">See restaurant cash advance options</Link> and compare with other financing.</p>
+        <p>Consider speed, qualification requirements, repayment structure, and cost. For fast funding and sales-based repayment, a restaurant business cash advance is worth considering. For large, long-term projects, explore loans. <Link to="/restaurant-cash-advance">See restaurant cash advance options</Link> and compare with other financing. For equipment-specific needs, see <Link to="/blog/how-to-fund-restaurant-equipment-repairs">how to fund restaurant equipment repairs</Link> and <Link to="/restaurant-cash-advance-vs-loan">restaurant cash advance vs loan</Link>.</p>
         <h2>Frequently Asked Questions</h2>
         <h3>What is the easiest restaurant financing to get?</h3>
         <p>Cash advances and some working capital products often have faster, simpler applications and may focus more on revenue than credit.</p>
@@ -188,7 +215,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
         <h2>Equipment Financing and Leasing</h2>
         <p>For larger replacements, equipment financing or leasing spreads the cost over time. The equipment often serves as collateral. This can be a good fit when you're buying new or major equipment rather than doing a quick repair.</p>
         <h2>Comparing Speed and Cost</h2>
-        <p>Cash advances and some working capital products offer speed; traditional equipment loans may offer lower rates for those who qualify. Consider how soon you need the funds and how you prefer to repay.</p>
+        <p>Cash advances and some working capital products offer speed; traditional equipment loans may offer lower rates for those who qualify. Consider how soon you need the funds and how you prefer to repay. For refrigeration emergencies specifically, see our <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link> guide. When you need money in days, <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> options can help.</p>
         <h2>Frequently Asked Questions</h2>
         <h3>How fast can I get funding for equipment repairs?</h3>
         <p>Some restaurant funding options can provide decisions in a day and funds in 24–48 hours. Terms vary by provider.</p>
@@ -283,7 +310,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h3>Why Many Owners Don&apos;t Have the Cash</h3>
       <p>Restaurant margins are thin. Rent, payroll, and food costs consume most revenue. Even profitable operators often don&apos;t have tens of thousands of dollars sitting in the account for an unexpected equipment failure. That&apos;s why so many turn to <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> when an emergency hits—to cover the cost without draining reserves or putting repairs on high-interest credit cards.</p>
       <h2>How Restaurants Handle Unexpected Equipment Expenses</h2>
-      <p>When revenue doesn't line up with a large repair or replacement bill, owners have a few options. Some dip into personal savings or business reserves. Others put the cost on a credit card—but high rates can make that expensive over time. Many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to cover the cost.</p>
+      <p>When revenue doesn't line up with a large repair or replacement bill, owners have a few options. Some dip into personal savings or business reserves. Others put the cost on a credit card—but high rates can make that expensive over time. Many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to cover the cost. For more on typical costs, see <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link> and <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> options when you need money fast.</p>
       <h3>Why Sales-Based Repayment Helps</h3>
       <p>Repayment tied to daily sales can make it easier to manage than a fixed loan payment. When business is slow, your payment is lower. When you're busy again after the repair, payments scale up. That flexibility is especially valuable after an emergency, when you may have already lost revenue from downtime and spoiled inventory. <Link to="/restaurant-funding">Restaurant funding options</Link> can provide same-day or next-day decisions and funds in 24–48 hours so you can get back up and running.</p>
       <h2>Funding Emergency Restaurant Refrigeration Repairs</h2>
@@ -313,7 +340,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h3>The Payroll Calendar Trap</h3>
       <p>Biweekly payroll means a fixed schedule. But your revenue doesn&apos;t follow a calendar—weekend rushes, holiday lulls, and seasonal swings create unpredictable cash flow. When a big weekend falls right after payday, you may have already spent the previous week&apos;s revenue on bills. That gap is where many owners get stuck.</p>
       <h2>What Owners Do When They Can&apos;t Make Payroll</h2>
-      <p>Some owners dip into personal savings. Others negotiate with staff for a short delay—though that damages trust and can violate labor laws. Many turn to <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to bridge the gap. These options can provide fast access to funds when you need money in days, not weeks.</p>
+      <p>Some owners dip into personal savings. Others negotiate with staff for a short delay—though that damages trust and can violate labor laws. Many turn to <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to bridge the gap. These options can provide fast access to funds when you need money in days, not weeks. If slow seasons are part of the problem, see how restaurants survive <Link to="/blog/restaurant-slow-season-survival">slow seasons without running out of cash</Link>. For dedicated payroll help, explore <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link> options.</p>
       <h2>How Restaurant Funding Helps With Payroll</h2>
       <p><Link to="/restaurant-funding">Restaurant funding options</Link> are often flexible-use. Payroll is one of the most common uses. Repayment tied to daily sales can make it easier to manage than a fixed loan payment when revenue fluctuates. Not all applicants qualify; terms vary by provider. But when you need to make payroll and don&apos;t have the cash, exploring your options is a practical step.</p>
       <h3>What to Look For in Payroll Funding</h3>
@@ -341,7 +368,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h2>Why Slow Seasons Hurt Restaurants</h2>
       <p>Fixed costs don&apos;t scale down when revenue drops. You still need to pay rent, keep the lights on, and maintain a minimum staff. Inventory may spoil. The gap between lower revenue and unchanged expenses is where many restaurant cash flow problems begin. Surviving a slow season requires a mix of preparation, cost control, and sometimes a bridge to the next busy period.</p>
       <h2>Preparing Before the Slow Season</h2>
-      <p>Build reserves during busy periods. Trim non-essential costs. Renegotiate with suppliers if possible. And know your options: <Link to="/restaurant-working-capital">restaurant working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> products can help bridge the gap when you need cash before the next busy period.</p>
+      <p>Build reserves during busy periods. Trim non-essential costs. Renegotiate with suppliers if possible. And know your options: <Link to="/restaurant-working-capital">restaurant working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> products can help bridge the gap when you need cash before the next busy period. Stocking up before traffic returns often requires cash—explore <Link to="/restaurant-inventory-funding">restaurant inventory funding</Link> and our guide to <Link to="/restaurant-seasonal-cash-flow">restaurant seasonal cash flow</Link> for more on bridging slow periods.</p>
       <h3>When to Start Preparing</h3>
       <p>Don&apos;t wait until traffic drops. Identify your slow periods from last year&apos;s data—January, post-holiday summer, or quiet weekdays. Start setting aside cash during your busiest months. Even a small reserve can reduce stress when revenue dips. If you know a slow period is coming and your account is thin, explore <Link to="/restaurant-funding">restaurant funding</Link> options before you need them.</p>
       <h2>Using Restaurant Funding During Slow Seasons</h2>
@@ -369,7 +396,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
     <>
       <p>Ovens, coolers, fryers, and hoods break at the worst times—often right before a busy weekend or during a rush. The real cost of restaurant equipment repairs can run from a few hundred dollars to tens of thousands. Many owners don&apos;t have that kind of cash on hand when an emergency hits. Here&apos;s what owners typically pay and how they handle it.</p>
       <h2>Typical Restaurant Equipment Repair Costs</h2>
-      <p>Simple fixes—thermostats, gaskets, minor electrical—can run $200–$800. Compressor work or major component replacement often costs $2,000–$8,000. Full walk-in cooler or freezer replacement can reach $15,000–$50,000 or more. Commercial ovens and ranges vary widely. Many restaurant owners don&apos;t have that cash on hand when an emergency hits. Knowing your funding options before equipment fails puts you in a better position to act quickly.</p>
+      <p>Simple fixes—thermostats, gaskets, minor electrical—can run $200–$800. Compressor work or major component replacement often costs $2,000–$8,000. Full walk-in cooler or freezer replacement can reach $15,000–$50,000 or more. Commercial ovens and ranges vary widely. Many restaurant owners don&apos;t have that cash on hand when an emergency hits. For refrigeration-specific emergencies, see our <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link> guide. When you need money fast, <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> can help. Knowing your funding options before equipment fails puts you in a better position to act quickly.</p>
       <h3>Hidden Costs of Downtime</h3>
       <p>Beyond the repair bill, consider lost sales. A broken oven during dinner service, a failed cooler overnight, or a hood system down during lunch—each hour of downtime costs revenue. Add spoiled inventory, emergency repair premiums, and potential health inspection issues, and the true cost of an equipment failure can far exceed the repair quote.</p>
       <h2>How Owners Fund Equipment Repairs</h2>
@@ -404,7 +431,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h3>Protecting Your Inventory</h3>
       <p>Perishables in the danger zone (above 41°F for more than two hours) may need to be discarded. Move high-value items first. If you have a second cooler or reach-in, use it. Some owners rent a portable refrigeration unit for a few days while repairs are done. The cost of a rental is often less than the cost of lost inventory and lost sales.</p>
       <h2>What Walk-In Cooler Repairs Cost</h2>
-      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$6,000. Full replacement typically runs $15,000–$50,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand.</p>
+      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$6,000. Full replacement typically runs $15,000–$50,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand. For a full guide on refrigeration emergencies, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>. For typical costs across all equipment, see <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>.</p>
       <h2>How Restaurant Owners Fund Cooler Emergencies</h2>
       <p>When revenue doesn&apos;t line up with a large repair bill, many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link>. These options can provide same-day or next-day decisions and funds in 24–48 hours. Repayment tied to daily sales can make it easier to manage than a fixed loan payment.</p>
       <p>Funds are typically flexible-use—you can pay the repair company, cover a temporary rental, or put a down payment on a new unit. Many providers offer same-day or next-day decisions, which is critical when you need to act fast. Not all applicants qualify; terms vary by provider. But when you&apos;re facing a cooler failure and don&apos;t have the cash, exploring your options is a practical step. <Link to="/restaurant-funding">Restaurant funding options</Link> are worth comparing before you commit to a repair or replacement.</p>

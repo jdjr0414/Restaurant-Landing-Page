@@ -28,6 +28,7 @@ function App() {
         ))}
         <Route path="/sitemap" element={<SitemapPage />} />
         <Route path="/blog" element={<BlogIndexPage />} />
+        <Route path="/blog/page/:page" element={<BlogIndexPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

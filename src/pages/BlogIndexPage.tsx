@@ -1,27 +1,58 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
-import { blogPosts } from '../data/blogPosts';
+import { blogPostsSortedByDate } from '../data/blogPosts';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
+const POSTS_PER_PAGE = 12;
+
+/** Featured guides: mix of blog posts and topic pages. */
+const FEATURED_GUIDES = [
+  { path: '/blog/restaurant-refrigeration-emergency', title: 'Restaurant Refrigeration Emergency', description: 'What to do when your refrigerator or walk-in cooler fails. Immediate steps, repair costs, and funding options.' },
+  { path: '/restaurant-payroll-funding', title: 'Restaurant Payroll Funding', description: "Can't make payroll? Options when revenue is slow but payday isn't. Fast funding for restaurant owners." },
+  { path: '/restaurant-seasonal-cash-flow', title: 'Restaurant Seasonal Cash Flow', description: 'Survive slow seasons. How to bridge the gap when traffic drops but rent and payroll don\'t.' },
+  { path: '/restaurant-cash-advance-vs-loan', title: 'Restaurant Cash Advance vs Loan', description: 'Compare speed, qualification, and repayment. Which fits your situation?' },
+];
+
+function getTotalPages(): number {
+  return Math.ceil(blogPostsSortedByDate.length / POSTS_PER_PAGE);
+}
+
+function getPostsForPage(page: number) {
+  const start = (page - 1) * POSTS_PER_PAGE;
+  return blogPostsSortedByDate.slice(start, start + POSTS_PER_PAGE);
+}
+
 export function BlogIndexPage() {
+  const { page } = useParams<{ page: string }>();
+  const currentPage = page ? Math.max(1, parseInt(page, 10) || 1) : 1;
+  const totalPages = getTotalPages();
+  const safePage = Math.min(currentPage, totalPages) || 1;
+  const posts = getPostsForPage(safePage);
+  const isFirstPage = safePage === 1;
+  const canonicalPath = isFirstPage ? '/blog' : `/blog/page/${safePage}`;
+
   return (
     <>
       <SeoHead
-        title="Restaurant Cash Flow & Funding Guides | Tips & Articles"
+        title={isFirstPage ? "Restaurant Cash Flow & Funding Guides | Tips & Articles" : `Blog Page ${safePage} | Restaurant Cash Flow & Funding Guides`}
         description="Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners."
-        canonicalPath="/blog"
+        canonicalPath={canonicalPath}
       />
       <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Blog', path: '/blog' }]} />
       <main className="page-main">
         <div className="page-content">
-          <p className="blog-index__hub">
-            <Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link> — main guide to options and how they work.
-          </p>
+          <nav className="blog-index__key-guides" aria-label="Key guides">
+            <Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link>
+            <span className="blog-index__key-sep" aria-hidden> · </span>
+            <Link to="/restaurant-working-capital">Restaurant Working Capital</Link>
+            <span className="blog-index__key-sep" aria-hidden> · </span>
+            <Link to="/restaurant-funding">Restaurant Funding Options</Link>
+          </nav>
           <h1 className="page-title">Restaurant Cash Flow &amp; Funding Guides</h1>
           <section className="blog-index__intro">
             <p className="page-lead">
@@ -34,17 +65,70 @@ export function BlogIndexPage() {
               Practical guides, no fluff. Written for restaurant owners who are looking for answers, not sales pitches.
             </p>
           </section>
-          <ul className="blog-list">
-            {blogPosts.map((post) => (
-              <li key={post.slug} className="blog-list__item">
-                <Link to={`/blog/${post.slug}`} className="blog-list__link">
-                  <span className="blog-list__title">{post.title}</span>
-                  <span className="blog-list__meta">{new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                </Link>
-                <p className="blog-list__desc">{post.description}</p>
-              </li>
-            ))}
-          </ul>
+
+          <section className="blog-index__featured" aria-labelledby="featured-guides-title">
+            <h2 id="featured-guides-title" className="blog-index__featured-title">Featured Guides</h2>
+            <ul className="blog-featured-list">
+              {FEATURED_GUIDES.map((guide) => (
+                <li key={guide.path} className="blog-featured-list__item">
+                  <Link to={guide.path} className="blog-featured-list__link">
+                    <span className="blog-featured-list__title">{guide.title}</span>
+                    <span className="blog-featured-list__desc">{guide.description}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="blog-index__list" aria-labelledby="all-articles-title">
+            <h2 id="all-articles-title" className="blog-index__list-title">All Articles</h2>
+            <ul className="blog-list">
+              {posts.map((post) => (
+                <li key={post.slug} className="blog-list__item">
+                  <Link to={`/blog/${post.slug}`} className="blog-list__link">
+                    <span className="blog-list__title">{post.title}</span>
+                    <span className="blog-list__meta">{new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                  </Link>
+                  <p className="blog-list__desc">{post.description}</p>
+                </li>
+              ))}
+            </ul>
+
+            {totalPages > 1 && (
+              <nav className="blog-pagination" aria-label="Blog pagination">
+                <ul className="blog-pagination__list">
+                  {safePage > 1 && (
+                    <li className="blog-pagination__item">
+                      <Link
+                        to={safePage === 2 ? '/blog' : `/blog/page/${safePage - 1}`}
+                        className="blog-pagination__link blog-pagination__link--prev"
+                        rel="prev"
+                      >
+                        ← Previous
+                      </Link>
+                    </li>
+                  )}
+                  <li className="blog-pagination__item blog-pagination__item--info">
+                    <span className="blog-pagination__info">
+                      Page {safePage} of {totalPages}
+                    </span>
+                  </li>
+                  {safePage < totalPages && (
+                    <li className="blog-pagination__item">
+                      <Link
+                        to={`/blog/page/${safePage + 1}`}
+                        className="blog-pagination__link blog-pagination__link--next"
+                        rel="next"
+                      >
+                        Next →
+                      </Link>
+                    </li>
+                  )}
+                </ul>
+              </nav>
+            )}
+          </section>
+
           <div className="page-cta blog-index__cta">
             <p><strong>Facing cash flow problems or need to cover payroll, inventory, or equipment?</strong></p>
             <p><a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Check Funding Options</a> — no obligation. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and funding options</Link>.</p>

@@ -28,12 +28,16 @@ const slugMatches = blogPostsSrc.matchAll(/slug:\s*['"]([^'"]+)['"]/g);
 const blogSlugs = [...new Set([...slugMatches].map((m) => m[1]))];
 const blogPaths = blogSlugs.map((s) => `/blog/${s}`);
 
+const POSTS_PER_PAGE = 12;
+const blogTotalPages = Math.ceil(blogSlugs.length / POSTS_PER_PAGE);
+const blogPaginationPaths = Array.from({ length: blogTotalPages - 1 }, (_, i) => `/blog/page/${i + 2}`);
+
 const topicPagesPath = join(root, 'src', 'data', 'topicPages.tsx');
 const topicPagesSrc = readFileSync(topicPagesPath, 'utf8');
 const pathMatches = topicPagesSrc.matchAll(/path:\s*['"]([^'"]+)['"]/g);
 const topicPaths = [...new Set([...pathMatches].map((m) => m[1]).filter((p) => p.startsWith('/')))];
 
-const urls = [...staticPaths, ...topicPaths, ...blogPaths];
+const urls = [...staticPaths, ...blogPaginationPaths, ...topicPaths, ...blogPaths];
 const lastmod = new Date().toISOString().slice(0, 10);
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

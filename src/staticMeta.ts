@@ -1,8 +1,14 @@
 /**
  * Static meta and path list for SSG prerender. Used by entry-server and prerender script.
  */
-import { getBlogPost, blogPosts } from './data/blogPosts';
+import { getBlogPost, blogPosts, blogPostsSortedByDate } from './data/blogPosts';
 import { topicPagesConfig } from './data/topicPages';
+
+const POSTS_PER_PAGE = 12;
+
+function getBlogTotalPages(): number {
+  return Math.ceil(blogPostsSortedByDate.length / POSTS_PER_PAGE);
+}
 
 export interface PageMeta {
   title: string;
@@ -56,6 +62,8 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
 export function getAllPaths(): string[] {
   const topicPaths = topicPagesConfig.map((p) => p.path);
   const blogPaths = blogPosts.map((p) => `/blog/${p.slug}`);
+  const blogTotalPages = getBlogTotalPages();
+  const blogPaginationPaths = Array.from({ length: blogTotalPages - 1 }, (_, i) => `/blog/page/${i + 2}`);
   return [
     '/',
     '/restaurant-cash-advance',
@@ -64,6 +72,7 @@ export function getAllPaths(): string[] {
     '/business-cash-advance',
     '/small-business-funding',
     '/blog',
+    ...blogPaginationPaths,
     '/sitemap',
     ...topicPaths,
     ...blogPaths,
@@ -81,6 +90,18 @@ export function getMeta(path: string): PageMeta | null {
   const topic = topicPagesConfig.find((p) => p.path === path);
   if (topic) {
     return { title: topic.title, description: topic.description, canonicalPath: topic.path };
+  }
+  const blogPageMatch = path.match(/^\/blog\/page\/(\d+)$/);
+  if (blogPageMatch) {
+    const pageNum = parseInt(blogPageMatch[1], 10);
+    const totalPages = getBlogTotalPages();
+    if (pageNum < 1 || pageNum > totalPages) return null;
+    return {
+      title: `Blog Page ${pageNum} | Restaurant Cash Flow & Funding Guides`,
+      description:
+        'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
+      canonicalPath: path,
+    };
   }
   const blogMatch = path.match(/^\/blog\/(.+)$/);
   if (blogMatch) {

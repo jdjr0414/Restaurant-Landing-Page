@@ -25,7 +25,8 @@ function injectMeta(template, meta, path) {
   const { title, description, canonicalPath } = meta;
   // Full canonical URL: homepage = base URL, others = base + path
   const canonicalUrl = canonicalPath === '/' ? siteUrl : `${siteUrl}${canonicalPath}`;
-  const ogType = path.startsWith('/blog/') && path !== '/blog' ? 'article' : 'website';
+  const isBlogPost = path.startsWith('/blog/') && path !== '/blog' && !path.match(/^\/blog\/page\/\d+$/);
+  const ogType = isBlogPost ? 'article' : 'website';
   let out = template;
 
   // 1. Replace title
