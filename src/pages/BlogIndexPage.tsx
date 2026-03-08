@@ -22,10 +22,18 @@ export function BlogIndexPage() {
           <p className="blog-index__hub">
             <Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link> — main guide to options and how they work.
           </p>
-          <h1 className="page-title">Restaurant Cash Flow & Funding Blog</h1>
-          <p className="page-lead">
-            Practical guides on the problems restaurant owners face: cash flow gaps, payroll crunches, seasonal slumps, equipment costs, and what options exist when you need help.
-          </p>
+          <h1 className="page-title">Restaurant Cash Flow &amp; Funding Blog</h1>
+          <section className="blog-index__intro">
+            <p className="page-lead">
+              Restaurant cash flow problems are one of the leading reasons restaurants close—even when sales look good. Revenue comes in unevenly: busy weekends, slow Tuesdays, holiday rushes, and post-holiday slumps. Meanwhile, rent, payroll, and vendor payments hit on fixed schedules. That timing mismatch creates gaps that many owners need to bridge.
+            </p>
+            <p>
+              This blog covers the problems restaurant owners face—payroll gaps, seasonal cash flow, equipment emergencies, vendor payment trouble—and the funding options that can help. Whether you need a <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, or want to <Link to="/restaurant-funding">compare restaurant funding options</Link>, these articles explain what&apos;s going on and what you can do next.
+            </p>
+            <p>
+              Practical guides, no fluff. Written for restaurant owners who are looking for answers, not sales pitches.
+            </p>
+          </section>
           <ul className="blog-list">
             {blogPosts.map((post) => (
               <li key={post.slug} className="blog-list__item">
