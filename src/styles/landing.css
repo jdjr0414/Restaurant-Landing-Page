@@ -19,6 +19,16 @@
   }
 }
 
+@media (max-width: 375px) {
+  .landing-section {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .landing-section {
     padding: var(--space-4xl) var(--space-xl);
@@ -170,6 +180,20 @@
   }
 }
 
+@media (max-width: 375px) {
+  .hero {
+    padding: var(--space-xl) var(--space-sm) var(--space-xl);
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+}
+
 .hero__inner {
   max-width: 720px;
   margin: 0 auto;
@@ -229,6 +253,24 @@
   background: var(--color-trust-soft);
   border-bottom: 1px solid rgba(44, 82, 130, 0.08);
   box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 640px) {
+  .trust-bar {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .trust-bar__inner {
+    gap: var(--space-md);
+  }
+
+  .trust-bar__value {
+    font-size: 1.25rem;
+  }
+
+  .trust-bar__label {
+    font-size: 0.8125rem;
+  }
 }
 
 .trust-bar__inner {
@@ -346,6 +388,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .why-axiant__card,
+  .when-to-explore__card {
+    padding: var(--space-lg);
+  }
+}
+
 .why-axiant__card {
   background: var(--color-white);
   padding: var(--space-xl);
@@ -385,6 +434,13 @@
   border-radius: var(--radius-lg);
   margin: 0 var(--space-md);
   padding: var(--space-3xl) var(--space-lg);
+}
+
+@media (max-width: 640px) {
+  .when-to-explore {
+    margin: 0 var(--space-sm);
+    padding: var(--space-2xl) var(--space-md);
+  }
 }
 
 @media (min-width: 768px) {
@@ -690,6 +746,21 @@
   }
 }
 
+@media (max-width: 375px) {
+  .comparison__table-wrap {
+    margin-left: calc(-1 * var(--space-sm));
+    margin-right: calc(-1 * var(--space-sm));
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+
+  .comparison__table th,
+  .comparison__table td {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.8125rem;
+  }
+}
+
 .comparison__table th {
   font-weight: 600;
   color: var(--color-ink);
@@ -949,6 +1020,11 @@
   .cta-sticky {
     display: block;
   }
+
+  /* Reserve space so footer content isn't hidden behind sticky CTA */
+  .footer {
+    padding-bottom: calc(var(--space-xl) + 72px + env(safe-area-inset-bottom));
+  }
 }
 
 .cta-sticky__btn {
@@ -967,6 +1043,8 @@
 @media (max-width: 640px) {
   .footer {
     padding: var(--space-lg) var(--space-md);
+    /* Reserve space so content isn't hidden behind sticky CTA on pages that have it */
+    padding-bottom: calc(var(--space-lg) + 72px + env(safe-area-inset-bottom));
   }
 
   .footer__nav {
@@ -981,6 +1059,14 @@
 
   .footer__disclosure {
     padding: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__topics-list {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
   }
 }
 

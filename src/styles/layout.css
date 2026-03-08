@@ -169,3 +169,13 @@
     height: 28px;
   }
 }
+
+@media (max-width: 375px) {
+  .site-header__inner {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .site-header__logo-img {
+    height: 24px;
+  }
+}
