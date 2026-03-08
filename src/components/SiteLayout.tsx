@@ -35,9 +35,14 @@ export function SiteLayout() {
                   </Link>
                 </li>
               ))}
+              <li className="site-header__cta-wrap">
+                <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary site-header__cta site-header__cta--mobile" onClick={() => setMobileNavOpen(false)}>
+                  Find options
+                </a>
+              </li>
             </ul>
           </nav>
-          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary site-header__cta">
+          <a href={FIND_MATCH_URL} target="_blank" rel="noopener noreferrer" className="btn btn-primary site-header__cta site-header__cta--desktop">
             Find options
           </a>
           <button

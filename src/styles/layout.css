@@ -68,32 +68,53 @@
   background: var(--color-cream);
 }
 
-.site-header__cta {
+.site-header__cta--mobile {
+  display: none;
+}
+
+.site-header__cta--desktop {
   flex-shrink: 0;
   padding: var(--space-sm) var(--space-lg);
   font-size: 0.9375rem;
 }
 
+.site-header__cta-wrap {
+  display: none;
+}
+
 .site-header__menu-btn {
   display: none;
+  min-width: 44px;
+  min-height: 44px;
   padding: var(--space-sm) var(--space-md);
   font-size: 1.25rem;
   background: none;
   border: none;
   color: var(--color-ink);
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
+  .site-header__cta--desktop {
+    display: none;
+  }
+
   .site-header__nav {
     position: fixed;
     top: 57px;
     left: 0;
     right: 0;
+    bottom: auto;
+    max-height: calc(100vh - 57px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     background: var(--color-white);
     border-bottom: 1px solid var(--color-cream-dark);
     box-shadow: var(--shadow-md);
     padding: var(--space-lg);
+    padding-bottom: calc(var(--space-lg) + env(safe-area-inset-bottom));
     display: none;
   }
 
@@ -104,29 +125,45 @@
   .site-header__list {
     flex-direction: column;
     align-items: stretch;
+    gap: 0;
   }
 
   .site-header__link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .site-header__cta-wrap {
     display: block;
-    padding: var(--space-md);
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-cream-dark);
+  }
+
+  .site-header__cta--mobile {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
+    padding: var(--space-md) var(--space-xl);
   }
 
   .site-header__menu-btn {
-    display: block;
+    display: flex;
   }
 }
 
 @media (max-width: 640px) {
   .site-header__inner {
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-md);
+    gap: var(--space-sm);
   }
 
   .site-header__logo {
-    font-size: 1.125rem;
-  }
-
-  .site-header__cta {
-    padding: var(--space-sm) var(--space-md);
-    font-size: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.3;
+    max-width: 55%;
   }
 }
