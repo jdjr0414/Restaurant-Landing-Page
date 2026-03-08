@@ -6,7 +6,6 @@ export default defineConfig(function (_a) {
         plugins: [react()],
         server: { port: 5173, open: true },
         build: {
-            // Keep client build output when running SSR build so prerender can read index.html
             emptyOutDir: !isSsrBuild,
         },
     });

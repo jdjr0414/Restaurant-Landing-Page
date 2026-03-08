@@ -10,6 +10,8 @@ interface SeoHeadProps {
   noindex?: boolean;
   /** Optional OG/Twitter image URL (e.g. 1200x630). */
   image?: string;
+  /** OG type: 'website' (default) or 'article' for blog posts. */
+  ogType?: 'website' | 'article';
 }
 
 function setMeta(name: string, content: string, attr: 'name' | 'property' = 'name') {
@@ -22,7 +24,7 @@ function setMeta(name: string, content: string, attr: 'name' | 'property' = 'nam
   el.setAttribute('content', content);
 }
 
-export function SeoHead({ title, description, canonicalPath, noindex, image }: SeoHeadProps) {
+export function SeoHead({ title, description, canonicalPath, noindex, image, ogType = 'website' }: SeoHeadProps) {
   useEffect(() => {
     document.title = title;
     const canonical = `${SITE_URL}${canonicalPath}`;
@@ -39,7 +41,7 @@ export function SeoHead({ title, description, canonicalPath, noindex, image }: S
     setMeta('og:title', title, 'property');
     setMeta('og:description', description, 'property');
     setMeta('og:url', canonical, 'property');
-    setMeta('og:type', 'website', 'property');
+    setMeta('og:type', ogType, 'property');
     setMeta('og:image', image ?? DEFAULT_OG_IMAGE, 'property');
 
     setMeta('twitter:card', 'summary_large_image', 'name');
@@ -55,7 +57,7 @@ export function SeoHead({ title, description, canonicalPath, noindex, image }: S
     }
 
     return () => {};
-  }, [title, description, canonicalPath, noindex, image]);
+  }, [title, description, canonicalPath, noindex, image, ogType]);
 
   return null;
 }

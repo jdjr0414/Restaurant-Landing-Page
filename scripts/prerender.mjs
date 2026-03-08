@@ -23,25 +23,31 @@ function escapeHtml(s) {
 
 function injectMeta(template, meta, path) {
   const { title, description, canonicalPath } = meta;
-  const canonicalUrl = `${siteUrl}${canonicalPath === '/' ? '' : canonicalPath}`;
-  const ogType = path.startsWith('/blog/') ? 'article' : 'website';
+  // Full canonical URL: homepage = base URL, others = base + path
+  const canonicalUrl = canonicalPath === '/' ? siteUrl : `${siteUrl}${canonicalPath}`;
+  const ogType = path.startsWith('/blog/') && path !== '/blog' ? 'article' : 'website';
   let out = template;
 
+  // 1. Replace title
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
+
+  // 2. Replace meta description (handle both " /> and "/>)
   out = out.replace(
-    /<meta name="description" content="[^"]*"\s*\/?>/,
+    /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i,
     `<meta name="description" content="${escapeHtml(description)}" />`
   );
 
-  if (!out.includes('rel="canonical"')) {
+  // 3. Replace or add canonical - always ensure correct value per route
+  if (out.includes('rel="canonical"')) {
+    out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`);
+  } else {
     out = out.replace(
       /(<meta name="description" content="[^"]*" \/>)/,
       `$1\n    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`
     );
-  } else {
-    out = out.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`);
   }
 
+  // 4. Replace or add Open Graph and Twitter meta - always ensure correct values per route
   const ogTwitterBlock = `
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
@@ -53,7 +59,33 @@ function injectMeta(template, meta, path) {
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${defaultOgImage}" />`;
 
-  if (!out.includes('og:title')) {
+  if (out.includes('og:title')) {
+    // Replace existing og:url and og:type (the critical per-page fields)
+    out = out.replace(
+      /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/i,
+      `<meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`
+    );
+    out = out.replace(
+      /<meta\s+property="og:type"\s+content="[^"]*"\s*\/?>/i,
+      `<meta property="og:type" content="${ogType}" />`
+    );
+    out = out.replace(
+      /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/i,
+      `<meta property="og:title" content="${escapeHtml(title)}" />`
+    );
+    out = out.replace(
+      /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/i,
+      `<meta property="og:description" content="${escapeHtml(description)}" />`
+    );
+    out = out.replace(
+      /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/?>/i,
+      `<meta name="twitter:title" content="${escapeHtml(title)}" />`
+    );
+    out = out.replace(
+      /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/?>/i,
+      `<meta name="twitter:description" content="${escapeHtml(description)}" />`
+    );
+  } else {
     out = out.replace('</title>', `</title>${ogTwitterBlock}`);
   }
 

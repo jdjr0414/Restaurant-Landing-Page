@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { ArticleSchema } from '../components/ArticleSchema';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
 import { FIND_MATCH_URL } from '../config';
@@ -52,6 +53,7 @@ export function BlogPostPage() {
         title={titleTag}
         description={metaDesc}
         canonicalPath={`/blog/${post.slug}`}
+        ogType="article"
       />
       <ArticleSchema
         headline={post.title}
@@ -59,6 +61,9 @@ export function BlogPostPage() {
         datePublished={post.publishedDate}
         urlPath={`/blog/${post.slug}`}
       />
+      {post.faqItems && post.faqItems.length > 0 && (
+        <BlogFaqSchema items={post.faqItems} />
+      )}
       <BreadcrumbSchema items={breadcrumbItems} />
       <main className="page-main">
         <article className="article">
