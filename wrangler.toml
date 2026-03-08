@@ -1,0 +1,11 @@
+# Cloudflare Pages / Workers static site deployment
+# For Git-connected Pages: build command runs automatically, output from dist/
+# For wrangler deploy: run "npm run build" first, then "wrangler pages deploy dist"
+
+name = "restaurant-landing-page"
+compatibility_date = "2024-01-01"
+
+# Static assets - prerendered HTML in dist/
+# All 252+ pages are pre-rendered; each route has its own index.html
+[assets]
+directory = "./dist"

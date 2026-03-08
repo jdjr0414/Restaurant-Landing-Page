@@ -2,11 +2,14 @@
 
 This site is **pre-rendered at build time**. Each page outputs full HTML in `dist/`. To see it when you "View Source", you must deploy the **built** output, not run the dev server.
 
+**→ For full deployment steps, see [DEPLOYMENT.md](./DEPLOYMENT.md).**
+
 ## Cloudflare Pages Setup
 
 1. **Build command:** `npm run build`
 2. **Build output directory:** `dist`
 3. **Root directory:** (leave default, or `/` if your repo root contains the project)
+4. **Deploy command:** Leave EMPTY for Pages Git deployment. Do NOT use `npx wrangler deploy` unless you use Workers.
 
 ## Why View Source Might Show Empty `<div id="root"></div>`
 
