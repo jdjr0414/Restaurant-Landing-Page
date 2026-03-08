@@ -1,4 +1,4 @@
-import { SITE_URL } from '../config';
+import { SITE_URL, SITE_NAME } from '../config';
 
 interface ArticleSchemaProps {
   headline: string;
@@ -16,9 +16,14 @@ export function ArticleSchema({ headline, description, datePublished, urlPath }:
     datePublished,
     dateModified: datePublished,
     url: `${SITE_URL}${urlPath}`,
+    author: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
     publisher: {
       '@type': 'Organization',
-      name: "Restaurant Owner's Guide",
+      name: SITE_NAME,
       url: SITE_URL,
     },
   };

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { HomeFAQ } from '../components/HomeFAQ';
 import { HomeFaqSchema } from '../components/HomeFaqSchema';
+import { WebSiteSchema } from '../components/WebSiteSchema';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -21,6 +22,7 @@ export function HomePage() {
         canonicalPath="/"
       />
       <HomeFaqSchema />
+      <WebSiteSchema />
       <main className="home-page">
         {/* Hero: psychology (relief + hope) + keywords */}
         <header className="home-hero">

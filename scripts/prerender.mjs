@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const root = join(__dirname, '..');
 const distDir = join(root, 'dist');
-const siteUrl = process.env.VITE_SITE_URL || 'https://www.restaurantownersguide.com';
+const siteUrl = process.env.VITE_SITE_URL || 'https://therestaurantownersguide.com';
 const defaultOgImage = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
 
 function escapeHtml(s) {
@@ -21,7 +21,7 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
-function injectMeta(template, meta, path) {
+function injectMeta(template, meta, path, blogTotalPages = 1) {
   const { title, description, canonicalPath } = meta;
   // Full canonical URL: homepage = base URL, others = base + path
   const canonicalUrl = canonicalPath === '/' ? siteUrl : `${siteUrl}${canonicalPath}`;
@@ -55,10 +55,30 @@ function injectMeta(template, meta, path) {
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
     <meta property="og:type" content="${ogType}" />
     <meta property="og:image" content="${defaultOgImage}" />
+    <meta property="og:site_name" content="The Restaurant Owners Guide" />
+    <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${defaultOgImage}" />`;
+
+  // 5. Blog pagination: rel prev/next for SEO
+  if (path === '/blog' && blogTotalPages > 1) {
+    out = out.replace('</head>', `<link rel="next" href="${escapeHtml(siteUrl + '/blog/page/2')}" />\n  </head>`);
+  }
+  const blogPageMatch = path.match(/^\/blog\/page\/(\d+)$/);
+  if (blogPageMatch) {
+    const pageNum = parseInt(blogPageMatch[1], 10);
+    const prevPath = pageNum === 2 ? '/blog' : pageNum > 2 ? `/blog/page/${pageNum - 1}` : null;
+    const nextPath = pageNum < blogTotalPages ? `/blog/page/${pageNum + 1}` : null;
+    const prevNext = [
+      prevPath ? `<link rel="prev" href="${escapeHtml(prevPath === '/blog' ? siteUrl + '/blog' : siteUrl + prevPath)}" />` : '',
+      nextPath ? `<link rel="next" href="${escapeHtml(siteUrl + nextPath)}" />` : '',
+    ].filter(Boolean).join('\n    ');
+    if (prevNext) {
+      out = out.replace('</head>', `${prevNext}\n  </head>`);
+    }
+  }
 
   if (out.includes('og:title')) {
     // Replace existing og:url and og:type (the critical per-page fields)
@@ -109,6 +129,8 @@ async function main() {
 
   const { render, getAllPaths, getMeta } = await import(pathToFileURL(entryPath).href);
   const paths = getAllPaths();
+  const blogPostCount = paths.filter((p) => p.startsWith('/blog/') && !p.includes('/page/') && p !== '/blog').length;
+  const blogTotalPages = Math.max(1, Math.ceil(blogPostCount / 12));
 
   let written = 0;
   for (const path of paths) {
@@ -116,7 +138,7 @@ async function main() {
     if (!meta) continue;
 
     const { html } = render(path);
-    let pageHtml = injectMeta(template, meta, path);
+    let pageHtml = injectMeta(template, meta, path, blogTotalPages);
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
 
     const filePath = path === '/' ? join(distDir, 'index.html') : join(distDir, path, 'index.html');

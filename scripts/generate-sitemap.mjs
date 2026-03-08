@@ -9,7 +9,7 @@ import { fileURLToPath } from 'url';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const root = join(__dirname, '..');
 const outDir = join(root, 'dist');
-const baseUrl = process.env.VITE_SITE_URL || 'https://www.restaurantownersguide.com';
+const baseUrl = process.env.VITE_SITE_URL || 'https://therestaurantownersguide.com';
 
 const staticPaths = [
   '/',

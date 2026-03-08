@@ -1,6 +1,7 @@
 import { useLocation, Navigate } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { FaqSchema } from '../components/FaqSchema';
 import { CTA } from '../components/CTA';
 import { getTopicPage } from '../data/topicPages';
 import '../styles/globals.css';
@@ -24,6 +25,7 @@ export function TopicPage() {
         canonicalPath={page.path}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />
+      {pathname === '/faq' && <FaqSchema />}
       <main className="page-main supporting-page">
         <div className="page-content">
           <h1 className="page-title">{page.h1}</h1>

@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.restaurantownersguide.com/sitemap.xml
+# AI/LLM crawlers: structured content map
+# https://llmstxt.org
+llms.txt: https://therestaurantownersguide.com/llms.txt
+
+Sitemap: https://therestaurantownersguide.com/sitemap.xml
