@@ -49,24 +49,7 @@ const replacements = [
       <h2>How Owners Fund Equipment Repairs</h2>
       <p>Some use reserves. Others put repairs on credit cards at high rates. Many turn to`,
   },
-  // 5. restaurant-broken-walk-in-cooler - expand Immediate Steps and Funding
-  {
-    old: `      <h2>Immediate Steps When Your Cooler Fails</h2>
-      <p>Move perishables to backup refrigeration or a temporary unit if possible. Call a commercial refrigeration repair service right away—restaurant equipment specialists can often diagnose and sometimes repair on the same day. Document the failure and any lost product for insurance and tax purposes. If the unit is beyond repair, get replacement quotes; lead times can be several days or weeks.</p>
-      <h2>What Walk-In Cooler Repairs Cost</h2>
-      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$6,000. Full replacement typically runs $15,000–$50,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand.</p>
-      <h2>How Restaurant Owners Fund Cooler Emergencies</h2>
-      <p>When revenue doesn&apos;t line up with a large repair bill, many use`,
-    new: `      <h2>Immediate Steps When Your Cooler Fails</h2>
-      <p>Move perishables to backup refrigeration or a temporary unit if possible. Call a commercial refrigeration repair service right away—restaurant equipment specialists can often diagnose and sometimes repair on the same day. Document the failure and any lost product for insurance and tax purposes. If the unit is beyond repair, get replacement quotes; lead times can be several days or weeks.</p>
-      <h3>Protecting Your Inventory</h3>
-      <p>Perishables in the danger zone (above 41°F for more than two hours) may need to be discarded. Move high-value items first. If you have a second cooler or reach-in, use it. Some owners rent a portable refrigeration unit for a few days while repairs are done. The cost of a rental is often less than the cost of lost inventory and lost sales.</p>
-      <h2>What Walk-In Cooler Repairs Cost</h2>
-      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$6,000. Full replacement typically runs $15,000–$50,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand.</p>
-      <h2>How Restaurant Owners Fund Cooler Emergencies</h2>
-      <p>When revenue doesn&apos;t line up with a large repair bill, many use`,
-  },
-  // 6. restaurant-cash-flow-mistakes - expand Mistake 1
+  // 5. restaurant-cash-flow-mistakes - expand Mistake 1
   {
     old: `      <h2>Mistake 1: Poor Cash Flow Forecasting</h2>
       <p>Not knowing when money will come in and go out leaves you vulnerable. Build a simple forecast: when are your biggest expenses (payroll, rent, vendors)? When does revenue typically peak and dip? Forecasts don&apos;t have to be perfect—they just need to help you see gaps before they hit.</p>

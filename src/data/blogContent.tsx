@@ -422,37 +422,6 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <CtaBlock />
     </>
   ),
-  'restaurant-broken-walk-in-cooler': (
-    <>
-      <p>A broken walk-in cooler can shut you down. Perishables spoil. Health inspections fail. Revenue stops. A walk-in is the heart of your cold storage—when it fails, you need to act fast. Here&apos;s what to do when your restaurant walk-in cooler breaks—immediate steps, typical costs, and how owners fund emergency repairs.</p>
-      <h2>Immediate Steps When Your Cooler Fails</h2>
-      <p>Move perishables to backup refrigeration or a temporary unit if possible. Call a commercial refrigeration repair service right away—restaurant equipment specialists can often diagnose and sometimes repair on the same day. Document the failure and any lost product for insurance and tax purposes. If the unit is beyond repair, get replacement quotes; lead times can be several days or weeks. Every hour counts when perishables are at risk.</p>
-      <h3>Protecting Your Inventory</h3>
-      <p>Perishables in the danger zone (above 41°F for more than two hours) may need to be discarded. Move high-value items first. If you have a second cooler or reach-in, use it. Some owners rent a portable refrigeration unit for a few days while repairs are done. The cost of a rental is often less than the cost of lost inventory and lost sales.</p>
-      <h2>What Walk-In Cooler Repairs Cost</h2>
-      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$6,000. Full replacement typically runs $15,000–$50,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand. For a full guide on refrigeration emergencies, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>. For typical costs across all equipment, see <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>.</p>
-      <h2>How Restaurant Owners Fund Cooler Emergencies</h2>
-      <p>When revenue doesn&apos;t line up with a large repair bill, many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link>. These options can provide same-day or next-day decisions and funds in 24–48 hours. Repayment tied to daily sales can make it easier to manage than a fixed loan payment.</p>
-      <p>Funds are typically flexible-use—you can pay the repair company, cover a temporary rental, or put a down payment on a new unit. Many providers offer same-day or next-day decisions, which is critical when you need to act fast. Not all applicants qualify; terms vary by provider. But when you&apos;re facing a cooler failure and don&apos;t have the cash, exploring your options is a practical step. <Link to="/restaurant-funding">Restaurant funding options</Link> are worth comparing before you commit to a repair or replacement.</p>
-      <h2>Preventing Future Cooler Failures</h2>
-      <p>Schedule regular maintenance. Keep coils clean. Monitor temperatures. Log daily temperature checks so you can spot trends before a failure. But when the unexpected happens, <Link to="/restaurant-funding">restaurant funding</Link> can help you act fast. Not all applicants qualify; terms vary by provider.</p>
-      <p>Consider a service contract with a commercial refrigeration company—scheduled maintenance can catch small issues before they become emergencies. Even with preventive care, failures happen. Having your funding options researched in advance means you can move quickly when the cooler goes down.</p>
-      <h2>Bottom Line</h2>
-      <p>A broken walk-in cooler can shut you down. Act fast: move perishables, call a commercial repair service, document everything. Repairs can run from hundreds to tens of thousands. When you don&apos;t have the cash, <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can provide funds in 24–48 hours. Repayment tied to daily sales can make it easier to manage than a fixed loan. <Link to="/restaurant-funding">Restaurant funding</Link> is commonly used for cooler emergencies. Know your options before the next failure.</p>
-      <h2>Frequently Asked Questions</h2>
-      <h3>What should I do first if my walk-in cooler breaks?</h3>
-      <p>Move perishables to backup refrigeration, call a commercial repair service immediately, and document the failure for insurance and tax purposes. Perishables in the danger zone (above 41°F for more than two hours) may need to be discarded—act fast to minimize loss.</p>
-      <h3>How much does walk-in cooler repair or replacement cost?</h3>
-      <p>Repairs can run from hundreds to several thousand dollars. Full replacement often costs tens of thousands depending on size and specs. When you don&apos;t have the cash, restaurant funding can help—many providers offer same-day or next-day decisions and funds in 24–48 hours.</p>
-      <h3>Can I use restaurant funding for walk-in cooler repairs?</h3>
-      <p>Yes. Restaurant cash advance and working capital products are commonly used for equipment emergencies like cooler failures.</p>
-      <h3>How quickly can I get funding for a cooler emergency?</h3>
-      <p>Many providers offer same-day or next-day decisions and funds in 24–48 hours. When you&apos;re losing inventory and revenue every hour, speed matters. Have your bank statements and basic business info ready to speed the process.</p>
-      <h3>What if I need a temporary cooler while mine is being repaired?</h3>
-      <p>Portable refrigeration rentals are available for short-term use. Restaurant funding can cover both the repair and a temporary rental—funds are typically flexible-use. The cost of a few days of rental is often less than lost inventory and lost sales. Have your repair company&apos;s contact info and rental options researched in advance so you can act quickly when the cooler fails. Know your funding options before the next failure.</p>
-      <CtaBlock />
-    </>
-  ),
   'restaurant-cash-flow-mistakes': (
     <>
       <p>Restaurant cash flow problems often stem from avoidable mistakes. Small errors compound over time—and by the time you notice, you may be in a crisis. Here are seven common errors that drain your business—and how to fix them before they become crises.</p>
@@ -609,6 +578,196 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <p>Some providers offer same-day or next-day decisions and funds in 24–48 hours. When payroll or a big bill is due before your weekend deposits arrive, that speed can make the difference. Repayment tied to daily sales can align with your cash flow—so you pay when the money comes in.</p>
       <h3>Does the deposit delay affect my ability to get funding?</h3>
       <p>No. Many restaurant funding providers use your card processing or bank statements to assess your business—they understand the 2–3 day delay. They fund based on your sales history and revenue pattern. Repayment is often a percentage of daily card sales, so the structure is designed for the timing mismatches restaurants face.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-walk-in-freezer-emergency': (
+    <>
+      <p><strong>Quick Answer:</strong> When your walk-in freezer stops working, move perishables immediately, call a commercial repair service, and document the failure. Repairs can run from hundreds to tens of thousands. Restaurant funding can provide funds in 24–48 hours when you need to act fast.</p>
+      <p>A failed walk-in freezer can spoil thousands of dollars in inventory in hours. Unlike a cooler, a freezer holds product at sub-zero temperatures—and when it fails, you have less time before everything thaws. Here&apos;s what to do when your restaurant walk-in freezer stops working, typical costs, and how owners fund emergency repairs.</p>
+      <h2>Immediate Steps When Your Freezer Fails</h2>
+      <p>Move perishables to backup refrigeration or a temporary unit if possible. Call a commercial refrigeration repair service right away—restaurant equipment specialists can often diagnose and sometimes repair on the same day. Document the failure and any lost product for insurance and tax purposes. If the unit is beyond repair, get replacement quotes; lead times can be several days or weeks.</p>
+      <h3>How Freezer Emergencies Differ From Cooler Failures</h3>
+      <p>Freezers run at lower temperatures and often have different components—compressors, evaporators, and defrost systems. A freezer failure can mean faster spoilage for certain items. Some owners have both a cooler and freezer; if one fails, you may be able to consolidate inventory temporarily. But when the freezer is your primary cold storage, you need to act fast.</p>
+      <h2>Typical Walk-In Freezer Repair and Replacement Costs</h2>
+      <p>Simple fixes—thermostats, door gaskets, defrost issues—can run $300–$1,000. Compressor or evaporator work often costs $2,000–$8,000. Full replacement typically runs $20,000–$60,000 depending on size and specs. Many restaurant owners don&apos;t have that cash on hand. For refrigeration emergencies generally, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>. For typical equipment costs, see <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>.</p>
+      <h2>How Restaurant Owners Fund Freezer Emergencies</h2>
+      <p>When revenue doesn&apos;t line up with a large repair bill, many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link>. These options can provide same-day or next-day decisions and funds in 24–48 hours. Repayment tied to daily sales can make it easier to manage than a fixed loan payment. Funds are typically flexible-use—you can pay the repair company, cover a temporary rental, or put a down payment on a new unit. <Link to="/restaurant-funding">Restaurant funding options</Link> are worth comparing before you commit to a repair or replacement.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What should I do first if my walk-in freezer stops working?</h3>
+      <p>Move perishables to backup refrigeration, call a commercial repair service immediately, and document the failure for insurance and tax purposes.</p>
+      <h3>How much does walk-in freezer repair or replacement cost?</h3>
+      <p>Repairs can run from hundreds to several thousand dollars. Full replacement often costs $20,000–$60,000 depending on size and specs. Restaurant funding can help cover the cost when you need to act fast.</p>
+      <h3>Can I use restaurant funding for freezer repairs?</h3>
+      <p>Yes. Restaurant cash advance and working capital products are commonly used for equipment emergencies like freezer failures. Many offer same-day or next-day decisions and funds in 24–48 hours.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-funding-same-day': (
+    <>
+      <p><strong>Quick Answer:</strong> Some restaurant funding providers offer same-day decisions and funding when your application and paperwork are complete. Speed varies by provider. Having bank statements and business info ready can speed the process.</p>
+      <p>When payroll is due today, equipment broke overnight, or an urgent expense hits, you need money fast. Restaurant funding same day isn&apos;t guaranteed—but some providers can deliver decisions and funds within a single business day when your paperwork is in order. Here&apos;s what to expect and how to improve your chances.</p>
+      <h2>Why Same-Day Funding Matters</h2>
+      <p>Payroll gaps, equipment failures, and vendor payment deadlines don&apos;t wait. A traditional loan can take weeks. A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> product can provide funds in 24–48 hours—and in some cases, same day. When you need money today, that speed matters.</p>
+      <h2>What Providers Need for Same-Day Funding</h2>
+      <p>Typically: recent bank statements, business information, and sometimes card processing data. Having documents ready—and applying early in the day—can improve your chances of same-day funding. Providers that work with restaurants understand urgent needs. <Link to="/restaurant-funding">Restaurant funding options</Link> vary by provider; compare speed and terms before committing.</p>
+      <h3>How to Speed Up Your Application</h3>
+      <p>Have bank statements (often 3–6 months) and basic business info ready. Apply early in the business day. Respond quickly to any follow-up requests. Some providers offer same-day decisions when everything is in order.</p>
+      <h2>When Same-Day Funding Makes Sense</h2>
+      <p>Payroll due tomorrow. Equipment emergency. Vendor putting you on hold. When the cost of waiting exceeds the cost of faster funding, same-day options can be worth it. Compare providers and terms—speed isn&apos;t the only factor. For more on fast funding, see <Link to="/blog/restaurant-payroll-gap">restaurant payroll gap</Link> and <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Can I get restaurant funding the same day?</h3>
+      <p>Some providers offer same-day decisions and funding when your application and paperwork are complete. Speed varies by provider and your situation.</p>
+      <h3>What do I need for same-day restaurant funding?</h3>
+      <p>Typically bank statements, business info, and sometimes card processing data. Having documents ready speeds the process.</p>
+      <h3>Is same-day funding more expensive?</h3>
+      <p>Costs vary by provider and product. Compare terms before committing. Speed can matter when payroll or an emergency is due.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-merchant-cash-advance-explained': (
+    <>
+      <p><strong>Quick Answer:</strong> A restaurant merchant cash advance (MCA) provides upfront capital repaid as a percentage of daily card sales. It&apos;s not a loan—it&apos;s a purchase of future receivables. Repayment flexes with your revenue.</p>
+      <p>Restaurant owners often hear about merchant cash advances and wonder how they work. An MCA is different from a traditional loan—and understanding the structure helps you decide if it fits your situation. Here&apos;s a clear explanation of restaurant merchant cash advance: how it works, repayment, qualification, and when it may fit.</p>
+      <h2>What Is a Restaurant Merchant Cash Advance?</h2>
+      <p>An MCA provides upfront capital in exchange for a percentage of your future card sales or revenue. The provider advances you a lump sum; you repay by remitting a percentage of daily sales until the advance is satisfied. It&apos;s a purchase of future receivables, not a loan. For a comparison with loans, see <Link to="/blog/restaurant-loan-vs-cash-advance">restaurant loan vs cash advance</Link>.</p>
+      <h2>How Repayment Works</h2>
+      <p>A percentage of your daily card sales goes toward repayment. Slower days mean smaller payments; busier days mean larger payments. That structure can align with seasonal cash flow—when business is slow, your payment is lower. When you&apos;re busy, it scales up. Compare with <Link to="/restaurant-cash-advance">restaurant cash advance</Link> to understand the full picture.</p>
+      <h2>Qualification and Speed</h2>
+      <p>MCAs often focus on your revenue history and card sales rather than credit score. They can offer faster decisions than traditional loans—sometimes same day or next day. Funds can arrive in 24–48 hours. Not all applicants qualify; terms vary by provider. <Link to="/restaurant-funding">Restaurant funding options</Link> include MCAs and other products—compare what fits your needs.</p>
+      <h2>When an MCA May Fit</h2>
+      <p>Short-term cash flow gaps—payroll, inventory, equipment repairs, seasonal preparation. When you need money fast and prefer repayment that flexes with sales. When traditional loans are too slow or hard to qualify for. Compare with <Link to="/restaurant-working-capital">restaurant working capital</Link> and other options before committing.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is a restaurant merchant cash advance?</h3>
+      <p>An MCA provides upfront capital repaid as a percentage of daily card sales. It&apos;s not a loan—it&apos;s a purchase of future receivables. Repayment flexes with your revenue.</p>
+      <h3>How does MCA repayment work for restaurants?</h3>
+      <p>A percentage of daily card sales goes toward repayment. Slower days mean smaller payments; busier days mean larger payments. It can align with seasonal cash flow.</p>
+      <h3>Is a merchant cash advance right for my restaurant?</h3>
+      <p>It depends on your needs. MCAs offer speed and flexible repayment. Compare with other options—see restaurant cash advance vs loan for a full comparison.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-opening-costs-breakdown': (
+    <>
+      <p><strong>Quick Answer:</strong> Restaurant opening costs include build-out, equipment, permits, inventory, and operating expenses. Costs vary widely—from tens of thousands to hundreds of thousands. New owners fund the gap with savings, investors, or alternative funding once they have revenue.</p>
+      <p>Opening a restaurant requires significant capital. Build-out, equipment, permits, and initial inventory add up quickly. Many new owners underestimate the true cost. Here&apos;s a real breakdown of restaurant opening costs and how new owners fund the gap.</p>
+      <h2>Build-Out and Construction</h2>
+      <p>Leasehold improvements, HVAC, plumbing, electrical, and finishes can run $50,000–$200,000+ depending on condition and scope. Landlords may offer tenant improvement allowances—negotiate. Build-out often takes longer and costs more than estimated. Plan for delays.</p>
+      <h2>Equipment and Fixtures</h2>
+      <p>Kitchen equipment—ovens, ranges, refrigeration, hoods—can run $50,000–$150,000+. Add POS, furniture, and smallwares. <Link to="/restaurant-equipment-financing">Restaurant equipment financing</Link> can spread the cost. For more on funding for new restaurants, see <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link>.</p>
+      <h2>Permits, Licenses, and Legal</h2>
+      <p>Health permits, liquor licenses, business licenses, and legal fees vary by location. Budget $5,000–$20,000+ depending on your concept and location. <Link to="/restaurant-funding">Restaurant funding</Link> can help cover these once you have some revenue.</p>
+      <h2>Initial Inventory and Operating Expenses</h2>
+      <p>First month&apos;s inventory, payroll before opening, marketing, and operating expenses. Many owners underestimate how much cash they need to carry them through the first month. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> may be available once you have card sales or revenue to show.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How much does it cost to open a restaurant?</h3>
+      <p>Costs vary widely—from tens of thousands for a small concept to hundreds of thousands for full build-out. Build-out, equipment, permits, and initial inventory are the main categories.</p>
+      <h3>How do new restaurants fund opening costs?</h3>
+      <p>Owners use savings, investors, SBA loans, or alternative funding like restaurant cash advance once they have some revenue. Options depend on your stage and track record.</p>
+      <h3>Can I get funding before my restaurant opens?</h3>
+      <p>Traditional loans often require revenue history. Some alternative options may be available for newer concepts. Compare funding options for new restaurants.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-renovation-cost-breakdown': (
+    <>
+      <p><strong>Quick Answer:</strong> Restaurant renovation costs vary widely—from $20,000 for a refresh to $200,000+ for a full remodel. Kitchen work, HVAC, and compliance upgrades add up. Restaurant funding can help cover the cost when you need to update your space.</p>
+      <p>Updating your restaurant—kitchen refresh, dining room remodel, or compliance upgrades—can cost more than you expect. Here&apos;s a real breakdown of restaurant renovation costs and how owners fund remodels.</p>
+      <h2>Kitchen Renovation Costs</h2>
+      <p>New equipment, hood upgrades, flooring, and plumbing can run $30,000–$100,000+. Commercial refrigeration and cooking equipment are major line items. <Link to="/blog/how-to-fund-restaurant-equipment-repairs">How to fund restaurant equipment repairs</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can help when you need to upgrade.</p>
+      <h2>Dining Room and Front of House</h2>
+      <p>Furniture, finishes, lighting, and decor can run $20,000–$80,000+ depending on scope. A refresh can be less; a full redesign costs more. <Link to="/restaurant-funding">Restaurant funding</Link> is often flexible-use and can fund these updates.</p>
+      <h2>Compliance and Safety Upgrades</h2>
+      <p>Fire suppression, HVAC, ADA compliance, and health department requirements can add significant cost. When you can&apos;t avoid these upgrades, <Link to="/restaurant-working-capital">restaurant working capital</Link> can bridge the gap. See <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link> for more on funding equipment.</p>
+      <h2>How Owners Fund Renovations</h2>
+      <p>Many use savings or equipment financing. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and working capital can fund remodels when you have revenue. Repayment tied to sales can make it easier to manage during a renovation when revenue may dip. <Link to="/blog/restaurant-remodel-funding">Restaurant remodel funding</Link> options vary—compare before committing.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How much does a restaurant renovation cost?</h3>
+      <p>Costs vary widely—from $20,000 for a refresh to $200,000+ for a full remodel. Kitchen work, HVAC, and compliance upgrades add up quickly.</p>
+      <h3>How do restaurants fund renovations?</h3>
+      <p>Many use savings, equipment financing, or restaurant working capital. Renovation funding options depend on the scope and your revenue history.</p>
+      <h3>Can I use restaurant funding for a renovation?</h3>
+      <p>Yes. Restaurant cash advance and working capital are often flexible-use and can fund remodels, equipment upgrades, and compliance work.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-invoice-factoring': (
+    <>
+      <p><strong>Quick Answer:</strong> Restaurant invoice factoring lets you sell unpaid invoices (receivables) for immediate cash. A factor advances most of the invoice value and collects from your customer. It can help when you have large catering or B2B invoices with 30–90 day payment terms.</p>
+      <p>When you have large catering orders or corporate accounts with payment terms of 30–90 days, you&apos;ve done the work but the cash isn&apos;t yours yet. Restaurant invoice factoring lets you get paid before your customer pays. Here&apos;s how it works and when it may fit.</p>
+      <h2>How Invoice Factoring Works</h2>
+      <p>You sell your receivables (unpaid invoices) to a factor. The factor advances you most of the invoice value—often 70–90%—upfront. The factor collects from your customer. You receive the remainder minus fees when the customer pays. It&apos;s not a loan—it&apos;s a sale of receivables.</p>
+      <h2>When Factoring Makes Sense for Restaurants</h2>
+      <p>Large catering or B2B invoices with payment terms of 30–90 days. When you need cash before the event or before the client pays. When you can&apos;t wait for net-30 or net-60. Compare with <Link to="/restaurant-cash-advance">restaurant cash advance</Link>—factoring is tied to specific invoices; a cash advance is based on your overall revenue. Both can provide fast cash. See <Link to="/blog/restaurant-catering-deposit-funding">restaurant catering deposit funding</Link> for more on catering cash flow.</p>
+      <h2>Factoring vs Cash Advance</h2>
+      <p>Factoring requires specific invoices. A cash advance is based on your revenue history. Factoring is often used for B2B or catering revenue. A cash advance can fund any business need. <Link to="/restaurant-funding">Restaurant funding options</Link> include both—compare for your situation.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is restaurant invoice factoring?</h3>
+      <p>You sell your receivables (unpaid invoices) to a factor for immediate cash. The factor collects from your customer. You get most of the invoice value upfront.</p>
+      <h3>When does invoice factoring make sense for restaurants?</h3>
+      <p>When you have large catering or B2B invoices with payment terms of 30–90 days and need cash before the customer pays.</p>
+      <h3>How does invoice factoring differ from a cash advance?</h3>
+      <p>Factoring is tied to specific invoices. A cash advance is based on your overall revenue. Both can provide fast cash—compare options for your situation.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-liquor-license-cost': (
+    <>
+      <p><strong>Quick Answer:</strong> Restaurant liquor license costs vary by state and license type—from a few hundred to tens of thousands. Some states have limited licenses that sell for much more. Restaurant funding can help cover license fees and compliance expenses.</p>
+      <p>Adding or renewing a liquor license can be a significant expense. Costs vary widely by state—and in some states, limited licenses sell for a premium on the open market. Here&apos;s what restaurant owners actually pay for liquor licenses and how to fund the cost.</p>
+      <h2>License Costs by State</h2>
+      <p>Application fees vary from a few hundred to several thousand. Annual renewal fees add up. Some states have quota systems—limited licenses can sell for $50,000–$500,000+ in the open market. Research your state&apos;s requirements early.</p>
+      <h2>Additional Costs</h2>
+      <p>Legal fees for applications and compliance. Training and certification for staff. Bond requirements. Insurance. Budget for these in addition to the license fee. <Link to="/restaurant-funding">Restaurant funding</Link> can help when you need to cover the full cost.</p>
+      <h2>How Owners Fund License Costs</h2>
+      <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> are often flexible-use and can fund license fees, legal costs, and compliance expenses. Many providers offer fast access—often in 24–48 hours. Not all applicants qualify; terms vary. When you need to secure or renew a license and don&apos;t have the cash, exploring your options is a practical step.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How much does a restaurant liquor license cost?</h3>
+      <p>Costs vary by state and license type—from a few hundred to tens of thousands. Some states have limited licenses that sell for much more in the open market.</p>
+      <h3>Can I use restaurant funding for a liquor license?</h3>
+      <p>Yes. Restaurant cash advance and working capital are often flexible-use and can fund license fees, legal costs, and compliance expenses.</p>
+      <h3>How long does it take to get a liquor license?</h3>
+      <p>Timelines vary by state—from weeks to several months. Plan ahead and budget for application fees, legal help, and potential delays.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-commercial-oven-broke': (
+    <>
+      <p><strong>Quick Answer:</strong> When your commercial oven breaks, call a commercial repair service immediately. Repairs can run from $300 to several thousand; replacement often costs $5,000–$30,000+. Restaurant funding can provide funds in 24–48 hours when you need to act fast.</p>
+      <p>A broken commercial oven can shut down your kitchen. You can&apos;t cook. Revenue stops. Customers leave. Here&apos;s what to do when your restaurant commercial oven breaks—immediate steps, repair vs replace, costs, and how owners fund oven emergencies.</p>
+      <h2>Immediate Steps When Your Oven Breaks</h2>
+      <p>Call a commercial repair service right away. Document the failure for insurance and tax purposes. If the unit is beyond repair, get replacement quotes. Lead times can be days or weeks. In the meantime, you may need to adjust your menu or use backup equipment. Every hour of downtime costs revenue. For refrigeration emergencies, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>. For typical equipment costs, see <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>.</p>
+      <h2>Repair vs Replace</h2>
+      <p>Simple fixes—thermostats, igniters, burners—can run $300–$1,500. Major component work can cost $2,000–$6,000+. Full replacement often costs $5,000–$30,000+ depending on type and capacity. A repair that costs more than half the replacement value may not be worth it. Get quotes for both.</p>
+      <h2>How Restaurant Owners Fund Oven Emergencies</h2>
+      <p>When revenue doesn&apos;t line up with a large repair bill, many use <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link>. These options can provide same-day or next-day decisions and funds in 24–48 hours. Funds are typically flexible-use—repairs, replacement, or temporary rentals. <Link to="/restaurant-funding">Restaurant funding</Link> is commonly used for equipment emergencies. See <Link to="/blog/how-to-fund-restaurant-equipment-repairs">how to fund restaurant equipment repairs</Link> for more.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What should I do first if my commercial oven breaks?</h3>
+      <p>Call a commercial repair service immediately. Document the failure. If repair isn&apos;t feasible, get replacement quotes. Restaurant funding can help cover the cost when you need to act fast.</p>
+      <h3>How much does commercial oven repair or replacement cost?</h3>
+      <p>Repairs can run from $300 to several thousand. Full replacement often costs $5,000–$30,000+ depending on type and capacity.</p>
+      <h3>Can I use restaurant funding for oven repairs?</h3>
+      <p>Yes. Restaurant cash advance and working capital are commonly used for equipment emergencies. Many offer same-day or next-day decisions and funds in 24–48 hours.</p>
+      <CtaBlock />
+    </>
+  ),
+  'restaurant-catering-deposit-funding': (
+    <>
+      <p><strong>Quick Answer:</strong> Large catering orders require cash upfront for food and labor. Restaurant working capital or cash advance can bridge the gap until the client pays. Many require deposits from clients; when deposits don&apos;t cover costs, funding can help.</p>
+      <p>You&apos;ve landed a large catering order. The client will pay on net-30 or after the event. But you need to buy food, pay staff, and cover costs now. That gap—between spending and getting paid—is where many catering operations get stuck. Here&apos;s how restaurant owners fund catering deposits and bridge the gap until the client pays.</p>
+      <h2>Why Catering Creates Cash Flow Gaps</h2>
+      <p>Large orders require significant inventory and labor upfront. Payment terms of 30–60 days are common for corporate and event clients. You&apos;ve done the work—but the cash isn&apos;t yours yet. <Link to="/restaurant-working-capital">Restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can bridge that gap. See <Link to="/blog/restaurant-invoice-factoring">restaurant invoice factoring</Link> for another option when you have receivables.</p>
+      <h2>Using Deposits to Reduce the Gap</h2>
+      <p>Requiring deposits from clients—often 25–50%—reduces upfront risk. When deposits don&apos;t cover costs, or when you have multiple events before payment arrives, funding can help. <Link to="/restaurant-funding">Restaurant funding</Link> is often flexible-use and can fund inventory, labor, and deposits for large orders.</p>
+      <h2>How Owners Fund Catering Cash Flow</h2>
+      <p>Many use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or working capital to fund the build-up before the event. Repayment tied to sales can align with your revenue pattern. When you have multiple events, the cash flow can be complex—funding can smooth the gaps. <Link to="/blog/restaurant-busy-season-preparation">Restaurant busy season preparation</Link> covers similar timing challenges for inventory.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How do restaurants fund large catering orders?</h3>
+      <p>Many require deposits from clients. When deposits don&apos;t cover costs, restaurant working capital or cash advance can bridge the gap until the client pays.</p>
+      <h3>When do catering clients typically pay?</h3>
+      <p>Payment terms vary—some pay before the event, others 30–60 days after. Net-30 or net-60 terms create cash flow gaps that funding can bridge.</p>
+      <h3>Can restaurant funding help with catering cash flow?</h3>
+      <p>Yes. Restaurant funding is often flexible-use and can fund inventory, labor, and deposits for large catering orders before payment arrives.</p>
       <CtaBlock />
     </>
   ),
