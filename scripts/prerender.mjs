@@ -27,6 +27,7 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
   const canonicalUrl = canonicalPath === '/' ? siteUrl : `${siteUrl}${canonicalPath}`;
   const isBlogPost = path.startsWith('/blog/') && path !== '/blog' && !path.match(/^\/blog\/page\/\d+$/);
   const ogType = isBlogPost ? 'article' : 'website';
+  const ogImageAlt = 'Restaurant dining and kitchen imagery from The Restaurant Owners Guide';
   let out = template;
 
   // 1. Replace title
@@ -49,18 +50,26 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
   }
 
   // 4. Replace or add Open Graph and Twitter meta - always ensure correct values per route
-  const ogTwitterBlock = `
+  let ogTwitterBlock = `
     <meta property="og:title" content="${escapeHtml(title)}" />
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
     <meta property="og:type" content="${ogType}" />
     <meta property="og:image" content="${defaultOgImage}" />
+    <meta property="og:image:alt" content="${escapeHtml(ogImageAlt)}" />
     <meta property="og:site_name" content="The Restaurant Owners Guide" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${defaultOgImage}" />`;
+  if (isBlogPost && meta.datePublished) {
+    ogTwitterBlock += `
+    <meta property="article:published_time" content="${escapeHtml(meta.datePublished)}" />
+    <meta property="article:modified_time" content="${escapeHtml(meta.datePublished)}" />
+    <meta property="article:author" content="The Restaurant Owners Guide" />
+    <meta property="article:section" content="Restaurant Cash Flow & Funding" />`;
+  }
 
   // 5. Blog pagination: rel prev/next for SEO
   if (path === '/blog' && blogTotalPages > 1) {

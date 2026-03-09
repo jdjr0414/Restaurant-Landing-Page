@@ -15,6 +15,8 @@ export interface PageMeta {
   title: string;
   description: string;
   canonicalPath: string;
+  /** For blog posts: published date (YYYY-MM-DD) for article meta tags */
+  datePublished?: string;
 }
 
 const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
@@ -24,37 +26,37 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Running out of cash? Restaurant cash flow problems are the #1 reason restaurants fail. Learn why it happens, what restaurant funding and working capital options exist, and what to do next. Practical guide for restaurant owners.",
   },
   '/restaurant-cash-advance': {
-    title: 'Restaurant Cash Flow Problems? Get Clear on Your Options',
+    title: 'Restaurant Cash Flow Guide: Problems, Options & Funding | The Restaurant Owners Guide',
     description:
       "Struggling with restaurant cash flow, payroll gaps, seasonal slumps, or equipment costs? Understand what's going on and what options exist. Practical guide for restaurant owners.",
   },
   '/restaurant-working-capital': {
-    title: 'When You Need Restaurant Working Capital | Problem & Options Guide',
+    title: 'Restaurant Working Capital: When You Need It | The Restaurant Owners Guide',
     description:
       "Struggling with payroll, inventory, or seasonal gaps? Understand what restaurant working capital is and what options exist when revenue doesn't line up with bills.",
   },
   '/restaurant-funding': {
-    title: "Restaurant Funding Options When You're Struggling | Guide",
+    title: "Restaurant Funding Options: Compare When You're Struggling | The Restaurant Owners Guide",
     description:
       'Facing a cash flow crunch or need to cover payroll, inventory, or equipment? Understand what restaurant funding options exist and when they might help.',
   },
   '/business-cash-advance': {
-    title: 'What Is a Business Cash Advance? | When It Might Help',
+    title: 'Business Cash Advance: What It Is, How It Works | The Restaurant Owners Guide',
     description:
       'Need money before revenue comes in? Understand what a business cash advance is, how it works, and when it might help with payroll, inventory, or short-term gaps.',
   },
   '/small-business-funding': {
-    title: "Small Business Funding When You're Short on Cash | Guide",
+    title: "Small Business Funding When You're Short on Cash | The Restaurant Owners Guide",
     description:
       "Struggling to cover payroll, inventory, or bills? Understand small business funding options and when they might help with cash flow gaps.",
   },
   '/blog': {
-    title: "Restaurant Cash Flow & Funding Guides | Tips & Articles",
+    title: "Restaurant Cash Flow & Funding Guides | The Restaurant Owners Guide",
     description:
       'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
   },
   '/sitemap': {
-    title: "Sitemap | All Guides & Topics | The Restaurant Owners Guide",
+    title: "Sitemap | All Restaurant Guides & Topics | The Restaurant Owners Guide",
     description:
       'Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need.',
   },
@@ -90,7 +92,8 @@ export function getMeta(path: string): PageMeta | null {
   }
   const topic = topicPagesConfig.find((p) => p.path === path);
   if (topic) {
-    return { title: topic.title, description: topic.description, canonicalPath: topic.path };
+    const title = topic.title.includes(SITE_NAME) ? topic.title : `${topic.title} | ${SITE_NAME}`;
+    return { title, description: topic.description, canonicalPath: topic.path };
   }
   const blogPageMatch = path.match(/^\/blog\/page\/(\d+)$/);
   if (blogPageMatch) {
@@ -113,7 +116,7 @@ export function getMeta(path: string): PageMeta | null {
       post.description.length > META_DESC_MAX
         ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'
         : post.description;
-    return { title, description, canonicalPath: path };
+    return { title, description, canonicalPath: path, datePublished: post.publishedDate };
   }
   return null;
 }

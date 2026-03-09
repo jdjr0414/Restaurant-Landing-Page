@@ -21,7 +21,7 @@ export function BlogPostPage() {
     return (
       <>
         <SeoHead
-          title="Post not found | Restaurant Owner's Guide"
+          title={`Post not found | ${SITE_NAME}`}
           description="The requested blog post was not found."
           canonicalPath={`/blog/${slug ?? ''}`}
           noindex
@@ -82,9 +82,13 @@ export function BlogPostPage() {
             </nav>
             <header className="article__header">
               <h1 className="article__title">{post.title}</h1>
-              <time className="article__date" dateTime={post.publishedDate}>
-                {new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-              </time>
+              <div className="article__meta">
+                <time className="article__date" dateTime={post.publishedDate}>
+                  Published: {new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                </time>
+                <span className="article__meta-sep" aria-hidden> · </span>
+                <span className="article__reviewed">Editorially reviewed</span>
+              </div>
             </header>
             <div className="article__body prose">
               {content}

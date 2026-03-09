@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { SITE_NAME } from '../config';
 import '../styles/globals.css';
 import '../styles/layout.css';
 
@@ -7,7 +8,7 @@ export function NotFoundPage() {
   return (
     <>
       <SeoHead
-        title="Page Not Found | Restaurant Owner's Guide"
+        title={`Page Not Found | ${SITE_NAME}`}
         description="The page you're looking for could not be found."
         canonicalPath="/404"
         noindex

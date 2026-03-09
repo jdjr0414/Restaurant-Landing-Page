@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { topicPagesConfig } from '../data/topicPages';
 import { blogPosts } from '../data/blogPosts';
+import { SITE_NAME } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -11,7 +12,7 @@ export function SitemapPage() {
   return (
     <>
       <SeoHead
-        title="Sitemap | All Guides & Topics | Restaurant Owner's Guide"
+        title={`Sitemap | All Guides & Topics | ${SITE_NAME}`}
         description="Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need."
         canonicalPath="/sitemap"
       />

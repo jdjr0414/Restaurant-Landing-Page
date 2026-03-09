@@ -1,7 +1,9 @@
 import { Link, useParams } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { BlogIndexSchema } from '../components/BlogIndexSchema';
 import { blogPostsSortedByDate } from '../data/blogPosts';
+import { getMeta } from '../staticMeta';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -35,15 +37,17 @@ export function BlogIndexPage() {
   const posts = getPostsForPage(safePage);
   const isFirstPage = safePage === 1;
   const canonicalPath = isFirstPage ? '/blog' : `/blog/page/${safePage}`;
+  const meta = getMeta(canonicalPath);
 
   return (
     <>
       <SeoHead
-        title={isFirstPage ? "Restaurant Cash Flow & Funding Guides | Tips & Articles" : `Blog Page ${safePage} | Restaurant Cash Flow & Funding Guides`}
-        description="Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners."
+        title={meta?.title ?? `Blog Page ${safePage} | Restaurant Cash Flow & Funding Guides`}
+        description={meta?.description ?? "Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners."}
         canonicalPath={canonicalPath}
       />
-      <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Blog', path: '/blog' }]} />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }]} />
+      <BlogIndexSchema posts={posts.map((p) => ({ slug: p.slug, title: p.title, publishedDate: p.publishedDate }))} />
       <main className="page-main page-main--blog">
         <div className="blog-index__layout">
           <div className="blog-index__main">

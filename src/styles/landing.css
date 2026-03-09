@@ -158,6 +158,67 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Trust badge - E-E-A-T signal */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+}
+
+.hero--with-bg .trust-badge {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.trust-badge__icon {
+  color: var(--color-amber);
+  font-weight: 700;
+}
+
+.hero--with-bg .trust-badge__icon {
+  color: var(--color-amber-light);
+}
+
+.home-hero .trust-badge {
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: var(--space-lg);
+}
+
+.home-hero .trust-badge__icon {
+  color: var(--color-amber-light);
+}
+
+/* Trust section - About this guide */
+.trust-section {
+  margin: var(--space-3xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-trust-soft);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(44, 82, 130, 0.08);
+}
+
+.trust-section__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-md);
+}
+
+.trust-section__content p {
+  margin: 0 0 var(--space-md);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+}
+
+.trust-section__content p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 640px) {
   .hero {
     padding: var(--space-2xl) var(--space-md) var(--space-2xl);

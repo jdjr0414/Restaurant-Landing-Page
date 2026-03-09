@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 import { FIND_MATCH_URL } from '../config';
+import { TrustBadge } from './TrustBadge';
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
 
@@ -30,6 +31,7 @@ export function Hero() {
           <li>Equipment and emergency costs</li>
           <li>Understanding your options</li>
         </ul>
+        <TrustBadge />
         <p className="hero__social-proof">Join other restaurant owners who've already explored their options—no obligation, just clarity.</p>
       </div>
     </header>

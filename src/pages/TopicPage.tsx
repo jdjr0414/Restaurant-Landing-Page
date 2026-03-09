@@ -4,6 +4,7 @@ import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { FaqSchema } from '../components/FaqSchema';
 import { CTA } from '../components/CTA';
 import { getTopicPage } from '../data/topicPages';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -17,11 +18,12 @@ export function TopicPage() {
     return <Navigate to="/" replace />;
   }
 
+  const meta = getMeta(pathname);
   return (
     <>
       <SeoHead
-        title={page.title}
-        description={page.description}
+        title={meta?.title ?? page.title}
+        description={meta?.description ?? page.description}
         canonicalPath={page.path}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />

@@ -16,3 +16,6 @@ export const SITE_URL =
 
 /** Default OG/Twitter image when page does not set one (1200x630 recommended). */
 export const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
+
+/** Publisher logo URL for schema (Organization, Article publisher). */
+export const SITE_LOGO = `${SITE_URL}/logo-horizontal.svg`;

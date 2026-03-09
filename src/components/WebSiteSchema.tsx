@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME } from '../config';
+import { SITE_URL, SITE_NAME, SITE_LOGO } from '../config';
 
 /** WebSite + Organization schema for homepage. Helps search engines and AI understand site identity. */
 export function WebSiteSchema() {
@@ -21,6 +21,10 @@ export function WebSiteSchema() {
         '@id': `${SITE_URL}/#organization`,
         name: SITE_NAME,
         url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: SITE_LOGO,
+        },
       },
     ],
   };

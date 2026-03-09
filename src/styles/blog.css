@@ -823,9 +823,19 @@
   line-height: 1.2;
 }
 
-.article__date {
+.article__meta {
   font-size: 0.9375rem;
   color: var(--color-ink-muted);
+}
+
+.article__date,
+.article__reviewed {
+  font-size: inherit;
+  color: inherit;
+}
+
+.article__meta-sep {
+  margin: 0 var(--space-xs);
 }
 
 .article__body.prose {

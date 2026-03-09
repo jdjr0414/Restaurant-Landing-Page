@@ -1,13 +1,15 @@
-import { SITE_URL, SITE_NAME } from '../config';
+import { SITE_URL, SITE_NAME, SITE_LOGO } from '../config';
 
 interface ArticleSchemaProps {
   headline: string;
   description: string;
   datePublished: string;
   urlPath: string;
+  /** Optional section/category for topical relevance */
+  articleSection?: string;
 }
 
-export function ArticleSchema({ headline, description, datePublished, urlPath }: ArticleSchemaProps) {
+export function ArticleSchema({ headline, description, datePublished, urlPath, articleSection = 'Restaurant Cash Flow & Funding' }: ArticleSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -16,6 +18,8 @@ export function ArticleSchema({ headline, description, datePublished, urlPath }:
     datePublished,
     dateModified: datePublished,
     url: `${SITE_URL}${urlPath}`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${urlPath}` },
+    articleSection,
     author: {
       '@type': 'Organization',
       name: SITE_NAME,
@@ -25,6 +29,10 @@ export function ArticleSchema({ headline, description, datePublished, urlPath }:
       '@type': 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: SITE_LOGO,
+      },
     },
   };
 

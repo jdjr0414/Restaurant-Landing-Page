@@ -3,6 +3,8 @@ import { SeoHead } from '../components/SeoHead';
 import { HomeFAQ } from '../components/HomeFAQ';
 import { HomeFaqSchema } from '../components/HomeFaqSchema';
 import { WebSiteSchema } from '../components/WebSiteSchema';
+import { TrustSection } from '../components/TrustSection';
+import { TrustBadge } from '../components/TrustBadge';
 import { FIND_MATCH_URL } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -46,6 +48,7 @@ export function HomePage() {
             <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary home-hero__cta">
               See what options might work for you
             </a>
+            <TrustBadge />
           </div>
         </header>
 
@@ -134,6 +137,9 @@ export function HomePage() {
               </Link>
             </nav>
           </section>
+
+          {/* Trust / About this guide - E-E-A-T signal */}
+          <TrustSection />
 
           {/* FAQ */}
           <HomeFAQ />
