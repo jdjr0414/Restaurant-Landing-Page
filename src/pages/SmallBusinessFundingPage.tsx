@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
+import { PageHero } from '../components/PageHero';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -18,6 +20,8 @@ export function SmallBusinessFundingPage() {
         canonicalPath={meta.canonicalPath}
         image={meta.image}
       />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Small Business Funding', path: '/small-business-funding' }]} />
+      <PageHero />
       <main className="page-main supporting-page">
         <div className="page-content">
           <h1 className="page-title">Small Business Funding When You’re Short on Cash</h1>

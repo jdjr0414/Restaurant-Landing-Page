@@ -4,6 +4,10 @@ export function HomeFaqSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['[data-speakable-home-faq]'],
+    },
     mainEntity: homeFaqItems.map((item) => ({
       '@type': 'Question',
       name: item.question,

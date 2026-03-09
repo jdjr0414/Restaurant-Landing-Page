@@ -48,6 +48,8 @@ export function SeoHead({ title, description, canonicalPath, noindex, image, ima
     setMeta('og:type', ogType, 'property');
     setMeta('og:image', image ?? DEFAULT_OG_IMAGE, 'property');
     setMeta('og:image:alt', imageAlt ?? DEFAULT_OG_IMAGE_ALT, 'property');
+    setMeta('og:locale', 'en_US', 'property');
+    setMeta('og:site_name', 'The Restaurant Owners Guide', 'property');
 
     setMeta('twitter:card', 'summary_large_image', 'name');
     setMeta('twitter:title', title, 'name');

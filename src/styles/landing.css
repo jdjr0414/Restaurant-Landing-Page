@@ -1,7 +1,7 @@
 /* Landing page section spacing and layout */
 .landing-section {
-  padding: var(--space-3xl) var(--space-lg);
-  max-width: 1200px;
+  padding: var(--space-3xl) var(--space-xl);
+  max-width: 1400px;
   margin: 0 auto;
 }
 

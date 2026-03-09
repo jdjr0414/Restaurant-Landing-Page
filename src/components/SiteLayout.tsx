@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import { Footer } from './Footer';
+import { GeoMeta } from './GeoMeta';
 import { SITE_NAME } from '../config';
 
 const NAV_LINKS = [
@@ -22,6 +23,7 @@ export function SiteLayout() {
 
   return (
     <>
+      <GeoMeta />
       <header className="site-header">
         <div className="site-header__inner">
           <Link to="/" className="site-header__logo" aria-label={SITE_NAME}>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { PageHero } from '../components/PageHero';
 import { CONSULTATION_BOOKING_URL, AXIANT_LINK_REL } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -14,6 +16,8 @@ export function ConsultationPage() {
         description="Book a free consultation to discuss your restaurant cash flow, payroll gaps, seasonal slumps, or funding options. No obligation—get clarity on what might fit your situation."
         canonicalPath="/consultation"
       />
+      <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Free Consultation', path: '/consultation' }]} />
+      <PageHero />
       <main className="page-main">
         <div className="page-content">
           <section className="consultation-section">

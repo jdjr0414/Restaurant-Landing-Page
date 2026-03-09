@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
+import { PageHero } from '../components/PageHero';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -20,6 +21,7 @@ export function RestaurantFundingPage() {
         image={meta.image}
       />
       <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Funding Options', path: '/restaurant-funding' }]} />
+      <PageHero />
       <main className="page-main supporting-page">
         <div className="page-content">
           <h1 className="page-title">Restaurant Funding Options When You’re Struggling</h1>

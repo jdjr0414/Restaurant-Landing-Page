@@ -9,9 +9,9 @@
 }
 
 .site-header__inner {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--space-md) var(--space-xl);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +63,7 @@
 
 @media (min-width: 1280px) {
   .site-header__inner {
-    max-width: 1400px;
+    max-width: 1440px;
   }
 }
 

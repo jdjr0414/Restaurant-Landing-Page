@@ -8,7 +8,7 @@ export function HomeFAQ() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <section className="home-faq" aria-labelledby="home-faq-title">
+    <section className="home-faq" aria-labelledby="home-faq-title" data-speakable-home-faq>
       <h2 id="home-faq-title" className="section-title">Common Questions Restaurant Owners Ask</h2>
       <p className="section-subtitle">
         Real answers to the questions restaurant owners ask most about cash flow, working capital, and funding options.

@@ -33,6 +33,7 @@ export function WebSiteSchema() {
           '@type': 'ImageObject',
           url: SITE_LOGO,
         },
+        areaServed: { '@type': 'Country', name: 'United States' },
       },
     ],
   };

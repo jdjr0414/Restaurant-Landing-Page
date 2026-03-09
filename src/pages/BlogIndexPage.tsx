@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { PageHero } from '../components/PageHero';
 import { BlogIndexSchema } from '../components/BlogIndexSchema';
 import { blogPostsSortedByDate } from '../data/blogPosts';
 import { getMeta } from '../staticMeta';
@@ -48,6 +49,7 @@ export function BlogIndexPage() {
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }]} />
       <BlogIndexSchema posts={posts.map((p) => ({ slug: p.slug, title: p.title, publishedDate: p.publishedDate }))} />
+      <PageHero />
       <main className="page-main page-main--blog">
         <div className="blog-index__layout">
           <div className="blog-index__main">

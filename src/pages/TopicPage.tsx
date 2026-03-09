@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { FaqSchema } from '../components/FaqSchema';
 import { CTA } from '../components/CTA';
+import { PageHero } from '../components/PageHero';
 import { getTopicPage } from '../data/topicPages';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -29,6 +30,7 @@ export function TopicPage() {
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />
       {pathname === '/faq' && <FaqSchema />}
+      <PageHero />
       <main className="page-main supporting-page">
         <div className="page-content" {...(pathname === '/faq' && { 'data-speakable-faq': '' })}>
           <h1 className="page-title">{page.h1}</h1>
