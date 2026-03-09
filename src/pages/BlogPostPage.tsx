@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { ArticleSchema } from '../components/ArticleSchema';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
+import { HowToSchema } from '../components/HowToSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
 import { FIND_MATCH_URL, SITE_NAME } from '../config';
@@ -60,9 +61,19 @@ export function BlogPostPage() {
         description={post.description}
         datePublished={post.publishedDate}
         urlPath={`/blog/${post.slug}`}
+        keywords={post.keywords}
+        dateModified={post.dateModified}
       />
       {post.faqItems && post.faqItems.length > 0 && (
         <BlogFaqSchema items={post.faqItems} />
+      )}
+      {post.howToSteps && post.howToSteps.length > 0 && (
+        <HowToSchema
+          name={post.title}
+          description={post.description}
+          urlPath={`/blog/${post.slug}`}
+          steps={post.howToSteps}
+        />
       )}
       <BreadcrumbSchema items={breadcrumbItems} />
       <main className="page-main">

@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { topicPagesConfig } from '../data/topicPages';
 import { blogPosts } from '../data/blogPosts';
-import { SITE_NAME } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
 export function SitemapPage() {
+  const meta = getMeta('/sitemap')!;
   return (
     <>
       <SeoHead
-        title={`Sitemap | All Guides & Topics | ${SITE_NAME}`}
-        description="Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need."
-        canonicalPath="/sitemap"
+        title={meta.title}
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <main className="page-main">
         <div className="page-content">

@@ -12,19 +12,19 @@ import { FAQ } from '../components/FAQ';
 import { CTA } from '../components/CTA';
 import { SeoHead } from '../components/SeoHead';
 import { FaqSchema } from '../components/FaqSchema';
+import { getMeta } from '../staticMeta';
 
-const PAGE_TITLE = 'Restaurant Cash Flow Problems? Get Clear on Your Options';
-const META_DESCRIPTION =
-  'Struggling with restaurant cash flow, payroll gaps, seasonal slumps, or equipment costs? Understand what’s going on and what options exist. Practical guide for restaurant owners.';
 const CANONICAL_PATH = '/restaurant-cash-advance';
 
 export function RestaurantCashAdvancePage() {
+  const meta = getMeta(CANONICAL_PATH)!;
   return (
     <>
       <SeoHead
-        title={PAGE_TITLE}
-        description={META_DESCRIPTION}
-        canonicalPath={CANONICAL_PATH}
+        title={meta.title}
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <FaqSchema />
       <Hero />

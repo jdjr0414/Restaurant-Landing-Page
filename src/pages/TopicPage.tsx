@@ -25,11 +25,12 @@ export function TopicPage() {
         title={meta?.title ?? page.title}
         description={meta?.description ?? page.description}
         canonicalPath={page.path}
+        image={meta?.image}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />
       {pathname === '/faq' && <FaqSchema />}
       <main className="page-main supporting-page">
-        <div className="page-content">
+        <div className="page-content" {...(pathname === '/faq' && { 'data-speakable-faq': '' })}>
           <h1 className="page-title">{page.h1}</h1>
           <p className="page-lead">{page.lead}</p>
           {page.sections.map((section) => (

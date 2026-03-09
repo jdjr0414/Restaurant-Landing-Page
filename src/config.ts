@@ -19,3 +19,9 @@ export const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1517248135467
 
 /** Publisher logo URL for schema (Organization, Article publisher). */
 export const SITE_LOGO = `${SITE_URL}/logo-horizontal.svg`;
+
+/** Optional per-page OG images. Add paths to use custom 1200x630 images for key pages. */
+export const PAGE_OG_IMAGES: Record<string, string> = {
+  // Example: '/': `${SITE_URL}/og-home.jpg`,
+  // '/restaurant-cash-advance': `${SITE_URL}/og-cash-advance.jpg`,
+};

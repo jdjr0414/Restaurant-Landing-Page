@@ -2,18 +2,21 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
 export function BusinessCashAdvancePage() {
+  const meta = getMeta('/business-cash-advance')!;
   return (
     <>
       <SeoHead
-        title="What Is a Business Cash Advance? | When It Might Help"
-        description="Need money before revenue comes in? Understand what a business cash advance is, how it works, and when it might help with payroll, inventory, or short-term gaps."
-        canonicalPath="/business-cash-advance"
+        title={meta.title}
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <main className="page-main supporting-page">
         <div className="page-content">

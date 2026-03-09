@@ -7,16 +7,21 @@ interface ArticleSchemaProps {
   urlPath: string;
   /** Optional section/category for topical relevance */
   articleSection?: string;
+  /** Optional keywords for topical relevance (3-5 terms) */
+  keywords?: string[];
+  /** Optional modified date; defaults to datePublished */
+  dateModified?: string;
 }
 
-export function ArticleSchema({ headline, description, datePublished, urlPath, articleSection = 'Restaurant Cash Flow & Funding' }: ArticleSchemaProps) {
-  const schema = {
+export function ArticleSchema({ headline, description, datePublished, urlPath, articleSection = 'Restaurant Cash Flow & Funding', keywords, dateModified }: ArticleSchemaProps) {
+  const modified = dateModified ?? datePublished;
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline,
     description: description.slice(0, 200),
     datePublished,
-    dateModified: datePublished,
+    dateModified: modified,
     url: `${SITE_URL}${urlPath}`,
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${urlPath}` },
     articleSection,
@@ -35,6 +40,9 @@ export function ArticleSchema({ headline, description, datePublished, urlPath, a
       },
     },
   };
+  if (keywords && keywords.length > 0) {
+    schema.keywords = keywords.join(', ');
+  }
 
   return (
     <script

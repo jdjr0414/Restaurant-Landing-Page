@@ -3,16 +3,18 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
 export function RestaurantWorkingCapitalPage() {
+  const meta = getMeta('/restaurant-working-capital')!;
   return (
     <>
       <SeoHead
-        title="When You Need Restaurant Working Capital | Problem & Options Guide"
+        title={meta.title}
         description="Struggling with payroll, inventory, or seasonal gaps? Understand what restaurant working capital is and what options exist when revenue doesn’t line up with bills."
         canonicalPath="/restaurant-working-capital"
       />

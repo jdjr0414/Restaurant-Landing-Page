@@ -3,18 +3,21 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
 export function RestaurantFundingPage() {
+  const meta = getMeta('/restaurant-funding')!;
   return (
     <>
       <SeoHead
         title="Restaurant Funding Options When You’re Struggling | Guide"
-        description="Facing a cash flow crunch or need to cover payroll, inventory, or equipment? Understand what restaurant funding options exist and when they might help."
-        canonicalPath="/restaurant-funding"
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <BreadcrumbSchema items={[{ name: 'Restaurant Cash Advance', path: '/restaurant-cash-advance' }, { name: 'Funding Options', path: '/restaurant-funding' }]} />
       <main className="page-main supporting-page">

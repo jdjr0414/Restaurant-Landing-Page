@@ -6,6 +6,7 @@ import { WebSiteSchema } from '../components/WebSiteSchema';
 import { TrustSection } from '../components/TrustSection';
 import { TrustBadge } from '../components/TrustBadge';
 import { FIND_MATCH_URL } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -16,12 +17,14 @@ const KITCHEN_IMAGE = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136
 const EQUIPMENT_IMAGE = 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1000&q=80';
 
 export function HomePage() {
+  const meta = getMeta('/')!;
   return (
     <>
       <SeoHead
-        title="Restaurant Cash Flow Problems? Get Answers & See Your Options | The Restaurant Owners Guide"
-        description="Running out of cash? Restaurant cash flow problems are the #1 reason restaurants fail. Learn why it happens, what restaurant funding and working capital options exist, and what to do next. Practical guide for restaurant owners."
-        canonicalPath="/"
+        title={meta.title}
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <HomeFaqSchema />
       <WebSiteSchema />

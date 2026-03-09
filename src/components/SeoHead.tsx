@@ -10,6 +10,8 @@ interface SeoHeadProps {
   noindex?: boolean;
   /** Optional OG/Twitter image URL (e.g. 1200x630). */
   image?: string;
+  /** Optional alt text for OG/Twitter image (accessibility + SEO). */
+  imageAlt?: string;
   /** OG type: 'website' (default) or 'article' for blog posts. */
   ogType?: 'website' | 'article';
 }
@@ -24,7 +26,9 @@ function setMeta(name: string, content: string, attr: 'name' | 'property' = 'nam
   el.setAttribute('content', content);
 }
 
-export function SeoHead({ title, description, canonicalPath, noindex, image, ogType = 'website' }: SeoHeadProps) {
+const DEFAULT_OG_IMAGE_ALT = 'Restaurant dining and kitchen imagery from The Restaurant Owners Guide';
+
+export function SeoHead({ title, description, canonicalPath, noindex, image, imageAlt, ogType = 'website' }: SeoHeadProps) {
   useEffect(() => {
     document.title = title;
     const canonical = `${SITE_URL}${canonicalPath}`;
@@ -43,6 +47,7 @@ export function SeoHead({ title, description, canonicalPath, noindex, image, ogT
     setMeta('og:url', canonical, 'property');
     setMeta('og:type', ogType, 'property');
     setMeta('og:image', image ?? DEFAULT_OG_IMAGE, 'property');
+    setMeta('og:image:alt', imageAlt ?? DEFAULT_OG_IMAGE_ALT, 'property');
 
     setMeta('twitter:card', 'summary_large_image', 'name');
     setMeta('twitter:title', title, 'name');
@@ -57,7 +62,7 @@ export function SeoHead({ title, description, canonicalPath, noindex, image, ogT
     }
 
     return () => {};
-  }, [title, description, canonicalPath, noindex, image, ogType]);
+  }, [title, description, canonicalPath, noindex, image, imageAlt, ogType]);
 
   return null;
 }

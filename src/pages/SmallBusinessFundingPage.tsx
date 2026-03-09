@@ -2,18 +2,21 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { CTA } from '../components/CTA';
 import { FIND_MATCH_URL } from '../config';
+import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
 export function SmallBusinessFundingPage() {
+  const meta = getMeta('/small-business-funding')!;
   return (
     <>
       <SeoHead
         title="Small Business Funding When You’re Short on Cash | Guide"
-        description="Struggling to cover payroll, inventory, or bills? Understand small business funding options and when they might help with cash flow gaps."
-        canonicalPath="/small-business-funding"
+        description={meta.description}
+        canonicalPath={meta.canonicalPath}
+        image={meta.image}
       />
       <main className="page-main supporting-page">
         <div className="page-content">

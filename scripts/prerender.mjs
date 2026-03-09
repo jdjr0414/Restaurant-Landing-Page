@@ -27,6 +27,7 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
   const canonicalUrl = canonicalPath === '/' ? siteUrl : `${siteUrl}${canonicalPath}`;
   const isBlogPost = path.startsWith('/blog/') && path !== '/blog' && !path.match(/^\/blog\/page\/\d+$/);
   const ogType = isBlogPost ? 'article' : 'website';
+  const ogImage = meta.image || defaultOgImage;
   const ogImageAlt = 'Restaurant dining and kitchen imagery from The Restaurant Owners Guide';
   let out = template;
 
@@ -55,14 +56,14 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
     <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />
     <meta property="og:type" content="${ogType}" />
-    <meta property="og:image" content="${defaultOgImage}" />
+    <meta property="og:image" content="${escapeHtml(ogImage)}" />
     <meta property="og:image:alt" content="${escapeHtml(ogImageAlt)}" />
     <meta property="og:site_name" content="The Restaurant Owners Guide" />
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
     <meta name="twitter:description" content="${escapeHtml(description)}" />
-    <meta name="twitter:image" content="${defaultOgImage}" />`;
+    <meta name="twitter:image" content="${escapeHtml(ogImage)}" />`;
   if (isBlogPost && meta.datePublished) {
     ogTwitterBlock += `
     <meta property="article:published_time" content="${escapeHtml(meta.datePublished)}" />

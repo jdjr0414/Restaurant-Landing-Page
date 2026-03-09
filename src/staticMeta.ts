@@ -3,7 +3,7 @@
  */
 import { getBlogPost, blogPosts, blogPostsSortedByDate } from './data/blogPosts';
 import { topicPagesConfig } from './data/topicPages';
-import { SITE_NAME } from './config';
+import { SITE_NAME, PAGE_OG_IMAGES } from './config';
 
 const POSTS_PER_PAGE = 12;
 
@@ -17,6 +17,8 @@ export interface PageMeta {
   canonicalPath: string;
   /** For blog posts: published date (YYYY-MM-DD) for article meta tags */
   datePublished?: string;
+  /** Optional custom OG image URL (1200x630) for this page */
+  image?: string;
 }
 
 const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
@@ -88,12 +90,14 @@ export function getMeta(path: string): PageMeta | null {
   const canonicalPath = path || '/';
   const staticEntry = STATIC_META[path];
   if (staticEntry) {
-    return { ...staticEntry, canonicalPath };
+    const image = PAGE_OG_IMAGES[path];
+    return { ...staticEntry, canonicalPath, ...(image && { image }) };
   }
   const topic = topicPagesConfig.find((p) => p.path === path);
   if (topic) {
     const title = topic.title.includes(SITE_NAME) ? topic.title : `${topic.title} | ${SITE_NAME}`;
-    return { title, description: topic.description, canonicalPath: topic.path };
+    const image = PAGE_OG_IMAGES[path];
+    return { title, description: topic.description, canonicalPath: topic.path, ...(image && { image }) };
   }
   const blogPageMatch = path.match(/^\/blog\/page\/(\d+)$/);
   if (blogPageMatch) {
@@ -116,7 +120,14 @@ export function getMeta(path: string): PageMeta | null {
       post.description.length > META_DESC_MAX
         ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'
         : post.description;
-    return { title, description, canonicalPath: path, datePublished: post.publishedDate };
+    const image = PAGE_OG_IMAGES[path];
+    return {
+      title,
+      description,
+      canonicalPath: path,
+      datePublished: post.publishedDate,
+      ...(image && { image }),
+    };
   }
   return null;
 }
