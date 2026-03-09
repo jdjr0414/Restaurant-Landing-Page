@@ -19,6 +19,8 @@ export interface PageMeta {
   datePublished?: string;
   /** Optional custom OG image URL (1200x630) for this page */
   image?: string;
+  /** When true, add robots noindex,nofollow (e.g. for generated-content blog posts) */
+  noindex?: boolean;
 }
 
 const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
@@ -62,6 +64,11 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       'Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need.',
   },
+  '/consultation': {
+    title: "Free Consultation | Restaurant Cash Flow & Funding | The Restaurant Owners Guide",
+    description:
+      "Book a free consultation to discuss your restaurant cash flow, payroll gaps, seasonal slumps, or funding options. No obligation—get clarity on what might fit your situation.",
+  },
 };
 
 export function getAllPaths(): string[] {
@@ -71,6 +78,7 @@ export function getAllPaths(): string[] {
   const blogPaginationPaths = Array.from({ length: blogTotalPages - 1 }, (_, i) => `/blog/page/${i + 2}`);
   return [
     '/',
+    '/consultation',
     '/restaurant-cash-advance',
     '/restaurant-working-capital',
     '/restaurant-funding',
@@ -127,6 +135,7 @@ export function getMeta(path: string): PageMeta | null {
       canonicalPath: path,
       datePublished: post.publishedDate,
       ...(image && { image }),
+      ...(post.hasCustomContent !== true && { noindex: true }),
     };
   }
   return null;

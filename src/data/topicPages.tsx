@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 
 export interface TopicPageConfig {
   path: string;
@@ -14,7 +14,7 @@ export interface TopicPageConfig {
 function CtaParagraph() {
   return (
     <p>
-      Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.
+      Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>Explore Restaurant Funding Options</a>.
     </p>
   );
 }

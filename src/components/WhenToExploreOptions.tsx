@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 
 export function WhenToExploreOptions() {
   return (
@@ -27,8 +27,8 @@ export function WhenToExploreOptions() {
         </li>
       </ul>
       <p className="when-to-explore__cta">
-        <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">
-          Find options that may help
+        <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">
+          Review Restaurant Financing Options
         </a>
       </p>
     </section>

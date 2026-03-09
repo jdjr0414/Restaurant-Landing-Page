@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 
 export function WhyAxiantPartners() {
   return (
@@ -27,7 +27,7 @@ export function WhyAxiantPartners() {
         </li>
       </ul>
       <p className="why-axiant__about">
-        <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">See options that may match your situation</a> and learn how providers help restaurants access working capital.
+        <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>Review Restaurant Financing Options</a> and learn how providers help restaurants access working capital.
       </p>
     </section>
   );

@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { TrustBadge } from './TrustBadge';
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
@@ -18,8 +18,8 @@ export function Hero() {
           Struggling with payroll gaps, seasonal slumps, equipment breakdowns, or bills that don’t line up with revenue? You’re not alone. This guide helps you understand what’s going on and what options exist—so you can decide your next step.
         </p>
         <div className="hero__actions">
-          <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary">
-            Find options that may help
+          <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">
+            Explore Restaurant Funding Options
           </a>
           <a href="#why-restaurants-struggle" className="btn btn-secondary">
             Learn what others face

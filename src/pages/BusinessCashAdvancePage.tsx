@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { CTA } from '../components/CTA';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -52,7 +52,7 @@ export function BusinessCashAdvancePage() {
 
           <section className="prose-block">
             <h2>Exploring Your Options</h2>
-            <p>If you need working capital for payroll, inventory, or short-term gaps, understanding what’s available can help. Not all applicants qualify; terms vary. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.</p>
+            <p>If you need working capital for payroll, inventory, or short-term gaps, understanding what’s available can help. Not all applicants qualify; terms vary. <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>See What Restaurant Funding Options May Be Available</a>.</p>
           </section>
         </div>
       </main>

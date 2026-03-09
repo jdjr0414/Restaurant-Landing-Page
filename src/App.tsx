@@ -9,6 +9,7 @@ import { SmallBusinessFundingPage } from './pages/SmallBusinessFundingPage';
 import { BlogIndexPage } from './pages/BlogIndexPage';
 import { BlogPostPage } from './pages/BlogPostPage';
 import { HomePage } from './pages/HomePage';
+import { ConsultationPage } from './pages/ConsultationPage';
 import { TopicPage } from './pages/TopicPage';
 import { SitemapPage } from './pages/SitemapPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -21,6 +22,7 @@ function App() {
       <Routes>
       <Route element={<SiteLayout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/consultation" element={<ConsultationPage />} />
         <Route path="/restaurant-cash-advance" element={<RestaurantCashAdvancePage />} />
         <Route path="/restaurant-working-capital" element={<RestaurantWorkingCapitalPage />} />
         <Route path="/restaurant-funding" element={<RestaurantFundingPage />} />

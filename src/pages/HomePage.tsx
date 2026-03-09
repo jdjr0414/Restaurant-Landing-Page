@@ -5,7 +5,7 @@ import { HomeFaqSchema } from '../components/HomeFaqSchema';
 import { WebSiteSchema } from '../components/WebSiteSchema';
 import { TrustSection } from '../components/TrustSection';
 import { TrustBadge } from '../components/TrustBadge';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -48,7 +48,7 @@ export function HomePage() {
             <p className="home-hero__tagline">
               Restaurant cash flow problems are the leading reason restaurants close—even when sales look good. If payroll, vendors, or equipment costs have you stressed, you&apos;re in the right place. Understand why it happens and what restaurant funding and working capital options exist so you can decide your next move.
             </p>
-            <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary home-hero__cta">
+            <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary home-hero__cta">
               See what options might work for you
             </a>
             <TrustBadge />
@@ -153,8 +153,8 @@ export function HomePage() {
             <p className="home-section__p">
               Thousands of restaurant owners face the same cash flow and funding questions. The difference is whether you have clear information and a path forward. You can keep reading our guides and blog, or you can take the next step and see what options might actually work for your situation. Either way, you&apos;re in a better place than when you were just wondering what to do.
             </p>
-            <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="btn btn-primary home-cta-section__btn">
-              See what options might work for you
+            <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary home-cta-section__btn">
+              Review Restaurant Financing Options
             </a>
           </section>
         </div>

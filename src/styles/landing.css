@@ -1221,3 +1221,69 @@
   font-size: 0.875rem;
   color: rgba(248, 246, 241, 0.65);
 }
+
+/* Consultation page */
+.consultation-section {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.consultation-section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-lg);
+}
+
+.consultation-section__lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  margin: 0 0 var(--space-xl);
+}
+
+.consultation-section__btn {
+  display: inline-block;
+  margin-bottom: var(--space-lg);
+}
+
+.consultation-section__sub {
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+  margin: 0 0 var(--space-2xl);
+  line-height: 1.6;
+}
+
+.consultation-section__links {
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-cream-dark);
+  text-align: left;
+}
+
+.consultation-section__links p {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+}
+
+.consultation-section__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.consultation-section__links li {
+  margin-bottom: var(--space-xs);
+}
+
+.consultation-section__links a {
+  color: var(--color-amber-dark);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.consultation-section__links a:hover {
+  text-decoration: underline;
+}

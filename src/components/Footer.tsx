@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL, SITE_NAME } from '../config';
+import { SITE_NAME } from '../config';
 import { topicPagesConfig } from '../data/topicPages';
 
 const MAIN_LINKS = [
@@ -9,6 +9,7 @@ const MAIN_LINKS = [
   { label: 'Restaurant Cash Flow Guide', href: '/restaurant-cash-advance' },
   { label: 'Working Capital', href: '/restaurant-working-capital' },
   { label: 'Restaurant Funding Options', href: '/restaurant-funding' },
+  { label: 'Free Consultation', href: '/consultation' },
   { label: 'Business Cash Advance', href: '/business-cash-advance' },
   { label: 'Small Business Funding', href: '/small-business-funding' },
   { label: 'FAQ', href: '/faq' },
@@ -39,11 +40,6 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <p className="footer__find-options">
-          <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer" className="footer__find-link">
-            Find funding options that may match your situation →
-          </a>
-        </p>
         <div className="footer__disclosure">
           <p>
             <strong>Disclaimer:</strong> This site is for information only. Not all applicants qualify for any product. Approval and terms depend on the provider. Funding is not available in all states. This is not an offer of credit or a guarantee of approval.

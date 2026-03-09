@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
-import { FIND_MATCH_URL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -59,7 +59,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Next Steps</h2>
-            <p>If you’re facing a cash flow problem or need to cover a specific expense, understanding your options is the first step. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options that may match your situation</a>.</p>
+            <p>If you’re facing a cash flow problem or need to cover a specific expense, understanding your options is the first step. Not all applicants qualify; terms vary by provider. <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>Review Restaurant Financing Options</a>.</p>
           </section>
         </div>
       </main>

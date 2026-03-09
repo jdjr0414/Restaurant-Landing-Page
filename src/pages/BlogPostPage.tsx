@@ -6,7 +6,7 @@ import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { HowToSchema } from '../components/HowToSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
-import { FIND_MATCH_URL, SITE_NAME } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL, SITE_NAME } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -55,6 +55,7 @@ export function BlogPostPage() {
         description={metaDesc}
         canonicalPath={`/blog/${post.slug}`}
         ogType="article"
+        noindex={!post.hasCustomContent}
       />
       <ArticleSchema
         headline={post.title}
@@ -111,7 +112,7 @@ export function BlogPostPage() {
                   <Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> — compare speed, cost, and repayment.
                 </p>
                 <p className="article__cta-external">
-                  When you&apos;re ready to see what may match your situation: <a href={FIND_MATCH_URL} target="_blank" rel="sponsored noopener noreferrer">Find options</a>.
+                  When you&apos;re ready to see what may match your situation: <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>See What Restaurant Funding Options May Be Available</a>.
                 </p>
               </div>
             </footer>
