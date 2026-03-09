@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
-const SECTION_IMAGE = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80';
+const SECTION_IMAGE = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=90';
 
 export function WhyRestaurantsUse() {
   return (
@@ -23,7 +23,7 @@ export function WhyRestaurantsUse() {
       </ul>
         </div>
         <figure className="why-restaurants__figure">
-          <img src={SECTION_IMAGE} alt="Restaurant kitchen and staff during service - representing the daily pressures of running a food business" width={800} height={533} className="why-restaurants__img" />
+          <img src={SECTION_IMAGE} alt="Restaurant kitchen and staff during service - representing the daily pressures of running a food business" width={1200} height={800} className="why-restaurants__img" />
         </figure>
       </div>
     </section>

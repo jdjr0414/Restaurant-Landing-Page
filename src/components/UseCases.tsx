@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
-const USECASE_IMAGE = 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80';
+const USECASE_IMAGE = 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&q=90';
 
 const CASES = [
   { title: 'Payroll', description: 'Cover labor during slow weeks or when you need extra staff for a rush.' },
@@ -22,7 +22,7 @@ export function UseCases() {
         These are the situations that push restaurant owners to look for help. Knowing what others deal with can help you see whether your situation is similar and what options might exist.
       </p>
       <figure className="use-cases__figure">
-        <img src={USECASE_IMAGE} alt="Restaurant staff and point of sale - everyday situations where cash flow and funding matter" width={800} height={533} className="use-cases__img" />
+        <img src={USECASE_IMAGE} alt="Restaurant staff and point of sale - everyday situations where cash flow and funding matter" width={1200} height={800} className="use-cases__img" />
       </figure>
       <ul className="use-cases__grid">
         {CASES.map(({ title, description }) => (

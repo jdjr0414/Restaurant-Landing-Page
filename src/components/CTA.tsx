@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 
-const CTA_IMAGE = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80';
+const CTA_IMAGE = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=90';
 
 export function CTA() {
   return (
@@ -20,7 +20,7 @@ export function CTA() {
           </a>
         </div>
           <figure className="cta__figure" aria-hidden>
-            <img src={CTA_IMAGE} alt="" width={400} height={400} className="cta__img" />
+            <img src={CTA_IMAGE} alt="" width={800} height={800} className="cta__img" />
           </figure>
         </div>
       </section>

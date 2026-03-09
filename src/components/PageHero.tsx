@@ -1,21 +1,24 @@
 /**
  * Hero banner with image for supporting pages (Funding Options, Working Capital, etc.).
- * Shown when users click a tab in the header.
+ * Shown when users click a tab in the header. Each page gets a unique image from pageHeroImages config.
  */
-const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
+import { useLocation } from 'react-router-dom';
+import { getPageHeroImage } from '../config/pageHeroImages';
 
 interface PageHeroProps {
   image?: string;
   imageAlt?: string;
 }
 
-export function PageHero({ image = DEFAULT_IMAGE, imageAlt }: PageHeroProps) {
+export function PageHero({ image, imageAlt }: PageHeroProps) {
+  const { pathname } = useLocation();
+  const heroImage = image ?? getPageHeroImage(pathname);
   const alt = imageAlt ?? 'Restaurant dining room representing the daily reality of running a restaurant business';
   return (
     <header className="page-hero">
       <div className="page-hero__image-wrap">
         <img
-          src={image}
+          src={heroImage}
           alt={alt}
           className="page-hero__image"
           width={1200}

@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
-const HOW_IT_WORKS_IMAGE = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80';
+const HOW_IT_WORKS_IMAGE = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=90';
 
 const STEPS = [
   {

@@ -3,7 +3,7 @@ import '../styles/landing.css';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { TrustBadge } from './TrustBadge';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80';
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=90';
 
 export function Hero() {
   return (
