@@ -35,9 +35,11 @@ export function ConsultationPage() {
             <div className="consultation-section__links">
               <p>Before or after your call, explore our guides:</p>
               <ul>
-                <li><Link to="/restaurant-cash-advance">Restaurant Cash Flow Guide</Link></li>
-                <li><Link to="/restaurant-working-capital">Restaurant Working Capital</Link></li>
-                <li><Link to="/restaurant-funding">Restaurant Funding Options</Link></li>
+                <li><Link to="/restaurant-cash-flow-guide">Restaurant Cash Flow Guide</Link></li>
+                <li><Link to="/restaurant-funding-options">Restaurant Funding Options</Link></li>
+                <li><Link to="/restaurant-working-capital-guide">Restaurant Working Capital Guide</Link></li>
+                <li><Link to="/restaurant-cash-advance">Restaurant Cash Advance</Link></li>
+                <li><Link to="/restaurant-funding">Restaurant Funding</Link></li>
               </ul>
             </div>
           </section>

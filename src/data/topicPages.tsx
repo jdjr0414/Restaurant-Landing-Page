@@ -31,7 +31,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Why Restaurant Payroll Is So Hard to Cover',
         content: (
           <>
-            <p>Labor often runs 25–35% of revenue. Unlike inventory, you can&apos;t delay it without hurting your team and your reputation. When sales are uneven, restaurant payroll funding or working capital can bridge the gap until revenue catches up. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and other <Link to="/restaurant-funding">restaurant funding options</Link> are commonly used for exactly this.</p>
+            <p>Labor often runs 25–35% of revenue. Unlike inventory, you can&apos;t delay it without hurting your team and your reputation. When sales are uneven, restaurant payroll funding or working capital can bridge the gap until revenue catches up. <Link to="/restaurant-cash-flow-guide">Restaurant cash flow</Link> problems often create payroll gaps. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and other <Link to="/restaurant-funding">restaurant funding options</Link> are commonly used for exactly this. See the <Link to="/restaurant-working-capital-guide">restaurant working capital guide</Link> for more context.</p>
             <p>Restaurant revenue is rarely even from week to week. Weekend rushes, holiday lulls, and seasonal swings create unpredictable cash flow. Meanwhile, payroll hits on a fixed schedule—every two weeks or twice a month. That timing mismatch is one of the main causes of restaurant payroll stress. Credit card deposits take 2–3 days to hit your account, so even a strong weekend may not fund Monday&apos;s payroll.</p>
             <p>Missing payroll damages staff trust, can violate labor laws, and makes it harder to retain good employees. Once word gets out that you&apos;ve delayed wages, recruiting becomes harder and turnover spikes. That&apos;s why many owners treat payroll as non-negotiable and seek funding when a gap appears.</p>
           </>
@@ -114,7 +114,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Preparing Before the Slow Season',
         content: (
           <>
-            <p>Don&apos;t wait until traffic drops. Identify your slow periods from last year&apos;s data—January, post-holiday summer, or quiet weekdays. Start setting aside cash during your busiest months. Even a small reserve can reduce stress when revenue dips. If you know a slow period is coming and your account is thin, explore <Link to="/restaurant-funding">restaurant funding</Link> options before you need them.</p>
+            <p>Don&apos;t wait until traffic drops. Identify your slow periods from last year&apos;s data—January, post-holiday summer, or quiet weekdays. Start setting aside cash during your busiest months. Even a small reserve can reduce stress when revenue dips. If you know a slow period is coming and your account is thin, explore <Link to="/restaurant-funding">restaurant funding</Link> options before you need them. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why seasonal dips create pressure.</p>
             <p>Build reserves during busy periods. Trim non-essential costs. Renegotiate with suppliers if possible. And know your options: <Link to="/restaurant-working-capital">restaurant working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> products can help bridge the gap when you need cash before the next busy period. Stocking up before traffic returns often requires cash—explore <Link to="/restaurant-inventory-funding">restaurant inventory funding</Link> for more on bridging slow periods.</p>
           </>
         ),
@@ -151,7 +151,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'When Restaurant Emergency Funding Makes Sense',
         content: (
           <>
-            <p>Equipment breakdowns, missed vendor payments, or a sudden chance to stock up often need a quick response. <Link to="/restaurant-funding">Restaurant funding</Link> options like cash advance or working capital can offer same-day decisions and funds in 24–48 hours. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and other options</Link> to see what fits.</p>
+            <p>Equipment breakdowns, missed vendor payments, or a sudden chance to stock up often need a quick response. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why these gaps occur. <Link to="/restaurant-funding">Restaurant funding</Link> options like cash advance or working capital can offer same-day decisions and funds in 24–48 hours. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and other options</Link> to see what fits.</p>
             <CtaParagraph />
           </>
         ),
@@ -169,25 +169,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Operational Restaurant Cash Flow Solutions',
         content: (
           <>
-            <p>Better forecasting, inventory control, and vendor terms can reduce the need for external cash. When that&apos;s not enough, <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can provide the bridge. Many owners use both: improve operations and have a funding option when needed.</p>
-            <CtaParagraph />
-          </>
-        ),
-      },
-    ],
-  },
-  {
-    path: '/restaurant-loan-alternatives',
-    title: 'Restaurant Loan Alternatives | Beyond Traditional Loans',
-    description: "Restaurant loan alternatives: cash advance, working capital, and other options when a bank loan isn't right or available.",
-    h1: 'Restaurant Loan Alternatives When Banks Say No',
-    lead: "Traditional restaurant loans aren't the only option. Restaurant loan alternatives—including restaurant cash advance and working capital—often focus on revenue rather than credit and can provide faster access to funds. Here's how they compare.",
-    sections: [
-      {
-        h2: 'Common Restaurant Loan Alternatives',
-        content: (
-          <>
-            <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, working capital products, and lines of credit are the main alternatives. Each has different speed, cost, and repayment. <Link to="/restaurant-funding">Restaurant funding options compared</Link> can help you see what might fit when a traditional loan isn&apos;t available or fast enough.</p>
+            <p>Better forecasting, inventory control, and vendor terms can reduce the need for external cash. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> covers these operational solutions in depth. When that&apos;s not enough, <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can provide the bridge. Many owners use both: improve operations and have a funding option when needed.</p>
             <CtaParagraph />
           </>
         ),
@@ -223,7 +205,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Why Restaurants Need Inventory Funding',
         content: (
           <>
-            <p>Holidays, events, and peak seasons often require large inventory buys. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> are commonly used for inventory. Use is typically flexible—you buy what you need and repay as sales come in.</p>
+            <p>Holidays, events, and peak seasons often require large inventory buys. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why this timing creates pressure. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> are commonly used for inventory. See <Link to="/restaurant-working-capital-guide">restaurant working capital</Link> for more. Use is typically flexible—you buy what you need and repay as sales come in.</p>
             <CtaParagraph />
           </>
         ),
@@ -287,7 +269,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Speed: Cash advance often wins—same-day or next-day decisions, funds in 24–48 hours. Loans can take weeks. Cost: Loans often have lower rates for qualified borrowers. Cash advance uses factor rates and fees; total cost depends on your repayment speed. Qualification: Cash advance focuses on revenue and sales history; loans focus on credit and collateral.</p>
-            <p>Consider your timeline, how you prefer to repay, and what you qualify for. There&apos;s no single &quot;best&quot; option—only the one that fits your situation. For more detail, see <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> guides.</p>
+            <p>Consider your timeline, how you prefer to repay, and what you qualify for. There&apos;s no single &quot;best&quot; option—only the one that fits your situation. See <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> when banks aren&apos;t an option, and <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.</p>
             <CtaParagraph />
           </>
         ),
@@ -323,7 +305,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Types of Restaurant Financing',
         content: (
           <>
-            <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, term loans, and equipment financing each suit different needs. <Link to="/restaurant-funding">Restaurant funding options in detail</Link>.</p>
+            <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, term loans, and equipment financing each suit different needs. See the <Link to="/restaurant-funding-options">restaurant funding options</Link> pillar for a full comparison.</p>
             <CtaParagraph />
           </>
         ),
@@ -341,7 +323,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Funding Options for Restaurant Startups',
         content: (
           <>
-            <p>Once you have sales, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/funding-for-new-restaurants">funding for new restaurants</Link> may be options. Equipment and build-out financing exist too. <Link to="/restaurant-funding">Compare restaurant funding options</Link>.</p>
+            <p>Once you have sales, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/funding-for-new-restaurants">funding for new restaurants</Link> may be options. <Link to="/restaurant-equipment-financing-guide">Equipment financing</Link> and build-out financing exist too. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.</p>
             <CtaParagraph />
           </>
         ),
@@ -359,7 +341,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'How to Fund Restaurant Expansion',
         content: (
           <>
-            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs. Larger projects may need traditional loans. <Link to="/restaurant-funding">Restaurant funding options</Link> compared.</p>
+            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs. Larger projects may need traditional loans. See <Link to="/restaurant-funding-options">restaurant funding options</Link> and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for a full comparison.</p>
             <CtaParagraph />
           </>
         ),
@@ -377,7 +359,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'How Lenders Typically Calculate Amounts',
         content: (
           <>
-            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>.</p>
+            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for more.</p>
             <p>Requirements (e.g. minimum monthly revenue, time in business) also vary. Not all applicants qualify; funding is not available in all states. Checking with a provider is the way to see what you may qualify for.</p>
             <CtaParagraph />
           </>
@@ -416,7 +398,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Restaurant Cash Flow',
         content: (
           <>
-            <p>Why do restaurants have cash flow problems? Usually a timing mismatch: revenue comes in unevenly while rent, payroll, and vendors are due on a schedule. <Link to="/why-restaurants-run-out-of-cash">Why restaurants run out of cash</Link>. <Link to="/restaurant-cash-flow-solutions">Restaurant cash flow solutions</Link>.</p>
+            <p>Why do restaurants have cash flow problems? Usually a timing mismatch: revenue comes in unevenly while rent, payroll, and vendors are due on a schedule. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for a full explanation. <Link to="/why-restaurants-run-out-of-cash">Why restaurants run out of cash</Link>. <Link to="/restaurant-cash-flow-solutions">Restaurant cash flow solutions</Link>.</p>
           </>
         ),
       },
@@ -424,7 +406,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Restaurant Funding & Working Capital',
         content: (
           <>
-            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. What options exist? <Link to="/restaurant-funding">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained.</p>
+            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital-guide">Restaurant working capital guide</Link>. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. What options exist? <Link to="/restaurant-funding-options">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained.</p>
           </>
         ),
       },
@@ -432,7 +414,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Payroll, Equipment, Seasonal',
         content: (
           <>
-            <p><Link to="/restaurant-payroll-funding">Restaurant payroll funding</Link>. <Link to="/restaurant-equipment-financing">Restaurant equipment financing</Link>. <Link to="/restaurant-seasonal-cash-flow">Restaurant seasonal cash flow</Link>. <Link to="/restaurant-emergency-funding">Restaurant emergency funding</Link>.</p>
+            <p><Link to="/restaurant-payroll-funding">Restaurant payroll funding</Link>. <Link to="/restaurant-equipment-financing-guide">Restaurant equipment financing guide</Link>. <Link to="/restaurant-seasonal-cash-flow">Restaurant seasonal cash flow</Link>. <Link to="/restaurant-emergency-funding">Restaurant emergency funding</Link>.</p>
             <CtaParagraph />
           </>
         ),

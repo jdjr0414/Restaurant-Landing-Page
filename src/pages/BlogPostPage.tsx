@@ -109,7 +109,7 @@ export function BlogPostPage() {
               <div className="article__cta-block">
                 <p className="article__cta-lead">Before exploring external options, read our guides to understand what might fit your situation.</p>
                 <p className="article__cta-sub">
-                  <Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> — compare speed, cost, and repayment.
+                  <Link to="/restaurant-cash-flow-guide">Restaurant cash flow guide</Link>, <Link to="/restaurant-funding-options">restaurant funding options</Link>, <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, and <Link to="/restaurant-working-capital">restaurant working capital</Link> — compare speed, cost, and repayment.
                 </p>
                 <p className="article__cta-external">
                   When you&apos;re ready to see what may match your situation: <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>See What Restaurant Funding Options May Be Available</a>.

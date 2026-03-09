@@ -11,9 +11,11 @@ import { BlogPostPage } from './pages/BlogPostPage';
 import { HomePage } from './pages/HomePage';
 import { ConsultationPage } from './pages/ConsultationPage';
 import { TopicPage } from './pages/TopicPage';
+import { PillarPage } from './pages/PillarPage';
 import { SitemapPage } from './pages/SitemapPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { topicPagesConfig } from './data/topicPages';
+import { pillarPagesConfig } from './data/pillarPages';
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
         <Route path="/restaurant-funding" element={<RestaurantFundingPage />} />
         <Route path="/business-cash-advance" element={<BusinessCashAdvancePage />} />
         <Route path="/small-business-funding" element={<SmallBusinessFundingPage />} />
+        {pillarPagesConfig.map((config) => (
+          <Route key={config.path} path={config.path} element={<PillarPage />} />
+        ))}
         {topicPagesConfig.map((config) => (
           <Route key={config.path} path={config.path} element={<TopicPage />} />
         ))}

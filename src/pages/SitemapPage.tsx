@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { topicPagesConfig } from '../data/topicPages';
+import { pillarPagesConfig } from '../data/pillarPages';
 import { blogPosts } from '../data/blogPosts';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -29,12 +30,23 @@ export function SitemapPage() {
             <h2>Main Guides</h2>
             <ul className="sitemap-list">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/restaurant-cash-advance">Restaurant Cash Flow Guide</Link></li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant Cash Flow Guide</Link></li>
               <li><Link to="/restaurant-working-capital">Working Capital When You Need It</Link></li>
               <li><Link to="/restaurant-funding">Restaurant Funding Options</Link></li>
               <li><Link to="/business-cash-advance">Business Cash Advance Explained</Link></li>
               <li><Link to="/small-business-funding">Small Business Funding</Link></li>
               <li><Link to="/faq">FAQ: Restaurant Cash Flow & Funding</Link></li>
+            </ul>
+          </section>
+
+          <section className="sitemap-section">
+            <h2>Pillar Guides</h2>
+            <ul className="sitemap-list">
+              {pillarPagesConfig.map((page) => (
+                <li key={page.path}>
+                  <Link to={page.path}>{page.h1}</Link>
+                </li>
+              ))}
             </ul>
           </section>
 

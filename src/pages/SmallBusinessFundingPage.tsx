@@ -37,7 +37,7 @@ export function SmallBusinessFundingPage() {
 
           <section className="prose-block">
             <h2>Funding for Restaurants</h2>
-            <p>Restaurants have unique cash flow patterns—seasonality, payroll pressure, and equipment breakdowns are common. Small business funding for restaurants can include restaurant-specific cash advances and working capital products. These often provide fast access to funds for payroll, inventory, equipment repairs, and seasonal gaps. <Link to="/restaurant-cash-advance">Restaurant cash advance options</Link> and <Link to="/restaurant-funding">restaurant funding</Link> are available for qualifying businesses.</p>
+            <p>Restaurants have unique cash flow patterns—seasonality, payroll pressure, and equipment breakdowns are common. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains these challenges. Small business funding for restaurants can include restaurant-specific cash advances and working capital products. These often provide fast access to funds for payroll, inventory, equipment repairs, and seasonal gaps. <Link to="/restaurant-cash-advance">Restaurant cash advance options</Link> and <Link to="/restaurant-funding">restaurant funding</Link> are available for qualifying businesses.</p>
           </section>
 
           <section className="prose-block">

@@ -29,7 +29,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Why Restaurants Seek Funding</h2>
-            <p>Restaurant owners look for funding to cover payroll, buy inventory, repair or replace equipment, handle seasonal cash flow gaps, or fund expansion. Sometimes the need is urgent—a broken walk-in or a missed payroll—and sometimes it’s planned, like stocking up for the holidays or opening a second location. Understanding your options helps you choose the right type of <Link to="/restaurant-cash-advance">restaurant funding</Link> for your situation.</p>
+            <p>Restaurant owners look for funding to cover payroll, buy inventory, repair or replace equipment, handle seasonal cash flow gaps, or fund expansion. Sometimes the need is urgent—a broken walk-in or a missed payroll—and sometimes it’s planned, like stocking up for the holidays or opening a second location. Understanding your options helps you choose the right type of <Link to="/restaurant-cash-advance">restaurant funding</Link> for your situation. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why these gaps occur. For a full comparison, see <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
           </section>
 
           <section className="prose-block">

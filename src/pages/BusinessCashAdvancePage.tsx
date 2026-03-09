@@ -47,7 +47,7 @@ export function BusinessCashAdvancePage() {
 
           <section className="prose-block">
             <h2>Restaurant Cash Advance</h2>
-            <p>If you run a restaurant, café, bar, or food truck, a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> is a business cash advance designed for your industry. The same principles apply: fast funding, repayment based on sales, flexible use. Restaurant cash advance products are designed to fit how restaurants operate. <Link to="/restaurant-cash-advance">Explore restaurant cash advance options</Link>.</p>
+            <p>If you run a restaurant, café, bar, or food truck, a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> is a business cash advance designed for your industry. The same principles apply: fast funding, repayment based on sales, flexible use. Restaurant cash advance products are designed to fit how restaurants operate. <Link to="/restaurant-cash-advance">Explore restaurant cash advance options</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.</p>
           </section>
 
           <section className="prose-block">

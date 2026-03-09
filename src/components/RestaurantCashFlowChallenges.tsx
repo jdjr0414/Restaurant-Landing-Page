@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
 
@@ -6,7 +7,7 @@ export function RestaurantCashFlowChallenges() {
     <section className="landing-section cash-flow-challenges">
       <h2 className="section-title">Restaurant Cash Flow Challenges</h2>
       <p className="section-subtitle">
-        Many restaurant owners face the same cash flow problems: revenue that doesn’t line up with when bills are due, seasonal dips, and unexpected expenses. Here’s how funding can help.
+        Many restaurant owners face the same cash flow problems: revenue that doesn’t line up with when bills are due, seasonal dips, and unexpected expenses. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains these challenges in depth. Here’s how funding can help.
       </p>
       <ul className="cash-flow-challenges__list">
         <li><strong>Seasonal slowdowns</strong> — Revenue drops in off-peak months while rent, payroll, and utilities stay the same. Working capital can bridge the gap until traffic picks up.</li>

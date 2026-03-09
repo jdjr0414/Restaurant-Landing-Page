@@ -54,7 +54,7 @@ export function RestaurantWorkingCapitalPage() {
 
           <section className="prose-block">
             <h2>Restaurant Working Capital vs Loans</h2>
-            <p>Traditional restaurant loans typically offer fixed monthly payments and longer terms. They can be a good fit for large, long-term investments when you qualify. Working capital products like a restaurant cash advance often offer faster decisions and funding, and repayment that flexes with your sales. Choosing between them depends on your timeline, how you prefer to repay, and what you qualify for. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and working capital options</Link> to see what fits your situation.</p>
+            <p>Traditional restaurant loans typically offer fixed monthly payments and longer terms. They can be a good fit for large, long-term investments when you qualify. Working capital products like a restaurant cash advance often offer faster decisions and funding, and repayment that flexes with your sales. Choosing between them depends on your timeline, how you prefer to repay, and what you qualify for. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> and <Link to="/restaurant-working-capital-guide">restaurant working capital guide</Link> for more context. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and working capital options</Link> to see what fits your situation.</p>
           </section>
 
           <section className="prose-block">

@@ -22,6 +22,9 @@ import {
 
 /** Related links for contextual internal linking. Each post gets 2+ links to related blog/topic pages. */
 const RELATED_LINKS_POOL: { path: string; anchor: string }[] = [
+  { path: '/restaurant-cash-flow-guide', anchor: 'restaurant cash flow guide' },
+  { path: '/restaurant-funding-options', anchor: 'restaurant funding options' },
+  { path: '/restaurant-working-capital-guide', anchor: 'restaurant working capital guide' },
   { path: '/blog/restaurant-equipment-repair-cost', anchor: 'restaurant equipment repair costs' },
   { path: '/restaurant-emergency-funding', anchor: 'restaurant emergency funding' },
   { path: '/blog/restaurant-slow-season-survival', anchor: 'restaurant slow season survival' },

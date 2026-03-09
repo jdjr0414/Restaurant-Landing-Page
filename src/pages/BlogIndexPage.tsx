@@ -136,7 +136,7 @@ export function BlogIndexPage() {
 
           <div className="page-cta blog-index__cta">
             <p><strong>Facing cash flow problems or need to cover payroll, inventory, or equipment?</strong></p>
-            <p>Read our guides on <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link> first. When you&apos;re ready: <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">Explore Restaurant Funding Options</a> — no obligation.</p>
+            <p>Read our pillar guides: <Link to="/restaurant-cash-flow-guide">restaurant cash flow</Link>, <Link to="/restaurant-funding-options">restaurant funding options</Link>, <Link to="/restaurant-working-capital-guide">restaurant working capital</Link>. Then explore <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link>, and <Link to="/restaurant-funding">restaurant funding options</Link>. When you&apos;re ready: <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">Explore Restaurant Funding Options</a> — no obligation.</p>
           </div>
           </div>
           <aside className="blog-index__sidebar" aria-label="Quick guides">

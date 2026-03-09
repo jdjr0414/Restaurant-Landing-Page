@@ -731,6 +731,31 @@
   color: var(--color-amber);
 }
 
+/* Cash cycle diagram (pillar pages) */
+.cash-cycle-diagram {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-amber);
+}
+
+.cash-cycle-list {
+  margin: 0;
+  padding-left: 1.5em;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-ink);
+}
+
+.cash-cycle-list li {
+  margin-bottom: var(--space-sm);
+}
+
+.cash-cycle-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* Article */
 .article {
   padding: var(--space-xl) var(--space-lg);

@@ -6,9 +6,10 @@ import { topicPagesConfig } from '../data/topicPages';
 
 const MAIN_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Restaurant Cash Flow Guide', href: '/restaurant-cash-advance' },
+  { label: 'Restaurant Cash Flow Guide', href: '/restaurant-cash-flow-guide' },
+  { label: 'Restaurant Funding Options', href: '/restaurant-funding-options' },
   { label: 'Working Capital', href: '/restaurant-working-capital' },
-  { label: 'Restaurant Funding Options', href: '/restaurant-funding' },
+  { label: 'Restaurant Funding', href: '/restaurant-funding' },
   { label: 'Free Consultation', href: '/consultation' },
   { label: 'Business Cash Advance', href: '/business-cash-advance' },
   { label: 'Small Business Funding', href: '/small-business-funding' },
