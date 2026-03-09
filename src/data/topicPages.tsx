@@ -9,6 +9,10 @@ export interface TopicPageConfig {
   h1: string;
   lead: string;
   sections: { h2: string; content: ReactNode }[];
+  /** Optional date published (YYYY-MM-DD) for schema. */
+  datePublished?: string;
+  /** Optional date modified (YYYY-MM-DD) for schema and "Last updated" display. */
+  dateModified?: string;
 }
 
 function CtaParagraph() {

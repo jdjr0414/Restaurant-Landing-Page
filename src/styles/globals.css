@@ -99,6 +99,21 @@ button {
   cursor: pointer;
 }
 
+/* Reduce tap delay on touch devices */
+@media (hover: none) {
+  a,
+  button,
+  .btn,
+  .site-header__link,
+  .footer__link,
+  .home-links__card,
+  .faq__question button,
+  .home-faq__question button,
+  .cta-sticky__btn {
+    touch-action: manipulation;
+  }
+}
+
 /* Touch targets: min 44px for tap areas (mobile) */
 @media (pointer: coarse) {
   .btn,
@@ -110,7 +125,8 @@ button {
   .blog-list__link,
   .blog-featured-list__link,
   .home-links__card,
-  .sitemap-list a {
+  .sitemap-list a,
+  .cta-sticky__btn {
     min-height: 44px;
     min-width: 44px;
   }

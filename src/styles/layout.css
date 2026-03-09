@@ -172,7 +172,8 @@
 
 @media (max-width: 375px) {
   .site-header__inner {
-    padding: var(--space-sm) var(--space-md);
+    padding-left: max(var(--space-md), env(safe-area-inset-left));
+    padding-right: max(var(--space-md), env(safe-area-inset-right));
   }
 
   .site-header__logo-img {

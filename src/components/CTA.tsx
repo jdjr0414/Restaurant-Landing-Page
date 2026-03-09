@@ -20,7 +20,7 @@ export function CTA() {
           </a>
         </div>
           <figure className="cta__figure" aria-hidden>
-            <img src={CTA_IMAGE} alt="" width={800} height={800} className="cta__img" />
+            <img src={CTA_IMAGE} alt="Cafe interior with tables and seating, inviting restaurant owners to explore funding options" width={800} height={800} className="cta__img" />
           </figure>
         </div>
       </section>

@@ -66,7 +66,7 @@ export function BlogPostPage() {
         dateModified={post.dateModified}
       />
       {post.faqItems && post.faqItems.length > 0 && (
-        <BlogFaqSchema items={post.faqItems} />
+        <BlogFaqSchema items={post.faqItems} urlPath={`/blog/${post.slug}`} />
       )}
       {post.howToSteps && post.howToSteps.length > 0 && (
         <HowToSchema
@@ -102,7 +102,7 @@ export function BlogPostPage() {
                 <span className="article__reviewed">Editorially reviewed</span>
               </div>
             </header>
-            <div className="article__body prose">
+            <div className="article__body prose" {...(post.faqItems?.length ? { 'data-speakable-faq': '' } : {})}>
               {content}
             </div>
             <footer className="article__footer">

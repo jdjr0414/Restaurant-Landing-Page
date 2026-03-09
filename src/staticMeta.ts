@@ -18,6 +18,8 @@ export interface PageMeta {
   canonicalPath: string;
   /** For blog posts: published date (YYYY-MM-DD) for article meta tags */
   datePublished?: string;
+  /** For blog posts: modified date (YYYY-MM-DD) for article:modified_time. Defaults to datePublished. */
+  dateModified?: string;
   /** Optional custom OG image URL (1200x630) for this page */
   image?: string;
   /** When true, add robots noindex,nofollow (e.g. for generated-content blog posts) */
@@ -157,11 +159,13 @@ export function getMeta(path: string): PageMeta | null {
         ? post.description.slice(0, META_DESC_MAX).trim().replace(/\s+\S*$/, '') + '…'
         : post.description;
     const image = PAGE_OG_IMAGES[path];
+    const dateModified = post.dateModified ?? post.publishedDate;
     return {
       title,
       description,
       canonicalPath: path,
       datePublished: post.publishedDate,
+      dateModified,
       ...(image && { image }),
       ...(post.hasCustomContent !== true && { noindex: true }),
     };

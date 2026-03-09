@@ -119,7 +119,7 @@
 
 @media (max-width: 375px) {
   .page-main {
-    padding: var(--space-lg) var(--space-sm);
+    padding: var(--space-lg) max(var(--space-sm), env(safe-area-inset-right)) var(--space-lg) max(var(--space-sm), env(safe-area-inset-left));
   }
 
   .page-title {
@@ -745,6 +745,8 @@
   margin: 0 0 var(--space-md);
   color: var(--color-ink);
   line-height: 1.7;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .prose-block ul {
@@ -762,6 +764,8 @@
   color: var(--color-amber-dark);
   text-decoration: underline;
   text-underline-offset: 2px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .prose-block a:hover {
@@ -908,6 +912,8 @@
 .article__body.prose p {
   margin: 0 0 var(--space-md);
   color: var(--color-ink);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .article__body.prose h2 {
@@ -939,6 +945,8 @@
   color: var(--color-amber-dark);
   text-decoration: underline;
   text-underline-offset: 2px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .article__body.prose a:hover {

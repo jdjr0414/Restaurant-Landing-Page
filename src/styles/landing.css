@@ -21,7 +21,10 @@
 
 @media (max-width: 375px) {
   .landing-section {
-    padding: var(--space-xl) var(--space-sm);
+    padding-left: max(var(--space-sm), env(safe-area-inset-left));
+    padding-right: max(var(--space-sm), env(safe-area-inset-right));
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
   }
 
   .section-title {
@@ -1107,7 +1110,9 @@
 
 @media (max-width: 640px) {
   .footer {
-    padding: var(--space-lg) var(--space-md);
+    padding-left: max(var(--space-md), env(safe-area-inset-left));
+    padding-right: max(var(--space-md), env(safe-area-inset-right));
+    padding-top: var(--space-lg);
     /* Reserve space so content isn't hidden behind sticky CTA on pages that have it */
     padding-bottom: calc(var(--space-lg) + 72px + env(safe-area-inset-bottom));
   }

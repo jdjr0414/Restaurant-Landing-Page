@@ -1,6 +1,7 @@
 import { useLocation, Navigate } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { WebPageSchema } from '../components/WebPageSchema';
 import { FaqSchema } from '../components/FaqSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
@@ -29,6 +30,7 @@ export function TopicPage() {
         image={meta?.image}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />
+      <WebPageSchema name={page.h1} description={page.description} urlPath={page.path} datePublished={page.datePublished} dateModified={page.dateModified} />
       {pathname === '/faq' && <FaqSchema />}
       <PageHero />
       <main className="page-main supporting-page">

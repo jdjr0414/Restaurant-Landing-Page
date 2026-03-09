@@ -198,6 +198,9 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
+              <strong>Restaurant funding options</strong> are the ways restaurant owners can access capital when they need it—including cash advance, working capital, loans, and equipment financing. Each works differently; speed, qualification, and cost vary by product.
+            </p>
+            <p>
               Restaurant owners have several funding options when they need capital: <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">restaurant working capital</Link> products, traditional bank loans, and <Link to="/restaurant-equipment-financing">equipment financing</Link>. Each works differently—speed, qualification, repayment structure, and cost vary. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow</Link> for context on why owners need funding, and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> when banks aren&apos;t an option.
             </p>
             <p>

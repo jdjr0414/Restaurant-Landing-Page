@@ -25,11 +25,19 @@ export function ArticleSchema({ headline, description, datePublished, urlPath, a
     url: `${SITE_URL}${urlPath}`,
     mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${urlPath}` },
     articleSection,
-    author: {
-      '@type': 'Organization',
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
+    author: [
+      {
+        '@type': 'Person',
+        name: 'Editorial Team',
+        jobTitle: 'Editor',
+        worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      },
+      {
+        '@type': 'Organization',
+        name: SITE_NAME,
+        url: SITE_URL,
+      },
+    ],
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,

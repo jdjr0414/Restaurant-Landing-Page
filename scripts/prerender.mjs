@@ -78,9 +78,10 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
     <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${escapeHtml(ogImage)}" />`;
   if (isBlogPost && meta.datePublished) {
+    const modifiedTime = meta.dateModified || meta.datePublished;
     ogTwitterBlock += `
     <meta property="article:published_time" content="${escapeHtml(meta.datePublished)}" />
-    <meta property="article:modified_time" content="${escapeHtml(meta.datePublished)}" />
+    <meta property="article:modified_time" content="${escapeHtml(modifiedTime)}" />
     <meta property="article:author" content="The Restaurant Owners Guide" />
     <meta property="article:section" content="Restaurant Cash Flow & Funding" />`;
   }

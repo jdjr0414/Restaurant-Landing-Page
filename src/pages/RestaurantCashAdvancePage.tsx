@@ -26,7 +26,7 @@ export function RestaurantCashAdvancePage() {
         canonicalPath={meta.canonicalPath}
         image={meta.image}
       />
-      <FaqSchema />
+      <FaqSchema basePath="/restaurant-cash-advance" />
       <Hero />
       <TrustBar />
       <main>
