@@ -3,6 +3,15 @@
 # For wrangler deploy: run "npm run build" first, then "wrangler pages deploy dist"
 
 name = "restaurant-landing-page"
+
+# Custom domains - domain must be in the same Cloudflare account
+[[routes]]
+pattern = "therestaurantownersguide.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.therestaurantownersguide.com"
+custom_domain = true
 compatibility_date = "2024-01-01"
 main = "worker.js"
 
