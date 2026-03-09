@@ -10,12 +10,15 @@ interface PageHeroProps {
   imageAlt?: string;
 }
 
+const LOWER_CROP_PATHS = ['/consultation', '/faq', '/blog', '/sitemap'];
+
 export function PageHero({ image, imageAlt }: PageHeroProps) {
   const { pathname } = useLocation();
   const heroImage = image ?? getPageHeroImage(pathname);
   const alt = imageAlt ?? 'Restaurant dining room representing the daily reality of running a restaurant business';
+  const useLowerCrop = LOWER_CROP_PATHS.includes(pathname);
   return (
-    <header className="page-hero">
+    <header className={`page-hero${useLowerCrop ? ' page-hero--lower-crop' : ''}`}>
       <div className="page-hero__image-wrap">
         <img
           src={heroImage}

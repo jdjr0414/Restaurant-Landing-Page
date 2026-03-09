@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
-const USECASE_IMAGE = 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200&q=90';
+const USECASE_IMAGE = 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=95';
 
 const CASES = [
   { title: 'Payroll', description: 'Cover labor during slow weeks or when you need extra staff for a rush.' },

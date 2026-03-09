@@ -12,9 +12,9 @@ import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=90';
-const KITCHEN_IMAGE = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=90';
-const EQUIPMENT_IMAGE = 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&q=90';
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95';
+const KITCHEN_IMAGE = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=95';
+const EQUIPMENT_IMAGE = 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1920&q=95';
 
 export function HomePage() {
   const meta = getMeta('/')!;

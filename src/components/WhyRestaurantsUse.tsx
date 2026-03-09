@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import '../styles/landing.css';
 
-const SECTION_IMAGE = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=90';
+const SECTION_IMAGE = 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=95';
 
 export function WhyRestaurantsUse() {
   return (

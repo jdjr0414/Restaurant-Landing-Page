@@ -1,18 +1,18 @@
 /**
- * Unique hero images per page for tab variety. All use w=1200&q=90 for sharp display.
+ * Unique hero images per page for tab variety. Use w=1920&q=95 for sharp, high-res display.
  * Theme: restaurant, food service, kitchens, dining, business.
  * Each image is used exactly once across the site.
  */
-const Q = 'w=1200&q=90';
+const Q = 'w=1920&q=95';
 
 export const PAGE_HERO_IMAGES: Record<string, string> = {
   // Main nav tabs
   '/restaurant-funding': `https://images.unsplash.com/photo-1770509634681-be8be680968a?${Q}`,
   '/restaurant-working-capital': `https://images.unsplash.com/photo-1761095596618-081ea3f043a5?${Q}`,
   '/consultation': `https://images.unsplash.com/photo-1696860650232-621c1c01fd84?${Q}`,
-  '/faq': `https://images.unsplash.com/photo-1592861956120-e524fc739696?${Q}`,
+  '/faq': `https://images.unsplash.com/photo-1767973200372-dae18c337a38?${Q}`,
   '/blog': `https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?${Q}`,
-  '/sitemap': `https://images.unsplash.com/photo-1766812782166-e243111f703d?${Q}`,
+  '/sitemap': `https://images.unsplash.com/photo-1761426186983-b380a4474a85?${Q}`,
   '/business-cash-advance': `https://images.unsplash.com/photo-1616538994032-f7619b8bebb5?${Q}`,
   '/small-business-funding': `https://images.unsplash.com/photo-1771575521792-4843df806b57?${Q}`,
 

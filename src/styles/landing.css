@@ -109,6 +109,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 40%;
   opacity: 0.45;
 }
 
@@ -640,6 +641,7 @@
   height: auto;
   display: block;
   object-fit: cover;
+  object-position: center 40%;
 }
 
 .how-it-works__list {
@@ -704,6 +706,7 @@
   height: auto;
   display: block;
   object-fit: cover;
+  object-position: center 40%;
 }
 
 .use-cases__grid {
@@ -1005,6 +1008,7 @@
   height: auto;
   display: block;
   object-fit: cover;
+  object-position: center 40%;
 }
 
 .cta__title {
