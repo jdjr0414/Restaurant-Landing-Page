@@ -1,6 +1,8 @@
 /**
  * Link to the find-match / apply form on Axiant Partners.
  */
+import { PAGE_HERO_IMAGES } from './config/pageHeroImages';
+
 export const FIND_MATCH_URL = 'https://axiantpartners.com/match';
 
 /** rel attribute for all external Axiant links (sponsored disclosure, new tab). */
@@ -26,14 +28,16 @@ export const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1517248135467
 /** Publisher logo URL for schema (Organization, Article publisher). */
 export const SITE_LOGO = `${SITE_URL}/logo-horizontal.svg`;
 
-/** Per-page OG images (1200x630). Uses hero images for consistency. */
-export const PAGE_OG_IMAGES: Record<string, string> = {
-  '/': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95',
-  '/restaurant-cash-advance': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95',
-  '/restaurant-funding': 'https://images.unsplash.com/photo-1770509634681-be8be680968a?w=1920&q=95',
-  '/restaurant-working-capital': 'https://images.unsplash.com/photo-1761095596618-081ea3f043a5?w=1920&q=95',
-  '/faq': 'https://images.unsplash.com/photo-1767973200372-dae18c337a38?w=1920&q=95',
-  '/blog': 'https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?w=1920&q=95',
-  '/sitemap': 'https://images.unsplash.com/photo-1761426186983-b380a4474a85?w=1920&q=95',
-  '/consultation': 'https://images.unsplash.com/photo-1696860650232-621c1c01fd84?w=1920&q=95',
+/** Per-page OG images (1200x630). Merges hero images for topic/pillar pages. */
+const Q = 'w=1920&q=95';
+const BASE_OG: Record<string, string> = {
+  '/': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?' + Q,
+  '/restaurant-cash-advance': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?' + Q,
+  '/restaurant-funding': 'https://images.unsplash.com/photo-1770509634681-be8be680968a?' + Q,
+  '/restaurant-working-capital': 'https://images.unsplash.com/photo-1761095596618-081ea3f043a5?' + Q,
+  '/faq': 'https://images.unsplash.com/photo-1767973200372-dae18c337a38?' + Q,
+  '/blog': 'https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?' + Q,
+  '/sitemap': 'https://images.unsplash.com/photo-1761426186983-b380a4474a85?' + Q,
+  '/consultation': 'https://images.unsplash.com/photo-1696860650232-621c1c01fd84?' + Q,
 };
+export const PAGE_OG_IMAGES: Record<string, string> = { ...PAGE_HERO_IMAGES, ...BASE_OG };

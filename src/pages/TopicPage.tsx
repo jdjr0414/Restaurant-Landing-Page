@@ -3,6 +3,8 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { WebPageSchema } from '../components/WebPageSchema';
 import { FaqSchema } from '../components/FaqSchema';
+import { BlogFaqSchema } from '../components/BlogFaqSchema';
+import { TopicFaqBlock } from '../components/TopicFaqBlock';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
 import { getTopicPage } from '../data/topicPages';
@@ -32,6 +34,7 @@ export function TopicPage() {
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: page.h1, path: page.path }]} />
       <WebPageSchema name={page.h1} description={page.description} urlPath={page.path} datePublished={page.datePublished} dateModified={page.dateModified} />
       {pathname === '/faq' && <FaqSchema />}
+      {page.faqItems?.length ? <BlogFaqSchema items={page.faqItems} urlPath={page.path} /> : null}
       <PageHero />
       <main className="page-main supporting-page">
         <div className="page-content" {...(pathname === '/faq' && { 'data-speakable-faq': '' })}>
@@ -43,6 +46,12 @@ export function TopicPage() {
               {section.content}
             </section>
           ))}
+          {page.faqItems?.length ? (
+            <section className="prose-block" id="faq">
+              <h2>Frequently Asked Questions</h2>
+              <TopicFaqBlock items={page.faqItems} />
+            </section>
+          ) : null}
         </div>
       </main>
       <CTA />

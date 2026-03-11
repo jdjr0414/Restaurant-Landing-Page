@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
+import { WebPageSchema } from '../components/WebPageSchema';
 import { PageHero } from '../components/PageHero';
 import { topicPagesConfig } from '../data/topicPages';
 import { pillarPagesConfig } from '../data/pillarPages';
@@ -22,13 +23,21 @@ export function SitemapPage() {
         image={meta.image}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Sitemap', path: '/sitemap' }]} />
+      <WebPageSchema name="Sitemap: All Guides & Topics" description={meta.description} urlPath="/sitemap" />
       <PageHero />
       <main className="page-main">
         <div className="page-content">
           <h1 className="page-title">Sitemap: All Guides & Topics</h1>
           <p className="page-lead">
-            Every guide and topic on this site. Use this page to find exactly what you need—restaurant cash flow, funding options, payroll, equipment, seasonal issues, and more.
+            Every guide and topic on this site. Use this page to find exactly what you need—restaurant cash flow, funding options, payroll, equipment, seasonal issues, and more. <a href="/sitemap.xml" className="page-lead__link">XML sitemap for search engines</a>.
           </p>
+
+          <section className="sitemap-section">
+            <h2>For Search Engines</h2>
+            <ul className="sitemap-list">
+              <li><a href="/sitemap.xml">XML Sitemap (sitemap.xml)</a></li>
+            </ul>
+          </section>
 
           <section className="sitemap-section">
             <h2>Main Guides</h2>

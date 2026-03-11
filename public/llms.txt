@@ -80,3 +80,4 @@
 ## Sitemap
 
 - [Full Sitemap](https://therestaurantownersguide.com/sitemap): Browse all guides and topics.
+- [XML Sitemap](https://therestaurantownersguide.com/sitemap.xml): Machine-readable sitemap for search engines.
