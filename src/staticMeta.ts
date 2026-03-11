@@ -33,19 +33,19 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Running out of cash? Restaurant cash flow problems are the #1 reason restaurants fail. Learn why it happens, what restaurant funding and working capital options exist, and what to do next. Practical guide for restaurant owners.",
   },
   '/restaurant-cash-advance': {
-    title: 'Restaurant Cash Flow Guide: Problems, Options & Funding | The Restaurant Owners Guide',
+    title: 'Restaurant Cash Advance | How It Works, Speed & When to Use | The Restaurant Owners Guide',
     description:
-      "Struggling with restaurant cash flow, payroll gaps, seasonal slumps, or equipment costs? Understand what's going on and what options exist. Practical guide for restaurant owners.",
+      "Restaurant cash advance explained: how it works, 24–48 hour funding, repayment tied to sales. When to use it for payroll, inventory, or equipment. Compare with working capital and loans.",
   },
   '/restaurant-working-capital': {
-    title: 'Restaurant Working Capital: When You Need It | The Restaurant Owners Guide',
+    title: 'Restaurant Working Capital | Payroll, Inventory & Operations | The Restaurant Owners Guide',
     description:
-      "Struggling with payroll, inventory, or seasonal gaps? Understand what restaurant working capital is and what options exist when revenue doesn't line up with bills.",
+      "Restaurant working capital for payroll, inventory, and operations. When revenue doesn't line up with bills—what it is, how it works, and what options exist.",
   },
   '/restaurant-funding': {
-    title: "Restaurant Funding Options: Compare When You're Struggling | The Restaurant Owners Guide",
+    title: 'Restaurant Funding | Cash Advance, Working Capital & Loans | The Restaurant Owners Guide',
     description:
-      'Facing a cash flow crunch or need to cover payroll, inventory, or equipment? Understand what restaurant funding options exist and when they might help.',
+      'Compare restaurant funding: cash advance, working capital, and loans. Speed, cost, and qualification. When each option fits payroll, inventory, or equipment needs.',
   },
   '/business-cash-advance': {
     title: 'Business Cash Advance: What It Is, How It Works | The Restaurant Owners Guide',
@@ -73,14 +73,14 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Book a free consultation to discuss your restaurant cash flow, payroll gaps, seasonal slumps, or funding options. No obligation—get clarity on what might fit your situation.",
   },
   '/restaurant-cash-flow-guide': {
-    title: 'Restaurant Cash Flow Guide | Problems, Timing & Solutions | The Restaurant Owners Guide',
+    title: 'Restaurant Cash Flow Guide | Why Timing Mismatches Cause Problems | The Restaurant Owners Guide',
     description:
-      "Understand restaurant cash flow: why timing mismatches cause problems, how the cash cycle works, and what options exist when revenue and bills don't align.",
+      "Why restaurant cash flow problems happen: the timing mismatch between revenue and bills. How the cash cycle works, fixed vs variable costs, and when to consider funding.",
   },
   '/restaurant-funding-options': {
-    title: 'Restaurant Funding Options | Compare Your Choices | The Restaurant Owners Guide',
+    title: 'Restaurant Funding Options | Complete Comparison of All Choices | The Restaurant Owners Guide',
     description:
-      'Compare restaurant funding options: cash advance, working capital, loans, and equipment financing. Understand what fits when you need capital.',
+      'Complete comparison of restaurant funding options: cash advance vs working capital vs loans vs equipment financing. Speed, cost, qualification, and when each fits.',
   },
   '/restaurant-working-capital-guide': {
     title: 'Restaurant Working Capital Guide | When You Need It | The Restaurant Owners Guide',
@@ -93,9 +93,9 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Restaurant loan alternatives: cash advance, working capital, and other options when a bank loan isn't right or available.",
   },
   '/restaurant-equipment-financing-guide': {
-    title: 'Restaurant Equipment Financing Guide | Ovens, Coolers & Kitchen Gear | The Restaurant Owners Guide',
+    title: 'Restaurant Equipment Financing Guide | Loans, Leases & Working Capital | The Restaurant Owners Guide',
     description:
-      'Restaurant equipment financing guide: options for ovens, refrigeration, and kitchen equipment when you need to buy or replace.',
+      'In-depth guide to restaurant equipment financing: loans vs leases, costs, requirements. When to use equipment financing vs flexible working capital for ovens, coolers, and kitchen gear.',
   },
 };
 

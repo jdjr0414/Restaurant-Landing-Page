@@ -856,6 +856,21 @@
   }
 }
 
+/* Very small screens (320px) - prevent overflow */
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 1.35rem;
+  }
+
+  .home-hero__title {
+    font-size: 1.5rem;
+  }
+
+  .home-hero__content {
+    padding: var(--space-xl) var(--space-sm);
+  }
+}
+
 .article__header {
   margin-bottom: var(--space-2xl);
 }

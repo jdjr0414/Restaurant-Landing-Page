@@ -32,6 +32,12 @@
   }
 }
 
+@media (max-width: 360px) {
+  .section-title {
+    font-size: 1.35rem;
+  }
+}
+
 @media (min-width: 768px) {
   .landing-section {
     padding: var(--space-4xl) var(--space-xl);

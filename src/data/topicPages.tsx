@@ -1167,8 +1167,8 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/working-capital-for-restaurants',
-    title: 'Working Capital for Restaurants | Day-to-Day Funding',
-    description: 'Working capital for restaurants: what it is, when you need it, and what options exist for payroll, inventory, and operations.',
+    title: 'Working Capital for Restaurants | Payroll, Inventory & Day-to-Day | The Restaurant Owners Guide',
+    description: 'Working capital for restaurants: day-to-day funding for payroll, inventory, and operations. What it is, when you need it, and what options exist.',
     h1: 'Working Capital for Restaurants',
     lead: 'Working capital for restaurants is the money you use to run daily operations—payroll, inventory, supplies, repairs. When you need more than you have on hand, working capital funding can help. This guide explains what it is and what options exist.',
     sections: [
@@ -1185,8 +1185,8 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/restaurant-financing-options',
-    title: 'Restaurant Financing Options | Compare All Your Choices',
-    description: 'Restaurant financing options compared: loans, cash advance, working capital, equipment financing. Find what fits.',
+    title: 'Restaurant Financing Options | Loans, Cash Advance & Equipment | The Restaurant Owners Guide',
+    description: 'Restaurant financing options: term loans, cash advance, working capital, equipment financing. Compare speed, cost, and use cases to find what fits.',
     h1: 'Restaurant Financing Options Compared',
     lead: 'Restaurant financing options include traditional loans, restaurant cash advance, working capital products, and equipment financing. Each has different speed, cost, and use. This guide helps you compare so you can choose.',
     sections: [
@@ -1203,8 +1203,8 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/restaurant-startup-funding',
-    title: 'Restaurant Startup Funding | Options for New Restaurants',
-    description: "Restaurant startup funding for new owners. What options exist when you're opening or just opened.",
+    title: 'Restaurant Startup Funding | Build-Out & Early Operations | The Restaurant Owners Guide',
+    description: "Restaurant startup funding for build-out, equipment, and early operations. What new owners can access when opening or just opened.",
     h1: 'Restaurant Startup Funding',
     lead: "New restaurants often need capital for build-out, equipment, and early operations. Restaurant startup funding options vary by stage and revenue. This guide covers what's typically available for new restaurant owners.",
     sections: [
