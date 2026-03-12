@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npx vite build --ssr src/entry-server.tsx && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && node scripts/verify-build.mjs",
+    "build": "node scripts/generate-inbound-counts.mjs && tsc -b && vite build && npx vite build --ssr src/entry-server.tsx && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && node scripts/verify-build.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

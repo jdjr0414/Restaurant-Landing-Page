@@ -72,6 +72,11 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Book a free consultation to discuss your restaurant cash flow, payroll gaps, seasonal slumps, or funding options. No obligation—get clarity on what might fit your situation.",
   },
+  '/restaurant-cash-flow-problems': {
+    title: 'Restaurant Cash Flow Problems | Why Restaurants Run Out of Cash | The Restaurant Owners Guide',
+    description:
+      'In-depth guide to restaurant cash flow problems: why restaurants run out of cash, payroll gaps, supplier payment issues, seasonal swings, and cost spikes. Practical solutions and funding options.',
+  },
   '/restaurant-cash-flow-guide': {
     title: 'Restaurant Cash Flow Guide | Why Timing Mismatches Cause Problems | The Restaurant Owners Guide',
     description:
@@ -96,6 +101,16 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     title: 'Restaurant Equipment Financing Guide | Loans, Leases & Working Capital | The Restaurant Owners Guide',
     description:
       'In-depth guide to restaurant equipment financing: loans vs leases, costs, requirements. When to use equipment financing vs flexible working capital for ovens, coolers, and kitchen gear.',
+  },
+  '/restaurant-funding-by-business-type': {
+    title: 'Restaurant Funding by Business Type | Food Trucks, Pizzerias, Bars & More',
+    description:
+      'Restaurant funding options by business type: food trucks, pizzerias, bars and breweries, bakeries, QSR, full-service, franchises, and pop-ups. Find funding that fits your concept.',
+  },
+  '/restaurant-funding-by-state': {
+    title: 'Restaurant Funding by State | California, Texas, Florida & All 50 States',
+    description:
+      'Restaurant funding availability by state. California, Texas, Florida, New York, and all 50 states. How state affects qualification and what to expect in your location.',
   },
 };
 

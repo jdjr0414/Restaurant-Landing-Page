@@ -40,17 +40,17 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
     `<meta name="description" content="${escapeHtml(description)}" />`
   );
 
-  // 2b. Add robots noindex for generated-content blog posts (no hasCustomContent)
-  if (meta.noindex) {
-    const robotsTag = '<meta name="robots" content="noindex, nofollow" />';
-    if (out.includes('name="robots"')) {
-      out = out.replace(/<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i, robotsTag);
-    } else {
-      out = out.replace(
-        /(<meta name="description" content="[^"]*" \/>)/,
-        `$1\n    ${robotsTag}`
-      );
-    }
+  // 2b. Robots meta: noindex for generated-content blog posts; index,follow for indexable pages
+  const robotsTag = meta.noindex
+    ? '<meta name="robots" content="noindex, nofollow" />'
+    : '<meta name="robots" content="index, follow" />';
+  if (out.includes('name="robots"')) {
+    out = out.replace(/<meta\s+name="robots"\s+content="[^"]*"\s*\/?>/i, robotsTag);
+  } else {
+    out = out.replace(
+      /(<meta name="description" content="[^"]*" \/>)/,
+      `$1\n    ${robotsTag}`
+    );
   }
 
   // 3. Replace or add canonical - always ensure correct value per route

@@ -6,6 +6,7 @@ import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { HowToSchema } from '../components/HowToSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
+import { RelatedArticles } from '../components/RelatedArticles';
 import { FIND_MATCH_URL, AXIANT_LINK_REL, SITE_NAME } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -104,6 +105,7 @@ export function BlogPostPage() {
             </header>
             <div className="article__body prose" {...(post.faqItems?.length ? { 'data-speakable-faq': '' } : {})}>
               {content}
+              <RelatedArticles currentSlug={slug!} />
             </div>
             <footer className="article__footer">
               <div className="article__cta-block">

@@ -31,28 +31,28 @@ const pillarPagesSrc = readFileSync(pillarPagesPath, 'utf8');
 const pillarPathMatches = pillarPagesSrc.matchAll(/path:\s*['"]([^'"]+)['"]/g);
 const pillarPaths = [...new Set([...pillarPathMatches].map((m) => m[1]).filter((p) => p.startsWith('/')))];
 
-// Blog posts with publishedDate / dateModified for lastmod
+// Blog posts: only include indexable (hasCustomContent: true). Exclude noindex.
 const blogPostsPath = join(root, 'src', 'data', 'blogPosts.ts');
 const blogPostsSrc = readFileSync(blogPostsPath, 'utf8');
-const slugMatches = blogPostsSrc.matchAll(/slug:\s*['"]([^'"]+)['"]/g);
-const blogSlugs = [...new Set([...slugMatches].map((m) => m[1]))];
-const blogPaths = blogSlugs.map((s) => `/blog/${s}`);
-
-// Build slug -> lastmod from blog data (dateModified || publishedDate)
 const blogLastmod = {};
+const indexableBlogSlugs = [];
 const blocks = blogPostsSrc.split(/\{\s*slug:\s*['"]/);
 for (let i = 1; i < blocks.length; i++) {
   const block = blocks[i];
   const slugMatch = block.match(/^([^'"]+)['"]/);
   const pubMatch = block.match(/publishedDate:\s*['"](\d{4}-\d{2}-\d{2})['"]/);
   const modMatch = block.match(/dateModified:\s*['"](\d{4}-\d{2}-\d{2})['"]/);
+  const hasCustomContent = /hasCustomContent:\s*true/.test(block);
   if (slugMatch && pubMatch) {
     blogLastmod[slugMatch[1]] = modMatch ? modMatch[1] : pubMatch[1];
+    if (hasCustomContent) indexableBlogSlugs.push(slugMatch[1]);
   }
 }
+const blogPaths = indexableBlogSlugs.map((s) => `/blog/${s}`);
 
 const POSTS_PER_PAGE = 12;
-const blogTotalPages = Math.ceil(blogSlugs.length / POSTS_PER_PAGE);
+const blogTotalPosts = blocks.length - 1; // number of blog post entries
+const blogTotalPages = Math.ceil(blogTotalPosts / POSTS_PER_PAGE);
 const blogPaginationPaths = Array.from({ length: blogTotalPages - 1 }, (_, i) => `/blog/page/${i + 2}`);
 
 const topicPagesPath = join(root, 'src', 'data', 'topicPages.tsx');

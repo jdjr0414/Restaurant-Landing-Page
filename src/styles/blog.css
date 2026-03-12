@@ -984,6 +984,50 @@
   color: var(--color-amber);
 }
 
+/* Related Articles section (before CTA block) */
+.related-articles {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-cream-dark);
+}
+
+.related-articles__title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-md);
+}
+
+.related-articles__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.related-articles__item {
+  margin: 0;
+  border-bottom: 1px solid var(--color-cream-dark);
+}
+
+.related-articles__item:last-child {
+  border-bottom: none;
+}
+
+.related-articles__link {
+  display: block;
+  padding: var(--space-sm) 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.related-articles__link:hover {
+  color: var(--color-amber-dark);
+  text-decoration: underline;
+}
+
 .article-cta {
   margin-top: var(--space-xl);
   padding: var(--space-lg);
