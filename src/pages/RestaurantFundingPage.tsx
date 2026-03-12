@@ -31,7 +31,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Why Restaurants Seek Funding</h2>
-            <p>Restaurant owners look for funding to cover payroll, buy inventory, repair or replace equipment, handle seasonal cash flow gaps, or fund expansion. Sometimes the need is urgent—a broken walk-in or a missed payroll—and sometimes it’s planned, like stocking up for the holidays or opening a second location. Understanding your options helps you choose the right type of <Link to="/restaurant-cash-advance">restaurant funding</Link> for your situation. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why these gaps occur. For a full comparison, see <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+            <p>Restaurant owners look for funding to cover payroll, buy inventory, repair or replace equipment, handle seasonal cash flow gaps, or fund expansion. Sometimes the need is urgent—a broken walk-in or a missed payroll—and sometimes it’s planned, like stocking up for the holidays or opening a second location. Understanding your options helps you choose the right type of <Link to="/restaurant-cash-advance">restaurant funding</Link> for your situation. The <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> explains why these gaps occur. For a full comparison, see <Link to="/restaurant-funding-options">restaurant funding options</Link>. Food trucks, bars, or pizzerias? <Link to="/restaurant-funding-by-business-type">Restaurant funding by business type</Link>. Need state-specific info? <Link to="/restaurant-funding-by-state">Restaurant funding by state</Link>. Just opening? <Link to="/restaurant-startup-funding">Restaurant startup funding</Link>. Wondering about amounts? <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link>.</p>
           </section>
 
           <section className="prose-block">
@@ -56,7 +56,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Who Often Qualifies</h2>
-            <p>Providers often work with full-service restaurants, cafés, bars, food trucks, bakeries, pizzerias, quick-service restaurants, fine dining, catering businesses, and franchises. Whether you need funding for payroll, inventory, equipment, or growth, exploring options can help you find what fits your business.</p>
+            <p>Providers often work with full-service restaurants, cafés, bars, food trucks, bakeries, pizzerias, quick-service restaurants, fine dining, catering businesses, and franchises. Whether you need funding for payroll, inventory, equipment, or growth, exploring options can help you find what fits your business. For <Link to="/restaurant-financing-options">restaurant financing options</Link> in detail, or <Link to="/working-capital-for-restaurants">working capital for restaurants</Link> specifically, see those guides.</p>
           </section>
 
           <section className="prose-block">

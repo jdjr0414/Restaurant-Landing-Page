@@ -1176,8 +1176,25 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'When Restaurants Need Working Capital',
         content: (
           <>
-            <p>Seasonal gaps, payroll crunches, inventory builds, and equipment costs are common triggers. <Link to="/restaurant-working-capital">Restaurant working capital guide</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance options</Link> can help you see what might fit.</p>
+            <p>Seasonal gaps, payroll crunches, inventory builds, and equipment costs are common triggers. <Link to="/restaurant-working-capital">Restaurant working capital guide</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance options</Link> can help you see what might fit. For why restaurants run out of cash, see <Link to="/restaurant-cash-flow-problems">restaurant cash flow problems</Link>. Compare <Link to="/restaurant-financing-options">restaurant financing options</Link> or <Link to="/restaurant-funding-by-business-type">funding by business type</Link>.</p>
+            <p>Common uses include <Link to="/blog/restaurant-payroll-gap">payroll gaps</Link> when revenue is slow, <Link to="/blog/restaurant-inventory-financing-guide">inventory financing</Link> before busy seasons, and <Link to="/blog/restaurant-operational-finance-guide">operational finance</Link> for day-to-day cash management. See <Link to="/blog/how-restaurant-owners-use-working-capital">how restaurant owners use working capital</Link> for real-world examples.</p>
             <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'Related Guides: Cash Flow, Labor, and Operations',
+        content: (
+          <>
+            <p>Working capital touches nearly every part of restaurant operations. These guides go deeper on specific needs:</p>
+            <ul>
+              <li><Link to="/blog/restaurant-payroll-stress">Restaurant payroll stress</Link>—When labor costs squeeze margins.</li>
+              <li><Link to="/blog/restaurant-cash-management-guide">Restaurant cash management</Link>—Best practices for managing cash day to day.</li>
+              <li><Link to="/blog/restaurant-budgeting-for-owners">Restaurant budgeting</Link>—Planning for seasonal swings and fixed costs.</li>
+              <li><Link to="/blog/restaurant-gift-card-sales">Restaurant gift card sales</Link>—How gift card timing affects cash flow.</li>
+              <li><Link to="/blog/restaurant-delivery-fleet">Restaurant delivery fleet</Link>—Funding in-house delivery and drivers.</li>
+              <li><Link to="/blog/restaurant-expense-reduction-strategies">Restaurant expense reduction</Link>—When costs need to come down before funding.</li>
+            </ul>
           </>
         ),
       },
@@ -1195,7 +1212,16 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, term loans, and equipment financing each suit different needs. See the <Link to="/restaurant-funding-options">restaurant funding options</Link> pillar for a full comparison.</p>
+            <p>When banks aren&apos;t an option, <Link to="/blog/restaurant-business-loan-alternatives">restaurant business loan alternatives</Link> and <Link to="/blog/restaurant-bridge-loan-alternative">restaurant bridge loan alternative</Link> cover other paths. For how costs work, see <Link to="/blog/restaurant-factor-rate-explained">restaurant factor rate explained</Link>. If you&apos;ve been <Link to="/blog/restaurant-funding-declined">declined for funding</Link>, that guide explains next steps.</p>
             <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'Understanding Terms and Requirements',
+        content: (
+          <>
+            <p>Requirements vary by product. <Link to="/blog/restaurant-repayment-term-length">Restaurant repayment term length</Link> explains how long you have to repay. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> covers typical revenue thresholds. <Link to="/blog/restaurant-credit-line-vs-advance">Restaurant credit line vs advance</Link> compares revolving vs lump-sum products.</p>
           </>
         ),
       },
@@ -1212,7 +1238,8 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Funding Options for Restaurant Startups',
         content: (
           <>
-            <p>Once you have sales, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/funding-for-new-restaurants">funding for new restaurants</Link> may be options. <Link to="/restaurant-equipment-financing-guide">Equipment financing</Link> and build-out financing exist too. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.</p>
+            <p>Once you have sales, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/funding-for-new-restaurants">funding for new restaurants</Link> may be options. <Link to="/restaurant-equipment-financing-guide">Equipment financing</Link> and build-out financing exist too. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison. Food trucks, bars, or franchises? <Link to="/restaurant-funding-by-business-type">Restaurant funding by business type</Link>. <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link> explains typical ranges.</p>
+            <p>Before opening, <Link to="/blog/restaurant-pre-opening-costs">restaurant pre-opening costs</Link> and <Link to="/blog/restaurant-opening-costs-breakdown">restaurant opening costs breakdown</Link> help you plan. For <Link to="/blog/restaurant-soft-opening">soft openings</Link> and <Link to="/blog/restaurant-opening-delayed">construction delays</Link>, those guides cover common early-stage challenges. <Link to="/blog/restaurant-kitchen-remodel">Restaurant kitchen remodel</Link> funding applies when you&apos;re upgrading an existing space.</p>
             <CtaParagraph />
           </>
         ),
@@ -1248,8 +1275,8 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'How Lenders Typically Calculate Amounts',
         content: (
           <>
-            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for more.</p>
-            <p>Requirements (e.g. minimum monthly revenue, time in business) also vary. Not all applicants qualify; funding is not available in all states. Checking with a provider is the way to see what you may qualify for.</p>
+            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for more. For concept-specific guidance, <Link to="/restaurant-funding-by-business-type">restaurant funding by business type</Link>; for location, <Link to="/restaurant-funding-by-state">restaurant funding by state</Link>.</p>
+            <p>Requirements (e.g. minimum monthly revenue, time in business) also vary. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> explains typical thresholds. <Link to="/blog/restaurant-funding-250000">Restaurant funding $250,000</Link> covers larger amounts. <Link to="/blog/restaurant-funding-amounts-by-state">Restaurant funding amounts by state</Link> explains geographic variation. For <Link to="/blog/restaurant-funding-approval-time">restaurant funding approval time</Link>, that guide covers how long the process typically takes. Not all applicants qualify; funding is not available in all states. Checking with a provider is the way to see what you may qualify for.</p>
             <CtaParagraph />
           </>
         ),
@@ -1295,7 +1322,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Restaurant Funding & Working Capital',
         content: (
           <>
-            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital-guide">Restaurant working capital guide</Link>. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. What options exist? <Link to="/restaurant-funding-options">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained.</p>
+            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital-guide">Restaurant working capital guide</Link>. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. <Link to="/working-capital-for-restaurants">Working capital for restaurants</Link> gives a focused overview. What options exist? <Link to="/restaurant-funding-options">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained. <Link to="/restaurant-financing-options">Restaurant financing options</Link> compared. New owners: <Link to="/restaurant-startup-funding">restaurant startup funding</Link>. <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link>?</p>
           </>
         ),
       },
