@@ -79,7 +79,7 @@ export function SitemapPage() {
             <h2>Blog</h2>
             <ul className="sitemap-list">
               <li><Link to="/blog">Blog index</Link></li>
-              {blogPosts.map((post) => (
+              {blogPosts.filter((post) => post.hasCustomContent).map((post) => (
                 <li key={post.slug}>
                   <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                 </li>
