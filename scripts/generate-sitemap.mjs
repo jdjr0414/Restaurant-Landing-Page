@@ -25,6 +25,30 @@ const staticPaths = [
   '/consultation',
 ];
 
+// Pain-point / problem-focused guides (no overlap with pillar/topic: those are product/concept; these are situation/pain)
+const painPointPaths = [
+  '/busy-but-broke-restaurant',
+  '/restaurant-first-year-cash-flow-surprises',
+  '/cant-make-restaurant-payroll',
+  '/behind-on-restaurant-vendor-payments',
+  '/restaurant-equipment-broke-no-money',
+  '/restaurant-labor-schedule-money-drains',
+  '/restaurant-slow-season-cash-flow',
+  '/restaurant-lease-too-expensive',
+  '/maxed-out-credit-cards-restaurant',
+  '/restaurant-delivery-app-fees-killing-profits',
+  '/restaurant-record-sales-no-profit',
+  '/restaurant-discounting-hurting-profits',
+  '/restaurant-bookkeeping-bad-news',
+  '/restaurant-partner-money-problems',
+  '/restaurant-menu-engineering-cash-flow',
+  '/restaurant-manager-quit-now-what',
+  '/restaurant-bar-profitable-restaurant-not',
+  '/restaurant-profitable-on-paper-no-cash',
+  '/restaurant-tax-bill-cant-pay',
+  '/opening-second-restaurant-cash-flow',
+];
+
 // Pillar pages
 const pillarPagesPath = join(root, 'src', 'data', 'pillarPages.tsx');
 const pillarPagesSrc = readFileSync(pillarPagesPath, 'utf8');
@@ -74,6 +98,7 @@ function addUrl(path, lastmodOverride, priority) {
 }
 
 staticPaths.forEach((p) => addUrl(p));
+painPointPaths.forEach((p) => addUrl(p));
 pillarPaths.forEach((p) => addUrl(p));
 blogPaginationPaths.forEach((p) => addUrl(p));
 topicPaths.forEach((p) => addUrl(p));
