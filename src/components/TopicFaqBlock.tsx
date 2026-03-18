@@ -10,7 +10,7 @@ export function TopicFaqBlock({ items }: TopicFaqBlockProps) {
   const [openId, setOpenId] = useState<number | null>(0);
 
   return (
-    <dl className="faq__list">
+    <dl className="faq__list" data-speakable-faq>
       {items.map((item, i) => (
         <div
           key={item.q}
