@@ -15,7 +15,7 @@ export function RestaurantFundingPage() {
   return (
     <>
       <SeoHead
-        title="Restaurant Funding Options When You’re Struggling | Guide"
+        title={meta.title}
         description={meta.description}
         canonicalPath={meta.canonicalPath}
         image={meta.image}

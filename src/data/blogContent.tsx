@@ -700,6 +700,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <p>Health permits, liquor licenses, business licenses, and legal fees vary by location. Budget $5,000–$20,000+ depending on your concept and location. <Link to="/restaurant-funding">Restaurant funding</Link> can help cover these once you have some revenue.</p>
       <h2>Initial Inventory and Operating Expenses</h2>
       <p>First month&apos;s inventory, payroll before opening, marketing, and operating expenses. Many owners underestimate how much cash they need to carry them through the first month. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> may be available once you have card sales or revenue to show.</p>
+      <p>Before selecting a product, compare <Link to="/restaurant-funding-options">restaurant funding options</Link> and review <Link to="/blog/restaurant-cash-management-guide">restaurant cash management</Link> so opening-week spending and payroll do not collide unexpectedly.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>How much does it cost to open a restaurant?</h3>
       <p>Costs vary widely—from tens of thousands for a small concept to hundreds of thousands for full build-out. Build-out, equipment, permits, and initial inventory are the main categories.</p>
@@ -2081,7 +2082,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h2>Core Elements</h2>
       <p>Revenue forecasting, cost tracking (food, labor, fixed), and cash flow planning. See <Link to="/blog/restaurant-cash-flow-forecasting">restaurant cash flow forecasting</Link>, <Link to="/blog/restaurant-budgeting-for-owners">restaurant budgeting</Link>, <Link to="/blog/restaurant-investment-planning-guide">restaurant investment planning</Link>, <Link to="/blog/restaurant-financial-health-guide">restaurant financial health</Link>, <Link to="/blog/restaurant-financial-risk-management">restaurant financial risk management</Link>, and <Link to="/blog/restaurant-business-capital-planning">restaurant business capital planning</Link>. Build reserves during busy periods. Know your <Link to="/restaurant-funding">restaurant funding options</Link> before you need them.</p>
       <h2>When Funding Fits</h2>
-      <p>When you face a temporary gap—payroll due before revenue, equipment emergency, or seasonal slump—<Link to="/restaurant-cash-advance">restaurant cash advance</Link> or working capital can help. See <Link to="/blog/restaurant-cash-flow-management-guide">restaurant cash flow management</Link>.</p>
+      <p>When you face a temporary gap—payroll due before revenue, equipment emergency, or seasonal slump—<Link to="/restaurant-cash-advance">restaurant cash advance</Link> or working capital can help. See <Link to="/blog/restaurant-cash-flow-management-guide">restaurant cash flow management</Link>, <Link to="/blog/restaurant-payroll-management-guide">how restaurants run payroll</Link>, and <Link to="/blog/restaurant-cash-management-guide">restaurant cash management</Link>.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What is restaurant financial planning?</h3>
       <p>Forecasting revenue, tracking costs, and planning for cash flow and capital needs. Reserves and funding options are part of the plan.</p>
@@ -2115,7 +2116,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h2>What to Budget</h2>
       <p>Food cost, labor, rent, utilities, and variable expenses. Track actuals vs budget weekly. See <Link to="/blog/restaurant-cost-management-guide">restaurant cost management</Link> and <Link to="/blog/restaurant-profit-margin-guide">restaurant profit margin guide</Link>. Seasonal swings matter—build reserves during busy periods.</p>
       <h2>When Budgets Fall Short</h2>
-      <p>Unexpected expenses, slow weeks, or seasonal dips can blow the budget. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> or <Link to="/restaurant-working-capital">restaurant working capital</Link> can bridge gaps. See <Link to="/blog/restaurant-cash-flow-problems-and-solutions">restaurant cash flow problems</Link>.</p>
+      <p>Unexpected expenses, slow weeks, or seasonal dips can blow the budget. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> or <Link to="/restaurant-working-capital">restaurant working capital</Link> can bridge gaps. See <Link to="/blog/restaurant-cash-flow-problems-and-solutions">restaurant cash flow problems</Link> and <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>How do I create a restaurant budget?</h3>
       <p>Start with fixed costs (rent, payroll baseline), then variable (food, labor hours). Track actuals and adjust. Plan for seasonal swings.</p>
@@ -4305,7 +4306,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
       <h3>Real Example: The ServSafe Push</h3>
       <p>A restaurant needed all kitchen staff certified. Cost: $2,500 for training and exams. They used <Link to="/restaurant-working-capital">restaurant working capital</Link> to fund it. Compliance improved; the investment paid off in reduced risk.</p>
       <h2>Funding Training</h2>
-      <p><Link to="/restaurant-funding">Restaurant funding</Link> is often flexible-use. You can use it for training and development. Many providers fund in 24–48 hours. Compare the cost of training to the cost of turnover.</p>
+      <p><Link to="/restaurant-funding">Restaurant funding</Link> is often flexible-use. You can use it for training and development. Many providers fund in 24–48 hours. Compare the cost of training to the cost of turnover, then review <Link to="/blog/restaurant-payroll-management-guide">payroll management</Link> and <Link to="/blog/restaurant-franchise-fees">restaurant franchise funding fees</Link> if labor or royalty dates are overlapping with training spend.</p>
       <h2>Bottom Line</h2>
       <p>Training requires investment. <Link to="/restaurant-funding">Restaurant funding</Link> can fund it. Many providers fund in 24–48 hours.</p>
       <h2>Frequently Asked Questions</h2>

@@ -115,6 +115,10 @@
   .page-content {
     padding: 0 var(--space-sm);
   }
+
+  .page-lead {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -133,12 +137,18 @@
   font-weight: 400;
   color: var(--color-ink);
   margin: 0 0 var(--space-md);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .page-lead {
   font-size: 1.125rem;
   color: var(--color-ink-muted);
   margin: 0 0 var(--space-xl);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .page-lead a,
@@ -750,6 +760,9 @@
   font-weight: 400;
   color: var(--color-ink);
   margin: 0 0 var(--space-md);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .prose-block p {
@@ -918,6 +931,8 @@
   color: var(--color-ink);
   margin: 0 0 var(--space-sm);
   line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .article__meta {
@@ -953,6 +968,9 @@
   font-weight: 400;
   color: var(--color-ink);
   margin: var(--space-xl) 0 var(--space-md);
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .article__body.prose h3 {
@@ -960,6 +978,9 @@
   font-weight: 600;
   color: var(--color-ink);
   margin: var(--space-lg) 0 var(--space-sm);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .article__body.prose ul {
@@ -982,6 +1003,23 @@
 
 .article__body.prose a:hover {
   color: var(--color-amber);
+}
+
+/* Generic table safety for long content pages on mobile */
+.page-content table,
+.article__body.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-content th,
+.page-content td,
+.article__body.prose th,
+.article__body.prose td {
+  white-space: nowrap;
 }
 
 /* Related Articles section (before CTA block) */
