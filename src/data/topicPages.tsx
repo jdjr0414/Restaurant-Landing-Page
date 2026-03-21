@@ -3037,8 +3037,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
 {
     path: '/restaurant-emergency-financing-options',
-    title: 'Restaurant Emergency Financing Options | The Restaurant Owners Guide',
-    description: 'Guide for restaurant owners and operators about “restaurant emergency financing options”. Explains what the term usually means, why cash flow timing matters, common problems, and the funding options that may help. Includes practical next steps and FAQs (AEO + GEO-friendly).',
+    title: 'Restaurant Emergency Financing: Same-Day & 24-Hour Funding Options',
+    description:
+      'Restaurant emergency? Vendor bill due, payroll coming, equipment broke. Here are the fastest financing options available to restaurant owners — some fund in 24–48 hours.',
     h1: 'Restaurant Emergency Financing Options',
     lead: 'This guide explains “restaurant emergency financing options” for restaurant owners: what it usually means, why restaurant cash flow timing matters, and how to decide on next steps using practical comparisons and FAQ.',
     datePublished: '2026-03-19',

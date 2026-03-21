@@ -155,6 +155,23 @@ export function BlogIndexPage() {
             </div>
           </aside>
         </div>
+        <section
+          style={{
+            background: '#1a1a1a',
+            color: '#fff',
+            padding: '2rem',
+            textAlign: 'center',
+            marginTop: '2rem',
+          }}
+        >
+          <h2 style={{ marginBottom: '0.5rem' }}>Need help right now?</h2>
+          <p style={{ marginBottom: '1rem', opacity: 0.9 }}>
+            Talk to someone about your restaurant cash flow situation — free, no obligation.
+          </p>
+          <Link to="/consultation" className="btn btn-primary">
+            Get a Free Consultation
+          </Link>
+        </section>
       </main>
     </>
   );

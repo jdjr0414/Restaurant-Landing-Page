@@ -5,7 +5,7 @@ import '../styles/landing.css';
 import '../styles/layout.css';
 import { Footer } from './Footer';
 import { GeoMeta } from './GeoMeta';
-import { SITE_NAME } from '../config';
+import { SITE_NAME, PHONE_NUMBER, PHONE_HREF } from '../config';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
@@ -38,8 +38,16 @@ export function SiteLayout() {
                   </Link>
                 </li>
               ))}
+              <li className="site-header__phone-mobile">
+                <a href={PHONE_HREF} className="site-header__phone site-header__link" onClick={() => setMobileNavOpen(false)}>
+                  📞 {PHONE_NUMBER}
+                </a>
+              </li>
             </ul>
           </nav>
+          <a href={PHONE_HREF} className="site-header__phone site-header__phone--desktop">
+            📞 {PHONE_NUMBER}
+          </a>
           <button
             type="button"
             className="site-header__menu-btn"

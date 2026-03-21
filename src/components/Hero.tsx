@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
@@ -13,17 +14,19 @@ export function Hero() {
         <div className="hero__bg-overlay" />
       </div>
       <div className="hero__inner">
-        <h1 className="hero__title">Restaurant Cash Flow Problems? Get Clear on Your Options</h1>
+        <h1 className="hero__title">
+          Restaurant Cash Flow Emergency? We Help Restaurant Owners Find Funding — Fast.
+        </h1>
         <p className="hero__subtitle">
-          Struggling with payroll gaps, seasonal slumps, equipment breakdowns, or bills that don’t line up with revenue? You’re not alone. This guide helps you understand what’s going on and what options exist—so you can decide your next step.
+          Payroll due Friday. Walk-in broke last night. Vendors calling. Whatever the crisis — restaurant owners use this guide to understand their options and take action. Some see funding in 24–48 hours.
         </p>
         <div className="hero__actions">
           <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">
             Explore Restaurant Funding Options
           </a>
-          <a href="#why-restaurants-struggle" className="btn btn-secondary">
-            Learn what others face
-          </a>
+          <Link to="/consultation" className="btn btn-secondary">
+            Talk to Someone — Free Call
+          </Link>
         </div>
         <ul className="hero__trust-strip" aria-label="What this guide covers">
           <li>Cash flow and timing gaps</li>

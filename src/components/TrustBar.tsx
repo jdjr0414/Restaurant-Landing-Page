@@ -2,10 +2,10 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 
 const ITEMS = [
-  'Cash flow & timing gaps',
-  'Payroll & seasonal crunches',
-  'Equipment & emergency costs',
-  'Understanding your options',
+  'Payroll due Friday with no cash',
+  'Equipment broke overnight',
+  'Vendors demanding payment',
+  'Seasonal slump killing margins',
 ];
 
 export function TrustBar() {

@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { ScrollToTop } from './components/ScrollToTop';
 import { SiteLayout } from './components/SiteLayout';
 import { RestaurantCashAdvancePage } from './pages/RestaurantCashAdvancePage';
@@ -79,6 +79,7 @@ function App() {
         <Route path="/sitemap" element={<SitemapPage />} />
         <Route path="/blog" element={<BlogIndexPage />} />
         <Route path="/blog/page/:page" element={<BlogIndexPage />} />
+        <Route path="/blog/page" element={<Navigate to="/blog" replace />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

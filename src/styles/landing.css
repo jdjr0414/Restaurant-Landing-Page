@@ -962,9 +962,14 @@
     width: 100%;
   }
 
-  .cta .btn {
+  .cta .btn,
+  .cta__actions .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .cta__actions {
+    max-width: 100%;
   }
 }
 
@@ -1301,4 +1306,145 @@
 
 .consultation-section__links a:hover {
   text-decoration: underline;
+}
+
+.consultation-section--with-form {
+  max-width: 640px;
+}
+
+.consultation-section__alt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  margin: 0 0 var(--space-lg);
+  text-align: center;
+}
+
+.consultation-section__alt-link {
+  font-weight: 600;
+}
+
+.consultation-section__disclaimer {
+  margin: var(--space-xl) 0 var(--space-lg);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+  text-align: center;
+}
+
+/* Lead capture form (Formspree) */
+.lead-form {
+  text-align: left;
+  max-width: 520px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.lead-form--success {
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--color-cream-dark);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(26, 26, 28, 0.08);
+}
+
+.lead-form__success-text {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.lead-form__row--2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+@media (max-width: 480px) {
+  .lead-form__row--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lead-form__field {
+  margin-bottom: var(--space-md);
+}
+
+.lead-form__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: var(--space-xs);
+}
+
+.lead-form__input,
+.lead-form__select,
+.lead-form__textarea {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.4;
+  color: var(--color-ink);
+  background: var(--color-white);
+  border: 1px solid var(--color-cream-dark);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+}
+
+.lead-form__input:focus,
+.lead-form__select:focus,
+.lead-form__textarea:focus {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+  border-color: var(--color-amber);
+}
+
+.lead-form__textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.lead-form__error {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.9375rem;
+  color: #b42318;
+}
+
+.lead-form__submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.lead-form__disclaimer {
+  margin: var(--space-md) 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+  text-align: center;
+}
+
+/* CTA: stacked actions + secondary on gradient */
+.cta__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.cta .btn-secondary.cta__btn {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: none;
+}
+
+.cta .btn-secondary.cta__btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
 }

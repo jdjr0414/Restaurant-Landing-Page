@@ -8,6 +8,10 @@ export const FIND_MATCH_URL = 'https://axiantpartners.com/match';
 /** rel attribute for all external Axiant links (sponsored disclosure, new tab). */
 export const AXIANT_LINK_REL = 'sponsored noopener noreferrer';
 
+/** Site-wide click-to-call phone (display + tel: link). */
+export const PHONE_NUMBER = '(919) 907-2611';
+export const PHONE_HREF = 'tel:+19199072611';
+
 /**
  * Free consultation booking (Outlook Bookings). Includes UTM params for attribution.
  */

@@ -43,9 +43,14 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Restaurant working capital for payroll, inventory, and operations. When revenue doesn't line up with bills—what it is, how it works, and what options exist.",
   },
   '/restaurant-funding': {
-    title: 'Restaurant Funding Options | Fast Restaurant Financing, Working Capital & Cash Advance',
+    title: 'Restaurant Funding Options | Working Capital for Restaurant Owners',
     description:
-      'Compare restaurant funding options for payroll, inventory, and emergencies: cash advance, working capital, and loans. Learn funding speed, costs, and qualification.',
+      'Restaurant funding options for working capital, equipment, payroll gaps, and emergencies. See what restaurant owners qualify for and how fast funding can arrive.',
+  },
+  '/restaurant-emergency-financing-options': {
+    title: 'Restaurant Emergency Financing: Same-Day & 24-Hour Funding Options',
+    description:
+      'Restaurant emergency? Vendor bill due, payroll coming, equipment broke. Here are the fastest financing options available to restaurant owners — some fund in 24–48 hours.',
   },
   '/business-cash-advance': {
     title: 'Business Cash Advance: What It Is, How It Works | The Restaurant Owners Guide',
