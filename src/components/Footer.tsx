@@ -2,7 +2,20 @@ import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import { SITE_NAME } from '../config';
-import { topicPagesConfig } from '../data/topicPages';
+
+/** Static subset of topic links so Footer does not import the full topicPages module on every page. */
+const FOOTER_TOPIC_LINKS = [
+  { to: '/restaurant-payroll-funding', label: 'Payroll funding' },
+  { to: '/restaurant-emergency-funding', label: 'Emergency funding' },
+  { to: '/restaurant-cash-advance-vs-loan', label: 'Cash advance vs loan' },
+  { to: '/restaurant-cash-flow-guide', label: 'Cash flow guide' },
+  { to: '/restaurant-funding-options', label: 'Funding options' },
+  { to: '/working-capital-for-restaurants', label: 'Working capital' },
+  { to: '/restaurant-seasonal-cash-flow', label: 'Seasonal cash flow' },
+  { to: '/food-truck-funding', label: 'Food truck funding' },
+  { to: '/faq', label: 'FAQ' },
+  { to: '/restaurant-financing-options', label: 'Financing options' },
+];
 
 const MAIN_LINKS = [
   { label: 'Home', href: '/' },
@@ -34,9 +47,9 @@ export function Footer() {
         <div className="footer__topics">
           <span className="footer__topics-label">More topics:</span>
           <div className="footer__topics-list">
-            {topicPagesConfig.map((page) => (
-              <Link key={page.path} to={page.path} className="footer__link footer__link--small">
-                {page.h1.split(':')[0].trim()}
+            {FOOTER_TOPIC_LINKS.map(({ to, label }) => (
+              <Link key={to} to={to} className="footer__link footer__link--small">
+                {label}
               </Link>
             ))}
           </div>

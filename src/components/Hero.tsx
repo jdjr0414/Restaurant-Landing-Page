@@ -18,7 +18,8 @@ export function Hero() {
           Restaurant Cash Flow Emergency? We Help Restaurant Owners Find Funding — Fast.
         </h1>
         <p className="hero__subtitle">
-          Payroll due Friday. Walk-in broke last night. Vendors calling. Whatever the crisis — restaurant owners use this guide to understand their options and take action. Some see funding in 24–48 hours.
+          Payroll due Friday. Walk-in broke last night. Vendors calling. Whatever the crisis — restaurant owners use this guide to understand their options and take action.{' '}
+          Some see funding in 24–48 hours.
         </p>
         <div className="hero__actions">
           <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary">

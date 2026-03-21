@@ -38,16 +38,13 @@ export function SiteLayout() {
                   </Link>
                 </li>
               ))}
-              <li className="site-header__phone-mobile">
-                <a href={PHONE_HREF} className="site-header__phone site-header__link" onClick={() => setMobileNavOpen(false)}>
+              <li className="site-header__phone-item">
+                <a href={PHONE_HREF} className="site-header__phone" onClick={() => setMobileNavOpen(false)}>
                   📞 {PHONE_NUMBER}
                 </a>
               </li>
             </ul>
           </nav>
-          <a href={PHONE_HREF} className="site-header__phone site-header__phone--desktop">
-            📞 {PHONE_NUMBER}
-          </a>
           <button
             type="button"
             className="site-header__menu-btn"

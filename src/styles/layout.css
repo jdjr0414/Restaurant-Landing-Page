@@ -114,18 +114,25 @@
   text-decoration: underline;
 }
 
-.site-header__phone-mobile {
+/* Phone as last nav item: visible in horizontal nav on desktop, in mobile drawer on small screens */
+.site-header__phone-item {
   display: none;
-}
-
-.site-header__phone--desktop {
-  display: none;
+  list-style: none;
 }
 
 @media (min-width: 1025px) {
-  .site-header__phone--desktop {
-    display: inline-flex;
-    align-items: center;
+  .site-header__phone-item {
+    display: list-item;
+  }
+
+  .site-header__phone-item .site-header__phone {
+    padding: var(--space-sm) var(--space-md);
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-header__phone-item {
+    display: block;
   }
 }
 
@@ -187,12 +194,7 @@
     display: flex;
   }
 
-  .site-header__phone-mobile {
-    display: block;
-    list-style: none;
-  }
-
-  .site-header__phone-mobile .site-header__phone {
+  .site-header__phone-item .site-header__phone {
     display: flex;
     align-items: center;
     min-height: 44px;
