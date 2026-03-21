@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL, PHONE_NUMBER, PHONE_HREF } from '../config';
 
 const CTA_IMAGE = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=95';
 
@@ -31,8 +31,16 @@ export function CTA() {
         </div>
       </section>
       <div className="cta-sticky" aria-hidden>
-        <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL} className="btn btn-primary cta-sticky__btn">
-          See What Restaurant Funding Options May Be Available
+        <a href={PHONE_HREF} className="cta-sticky__phone">
+          📞 {PHONE_NUMBER}
+        </a>
+        <a
+          href={FIND_MATCH_URL}
+          target="_blank"
+          rel={AXIANT_LINK_REL}
+          className="btn btn-primary cta-sticky__btn"
+        >
+          See Funding Options
         </a>
       </div>
     </>

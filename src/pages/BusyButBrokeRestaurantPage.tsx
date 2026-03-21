@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -85,6 +86,8 @@ export function BusyButBrokeRestaurantPage() {
               dollar goes so that a busy dining room translates into real money for payroll, inventory, and equipment.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>Why the Bank Account Is Always Behind the Dining Room</h2>

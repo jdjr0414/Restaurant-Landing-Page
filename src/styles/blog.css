@@ -1093,9 +1093,47 @@
   margin-bottom: 0;
 }
 
+.article__cta-heading {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
 .article__cta-lead {
   margin: 0 0 var(--space-md);
+  font-weight: 500;
+  color: var(--color-ink-muted);
+  line-height: 1.55;
+}
+
+.article__cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.article__cta-actions .btn {
+  flex: 1 1 auto;
+  min-width: min(100%, 220px);
+  justify-content: center;
+}
+
+.article__cta-phone {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+}
+
+.article__cta-phone-link {
+  color: var(--color-amber-dark);
   font-weight: 600;
+  text-decoration: underline;
+}
+
+.article__cta-phone-link:hover {
   color: var(--color-ink);
 }
 

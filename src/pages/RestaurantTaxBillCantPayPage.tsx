@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -50,6 +51,8 @@ export function RestaurantTaxBillCantPayPage() {
               State and local tax agencies often allow payment plans if you ask before the account goes to collections. Contact them, explain the situation, and propose a schedule you can keep. Penalties and interest will still apply, but getting on a plan is usually better than ignoring the bill. If you need to free up cash to make the first payment or get on a plan, <Link to="/restaurant-working-capital">restaurant working capital</Link> or a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> may help—see <Link to="/restaurant-funding-options">restaurant funding options</Link>.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>Payroll Tax: Take This One Seriously</h2>

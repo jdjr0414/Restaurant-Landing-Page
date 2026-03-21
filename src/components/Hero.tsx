@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../styles/globals.css';
 import '../styles/landing.css';
-import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL, PHONE_NUMBER, PHONE_HREF } from '../config';
 import { TrustBadge } from './TrustBadge';
 
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95';
@@ -29,6 +29,13 @@ export function Hero() {
             Talk to Someone — Free Call
           </Link>
         </div>
+        <p className="hero__phone">
+          Or call now:{' '}
+          <a href={PHONE_HREF} className="hero__phone-link">
+            {PHONE_NUMBER}
+          </a>
+          {' '}— we answer
+        </p>
         <ul className="hero__trust-strip" aria-label="What this guide covers">
           <li>Cash flow and timing gaps</li>
           <li>Payroll and seasonal crunches</li>

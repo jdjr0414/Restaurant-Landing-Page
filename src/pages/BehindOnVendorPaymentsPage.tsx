@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -50,9 +51,11 @@ export function BehindOnVendorPaymentsPage() {
               Not all past-due bills are equal. List every vendor you owe, the amount, how late you are, and whether they are critical to daily operations. Meat, produce, and dairy suppliers that deliver multiple times a week are often non-negotiable: if they cut you off, you cannot open. Specialty or secondary suppliers may allow more flexibility.
             </p>
             <p>
-              Also separate true vendor debt from other obligations. Payroll and payroll taxes, rent, and utilities have different consequences if missed. Knowing the full picture helps you decide how much you need to free up and whether <Link to="/restaurant-funding-options">restaurant funding options</Link> are part of the solution.
+              Also separate true vendor debt from other obligations. Payroll and payroll taxes, rent, and utilities have different consequences if missed.               Knowing the full picture helps you decide how much you need to free up and whether <Link to="/restaurant-funding-options">restaurant funding options</Link> are part of the solution.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>How to Talk to Vendors When You Are Behind</h2>

@@ -7,7 +7,7 @@ import { HowToSchema } from '../components/HowToSchema';
 import { getBlogPost } from '../data/blogPosts';
 import { getBlogContent } from '../data/blogContent';
 import { RelatedArticles } from '../components/RelatedArticles';
-import { FIND_MATCH_URL, AXIANT_LINK_REL, SITE_NAME } from '../config';
+import { FIND_MATCH_URL, AXIANT_LINK_REL, SITE_NAME, PHONE_NUMBER, PHONE_HREF } from '../config';
 import '../styles/globals.css';
 import '../styles/landing.css';
 import '../styles/layout.css';
@@ -109,12 +109,31 @@ export function BlogPostPage() {
             </div>
             <footer className="article__footer">
               <div className="article__cta-block">
-                <p className="article__cta-lead">Before exploring external options, read our guides to understand what might fit your situation.</p>
-                <p className="article__cta-sub">
-                  <Link to="/restaurant-cash-flow-guide">Restaurant cash flow guide</Link>, <Link to="/restaurant-funding-options">restaurant funding options</Link>, <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, and <Link to="/restaurant-working-capital">restaurant working capital</Link> — compare speed, cost, and repayment.
+                <h3 className="article__cta-heading">
+                  Ready to explore your options?
+                </h3>
+                <p className="article__cta-lead">
+                  Restaurant owners dealing with payroll gaps, equipment emergencies, or cash flow problems use these
+                  guides to understand their options — then take action.
                 </p>
-                <p className="article__cta-external">
-                  When you&apos;re ready to see what may match your situation: <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>See What Restaurant Funding Options May Be Available</a>.
+                <div className="article__cta-actions">
+                  <a
+                    href={FIND_MATCH_URL}
+                    target="_blank"
+                    rel={AXIANT_LINK_REL}
+                    className="btn btn-primary"
+                  >
+                    See What Funding Options Are Available
+                  </a>
+                  <Link to="/consultation" className="btn btn-secondary">
+                    Talk to Someone — Free Call
+                  </Link>
+                </div>
+                <p className="article__cta-phone">
+                  Or call directly:{' '}
+                  <a href={PHONE_HREF} className="article__cta-phone-link">
+                    {PHONE_NUMBER}
+                  </a>
                 </p>
               </div>
             </footer>

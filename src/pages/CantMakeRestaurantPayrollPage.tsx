@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -66,6 +67,8 @@ export function CantMakeRestaurantPayrollPage() {
               obligations are much harder to “catch up” without damage.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>Talk to Your Team the Right Way</h2>

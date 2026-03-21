@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -53,6 +54,8 @@ export function RestaurantEquipmentBrokePage() {
               For critical equipment (refrigeration, cooking), the question is often “how fast can I get back online?” A repair might get you through the week; a replacement might take longer but solve the problem for years. Your <Link to="/restaurant-cash-flow-guide">cash flow</Link> and how much you can access in <Link to="/restaurant-working-capital">working capital</Link> will shape what you can do.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>When You Have No Reserve: Funding the Fix</h2>

@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
 import { PageHero } from '../components/PageHero';
+import MidPageCTA from '../components/MidPageCTA';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
@@ -50,6 +51,8 @@ export function RestaurantSlowSeasonPage() {
               Even a simple forecast helps. List your fixed costs (rent, insurance, debt service) and estimate labor and food for the next three months based on last year or a conservative sales estimate. Compare that to expected revenue. If you see a shortfall, you have time to reduce hours, negotiate with vendors, or line up <Link to="/restaurant-working-capital">working capital</Link> before you are in crisis. Many owners only look when the account is already empty—by then options are fewer.
             </p>
           </section>
+
+          <MidPageCTA />
 
           <section className="prose-block">
             <h2>What to Cut—and What to Protect</h2>
