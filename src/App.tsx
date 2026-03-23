@@ -87,6 +87,37 @@ const BusinessCashAdvancePage = lazy(() =>
 const SmallBusinessFundingPage = lazy(() =>
   import('./pages/SmallBusinessFundingPage').then((m) => ({ default: m.SmallBusinessFundingPage }))
 );
+const MerchantCashAdvanceForRestaurantsPage = lazy(() =>
+  import('./pages/MerchantCashAdvanceForRestaurantsPage').then((m) => ({
+    default: m.MerchantCashAdvanceForRestaurantsPage,
+  }))
+);
+const RestaurantMcaVsLineOfCreditPage = lazy(() =>
+  import('./pages/RestaurantMcaVsLineOfCreditPage').then((m) => ({
+    default: m.RestaurantMcaVsLineOfCreditPage,
+  }))
+);
+const SameDayRestaurantFundingPage = lazy(() =>
+  import('./pages/SameDayRestaurantFundingPage').then((m) => ({ default: m.SameDayRestaurantFundingPage }))
+);
+const BadCreditRestaurantFundingPage = lazy(() =>
+  import('./pages/BadCreditRestaurantFundingPage').then((m) => ({ default: m.BadCreditRestaurantFundingPage }))
+);
+const RestaurantInventoryFinancingFastPage = lazy(() =>
+  import('./pages/RestaurantInventoryFinancingFastPage').then((m) => ({
+    default: m.RestaurantInventoryFinancingFastPage,
+  }))
+);
+const RestaurantPayrollFundingOptionsPage = lazy(() =>
+  import('./pages/RestaurantPayrollFundingOptionsPage').then((m) => ({
+    default: m.RestaurantPayrollFundingOptionsPage,
+  }))
+);
+const WarImpactRestaurantFinancingPage = lazy(() =>
+  import('./pages/WarImpactRestaurantFinancingPage').then((m) => ({
+    default: m.WarImpactRestaurantFinancingPage,
+  }))
+);
 const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage').then((m) => ({ default: m.BlogIndexPage })));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage').then((m) => ({ default: m.BlogPostPage })));
 const HomePage = lazy(() => import('./pages/HomePage').then((m) => ({ default: m.HomePage })));
@@ -131,6 +162,13 @@ function App() {
             <Route path="/opening-second-restaurant-cash-flow" element={<OpeningSecondRestaurantPage />} />
             <Route path="/business-cash-advance" element={<BusinessCashAdvancePage />} />
             <Route path="/small-business-funding" element={<SmallBusinessFundingPage />} />
+            <Route path="/merchant-cash-advance-for-restaurants" element={<MerchantCashAdvanceForRestaurantsPage />} />
+            <Route path="/restaurant-mca-vs-line-of-credit" element={<RestaurantMcaVsLineOfCreditPage />} />
+            <Route path="/same-day-restaurant-funding" element={<SameDayRestaurantFundingPage />} />
+            <Route path="/bad-credit-restaurant-funding" element={<BadCreditRestaurantFundingPage />} />
+            <Route path="/restaurant-inventory-financing-fast" element={<RestaurantInventoryFinancingFastPage />} />
+            <Route path="/restaurant-payroll-funding-options" element={<RestaurantPayrollFundingOptionsPage />} />
+            <Route path="/war-impact-restaurant-financing" element={<WarImpactRestaurantFinancingPage />} />
             {PILLAR_ROUTE_PATHS.map((path) => (
               <Route key={path} path={path} element={<PillarPage />} />
             ))}

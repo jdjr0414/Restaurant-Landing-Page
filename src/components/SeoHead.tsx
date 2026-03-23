@@ -14,6 +14,11 @@ interface SeoHeadProps {
   imageAlt?: string;
   /** OG type: 'website' (default) or 'article' for blog posts. */
   ogType?: 'website' | 'article';
+  /** Optional keywords for long-tail topical relevance. */
+  keywords?: string;
+  /** Optional geographic signals for local/geo intent pages. */
+  geoRegion?: string;
+  geoPlacename?: string;
 }
 
 function setMeta(name: string, content: string, attr: 'name' | 'property' = 'name') {
@@ -28,7 +33,18 @@ function setMeta(name: string, content: string, attr: 'name' | 'property' = 'nam
 
 const DEFAULT_OG_IMAGE_ALT = 'Restaurant dining and kitchen imagery from The Restaurant Owners Guide';
 
-export function SeoHead({ title, description, canonicalPath, noindex, image, imageAlt, ogType = 'website' }: SeoHeadProps) {
+export function SeoHead({
+  title,
+  description,
+  canonicalPath,
+  noindex,
+  image,
+  imageAlt,
+  ogType = 'website',
+  keywords,
+  geoRegion,
+  geoPlacename,
+}: SeoHeadProps) {
   useEffect(() => {
     document.title = title;
     const canonical = `${SITE_URL}${canonicalPath}`;
@@ -55,6 +71,24 @@ export function SeoHead({ title, description, canonicalPath, noindex, image, ima
     setMeta('twitter:title', title, 'name');
     setMeta('twitter:description', description, 'name');
     setMeta('twitter:image', image ?? DEFAULT_OG_IMAGE, 'name');
+    if (keywords) {
+      setMeta('keywords', keywords, 'name');
+    } else {
+      const keywordsTag = document.querySelector('meta[name="keywords"]');
+      if (keywordsTag) keywordsTag.remove();
+    }
+    if (geoRegion) {
+      setMeta('geo.region', geoRegion, 'name');
+    } else {
+      const geoRegionTag = document.querySelector('meta[name="geo.region"]');
+      if (geoRegionTag) geoRegionTag.remove();
+    }
+    if (geoPlacename) {
+      setMeta('geo.placename', geoPlacename, 'name');
+    } else {
+      const geoPlacenameTag = document.querySelector('meta[name="geo.placename"]');
+      if (geoPlacenameTag) geoPlacenameTag.remove();
+    }
 
     if (noindex) {
       setMeta('robots', 'noindex, nofollow');
@@ -64,7 +98,7 @@ export function SeoHead({ title, description, canonicalPath, noindex, image, ima
     }
 
     return () => {};
-  }, [title, description, canonicalPath, noindex, image, imageAlt, ogType]);
+  }, [title, description, canonicalPath, noindex, image, imageAlt, ogType, keywords, geoRegion, geoPlacename]);
 
   return null;
 }

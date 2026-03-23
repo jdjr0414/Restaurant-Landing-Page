@@ -12,6 +12,7 @@ import { FAQ } from '../components/FAQ';
 import { CTA } from '../components/CTA';
 import { SeoHead } from '../components/SeoHead';
 import { FaqSchema } from '../components/FaqSchema';
+import { LeadCaptureForm } from '../components/LeadCaptureForm';
 import { getMeta } from '../staticMeta';
 
 const CANONICAL_PATH = '/restaurant-cash-advance';
@@ -33,6 +34,14 @@ export function RestaurantCashAdvancePage() {
         <WhyRestaurantsUse />
         <UseCases />
         <HowItWorks />
+        <section className="landing-section quick-lead-section">
+          <h2 className="section-title">Need Help Now? Get a Call Back Before You Scroll Further</h2>
+          <p className="section-subtitle">
+            If you are actively comparing options, submit this short form and we will call you within 1 business day,
+            often same day.
+          </p>
+          <LeadCaptureForm source="restaurant-cash-advance-inline" submitLabel="Get Free Help Now" />
+        </section>
         <WhenToExploreOptions />
         <Qualifications />
         <Comparison />

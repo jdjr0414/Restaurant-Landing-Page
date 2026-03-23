@@ -62,6 +62,41 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Struggling to cover payroll, inventory, or bills? Understand small business funding options and when they might help with cash flow gaps.",
   },
+  '/merchant-cash-advance-for-restaurants': {
+    title: 'Merchant Cash Advance for Restaurants | Fast MCA Guide, Requirements, and Use Cases',
+    description:
+      'Merchant cash advance for restaurants explained: how MCA works, who qualifies, funding timeline, repayment from sales, and when MCA can help payroll, inventory, and urgent cash flow gaps.',
+  },
+  '/restaurant-mca-vs-line-of-credit': {
+    title: 'Restaurant MCA vs Line of Credit | Which Funding Option Fits Your Cash Flow Timing?',
+    description:
+      'In-depth comparison of restaurant MCA vs line of credit: speed, qualification, repayment flexibility, costs, and practical scenarios so owners can choose the best fit for urgent and planned needs.',
+  },
+  '/same-day-restaurant-funding': {
+    title: 'Same-Day Restaurant Funding | Fast Options for Payroll, Vendors, and Emergencies',
+    description:
+      'Need same-day restaurant funding? Learn the fastest options, what lenders look at, and how to prepare your application for quick decisions and 24-48 hour funding outcomes.',
+  },
+  '/bad-credit-restaurant-funding': {
+    title: 'Bad Credit Restaurant Funding | Options Beyond Traditional Bank Loans',
+    description:
+      'Bad credit restaurant funding options: what is realistic, how revenue-based approvals work, and steps to improve your chance of qualifying when bank financing is out of reach.',
+  },
+  '/restaurant-inventory-financing-fast': {
+    title: 'Restaurant Inventory Financing Fast | Cover Food, Beverage, and Supply Purchases',
+    description:
+      'Restaurant inventory financing for urgent stock purchases before weekends, events, and seasonal demand. Compare fast funding options and build safer repayment plans tied to sales.',
+  },
+  '/restaurant-payroll-funding-options': {
+    title: 'Restaurant Payroll Funding Options | Prevent Missed Payroll and Staff Turnover',
+    description:
+      'Restaurant payroll funding options to bridge short-term gaps. Compare MCA, working capital, and credit alternatives to protect payroll, retain staff, and stabilize operations.',
+  },
+  '/war-impact-restaurant-financing': {
+    title: 'War Impact Restaurant Financing | Managing Supply, Cost Spikes, and Cash Flow Shocks',
+    description:
+      'War-related disruptions can hit restaurant margins through food costs, fuel, imports, and labor pressure. Learn practical financing strategies, including MCA and line of credit options.',
+  },
   '/blog': {
     title: "Restaurant Cash Flow & Funding Guides | The Restaurant Owners Guide",
     description:
@@ -233,6 +268,13 @@ export function getAllPaths(): string[] {
     '/restaurant-funding',
     '/business-cash-advance',
     '/small-business-funding',
+    '/merchant-cash-advance-for-restaurants',
+    '/restaurant-mca-vs-line-of-credit',
+    '/same-day-restaurant-funding',
+    '/bad-credit-restaurant-funding',
+    '/restaurant-inventory-financing-fast',
+    '/restaurant-payroll-funding-options',
+    '/war-impact-restaurant-financing',
     '/blog',
     ...blogPaginationPaths,
     '/sitemap',
