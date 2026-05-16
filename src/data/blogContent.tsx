@@ -4,6 +4,7 @@ import { BlogPostMeta } from './blogPosts';
 import React from 'react';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { cityFundingPostsContent } from './blogContentCityFunding';
+import { batch2ContentMap } from './blogContentBatch2';
 import {
   hashStr,
   pick,
@@ -5484,6 +5485,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
     </>
   ),
   ...cityFundingPostsContent,
+  ...batch2ContentMap,
   };
 
   return contentMap[slug] ?? getGeneratedBlogContent(meta);
