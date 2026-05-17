@@ -4,6 +4,7 @@ import { BlogPostMeta } from './blogPosts';
 import React from 'react';
 import { FIND_MATCH_URL, AXIANT_LINK_REL } from '../config';
 import { cityFundingPostsContent } from './blogContentCityFunding';
+import { batch2ContentMap } from './blogContentBatch2';
 import {
   hashStr,
   pick,
@@ -692,24 +693,100 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
   ),
   'restaurant-opening-costs-breakdown': (
     <>
-      <p><strong>Quick Answer:</strong> Restaurant opening costs include build-out, equipment, permits, inventory, and operating expenses. Costs vary widely—from tens of thousands to hundreds of thousands. New owners fund the gap with savings, investors, or alternative funding once they have revenue.</p>
-      <p>Opening a restaurant requires significant capital. Build-out, equipment, permits, and initial inventory add up quickly. Many new owners underestimate the true cost. Here&apos;s a real breakdown of restaurant opening costs and how new owners fund the gap.</p>
-      <h2>Build-Out and Construction</h2>
-      <p>Leasehold improvements, HVAC, plumbing, electrical, and finishes can run $50,000–$200,000+ depending on condition and scope. Landlords may offer tenant improvement allowances—negotiate. Build-out often takes longer and costs more than estimated. Plan for delays.</p>
-      <h2>Equipment and Fixtures</h2>
-      <p>Kitchen equipment—ovens, ranges, refrigeration, hoods—can run $50,000–$150,000+. Add POS, furniture, and smallwares. <Link to="/restaurant-equipment-financing">Restaurant equipment financing</Link> can spread the cost. For more on funding for new restaurants, see <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link>.</p>
-      <h2>Permits, Licenses, and Legal</h2>
-      <p>Health permits, liquor licenses, business licenses, and legal fees vary by location. Budget $5,000–$20,000+ depending on your concept and location. <Link to="/restaurant-funding">Restaurant funding</Link> can help cover these once you have some revenue.</p>
-      <h2>Initial Inventory and Operating Expenses</h2>
-      <p>First month&apos;s inventory, payroll before opening, marketing, and operating expenses. Many owners underestimate how much cash they need to carry them through the first month. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> may be available once you have card sales or revenue to show.</p>
-      <p>Before selecting a product, compare <Link to="/restaurant-funding-options">restaurant funding options</Link> and review <Link to="/blog/restaurant-cash-management-guide">restaurant cash management</Link> so opening-week spending and payroll do not collide unexpectedly.</p>
+      <p><strong>Quick Answer:</strong> Opening a restaurant costs $175,000–$750,000 for most full-service concepts. Fast casual and counter-service can open for $75,000–$300,000. Ghost kitchens and food trucks run $20,000–$100,000. The biggest variables are whether you&apos;re building from scratch or taking over an existing space, your location&apos;s rent market, and how much of your own labor you contribute to build-out.</p>
+      <p>Most new restaurant owners underestimate total startup costs by 30–50%. They budget for equipment and build-out but miss the operating capital needed to survive the first 60–90 days before revenue stabilizes. Here&apos;s a category-by-category breakdown of what restaurant opening actually costs—and how owners fund it.</p>
+
+      <h2>Build-Out and Construction: The Biggest Variable</h2>
+      <p>Build-out is typically the largest cost and the hardest to estimate. The range is enormous depending on the condition of your space and the scope of work:</p>
+      <ul>
+        <li><strong>Existing restaurant space (turn-key or light refresh):</strong> $20,000–$75,000</li>
+        <li><strong>Existing restaurant space (moderate renovation):</strong> $75,000–$200,000</li>
+        <li><strong>Raw or cold shell space (full build-out):</strong> $150,000–$500,000+</li>
+        <li><strong>New construction:</strong> $300,000–$1,000,000+</li>
+      </ul>
+      <p>Build-out line items to budget for individually: HVAC ($15,000–$50,000), plumbing ($10,000–$40,000), electrical ($15,000–$50,000), fire suppression system ($8,000–$25,000), flooring ($5,000–$20,000), hood and ventilation ($10,000–$40,000), interior finishes (walls, ceilings, lighting: $15,000–$60,000).</p>
+      <p><strong>Critical: negotiate tenant improvement allowances.</strong> In most commercial leases, landlords provide a TI allowance (typically $20–$60/sq ft in competitive markets) to offset build-out costs. Always negotiate this before signing. It&apos;s standard—not a special favor—and can reduce your out-of-pocket build-out cost by $50,000–$150,000.</p>
+      <p>Build-out almost always takes longer than estimated. Plan for your lease to start 1–2 months before you actually open. Those months of rent with no revenue are part of your opening cost. See <Link to="/blog/restaurant-renovation-cost-breakdown">restaurant renovation cost breakdown</Link> for specifics on renovation-vs-new-build tradeoffs.</p>
+
+      <h2>Kitchen Equipment and Fixtures</h2>
+      <p>Equipment costs depend heavily on concept type, whether you buy new vs. used, and whether you lease or purchase:</p>
+      <ul>
+        <li><strong>Full-service restaurant (full commercial kitchen):</strong> $60,000–$150,000 new; $25,000–$75,000 used or refurbished</li>
+        <li><strong>Fast casual or counter service:</strong> $30,000–$80,000 new; $15,000–$40,000 used</li>
+        <li><strong>Coffee shop or bakery:</strong> $20,000–$50,000 (espresso equipment alone: $5,000–$25,000)</li>
+        <li><strong>Bar or nightclub:</strong> $20,000–$60,000 (back bar, draft systems, glass washers)</li>
+      </ul>
+      <p>Major equipment line items: commercial range/oven ($5,000–$25,000), walk-in cooler/freezer ($8,000–$20,000), prep tables and smallwares ($3,000–$10,000), dishwasher ($3,000–$15,000), POS system ($2,000–$8,000 plus monthly fees). <Link to="/restaurant-equipment-financing">Restaurant equipment financing</Link> can spread these costs over 24–60 months, preserving cash for operations. For more on opening a second location vs. your first, see <Link to="/blog/restaurant-second-location-costs">restaurant second location costs</Link>.</p>
+
+      <h2>Permits, Licenses, and Legal Fees</h2>
+      <p>Permitting costs vary dramatically by city and state. Budget more than you think:</p>
+      <ul>
+        <li>Business license: $50–$500</li>
+        <li>Food establishment/health permit: $200–$2,000</li>
+        <li>Certificate of occupancy: $100–$1,000</li>
+        <li>Signage permits: $50–$500</li>
+        <li>Liquor license: $300–$14,000 in most states; $50,000–$500,000+ in quota states (New York, Massachusetts, parts of California)</li>
+        <li>TABC/alcohol licensing (Texas): $500–$2,500</li>
+        <li>Outdoor seating/patio permit: $200–$3,000</li>
+        <li>Legal fees (lease review, entity formation, compliance): $2,000–$8,000</li>
+      </ul>
+      <p>Total permit and legal budget for most concepts: $5,000–$25,000. Heavy-drinking concepts or quota-state liquor licenses can push this to $100,000+. See <Link to="/blog/restaurant-liquor-license-renewal">liquor license costs and renewal</Link> and <Link to="/blog/restaurant-zoning-permits">zoning and permit requirements</Link> for more detail.</p>
+
+      <h2>Pre-Opening Operating Expenses</h2>
+      <p>This is what most new owners miss. Before you open, you&apos;re spending without earning:</p>
+      <ul>
+        <li><strong>Rent during build-out (typically 1–3 months):</strong> $5,000–$30,000</li>
+        <li><strong>Initial food and beverage inventory:</strong> $5,000–$25,000</li>
+        <li><strong>Staff wages during training (2–4 weeks):</strong> $5,000–$20,000</li>
+        <li><strong>Pre-opening marketing and social media:</strong> $2,000–$10,000</li>
+        <li><strong>Uniforms and smallwares:</strong> $1,000–$5,000</li>
+        <li><strong>Deposits (utilities, vendors):</strong> $2,000–$8,000</li>
+        <li><strong>Insurance (first month or annual premium):</strong> $2,000–$8,000</li>
+        <li><strong>Technology setup (website, reservations, accounting):</strong> $1,000–$5,000</li>
+      </ul>
+      <p>Total pre-opening operating costs: $23,000–$111,000. Add this to your build-out and equipment budgets—it&apos;s not optional.</p>
+
+      <h2>Working Capital Reserve: The Number Owners Skip</h2>
+      <p>Even after you open, it takes 60–90 days for revenue to stabilize. You need a working capital reserve to cover monthly expenses (rent, payroll, inventory, utilities) during that ramp-up period. Most experienced restaurant consultants recommend holding 3–6 months of operating expenses in reserve:</p>
+      <ul>
+        <li>Monthly operating costs for a typical $1M/year restaurant: $75,000–$90,000</li>
+        <li>3-month reserve: $225,000–$270,000</li>
+        <li>Minimum viable 6-week reserve: $112,500–$135,000</li>
+      </ul>
+      <p>This is the number that breaks most new restaurant owners who undercapitalize. Opening with a strong reserve gives you time to find your concept, fix operational issues, and build a customer base before cash pressure forces bad decisions. See <Link to="/blog/restaurant-days-cash-on-hand">days cash on hand calculation</Link> and <Link to="/blog/restaurant-financial-planning-guide">restaurant financial planning guide</Link>.</p>
+
+      <h2>Total Opening Cost Estimates by Concept</h2>
+      <ul>
+        <li><strong>Food truck:</strong> $20,000–$100,000</li>
+        <li><strong>Ghost kitchen / delivery-only:</strong> $30,000–$100,000</li>
+        <li><strong>Fast casual (leased space):</strong> $100,000–$350,000</li>
+        <li><strong>Full-service casual dining:</strong> $200,000–$500,000</li>
+        <li><strong>Fine dining or chef-driven concept:</strong> $350,000–$1,000,000+</li>
+        <li><strong>Bar or nightclub:</strong> $200,000–$600,000</li>
+      </ul>
+
+      <h2>How New Restaurants Fund Opening Costs</h2>
+      <p>The funding stack for a new restaurant typically combines several sources:</p>
+      <ul>
+        <li><strong>Personal savings and equity:</strong> Most lenders want to see owner equity of 20–30% of total opening costs</li>
+        <li><strong>SBA 7(a) or 504 loans:</strong> Up to $5M, best rates and terms, but requires 2–3 years in business for most programs (startup SBA loans are harder to qualify for)</li>
+        <li><strong>Equipment financing:</strong> Equipment-specific loans or leases that preserve cash—easier to qualify for than general business loans</li>
+        <li><strong>Friends and family investment:</strong> Common for initial capitalization; structure carefully with a promissory note or equity agreement</li>
+        <li><strong>Alternative working capital:</strong> Once you have card processing revenue (even in your first weeks), <Link to="/restaurant-cash-advance">restaurant cash advances</Link> and <Link to="/restaurant-working-capital">working capital</Link> become available—often in 24–48 hours</li>
+      </ul>
+      <p>Review <Link to="/restaurant-funding-options">restaurant funding options</Link> and compare structures before committing. Once open, also review <Link to="/blog/restaurant-cash-management-guide">restaurant cash management</Link> to make sure your opening-week spending and payroll don&apos;t create an immediate cash crunch.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>How much does it cost to open a restaurant?</h3>
-      <p>Costs vary widely—from tens of thousands for a small concept to hundreds of thousands for full build-out. Build-out, equipment, permits, and initial inventory are the main categories.</p>
-      <h3>How do new restaurants fund opening costs?</h3>
-      <p>Owners use savings, investors, SBA loans, or alternative funding like restaurant cash advance once they have some revenue. Options depend on your stage and track record.</p>
-      <h3>Can I get funding before my restaurant opens?</h3>
-      <p>Traditional loans often require revenue history. Some alternative options may be available for newer concepts. Compare funding options for new restaurants.</p>
+      <p>Most full-service restaurants cost $175,000–$750,000 to open, including build-out, equipment, permits, pre-opening expenses, and working capital reserve. Fast casual concepts can open for $75,000–$300,000. The range is wide because it depends on whether you&apos;re building from scratch or taking over an existing space, your location&apos;s rent market, and how much of the build-out you can negotiate the landlord to fund via TI allowance.</p>
+      <h3>What is the biggest expense when opening a restaurant?</h3>
+      <p>For most concepts, build-out and construction is the largest line item—often $75,000–$300,000 or more. Equipment is the second largest at $30,000–$150,000. The most commonly overlooked expense is the working capital reserve needed to cover 60–90 days of operations while revenue stabilizes after opening.</p>
+      <h3>How do new restaurants get funding before they open?</h3>
+      <p>Pre-revenue, your options are personal savings, investors, SBA startup loans (which are available but harder to qualify for than operating loans), and equipment financing. Once you have any card processing revenue—even from a soft opening—alternative working capital options like restaurant cash advances become available. Many providers fund in 24–48 hours once you have revenue history.</p>
+      <h3>How much working capital do I need to open a restaurant?</h3>
+      <p>Most financial advisors recommend 3–6 months of operating expenses as a working capital reserve. For a restaurant with $80,000/month in operating costs, that&apos;s $240,000–$480,000 in reserve. At minimum, you need enough to cover 6–8 weeks of fixed costs (rent, payroll, utilities) without any revenue. Many restaurant failures happen not because the concept failed but because the owner ran out of cash before revenue could stabilize.</p>
+      <h3>Can I open a restaurant for under $50,000?</h3>
+      <p>Yes, but it requires significant constraints on concept and scope. Food trucks, ghost kitchens, pop-up concepts, or taking over a fully equipped existing restaurant space can potentially be launched for $30,000–$75,000. A full build-out with new equipment for a seated dining concept cannot be done for this amount in most markets.</p>
       <CtaBlock />
     </>
   ),
@@ -3765,22 +3842,69 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
   ),
   'restaurant-tourism-seasonal': (
     <>
-      <p>When your town is seasonal—tourist-driven in summer or winter—revenue swings can be dramatic. Restaurant tourism and seasonal traffic create feast-or-famine cash flow. Here&apos;s how to manage when your town is seasonal and revenue swings.</p>
-      <h2>Why Tourism-Driven Revenue Swings</h2>
-      <p>Beach towns boom in summer. Ski towns boom in winter. Off-season traffic drops. You need to build reserves during peak and survive the lean months. See <Link to="/blog/restaurant-slow-season-survival">restaurant slow season survival</Link> and <Link to="/blog/how-restaurants-handle-seasonal-cash-flow">how restaurants handle seasonal cash flow</Link>. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> can bridge off-season gaps.</p>
-      <h3>Real Example: The Beach Town</h3>
-      <p>A beach restaurant made 70% of annual revenue in three summer months. They used <Link to="/restaurant-working-capital">restaurant working capital</Link> to cover rent and payroll during the off-season. Repayment tied to sales meant lower payments when traffic was slow.</p>
-      <h2>Managing Seasonal Tourism</h2>
-      <p>Build reserves during peak. Trim costs during off-season. Know your funding options before the lean months. Many restaurant funding options offer funds in 24–48 hours.</p>
-      <h2>Bottom Line</h2>
-      <p>Tourism-driven revenue swings are common. Plan for the lean months. <Link to="/restaurant-funding">Restaurant funding</Link> can bridge off-season gaps. Many providers fund in 24–48 hours.</p>
+      <p><strong>Quick Answer:</strong> Seasonal tourism restaurants often earn 60–80% of annual revenue in 3–4 months. The cash flow challenge isn&apos;t the peak season—it&apos;s surviving the other 8–9 months while fixed costs (rent, insurance, loan payments) continue on the same schedule. The restaurants that succeed plan their off-season funding strategy during peak, not after revenue has already dropped.</p>
+      <p>Running a restaurant in a tourism-driven market means your business operates on a fundamentally different financial calendar than year-round operations. Here&apos;s what seasonal restaurant owners actually face—and the specific strategies that work for managing the feast-or-famine cycle.</p>
+
+      <h2>The Math of Seasonal Restaurant Cash Flow</h2>
+      <p>Consider a beach town restaurant with $600,000 in annual revenue. In a typical tourism market, the breakdown looks like this:</p>
+      <ul>
+        <li><strong>Peak season (June–August):</strong> $360,000 (60% of annual revenue in 3 months)</li>
+        <li><strong>Shoulder season (May, September–October):</strong> $120,000 (20% spread over 3 months)</li>
+        <li><strong>Off-season (November–April):</strong> $120,000 (20% over 6 months — $20,000/month average)</li>
+      </ul>
+      <p>Meanwhile, fixed costs—rent, insurance, utility minimums, loan payments, manager salaries—run $25,000–$40,000/month regardless of season. In peak months, this is easy to cover. In off-season months, you may be cash-flow negative by $5,000–$20,000/month. Over 6 off-season months, the cumulative cash shortfall can reach $30,000–$120,000. See <Link to="/blog/restaurant-slow-season-survival">restaurant slow season survival strategies</Link> for a full framework on managing this cycle.</p>
+
+      <h2>Types of Seasonal Tourism Markets (and How They Differ)</h2>
+      <h3>Beach and Coastal Markets</h3>
+      <p>Summer peak, winter off-season. Revenue concentrated in Memorial Day through Labor Day. Many beach-town restaurants close completely in January–February to reduce fixed costs. Those that stay open need a plan for 4–5 months of reduced revenue. The challenge: building enough reserves during summer to fund October through April without running out.</p>
+      <h3>Ski and Mountain Markets</h3>
+      <p>Winter peak (December–March), summer shoulder, spring/fall off-season. A ski town restaurant may do 55–65% of revenue in 4 winter months. Climate change variability makes early-season and late-season revenue increasingly uncertain, making reserve-building during peak even more important.</p>
+      <h3>College Towns and University Markets</h3>
+      <p>Academic year drives revenue (September–May), with summer being the slow season. Unlike beach or ski markets, the off-season is predictable—but it comes during summer when many restaurant owners expect growth. Plan for a 30–50% revenue drop from May through August.</p>
+      <h3>Destination and Event-Driven Markets</h3>
+      <p>Cities with annual events (Mardi Gras, SXSW, local festivals) see sharp spikes rather than sustained seasons. Revenue may be intensely concentrated in 2–4 weeks per year. For event-specific planning, see <Link to="/blog/restaurant-festival-event">restaurant festival and event funding</Link>.</p>
+
+      <h2>The Peak Season Playbook: Building Reserves That Last</h2>
+      <p>The most common mistake seasonal restaurant owners make is spending peak-season profits on immediate needs (kitchen equipment, renovations, hiring bonuses) without allocating enough to an off-season reserve. Here&apos;s a framework for peak season cash management:</p>
+      <ul>
+        <li><strong>Calculate your monthly off-season burn rate:</strong> total fixed costs + minimum variable costs (skeleton crew, reduced inventory) during your slowest months</li>
+        <li><strong>Determine your off-season funding gap:</strong> burn rate × number of off-season months, minus expected reduced revenue</li>
+        <li><strong>Set aside 20–30% of peak revenue</strong> into a dedicated off-season reserve account — treat it as untouchable during peak</li>
+        <li><strong>Time major capital purchases</strong> (equipment, renovations) to shoulder season when you can use revenue without depleting the reserve</li>
+      </ul>
+      <p>Review your <Link to="/blog/restaurant-annual-budget-template">annual budget template</Link> and <Link to="/blog/restaurant-days-cash-on-hand">days cash on hand calculation</Link> to determine exactly how much reserve you need to carry through the off-season.</p>
+
+      <h2>Off-Season Strategies That Actually Work</h2>
+      <h3>Reduce Fixed Costs</h3>
+      <p>Negotiate with your landlord for a seasonal lease structure—reduced rent in off-season months is more common in tourist markets than you might think. Reduce utility costs with seasonal hours. Put some equipment on maintenance programs that pause during closure. Review <Link to="/blog/restaurant-occupancy-cost-ratio">occupancy cost ratio</Link> to understand how much of your revenue should be going to fixed facility costs.</p>
+      <h3>Diversify Revenue Streams</h3>
+      <p>Catering, private events, and local delivery can generate off-season revenue from a customer base that isn&apos;t tourist-dependent. Ghost kitchen operations (using your kitchen during off-peak hours for delivery-only brands) can add $3,000–$8,000/month in revenue with minimal additional cost. See <Link to="/blog/restaurant-ghost-kitchen-revenue">ghost kitchen revenue strategies</Link> and <Link to="/blog/restaurant-catering-revenue">catering revenue development</Link>.</p>
+      <h3>Adjust Staffing Seasonally</h3>
+      <p>Build your staffing model around the season—core full-time staff year-round, seasonal part-time or contracted staff for peak. Be transparent with staff about the seasonal nature of the business; many employees in tourism markets expect and plan for seasonal work. See <Link to="/blog/restaurant-cross-training">cross-training strategies</Link> to make your core team more flexible during slow months.</p>
+
+      <h2>Funding the Off-Season Gap</h2>
+      <p>Even the best-planned reserve may not fully cover the off-season gap—especially if peak season underperforms expectations or unexpected expenses arise. <Link to="/restaurant-funding">Restaurant funding</Link> and <Link to="/restaurant-working-capital">working capital</Link> options can bridge the gap. Key considerations for seasonal businesses seeking funding:</p>
+      <ul>
+        <li><strong>Apply before the off-season starts</strong> — lenders look at recent revenue. Your strongest application window is during or right after peak season when revenue is highest</li>
+        <li><strong>Sales-based repayment structures</strong> (like merchant cash advances) are particularly well-suited to seasonal businesses because payments scale down when revenue drops</li>
+        <li><strong>Line of credit arrangements</strong> let you draw only what you need during slow months rather than taking a lump sum you may not need</li>
+        <li><strong>12-month vs. shorter terms</strong> — for seasonal businesses, longer repayment terms that span a full annual cycle often make more sense than short-term high-payment structures</li>
+      </ul>
+      <p>Many funding providers offer fast decisions and funding in 24–48 hours. Having an option in place before you need it gives you flexibility. Compare <Link to="/restaurant-cash-advance">restaurant cash advance</Link> vs. <Link to="/blog/restaurant-credit-line-vs-advance">line of credit options</Link> to understand which structure fits seasonal revenue patterns best.</p>
+
       <h2>Frequently Asked Questions</h2>
-      <h3>How do I manage when my town is seasonal?</h3>
-      <p>Build reserves during peak. Trim costs during off-season. Know your funding options for the lean months.</p>
-      <h3>Can restaurant funding help with seasonal tourism?</h3>
-      <p>Yes. Restaurant funding can bridge off-season gaps when tourism-driven revenue drops.</p>
-      <h3>When should I secure funding for off-season?</h3>
-      <p>Before the lean months. Having options ready reduces stress when revenue drops.</p>
+      <h3>How do seasonal restaurants survive the off-season?</h3>
+      <p>Successful seasonal restaurants use a combination of strategies: building a cash reserve during peak season (typically 20–30% of peak revenue), reducing fixed costs where possible (seasonal staffing, negotiated rent), diversifying with catering and events that draw local customers, and having funding options in place before the slow months begin.</p>
+      <h3>What percentage of revenue should I reserve for off-season?</h3>
+      <p>Most operators in high-seasonality markets need to reserve 20–30% of peak season revenue for off-season operations. The exact amount depends on your fixed cost structure and how long your off-season lasts. Calculate your monthly cash burn during your slowest months and multiply by the number of slow months to get your target reserve.</p>
+      <h3>When should I apply for off-season restaurant funding?</h3>
+      <p>During or right after peak season, when your revenue history is strongest. Waiting until you&apos;re already in the slow months means applying with lower recent revenue, which can affect how much you qualify for and at what terms. Having a funding option in place before you need it is almost always better than scrambling once cash flow drops.</p>
+      <h3>Can restaurant funding work for seasonal businesses?</h3>
+      <p>Yes. Sales-based repayment structures (merchant cash advances) are particularly well-suited to seasonal businesses because payments automatically scale with revenue—you pay more when revenue is high, less when it&apos;s slow. This alignment with actual cash flow makes them a popular option for beach, ski, and other seasonal restaurant operators.</p>
+      <h3>Should I close my restaurant in the off-season or stay open?</h3>
+      <p>This depends on your fixed cost structure and local off-season traffic. If rent continues regardless, staying open to generate at least some revenue is often better than a full closure. But if staying open means burning through reserves faster than a closure would, partial closure (reduced hours, limited menu) or full closure can make financial sense. Run the numbers specific to your market and lease terms.</p>
+      <h3>How do tourist restaurants handle payroll during slow months?</h3>
+      <p>Most use a combination of approaches: reducing to a core skeleton crew for off-season, using accrued vacation to smooth payroll costs, and having working capital available to cover payroll when needed. See <Link to="/blog/restaurant-payroll-management-guide">restaurant payroll management guide</Link> for a full framework on managing payroll through revenue swings.</p>
       <CtaBlock />
     </>
   ),
@@ -4416,22 +4540,60 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
   ),
   'restaurant-staff-training-cost': (
     <>
-      <p>Training and development improve operations—but they cost time and money. Funding training and development for your team can strain cash flow when you&apos;re building skills. Here&apos;s what to consider.</p>
-      <h2>Why Training Costs</h2>
-      <p>Onboarding, certifications, ongoing development. You pay for training before you see the return. See <Link to="/blog/restaurant-employee-retention-cost">restaurant employee retention cost</Link>, <Link to="/blog/restaurant-worker-shortage">restaurant worker shortage</Link>, and <Link to="/blog/restaurant-payroll-software">restaurant payroll software</Link>. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> can fund training.</p>
-      <h3>Real Example: The ServSafe Push</h3>
-      <p>A restaurant needed all kitchen staff certified. Cost: $2,500 for training and exams. They used <Link to="/restaurant-working-capital">restaurant working capital</Link> to fund it. Compliance improved; the investment paid off in reduced risk.</p>
-      <h2>Funding Training</h2>
-      <p><Link to="/restaurant-funding">Restaurant funding</Link> is often flexible-use. You can use it for training and development. Many providers fund in 24–48 hours. Compare the cost of training to the cost of turnover, then review <Link to="/blog/restaurant-payroll-management-guide">payroll management</Link> and <Link to="/blog/restaurant-franchise-fees">restaurant franchise funding fees</Link> if labor or royalty dates are overlapping with training spend.</p>
-      <h2>Bottom Line</h2>
-      <p>Training requires investment. <Link to="/restaurant-funding">Restaurant funding</Link> can fund it. Many providers fund in 24–48 hours.</p>
+      <p><strong>Quick Answer:</strong> Restaurant staff training costs $1,000–$5,000+ per employee when you factor in onboarding time, certifications, and lost productivity during ramp-up. ServSafe food handler certification runs $15–$150 per employee. Manager-level training programs can cost $500–$3,000 per manager. High turnover makes these costs repeat constantly—which is why training ROI matters as much as the upfront number.</p>
+      <p>Training is one of the most underestimated expenses in restaurant operations. Owners budget for food and labor but forget that every new hire represents a real dollar cost before they generate any return. Here&apos;s a realistic breakdown of what restaurant staff training actually costs—and how to fund it when cash flow is tight.</p>
+
+      <h2>What Restaurant Staff Training Actually Costs</h2>
+      <p>Training costs fall into four categories: onboarding time, certifications, ongoing development, and the hidden cost of productivity loss during ramp-up.</p>
+      <h3>Onboarding and Initial Training</h3>
+      <p>A new server or line cook typically takes 2–4 weeks to reach full productivity. During that time, you&apos;re paying them full wages while their output is 50–70% of a seasoned employee. For a full-time employee earning $15/hour, that&apos;s $600–$2,400 in above-productivity wages just in the ramp-up window. Add the cost of a trainer&apos;s time—often a senior employee pulled off productive work—and initial onboarding for one employee easily runs $1,500–$4,000.</p>
+      <h3>Required Certifications</h3>
+      <p>Food handler certifications (ServSafe, TABC, local health department cards) are legally required in most states. Costs per employee:</p>
+      <ul>
+        <li>ServSafe Food Handler certificate: $15–$45 per person</li>
+        <li>ServSafe Food Manager certification (required for at least one manager per location in many states): $35–$150 per person plus exam fees</li>
+        <li>Alcohol service certification (TIPS, TABC, RBS): $15–$75 per person</li>
+        <li>State food handler card renewals: typically every 2–3 years</li>
+      </ul>
+      <p>A restaurant with 20 staff cycling certifications annually can spend $1,500–$5,000+ just on compliance certifications. For compliance-specific costs, see <Link to="/blog/restaurant-food-handler-certification">food handler certification costs</Link> and <Link to="/blog/restaurant-minimum-wage-compliance">minimum wage and compliance requirements</Link>.</p>
+      <h3>Management and Leadership Training</h3>
+      <p>Investing in manager development pays dividends in retention and operations quality—but it&apos;s expensive. External restaurant management programs run $500–$3,000 per manager. Online platforms like ServSuccess or National Restaurant Association training modules run $200–$800/year per user. Sending a manager to an industry conference or workshop: $500–$2,000 including travel. Many multi-unit operators budget $3,000–$8,000 per manager per year for development.</p>
+      <h3>POS and Technology Training</h3>
+      <p>Switching or upgrading your POS system means training every employee on the new software. For a 20-person staff, plan 4–8 hours of paid training time plus 1–2 weeks of reduced productivity while staff learns the system. At $15/hour average wage, that&apos;s $1,200–$2,400 in training wages alone. See <Link to="/blog/restaurant-kitchen-display-system">kitchen display system costs</Link> and <Link to="/blog/restaurant-scheduling-software">scheduling software options</Link> for more on technology investment.</p>
+
+      <h2>The Real Cost: What Turnover Does to Training Spend</h2>
+      <p>The restaurant industry averages 75% annual staff turnover. That means if you have 20 employees, you&apos;re replacing 15 people per year. If each replacement costs $1,500–$4,000 to train, your annual training spend is $22,500–$60,000—and that&apos;s before any development investment. This is why <Link to="/blog/restaurant-employee-retention">employee retention</Link> and <Link to="/blog/restaurant-turnover-cost">turnover cost reduction</Link> are the highest-ROI investments for most restaurant operators. Spending $500 more per employee on development to reduce turnover by even 20% can save $4,500–$12,000 annually on training replacement costs.</p>
+
+      <h2>How to Calculate Your Training ROI</h2>
+      <p>Before funding training, run a quick ROI check:</p>
+      <ul>
+        <li><strong>Cost to train one employee:</strong> certification fees + trainer time + productivity ramp-up wages</li>
+        <li><strong>Annual turnover rate:</strong> how many of this role you replace per year</li>
+        <li><strong>Breakeven point:</strong> how long before this employee&apos;s output covers their training cost</li>
+        <li><strong>Development investment payback:</strong> if a $1,000 training program improves a manager&apos;s efficiency by 10%, and they manage $500,000 in labor annually, the payback is 2 months</li>
+      </ul>
+      <p>For a deeper look at restaurant financial benchmarks, see <Link to="/blog/restaurant-labor-cost-percentage">labor cost percentage guide</Link> and <Link to="/blog/restaurant-kpi-guide">restaurant KPI guide</Link>.</p>
+
+      <h2>Funding Training When Cash Flow Is Tight</h2>
+      <p>Training costs are unavoidable but timing them against cash flow is a real challenge—especially when you&apos;re replacing staff during slow seasons. <Link to="/restaurant-funding">Restaurant funding</Link> and <Link to="/restaurant-working-capital">working capital</Link> are flexible-use and can cover training costs. Many providers fund in 24–48 hours, which matters when you need a ServSafe exam booked this week or a new manager program starting next month.</p>
+      <p>Key situations where funding training makes sense: replacing a key manager mid-year, investing in a certification program before a health department inspection, or rolling out new technology that requires company-wide training. Compare funding options against the cost of NOT training—service quality issues, compliance failures, and higher turnover all have dollar costs too. See <Link to="/blog/restaurant-payroll-management-guide">payroll management guide</Link> to understand how training spend fits into your overall labor budget.</p>
+
+      <h2>Budgeting for Training Proactively</h2>
+      <p>High-performing operators build training into the annual budget rather than treating it as a surprise expense. A practical framework: allocate 1–2% of annual labor spend to training and development. On $400,000 in annual labor, that&apos;s $4,000–$8,000—enough for all required certifications, some management development, and a cushion for unexpected turnover training costs. Review your <Link to="/blog/restaurant-annual-budget-template">annual budget template</Link> and <Link to="/blog/restaurant-financial-planning-guide">restaurant financial planning guide</Link> for how to integrate training costs into your P&L.</p>
+
       <h2>Frequently Asked Questions</h2>
-      <h3>Can I use restaurant funding for staff training?</h3>
-      <p>Yes. Restaurant funding is often flexible-use and can fund training and development.</p>
-      <h3>How much does restaurant staff training cost?</h3>
-      <p>Varies—onboarding, certifications, ongoing development. Plan for the investment.</p>
-      <h3>When does training funding make sense?</h3>
-      <p>When you need to train staff and don&apos;t have cash on hand. Funding can bridge the gap.</p>
+      <h3>How much does it cost to train a restaurant employee?</h3>
+      <p>Total cost including onboarding time, productivity ramp-up, and required certifications runs $1,000–$5,000+ per employee depending on the role. A line cook may cost $1,500–$3,000 to onboard and certify. A manager replacement often costs $3,000–$8,000 when you include development and ramp-up time.</p>
+      <h3>What certifications do restaurant staff need?</h3>
+      <p>Requirements vary by state and role. Most locations require food handler cards ($15–$45 each) for all staff handling food. Many states require a certified Food Manager on site (ServSafe Manager, $35–$150 per person). Alcohol service certification (TIPS, TABC) is required in states with dram shop liability laws. Check your state health department for specific requirements.</p>
+      <h3>How do I fund restaurant staff training?</h3>
+      <p>Restaurant working capital and cash advances are flexible-use and can cover training costs. Many providers fund in 24–48 hours. You can also budget training into your quarterly cash flow plan so certification renewals and development programs don&apos;t catch you off guard.</p>
+      <h3>Is restaurant staff training tax deductible?</h3>
+      <p>Generally yes—employee training and development costs are deductible as a business expense under IRS rules. This includes certification fees, training materials, and the wages of employees during paid training time. Consult your accountant for specifics on your situation.</p>
+      <h3>How do I reduce restaurant training costs?</h3>
+      <p>Build internal training systems (documented SOPs, training checklists) so experienced staff can onboard new hires efficiently. Cross-train employees so fewer people need to be replaced for any given role. Invest in retention to reduce turnover—every employee you keep is one fewer training cycle you pay for.</p>
+      <h3>What is a realistic annual training budget for a restaurant?</h3>
+      <p>Most operators should budget 1–2% of annual labor spend for training and development. On a $300,000–$500,000 annual labor budget, that&apos;s $3,000–$10,000 per year. High-turnover concepts may need to budget higher; well-staffed operations with strong retention can often manage at the lower end.</p>
       <CtaBlock />
     </>
   ),
@@ -5484,6 +5646,7 @@ export function getBlogContent(slug: string, meta: BlogPostMeta): ReactNode {
     </>
   ),
   ...cityFundingPostsContent,
+  ...batch2ContentMap,
   };
 
   return contentMap[slug] ?? getGeneratedBlogContent(meta);
