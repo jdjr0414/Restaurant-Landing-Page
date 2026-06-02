@@ -28,9 +28,9 @@ export interface PageMeta {
 
 const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
   '/': {
-    title: "Restaurant Cash Flow Problems? Get Answers & See Your Options | The Restaurant Owners Guide",
+    title: "Restaurant Cash Flow Guide | Funding Options for Restaurant Owners",
     description:
-      "Running out of cash? Restaurant cash flow problems are the #1 reason restaurants fail. Learn why it happens, what restaurant funding and working capital options exist, and what to do next. Practical guide for restaurant owners.",
+      "Cash flow problems are the #1 reason restaurants close. Get a plain-English guide to funding options and what to do when cash runs out.",
   },
   '/restaurant-cash-advance': {
     title: 'Restaurant Cash Advance | How It Works, Speed & When to Use | The Restaurant Owners Guide',
