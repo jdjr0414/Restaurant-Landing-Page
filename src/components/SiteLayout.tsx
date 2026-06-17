@@ -57,6 +57,10 @@ export function SiteLayout() {
         </div>
       </header>
       <Outlet />
+      <div className="cta-sticky" aria-label="Get help now">
+        <a href={PHONE_HREF} className="cta-sticky__phone">📞 {PHONE_NUMBER}</a>
+        <Link to="/consultation" className="btn btn-primary cta-sticky__btn">Get Free Help</Link>
+      </div>
       <Footer />
     </>
   );

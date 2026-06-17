@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME, SITE_LOGO } from '../config';
+import { SITE_URL, SITE_NAME, SITE_LOGO, PHONE_NUMBER } from '../config';
 
 /** WebSite + Organization schema for homepage. Helps search engines and AI understand site identity. */
 export function WebSiteSchema() {
@@ -33,7 +33,23 @@ export function WebSiteSchema() {
           '@type': 'ImageObject',
           url: SITE_LOGO,
         },
+        telephone: PHONE_NUMBER,
         areaServed: { '@type': 'Country', name: 'United States' },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: PHONE_NUMBER,
+          contactType: 'customer support',
+          areaServed: 'US',
+          availableLanguage: 'English',
+        },
+        knowsAbout: [
+          'restaurant cash flow',
+          'restaurant funding',
+          'merchant cash advance',
+          'restaurant working capital',
+          'MCA debt restructuring',
+          'restaurant payroll funding',
+        ],
       },
     ],
   };

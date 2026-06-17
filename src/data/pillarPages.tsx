@@ -545,6 +545,26 @@ export const pillarPagesConfig: PillarPageConfig[] = [
           </>
         ),
       },
+      {
+        h2: 'When the Alternative Itself Becomes the Problem: MCA Debt',
+        content: (
+          <>
+            <p>
+              Merchant cash advances are one of the most common loan alternatives for restaurants — but they come with their own risk. When a restaurant takes multiple advances (stacking), or when a holdback rate is set too high relative to actual revenue, the MCA that solved the original problem becomes the new problem. Daily holdbacks of 25–40% of card revenue can leave a restaurant unable to cover payroll, rent, or vendor payments — even in a normal operating week.
+            </p>
+            <p>
+              If you are currently in an MCA and the payments are consuming too much of your daily revenue, the right path is not another advance. It is a review of your current position and, in most cases, professional restructuring. These guides cover each stage:
+            </p>
+            <ul>
+              <li><Link to="/restaurant-mca-debt-help">Restaurant MCA debt help</Link> — Understanding restructuring and when to get professional help.</li>
+              <li><Link to="/restaurant-mca-payments-too-high">MCA payments too high</Link> — What drives unsustainable holdbacks and how to lower them.</li>
+              <li><Link to="/restaurant-mca-stacking">Restaurant MCA stacking</Link> — How multiple advances compound and how to get out.</li>
+              <li><Link to="/cant-pay-restaurant-mca">Can't pay your restaurant MCA</Link> — What to do in the next 72 hours if you cannot make a payment.</li>
+              <li><Link to="/restaurant-mca-default">Restaurant MCA default</Link> — The default timeline, what lenders can do, and your options at each stage.</li>
+            </ul>
+          </>
+        ),
+      },
     ],
   },
   {

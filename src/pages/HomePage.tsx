@@ -134,6 +134,22 @@ export function HomePage() {
                 <span className="home-links__title">Restaurant Funding Options</span>
                 <span className="home-links__desc">Compare restaurant financing options when you&apos;re struggling to cover payroll, inventory, or equipment. Speed, cost, and what to expect.</span>
               </Link>
+              <Link to="/restaurant-mca-debt-help" className="home-links__card">
+                <span className="home-links__title">Buried in MCA Debt?</span>
+                <span className="home-links__desc">When merchant cash advance payments are consuming your cash flow. What MCA debt restructuring is, when to get help, and what options exist when payments are too high to sustain.</span>
+              </Link>
+              <Link to="/restaurant-mca-calculator" className="home-links__card">
+                <span className="home-links__title">MCA Holdback Calculator</span>
+                <span className="home-links__desc">Enter your monthly card revenue and daily MCA deductions to see your holdback burden, how much cash restructured payments would free up, and what a 50% balance settlement would save.</span>
+              </Link>
+              <Link to="/how-to-get-out-of-merchant-cash-advance" className="home-links__card">
+                <span className="home-links__title">How to Exit an MCA</span>
+                <span className="home-links__desc">Every exit path from a merchant cash advance: self-negotiation, professional restructuring, consolidation, and legal defense. Which fits your situation and how long each takes.</span>
+              </Link>
+              <Link to="/merchant-cash-advance-settlement" className="home-links__card">
+                <span className="home-links__title">MCA Settlement Guide</span>
+                <span className="home-links__desc">What MCA settlement looks like in real numbers — typical 40–70% balance reductions, lump sum vs. structured settlement, when lenders negotiate, and red flags to avoid.</span>
+              </Link>
               <Link to="/blog" className="home-links__card">
                 <span className="home-links__title">Blog: Cash Flow, Payroll &amp; More</span>
                 <span className="home-links__desc">Articles on restaurant cash flow problems, payroll stress, seasonal slumps, equipment funding, and what other restaurant owners are asking.</span>

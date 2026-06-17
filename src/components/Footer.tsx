@@ -10,10 +10,19 @@ const FOOTER_TOPIC_LINKS = [
   { to: '/restaurant-cash-advance-vs-loan', label: 'Cash advance vs loan' },
   { to: '/restaurant-cash-flow-guide', label: 'Cash flow guide' },
   { to: '/restaurant-funding-options', label: 'Funding options' },
-{ to: '/restaurant-seasonal-cash-flow', label: 'Seasonal cash flow' },
+  { to: '/restaurant-seasonal-cash-flow', label: 'Seasonal cash flow' },
   { to: '/food-truck-funding', label: 'Food truck funding' },
   { to: '/faq', label: 'FAQ' },
   { to: '/restaurant-financing-options', label: 'Financing options' },
+];
+
+const FOOTER_MCA_LINKS = [
+  { to: '/restaurant-mca-debt-help', label: 'MCA debt help' },
+  { to: '/cant-pay-restaurant-mca', label: "Can't pay MCA" },
+  { to: '/mca-bank-account-frozen', label: 'Bank account frozen' },
+  { to: '/merchant-cash-advance-settlement', label: 'MCA settlement' },
+  { to: '/merchant-cash-advance-ucc-lien', label: 'UCC lien removal' },
+  { to: '/restaurant-mca-debt-relief', label: 'MCA debt relief' },
 ];
 
 const MAIN_LINKS = [
@@ -45,6 +54,16 @@ export function Footer() {
           <span className="footer__topics-label">More topics:</span>
           <div className="footer__topics-list">
             {FOOTER_TOPIC_LINKS.map(({ to, label }) => (
+              <Link key={to} to={to} className="footer__link footer__link--small">
+                {label}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="footer__topics">
+          <span className="footer__topics-label">MCA debt relief:</span>
+          <div className="footer__topics-list">
+            {FOOTER_MCA_LINKS.map(({ to, label }) => (
               <Link key={to} to={to} className="footer__link footer__link--small">
                 {label}
               </Link>

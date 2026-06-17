@@ -22,6 +22,22 @@
 /blog/restaurant-funding-phoenix /restaurant-funding 301
 /blog/restaurant-funding-minneapolis /restaurant-funding 301
 
+# Round 3 - equipment-financing topic page (duplicates the pillar)
+/restaurant-equipment-financing /restaurant-equipment-financing-guide 301
+
+# Round 3 - off-topic/deeply buried blog posts
+/blog/restaurant-profit-loss-reading /restaurant-cash-flow-guide 301
+/blog/restaurant-business-insurance-guide /restaurant-cash-flow-guide 301
+/blog/restaurant-prix-fixe-menu /restaurant-cash-flow-solutions 301
+/blog/restaurant-liquor-license-cost /restaurant-liquor-license-financing 301
+/blog/restaurant-reservation-system /restaurant-cash-flow-solutions 301
+/blog/restaurant-tableside-payment /restaurant-cash-flow-solutions 301
+/blog/restaurant-renovation-cost-breakdown /restaurant-expansion-funding 301
+/blog/restaurant-food-cost-percentage-control /restaurant-cash-flow-guide 301
+/blog/restaurant-kitchen-display-system /restaurant-cash-flow-solutions 301
+/blog/restaurant-cash-flow-forecasting /restaurant-cash-flow-guide 301
+/blog/restaurant-emergency-closure /restaurant-emergency-funding 301
+
 # Round 2 - duplicate/thin MCA pages
 /business-cash-advance /restaurant-cash-advance 301
 /merchant-cash-advance-for-restaurants /restaurant-cash-advance 301

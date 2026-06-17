@@ -24,6 +24,29 @@ const painPointSitemapEntries: { path: string; title: string }[] = [
   { path: '/restaurant-tax-bill-cant-pay', title: "Restaurant Tax Bill You Can't Pay? What to Do Next" },
   { path: '/opening-second-restaurant-cash-flow', title: 'The Cash Flow Risk of Opening a Second Restaurant Too Fast' },
 ];
+
+const mcaDebtSitemapEntries: { path: string; title: string }[] = [
+  { path: '/restaurant-mca-debt-help', title: 'Restaurant MCA Debt Relief: Restructuring, Settlement & Help' },
+  { path: '/restaurant-mca-debt-relief', title: 'Restaurant MCA Debt Relief: Who Qualifies and How It Works' },
+  { path: '/how-to-get-out-of-merchant-cash-advance', title: 'How to Get Out of a Merchant Cash Advance: Every Exit Path' },
+  { path: '/merchant-cash-advance-settlement', title: 'Merchant Cash Advance Settlement: What to Expect & How to Negotiate' },
+  { path: '/cant-pay-restaurant-mca', title: "Can't Pay Merchant Cash Advance? What Happens & What to Do" },
+  { path: '/restaurant-mca-default', title: 'Merchant Cash Advance Default: Frozen Account, COJ & Recovery' },
+  { path: '/restaurant-mca-payments-too-high', title: 'MCA Payments Too High? Lower Your Restaurant Holdback Rate' },
+  { path: '/restaurant-mca-stacking', title: 'MCA Stacking: Multiple Merchant Cash Advances & How to Exit' },
+  { path: '/restaurant-mca-confession-of-judgment', title: 'Confession of Judgment in MCAs: What It Means by State' },
+  { path: '/restaurant-mca-calculator', title: 'MCA Calculator: Holdback Rate, Cost & Restructuring Savings' },
+  { path: '/mca-bank-account-frozen', title: 'MCA Froze My Bank Account: Emergency Steps in the Next 24 Hours' },
+  { path: '/merchant-cash-advance-personal-guarantee', title: 'MCA Personal Guarantee: What Assets Are at Risk' },
+  { path: '/restaurant-mca-debt-after-closing', title: 'MCA Debt After Restaurant Closes: What Survives and What to Do' },
+  { path: '/merchant-cash-advance-ucc-lien', title: 'MCA UCC Lien: How to Find and Remove Them' },
+  { path: '/merchant-cash-advance-consolidation', title: 'MCA Consolidation vs Restructuring: The Math and Red Flags' },
+  { path: '/restaurant-mca-debt-help-texas', title: 'Texas MCA Debt Help: Homestead and Wage Protections' },
+  { path: '/restaurant-mca-debt-help-california', title: 'California MCA Debt Help: COJ Ban, SB 1235 & Unique Grounds' },
+  { path: '/restaurant-mca-debt-help-florida', title: 'Florida MCA Debt Help: Homestead, UEFJA & Wage Rights' },
+  { path: '/merchant-cash-advance-attorney', title: 'Merchant Cash Advance Attorney: When You Need One vs. a Mediator' },
+  { path: '/merchant-cash-advance-factor-rate', title: 'MCA Factor Rate: True Cost, APR Conversion & Early Payoff Math' },
+];
 import '../styles/landing.css';
 import '../styles/layout.css';
 import '../styles/blog.css';
@@ -85,6 +108,20 @@ export function SitemapPage() {
             </p>
             <ul className="sitemap-list">
               {painPointSitemapEntries.map((entry) => (
+                <li key={entry.path}>
+                  <Link to={entry.path}>{entry.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="sitemap-section">
+            <h2>MCA Debt Guides</h2>
+            <p className="sitemap-section__intro">
+              Guides for restaurant owners dealing with merchant cash advance debt, unmanageable payments, stacking, or default.
+            </p>
+            <ul className="sitemap-list">
+              {mcaDebtSitemapEntries.map((entry) => (
                 <li key={entry.path}>
                   <Link to={entry.path}>{entry.title}</Link>
                 </li>

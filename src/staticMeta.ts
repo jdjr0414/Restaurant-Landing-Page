@@ -33,12 +33,12 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Cash flow problems are the #1 reason restaurants close. Get a plain-English guide to funding options and what to do when cash runs out.",
   },
   '/restaurant-cash-advance': {
-    title: 'Restaurant Cash Advance | How It Works, Speed & When to Use | The Restaurant Owners Guide',
+    title: 'Restaurant Cash Advance | How It Works & When to Use It',
     description:
       "Restaurant cash advance explained: how it works, 24–48 hour funding, repayment tied to sales. When to use it for payroll, inventory, or equipment. Compare with working capital and loans.",
   },
   '/restaurant-working-capital': {
-    title: 'Restaurant Working Capital | Payroll, Inventory & Operations | The Restaurant Owners Guide',
+    title: 'Restaurant Working Capital | Payroll, Inventory & Operations',
     description:
       "Restaurant working capital for payroll, inventory, and operations. When revenue doesn't line up with bills—what it is, how it works, and what options exist.",
   },
@@ -48,12 +48,12 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       'Restaurant funding options for working capital, equipment, payroll gaps, and emergencies. See what restaurant owners qualify for and how fast funding can arrive.',
   },
   '/restaurant-mca-vs-line-of-credit': {
-    title: 'Restaurant MCA vs Line of Credit | Which Funding Option Fits Your Cash Flow Timing?',
+    title: 'Restaurant MCA vs Line of Credit | Which Option Fits Best?',
     description:
       'In-depth comparison of restaurant MCA vs line of credit: speed, qualification, repayment flexibility, costs, and practical scenarios so owners can choose the best fit for urgent and planned needs.',
   },
   '/same-day-restaurant-funding': {
-    title: 'Same-Day Restaurant Funding | Fast Options for Payroll, Vendors, and Emergencies',
+    title: 'Same-Day Restaurant Funding | Fast Cash for Emergencies',
     description:
       'Need same-day restaurant funding? Learn the fastest options, what lenders look at, and how to prepare your application for quick decisions and 24-48 hour funding outcomes.',
   },
@@ -63,7 +63,7 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       'Bad credit restaurant funding options: what is realistic, how revenue-based approvals work, and steps to improve your chance of qualifying when bank financing is out of reach.',
   },
   '/restaurant-inventory-financing-fast': {
-    title: 'Restaurant Inventory Financing Fast | Cover Food, Beverage, and Supply Purchases',
+    title: 'Restaurant Inventory Financing | Fast Funding for Stock Purchases',
     description:
       'Restaurant inventory financing for urgent stock purchases before weekends, events, and seasonal demand. Compare fast funding options and build safer repayment plans tied to sales.',
   },
@@ -78,37 +78,37 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       'Browse all guides and topics: restaurant cash flow, funding, payroll, equipment, seasonal cash flow, and more. Find the guide you need.',
   },
   '/consultation': {
-    title: "Free Consultation | Restaurant Cash Flow & Funding | The Restaurant Owners Guide",
+    title: "Free Restaurant Funding Consultation | No Obligation",
     description:
       "Book a free consultation to discuss your restaurant cash flow, payroll gaps, seasonal slumps, or funding options. No obligation—get clarity on what might fit your situation.",
   },
   '/restaurant-cash-flow-problems': {
-    title: 'Restaurant Cash Flow Problems | Why Restaurants Run Out of Cash | The Restaurant Owners Guide',
+    title: 'Restaurant Cash Flow Problems | Why Restaurants Run Out of Cash',
     description:
       'In-depth guide to restaurant cash flow problems: why restaurants run out of cash, payroll gaps, supplier payment issues, seasonal swings, and cost spikes. Practical solutions and funding options.',
   },
   '/restaurant-cash-flow-guide': {
-    title: 'Restaurant Cash Flow Guide | Why Timing Mismatches Cause Problems | The Restaurant Owners Guide',
+    title: 'Restaurant Cash Flow Guide | Why Timing Mismatches Hurt You',
     description:
       "Why restaurant cash flow problems happen: the timing mismatch between revenue and bills. How the cash cycle works, fixed vs variable costs, and when to consider funding.",
   },
   '/restaurant-funding-options': {
-    title: 'Restaurant Funding Options | Complete Comparison of All Choices | The Restaurant Owners Guide',
+    title: 'Restaurant Funding Options | Compare All Your Choices',
     description:
       'Complete comparison of restaurant funding options: cash advance vs working capital vs loans vs equipment financing. Speed, cost, qualification, and when each fits.',
   },
   '/restaurant-working-capital-guide': {
-    title: 'Restaurant Working Capital Guide | When You Need It | The Restaurant Owners Guide',
+    title: 'Restaurant Working Capital Guide | When You Need It',
     description:
       'Restaurant working capital guide: what it is, when you need it, and what options exist for payroll, inventory, and operations.',
   },
   '/restaurant-loan-alternatives': {
-    title: 'Restaurant Loan Alternatives | Beyond Traditional Loans | The Restaurant Owners Guide',
+    title: 'Restaurant Loan Alternatives | When Banks Say No',
     description:
       "Restaurant loan alternatives: cash advance, working capital, and other options when a bank loan isn't right or available.",
   },
   '/restaurant-equipment-financing-guide': {
-    title: 'Restaurant Equipment Financing Guide | Loans, Leases & Working Capital | The Restaurant Owners Guide',
+    title: 'Restaurant Equipment Financing | Loans, Leases & Working Capital',
     description:
       'In-depth guide to restaurant equipment financing: loans vs leases, costs, requirements. When to use equipment financing vs flexible working capital for ovens, coolers, and kitchen gear.',
   },
@@ -177,6 +177,111 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Opening a second restaurant? How expansion stretches cash, starves the first location, and how to fund growth without overextending.",
   },
+  '/restaurant-mca-debt-help': {
+    title: "Restaurant MCA Debt Relief | Restructuring, Settlement & Help",
+    description:
+      "Restaurant MCA debt crushing your cash flow? Professional mediators typically achieve 40–70% balance reductions. Learn what MCA debt relief, restructuring, and settlement actually look like.",
+  },
+  '/cant-pay-restaurant-mca': {
+    title: "Can't Pay Merchant Cash Advance? What Happens & What to Do",
+    description:
+      "Can't pay your merchant cash advance? Steps to take in the next 72 hours, how lenders use Confessions of Judgment, and when professional help changes the outcome.",
+  },
+  '/restaurant-mca-default': {
+    title: "Merchant Cash Advance Default: Frozen Account, COJ & Recovery",
+    description:
+      "Defaulted on an MCA or bank account frozen? The exact timeline from missed payment to frozen account, what a COJ means, and the recovery steps that actually work.",
+  },
+  '/restaurant-mca-payments-too-high': {
+    title: "MCA Payments Too High? Lower Your Restaurant Holdback Rate",
+    description:
+      "MCA daily holdbacks consuming 20–30%+ of your restaurant revenue? How holdback rates work, what makes them unsustainable, and how professional restructuring lowers them.",
+  },
+  '/restaurant-mca-stacking': {
+    title: "MCA Stacking: Multiple Merchant Cash Advances & How to Exit",
+    description:
+      "Stacked multiple MCAs and now paying 30–50% of daily revenue before operations? How stacking compounds cash drain, how lenders target stacked businesses, and how to get out.",
+  },
+  '/restaurant-mca-calculator': {
+    title: "MCA Calculator: Holdback Rate, Cost & Restructuring Savings",
+    description:
+      "Free MCA holdback calculator: enter your card revenue and daily deductions to see your burden rate, monthly cost, and how much cash restructured payments would free up.",
+  },
+  '/restaurant-mca-confession-of-judgment': {
+    title: "Confession of Judgment in MCAs: What It Means by State",
+    description:
+      "How COJ clauses work in MCA contracts, which states enforce them, and what to do immediately if your bank account has been frozen by an MCA lender.",
+  },
+  '/how-to-get-out-of-merchant-cash-advance': {
+    title: "How to Get Out of a Merchant Cash Advance | Every Exit Path",
+    description:
+      "Every exit path from a merchant cash advance explained: self-negotiation, professional restructuring, consolidation, and legal defense. Which one fits your situation and how long each takes.",
+  },
+  '/merchant-cash-advance-settlement': {
+    title: "Merchant Cash Advance Settlement | What to Expect & How to Negotiate",
+    description:
+      "MCA settlement explained: what settlement percentages look like (40–70% reductions), lump sum vs. structured settlement, when lenders will negotiate, and red flags to avoid.",
+  },
+  '/restaurant-mca-debt-relief': {
+    title: "Restaurant MCA Debt Relief | Who Qualifies and How It Works",
+    description:
+      "Restaurant MCA debt relief is not a government program — it's a professional negotiation that reduces what you owe and lowers daily payments to sustainable levels. Who qualifies and what to expect.",
+  },
+  '/mca-bank-account-frozen': {
+    title: "MCA Froze My Bank Account | Emergency Steps in the Next 24 Hours",
+    description:
+      "MCA bank account frozen by a restraining notice? Open a new account, redirect your processor, and contact a mediator within hours. This guide covers the exact priority order.",
+  },
+  '/merchant-cash-advance-personal-guarantee': {
+    title: "Merchant Cash Advance Personal Guarantee | What Assets Are at Risk",
+    description:
+      "Does an MCA personal guarantee put your home at risk? What assets are reachable, homestead exemptions by state, and how to get a PG released as part of settlement.",
+  },
+  '/restaurant-mca-debt-after-closing': {
+    title: "MCA Debt After Restaurant Closes | What Survives and What to Do",
+    description:
+      "Closing your restaurant does not eliminate MCA debt. Personal guarantees, COJ judgments, and UCC liens survive closure. Why negotiating before closing produces far better outcomes.",
+  },
+  '/merchant-cash-advance-ucc-lien': {
+    title: "Merchant Cash Advance UCC Lien | How to Find and Remove Them",
+    description:
+      "Every MCA files a UCC-1 lien against your business. How to search your state's SOS database, what all-assets liens block, lien priority explained, and how to get UCC-3 terminations.",
+  },
+  '/merchant-cash-advance-consolidation': {
+    title: "MCA Consolidation vs Restructuring | The Math and Red Flags",
+    description:
+      "MCA consolidation increases your total obligation while lowering daily payments. See the break-even math, red flags in consolidation offers, and when restructuring is the better option.",
+  },
+  '/restaurant-mca-debt-help-texas': {
+    title: "Texas Restaurant MCA Debt Help | Homestead & Wage Protections",
+    description:
+      "Texas restaurant owners with MCA debt have stronger protections than most states: unlimited homestead exemption, no wage garnishment for commercial debt, and a slower COJ enforcement timeline.",
+  },
+  '/restaurant-mca-debt-help-california': {
+    title: "California Restaurant MCA Debt Help | COJ Ban, SB 1235 & More",
+    description:
+      "California prohibits confessed judgments (CCP § 1132), requires APR disclosure under SB 1235, and offers unique grounds to challenge MCA enforcement. What California restaurant owners need to know.",
+  },
+  '/restaurant-mca-debt-help-florida': {
+    title: "Florida Restaurant MCA Debt Help | Homestead, UEFJA & Wage Rights",
+    description:
+      "Florida's unlimited homestead exemption, 30-day UEFJA contest window, and head-of-household wage exemption give Florida restaurant owners strong MCA debt protections.",
+  },
+  '/merchant-cash-advance-attorney': {
+    title: "Merchant Cash Advance Attorney | When You Need One vs. a Mediator",
+    description:
+      "5 specific situations that require an MCA attorney vs. when professional mediation is faster and cheaper. COJ vacatur, usury arguments, UEFJA defense, and what MCA attorneys charge.",
+  },
+  '/merchant-cash-advance-factor-rate': {
+    title: "MCA Factor Rate Explained | True Cost, APR & Early Payoff Math",
+    description:
+      "A 1.35 factor rate is 70%+ APR on a 6-month advance. How to calculate your true MCA cost, why paying early saves no money, the renewal trap, and what buyout amount really means.",
+  },
+  '/faq': {
+    title: "FAQ: Restaurant Cash Flow, Funding & MCA Debt",
+    description:
+      "Answers to common questions about restaurant cash flow, merchant cash advances, MCA debt restructuring, working capital, and what to do when payments become unmanageable.",
+  },
 };
 
 export function getAllPaths(): string[] {
@@ -210,6 +315,27 @@ export function getAllPaths(): string[] {
     '/restaurant-bar-profitable-restaurant-not',
     '/restaurant-tax-bill-cant-pay',
     '/opening-second-restaurant-cash-flow',
+    '/restaurant-mca-debt-help',
+    '/cant-pay-restaurant-mca',
+    '/restaurant-mca-default',
+    '/restaurant-mca-payments-too-high',
+    '/restaurant-mca-stacking',
+    '/restaurant-mca-calculator',
+    '/restaurant-mca-confession-of-judgment',
+    '/faq',
+    '/how-to-get-out-of-merchant-cash-advance',
+    '/merchant-cash-advance-settlement',
+    '/restaurant-mca-debt-relief',
+    '/mca-bank-account-frozen',
+    '/merchant-cash-advance-personal-guarantee',
+    '/restaurant-mca-debt-after-closing',
+    '/merchant-cash-advance-ucc-lien',
+    '/merchant-cash-advance-consolidation',
+    '/restaurant-mca-debt-help-texas',
+    '/restaurant-mca-debt-help-california',
+    '/restaurant-mca-debt-help-florida',
+    '/merchant-cash-advance-attorney',
+    '/merchant-cash-advance-factor-rate',
     ...pillarPaths,
     ...topicPaths,
     ...blogPaths,

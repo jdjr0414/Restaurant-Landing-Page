@@ -147,6 +147,7 @@ export function LeadCaptureForm({
       <button type="submit" className="btn btn-primary lead-form__submit" disabled={status === 'submitting'}>
         {status === 'submitting' ? 'Sending…' : submitLabel}
       </button>
+      <p className="lead-form__disclaimer">No spam. No obligation. One call to understand your options.</p>
     </form>
   );
 }
