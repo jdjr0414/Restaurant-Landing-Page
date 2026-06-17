@@ -13,9 +13,6 @@ export const PAGE_HERO_IMAGES: Record<string, string> = {
   '/faq': `https://images.unsplash.com/photo-1767973200372-dae18c337a38?${Q}`,
   '/blog': `https://images.unsplash.com/photo-1667388968964-4aa652df0a9b?${Q}`,
   '/sitemap': `https://images.unsplash.com/photo-1761426186983-b380a4474a85?${Q}`,
-  '/business-cash-advance': `https://images.unsplash.com/photo-1616538994032-f7619b8bebb5?${Q}`,
-  '/small-business-funding': `https://images.unsplash.com/photo-1771575521792-4843df806b57?${Q}`,
-
   // Pillar pages
   '/restaurant-cash-flow-guide': `https://images.unsplash.com/photo-1758835382995-acc5e2592d6e?${Q}`,
   '/restaurant-funding-options': `https://images.unsplash.com/photo-1763994682440-6e596fce21b5?${Q}`,
@@ -33,7 +30,6 @@ export const PAGE_HERO_IMAGES: Record<string, string> = {
   '/restaurant-inventory-funding': `https://images.unsplash.com/photo-1514939771107-60b853a2ebdd?${Q}`,
   '/why-restaurants-run-out-of-cash': `https://images.unsplash.com/photo-1568901346375-23c9450c58cd?${Q}`,
   '/restaurant-cash-advance-vs-loan': `https://images.unsplash.com/photo-1414235077428-338989a2e8c0?${Q}`,
-  '/working-capital-for-restaurants': `https://images.unsplash.com/photo-1759866614069-e5b93d17e663?${Q}`,
   '/restaurant-financing-options': `https://images.unsplash.com/photo-1769208053961-567c81c9def0?${Q}`,
   '/restaurant-startup-funding': `https://images.unsplash.com/photo-1667388968900-4dc428fedb8c?${Q}`,
   '/restaurant-expansion-funding': `https://images.unsplash.com/photo-1758245475662-09d75f1f230a?${Q}`,

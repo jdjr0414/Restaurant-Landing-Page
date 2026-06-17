@@ -10,5 +10,4 @@ export const PILLAR_ROUTE_PATHS: string[] = [
   '/restaurant-loan-alternatives',
   '/restaurant-equipment-financing-guide',
   '/restaurant-funding-by-business-type',
-  '/restaurant-funding-by-state',
 ];
