@@ -99,6 +99,14 @@ export function BlogPostPage() {
                 <time className="article__date" dateTime={post.publishedDate}>
                   Published: {new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </time>
+                {post.dateModified && post.dateModified !== post.publishedDate && (
+                  <>
+                    <span className="article__meta-sep" aria-hidden> · </span>
+                    <time className="article__date" dateTime={post.dateModified}>
+                      Updated: {new Date(post.dateModified).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                    </time>
+                  </>
+                )}
                 <span className="article__meta-sep" aria-hidden> · </span>
                 <span className="article__reviewed">Editorially reviewed</span>
               </div>

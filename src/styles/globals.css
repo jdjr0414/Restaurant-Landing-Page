@@ -14,6 +14,9 @@
   --color-amber-dark: #8b5a28;
   --color-white: #ffffff;
   --color-success: #2d6a4f;
+  /* Semantic aliases used by outcome-callout boxes site-wide */
+  --color-surface: var(--color-cream);
+  --color-primary: var(--color-amber);
   --font-display: "DM Serif Display", Georgia, serif;
   --font-sans: "Outfit", system-ui, sans-serif;
   --space-xs: 0.25rem;
