@@ -22,7 +22,6 @@ export const PAGE_HERO_IMAGES: Record<string, string> = {
 
   // Topic pages - each unique
   '/restaurant-payroll-funding': `https://images.unsplash.com/photo-1538333581680-29dd4752ddf2?${Q}`,
-  '/restaurant-equipment-financing': `https://images.unsplash.com/photo-1583354608715-177553a4035e?${Q}`,
   '/restaurant-seasonal-cash-flow': `https://images.unsplash.com/photo-1560130934-590b85fc08e7?${Q}`,
   '/restaurant-emergency-funding': `https://images.unsplash.com/photo-1613274554329-70f997f5789f?${Q}`,
   '/restaurant-cash-flow-solutions': `https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?${Q}`,

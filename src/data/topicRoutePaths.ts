@@ -4,7 +4,6 @@
  */
 export const TOPIC_ROUTE_PATHS: string[] = [
   '/restaurant-payroll-funding',
-  '/restaurant-equipment-financing',
   '/restaurant-seasonal-cash-flow',
   '/restaurant-emergency-funding',
   '/restaurant-cash-flow-solutions',
