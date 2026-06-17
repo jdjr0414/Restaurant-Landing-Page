@@ -1,0 +1,54 @@
+# Pages removed - redirect to primary funding page
+/small-business-funding /restaurant-funding 301
+/war-impact-restaurant-financing /restaurant-funding 301
+
+# State-level funding pages - too broad/competitive, consolidate authority
+/blog/restaurant-funding-texas /restaurant-funding 301
+/blog/restaurant-funding-california /restaurant-funding 301
+/blog/restaurant-funding-florida /restaurant-funding 301
+/blog/restaurant-funding-illinois /restaurant-funding 301
+/blog/restaurant-funding-georgia /restaurant-funding 301
+/blog/restaurant-funding-arizona /restaurant-funding 301
+/blog/restaurant-funding-nevada /restaurant-funding 301
+/blog/restaurant-funding-colorado /restaurant-funding 301
+/blog/restaurant-funding-ohio /restaurant-funding 301
+/blog/restaurant-funding-michigan /restaurant-funding 301
+/blog/restaurant-funding-virginia /restaurant-funding 301
+/blog/restaurant-funding-washington /restaurant-funding 301
+/blog/restaurant-funding-massachusetts /restaurant-funding 301
+/blog/restaurant-funding-pennsylvania /restaurant-funding 301
+
+# Weak city pages - near-zero impressions and/or buried positions
+/blog/restaurant-funding-phoenix /restaurant-funding 301
+/blog/restaurant-funding-minneapolis /restaurant-funding 301
+
+# Round 2 - duplicate/thin MCA pages
+/business-cash-advance /restaurant-cash-advance 301
+/merchant-cash-advance-for-restaurants /restaurant-cash-advance 301
+
+# Round 2 - same-day funding cluster
+/restaurant-24-hour-funding-payroll /same-day-restaurant-funding 301
+/restaurant-same-day-working-capital-options /same-day-restaurant-funding 301
+
+# Round 2 - payroll funding cluster
+/restaurant-payroll-funding-options /restaurant-payroll-funding 301
+/restaurant-funding-options-for-payroll /restaurant-payroll-funding 301
+
+# Round 2 - emergency funding cluster
+/restaurant-emergency-financing-options /restaurant-emergency-funding 301
+
+# Round 2 - working capital duplicate
+/working-capital-for-restaurants /restaurant-working-capital 301
+
+# Round 2 - state funding pillar
+/restaurant-funding-by-state /restaurant-funding 301
+
+# Round 2 - scenario/pain-point pages consolidated to closest guides
+/restaurant-first-year-cash-flow-surprises /restaurant-cash-flow-guide 301
+/behind-on-restaurant-vendor-payments /restaurant-emergency-funding 301
+/restaurant-labor-schedule-money-drains /restaurant-cash-flow-guide 301
+/maxed-out-credit-cards-restaurant /restaurant-funding 301
+/restaurant-partner-money-problems /restaurant-funding 301
+/restaurant-menu-engineering-cash-flow /restaurant-cash-flow-guide 301
+/restaurant-manager-quit-now-what /restaurant-cash-flow-guide 301
+/restaurant-profitable-on-paper-no-cash /restaurant-cash-flow-guide 301

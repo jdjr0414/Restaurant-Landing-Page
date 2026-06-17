@@ -46,6 +46,7 @@ export function BlogIndexPage() {
         title={meta?.title ?? `Blog Page ${safePage} | Restaurant Cash Flow & Funding Guides`}
         description={meta?.description ?? "Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners."}
         canonicalPath={canonicalPath}
+        noindex={!isFirstPage}
       />
       <BreadcrumbSchema items={[{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }]} />
       <BlogIndexSchema posts={posts.map((p) => ({ slug: p.slug, title: p.title, publishedDate: p.publishedDate }))} />

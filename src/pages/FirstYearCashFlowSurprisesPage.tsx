@@ -168,7 +168,7 @@ export function FirstYearCashFlowSurprisesPage() {
             <p>
               Pair that plan with a clear understanding of your options if you see a gap coming. That might include
               trimming labor, negotiating with vendors, adjusting promotions, or exploring{' '}
-              <Link to="/small-business-funding">small business funding</Link> built for restaurants.
+              <Link to="/restaurant-funding">restaurant funding options</Link> built for your situation.
             </p>
           </section>
 
