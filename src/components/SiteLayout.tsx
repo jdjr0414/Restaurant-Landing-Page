@@ -9,7 +9,7 @@ import { SITE_NAME, PHONE_NUMBER, PHONE_HREF } from '../config';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Cash Flow Guide', href: '/restaurant-cash-advance' },
+  { label: 'Cash Flow Guide', href: '/restaurant-cash-flow-guide' },
   { label: 'Working Capital', href: '/restaurant-working-capital' },
   { label: 'Funding Options', href: '/restaurant-funding' },
   { label: 'Free Consultation', href: '/consultation' },

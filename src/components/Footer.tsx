@@ -32,7 +32,7 @@ const MAIN_LINKS = [
   { label: 'Working Capital', href: '/restaurant-working-capital' },
   { label: 'Restaurant Funding', href: '/restaurant-funding' },
   { label: 'Free Consultation', href: '/consultation' },
-{ label: 'FAQ', href: '/faq' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Blog', href: '/blog' },
   { label: 'All Topics', href: '/sitemap' },
 ];
