@@ -23,6 +23,19 @@ const painPointSitemapEntries: { path: string; title: string }[] = [
   { path: '/restaurant-bar-profitable-restaurant-not', title: "Why Your Bar Sales Aren't Saving Your Restaurant" },
   { path: '/restaurant-tax-bill-cant-pay', title: "Restaurant Tax Bill You Can't Pay? What to Do Next" },
   { path: '/opening-second-restaurant-cash-flow', title: 'The Cash Flow Risk of Opening a Second Restaurant Too Fast' },
+  { path: '/behind-on-restaurant-vendor-payments', title: 'Behind on Restaurant Vendor Payments? How to Catch Up Without Losing Suppliers' },
+  { path: '/restaurant-manager-quit-now-what', title: 'Your Restaurant Manager Quit Without Notice | What to Do Now' },
+  { path: '/restaurant-profitable-on-paper-no-cash', title: 'Restaurant Shows a Profit on Paper But No Cash in the Bank' },
+  { path: '/restaurant-payroll-funding-options', title: 'Restaurant Payroll Funding Options | When Payday Is Short' },
+  { path: '/war-impact-restaurant-financing', title: 'Global Economic Uncertainty and Restaurant Financing | What Changed' },
+  { path: '/restaurant-first-year-cash-flow-surprises', title: 'First-Year Restaurant Cash Flow Surprises | What New Owners Don\'t Expect' },
+  { path: '/maxed-out-credit-cards-restaurant', title: 'Running a Restaurant on Maxed-Out Credit Cards | What to Do Instead' },
+  { path: '/restaurant-labor-schedule-money-drains', title: 'Restaurant Labor Scheduling Mistakes That Drain Cash | How to Fix Them' },
+  { path: '/restaurant-partner-money-problems', title: 'Restaurant Partner Money Disputes | How to Handle Financial Conflicts' },
+  { path: '/restaurant-menu-engineering-cash-flow', title: 'Menu Engineering for Restaurant Cash Flow | Pricing Your Way to Profit' },
+  { path: '/business-cash-advance', title: 'Business Cash Advance | How It Works, Costs & When to Use It' },
+  { path: '/small-business-funding', title: 'Small Business Funding | Fast Options When Banks Say No' },
+  { path: '/merchant-cash-advance-for-restaurants', title: 'Merchant Cash Advance for Restaurants | How It Works & What to Watch' },
 ];
 
 const mcaDebtSitemapEntries: { path: string; title: string }[] = [
@@ -35,7 +48,7 @@ const mcaDebtSitemapEntries: { path: string; title: string }[] = [
   { path: '/restaurant-mca-payments-too-high', title: 'MCA Payments Too High? Lower Your Restaurant Holdback Rate' },
   { path: '/restaurant-mca-stacking', title: 'MCA Stacking: Multiple Merchant Cash Advances & How to Exit' },
   { path: '/restaurant-mca-confession-of-judgment', title: 'Confession of Judgment in MCAs: What It Means by State' },
-  { path: '/restaurant-mca-calculator', title: 'MCA Calculator: Holdback Rate, Cost & Restructuring Savings' },
+  { path: '/restaurant-mca-calculator', title: 'Restaurant MCA Calculator: Free Holdback Rate & Payment Tool' },
   { path: '/mca-bank-account-frozen', title: 'MCA Froze My Bank Account: Emergency Steps in the Next 24 Hours' },
   { path: '/merchant-cash-advance-personal-guarantee', title: 'MCA Personal Guarantee: What Assets Are at Risk' },
   { path: '/restaurant-mca-debt-after-closing', title: 'MCA Debt After Restaurant Closes: What Survives and What to Do' },

@@ -203,9 +203,9 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Stacked multiple MCAs and now paying 30–50% of daily revenue before operations? How stacking compounds cash drain, how lenders target stacked businesses, and how to get out.",
   },
   '/restaurant-mca-calculator': {
-    title: "MCA Calculator: Holdback Rate, Cost & Restructuring Savings",
+    title: "Restaurant MCA Calculator: Free Holdback Rate & Payment Tool",
     description:
-      "Free MCA holdback calculator: enter your card revenue and daily deductions to see your burden rate, monthly cost, and how much cash restructured payments would free up.",
+      "Free restaurant MCA calculator. Enter your daily or weekly deductions and card revenue to instantly see your holdback rate, monthly MCA cost, and how much restructuring could save you.",
   },
   '/restaurant-mca-confession-of-judgment': {
     title: "Confession of Judgment in MCAs: What It Means by State",
@@ -282,6 +282,71 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Answers to common questions about restaurant cash flow, merchant cash advances, MCA debt restructuring, working capital, and what to do when payments become unmanageable.",
   },
+  '/behind-on-restaurant-vendor-payments': {
+    title: "Behind on Restaurant Vendor Payments? How to Catch Up Without Losing Suppliers",
+    description:
+      "Behind on restaurant vendor payments? How to prioritize which suppliers to pay first, how to approach vendors before they cut you off, and funding options to get current fast.",
+  },
+  '/business-cash-advance': {
+    title: "Business Cash Advance | How It Works, Costs & When to Use It",
+    description:
+      "Business cash advance explained: how revenue-based repayment works, factor rates, qualification requirements, and when it makes more sense than a traditional small business loan.",
+  },
+  '/small-business-funding': {
+    title: "Small Business Funding | Fast Options When Banks Say No",
+    description:
+      "Small business funding beyond bank loans: merchant cash advances, working capital, revenue-based financing, and equipment funding. How each works and who qualifies.",
+  },
+  '/restaurant-manager-quit-now-what': {
+    title: "Your Restaurant Manager Quit Without Notice | What to Do Now",
+    description:
+      "Restaurant manager quit suddenly? Immediate steps to protect operations, how to manage the financial hit of turnover, and when short-term funding helps while you rebuild the team.",
+  },
+  '/restaurant-profitable-on-paper-no-cash': {
+    title: "Restaurant Shows a Profit on Paper But No Cash in the Bank | Why",
+    description:
+      "Why your restaurant P&L shows profit but your bank account is empty. The accounting and timing gaps that cause it — and what to do when paper profit doesn't pay real bills.",
+  },
+  '/merchant-cash-advance-for-restaurants': {
+    title: "Merchant Cash Advance for Restaurants | How It Works & What to Watch",
+    description:
+      "How merchant cash advances work for restaurants: repayment tied to card sales, factor rates, holdback rates, and what to compare before taking one on. Alternatives explained.",
+  },
+  '/restaurant-payroll-funding-options': {
+    title: "Restaurant Payroll Funding Options | When Payday Is Short",
+    description:
+      "Restaurant payroll funding options when cash runs short before payday: how to bridge gaps fast, what lenders look for, and which options get money in your account in 24–48 hours.",
+  },
+  '/war-impact-restaurant-financing': {
+    title: "Global Economic Uncertainty and Restaurant Financing | What Changed",
+    description:
+      "How global supply chain disruptions and economic uncertainty changed restaurant financing: tighter bank credit, higher food costs, and what fast funding options still exist for operators.",
+  },
+  '/restaurant-first-year-cash-flow-surprises': {
+    title: "First-Year Restaurant Cash Flow Surprises | What New Owners Don't Expect",
+    description:
+      "The cash flow surprises that hit new restaurant owners hardest in year one: delayed card deposits, startup overruns, seasonality, and why the first January can break a restaurant's finances.",
+  },
+  '/maxed-out-credit-cards-restaurant': {
+    title: "Running a Restaurant on Maxed-Out Credit Cards | What to Do Instead",
+    description:
+      "Maxed-out credit cards running your restaurant? Why this cycle accelerates cash problems, what alternative funding exists, and how to restructure before interest compounds the situation.",
+  },
+  '/restaurant-labor-schedule-money-drains': {
+    title: "Restaurant Labor Scheduling Mistakes That Drain Cash | How to Fix Them",
+    description:
+      "How poor labor scheduling quietly drains restaurant cash: overtime creep, overstaffing slow periods, split-shift costs. Scheduling fixes that restore margin without cutting service quality.",
+  },
+  '/restaurant-partner-money-problems': {
+    title: "Restaurant Partner Money Disputes | How to Handle Financial Conflicts",
+    description:
+      "Restaurant partnership money problems: how ownership disputes, unequal capital contributions, and financial disagreements threaten operations — and steps to resolve them before they close the business.",
+  },
+  '/restaurant-menu-engineering-cash-flow': {
+    title: "Menu Engineering for Restaurant Cash Flow | Pricing Your Way to Profit",
+    description:
+      "How menu engineering improves restaurant cash flow: identifying high-margin items, repositioning slow movers, and using pricing strategy to free up operating cash every week.",
+  },
 };
 
 export function getAllPaths(): string[] {
@@ -336,6 +401,19 @@ export function getAllPaths(): string[] {
     '/restaurant-mca-debt-help-florida',
     '/merchant-cash-advance-attorney',
     '/merchant-cash-advance-factor-rate',
+    '/behind-on-restaurant-vendor-payments',
+    '/business-cash-advance',
+    '/small-business-funding',
+    '/restaurant-manager-quit-now-what',
+    '/restaurant-profitable-on-paper-no-cash',
+    '/merchant-cash-advance-for-restaurants',
+    '/restaurant-payroll-funding-options',
+    '/war-impact-restaurant-financing',
+    '/restaurant-first-year-cash-flow-surprises',
+    '/maxed-out-credit-cards-restaurant',
+    '/restaurant-labor-schedule-money-drains',
+    '/restaurant-partner-money-problems',
+    '/restaurant-menu-engineering-cash-flow',
     ...pillarPaths,
     ...topicPaths,
     ...blogPaths,

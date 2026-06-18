@@ -147,6 +147,51 @@ const ConsultationPage = lazy(() =>
 const TopicPage = lazy(() => import('./pages/TopicPage').then((m) => ({ default: m.TopicPage })));
 const PillarPage = lazy(() => import('./pages/PillarPage').then((m) => ({ default: m.PillarPage })));
 const SitemapPage = lazy(() => import('./pages/SitemapPage').then((m) => ({ default: m.SitemapPage })));
+const BehindOnVendorPaymentsPage = lazy(() =>
+  import('./pages/BehindOnVendorPaymentsPage').then((m) => ({ default: m.BehindOnVendorPaymentsPage }))
+);
+const BusinessCashAdvancePage = lazy(() =>
+  import('./pages/BusinessCashAdvancePage').then((m) => ({ default: m.BusinessCashAdvancePage }))
+);
+const SmallBusinessFundingPage = lazy(() =>
+  import('./pages/SmallBusinessFundingPage').then((m) => ({ default: m.SmallBusinessFundingPage }))
+);
+const RestaurantManagerQuitPage = lazy(() =>
+  import('./pages/RestaurantManagerQuitPage').then((m) => ({ default: m.RestaurantManagerQuitPage }))
+);
+const RestaurantProfitableOnPaperNoCashPage = lazy(() =>
+  import('./pages/RestaurantProfitableOnPaperNoCashPage').then((m) => ({
+    default: m.RestaurantProfitableOnPaperNoCashPage,
+  }))
+);
+const MerchantCashAdvanceForRestaurantsPage = lazy(() =>
+  import('./pages/MerchantCashAdvanceForRestaurantsPage').then((m) => ({
+    default: m.MerchantCashAdvanceForRestaurantsPage,
+  }))
+);
+const RestaurantPayrollFundingOptionsPage = lazy(() =>
+  import('./pages/RestaurantPayrollFundingOptionsPage').then((m) => ({ default: m.RestaurantPayrollFundingOptionsPage }))
+);
+const WarImpactRestaurantFinancingPage = lazy(() =>
+  import('./pages/WarImpactRestaurantFinancingPage').then((m) => ({ default: m.WarImpactRestaurantFinancingPage }))
+);
+const FirstYearCashFlowSurprisesPage = lazy(() =>
+  import('./pages/FirstYearCashFlowSurprisesPage').then((m) => ({ default: m.FirstYearCashFlowSurprisesPage }))
+);
+const MaxedOutCreditCardsRestaurantPage = lazy(() =>
+  import('./pages/MaxedOutCreditCardsRestaurantPage').then((m) => ({ default: m.MaxedOutCreditCardsRestaurantPage }))
+);
+const RestaurantLaborScheduleMoneyDrainsPage = lazy(() =>
+  import('./pages/RestaurantLaborScheduleMoneyDrainsPage').then((m) => ({
+    default: m.RestaurantLaborScheduleMoneyDrainsPage,
+  }))
+);
+const RestaurantPartnerMoneyProblemsPage = lazy(() =>
+  import('./pages/RestaurantPartnerMoneyProblemsPage').then((m) => ({ default: m.RestaurantPartnerMoneyProblemsPage }))
+);
+const RestaurantMenuEngineeringPage = lazy(() =>
+  import('./pages/RestaurantMenuEngineeringPage').then((m) => ({ default: m.RestaurantMenuEngineeringPage }))
+);
 
 function App() {
   return (
@@ -197,6 +242,19 @@ function App() {
             <Route path="/same-day-restaurant-funding" element={<SameDayRestaurantFundingPage />} />
             <Route path="/bad-credit-restaurant-funding" element={<BadCreditRestaurantFundingPage />} />
             <Route path="/restaurant-inventory-financing-fast" element={<RestaurantInventoryFinancingFastPage />} />
+            <Route path="/behind-on-restaurant-vendor-payments" element={<BehindOnVendorPaymentsPage />} />
+            <Route path="/business-cash-advance" element={<BusinessCashAdvancePage />} />
+            <Route path="/small-business-funding" element={<SmallBusinessFundingPage />} />
+            <Route path="/restaurant-manager-quit-now-what" element={<RestaurantManagerQuitPage />} />
+            <Route path="/restaurant-profitable-on-paper-no-cash" element={<RestaurantProfitableOnPaperNoCashPage />} />
+            <Route path="/merchant-cash-advance-for-restaurants" element={<MerchantCashAdvanceForRestaurantsPage />} />
+            <Route path="/restaurant-payroll-funding-options" element={<RestaurantPayrollFundingOptionsPage />} />
+            <Route path="/war-impact-restaurant-financing" element={<WarImpactRestaurantFinancingPage />} />
+            <Route path="/restaurant-first-year-cash-flow-surprises" element={<FirstYearCashFlowSurprisesPage />} />
+            <Route path="/maxed-out-credit-cards-restaurant" element={<MaxedOutCreditCardsRestaurantPage />} />
+            <Route path="/restaurant-labor-schedule-money-drains" element={<RestaurantLaborScheduleMoneyDrainsPage />} />
+            <Route path="/restaurant-partner-money-problems" element={<RestaurantPartnerMoneyProblemsPage />} />
+            <Route path="/restaurant-menu-engineering-cash-flow" element={<RestaurantMenuEngineeringPage />} />
             {PILLAR_ROUTE_PATHS.map((path) => (
               <Route key={path} path={path} element={<PillarPage />} />
             ))}
