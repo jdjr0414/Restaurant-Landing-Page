@@ -63,6 +63,9 @@ export function RestaurantMcaDebtHelpTexasPage() {
           <p className="page-lead">
             Texas restaurant owners with MCA debt have legal protections that most other states do not offer — including an unlimited home exemption, virtual immunity from wage garnishment, and a slower enforcement timeline for out-of-state judgments. This guide explains exactly what those protections mean and how to use them as leverage in MCA negotiations.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-04-02">Updated: April 2, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>Why Texas Law Gives MCA Borrowers Unusual Leverage</h2>

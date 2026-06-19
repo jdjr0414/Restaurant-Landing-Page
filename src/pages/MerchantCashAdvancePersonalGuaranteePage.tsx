@@ -63,6 +63,9 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
           <p className="page-lead">
             Most restaurant owners who signed an MCA agreement also signed a personal guarantee — often without fully understanding that it makes them personally liable for the debt if the business cannot pay. This guide explains exactly what assets are at risk, how homestead laws protect you (or don't), and what happens to a personal guarantee in settlement or bankruptcy.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-04-22">Updated: April 22, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>What Personal Guarantee Language Looks Like in an MCA Contract</h2>

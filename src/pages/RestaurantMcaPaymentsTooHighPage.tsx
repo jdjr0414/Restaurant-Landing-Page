@@ -54,6 +54,9 @@ export function RestaurantMcaPaymentsTooHighPage() {
           <p className="page-lead">
             If your merchant cash advance holdback is consuming most of the cash your restaurant generates each day, the math is telling you something important: the payment is not aligned with your actual revenue. Here is what drives holdback to unsustainable levels and what you can do about it.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-21">Updated: May 21, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>Why Your MCA Payment Feels Larger Than It Did When You Signed</h2>

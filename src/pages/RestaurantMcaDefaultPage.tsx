@@ -67,6 +67,9 @@ export function RestaurantMcaDefaultPage() {
           <p className="page-lead">
             Defaulting on a merchant cash advance triggers consequences that move faster than most restaurant owners expect. Here is exactly what happens at each stage and what your options are at each point in the timeline.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-27">Updated: May 27, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>The MCA Default Timeline for Restaurants</h2>

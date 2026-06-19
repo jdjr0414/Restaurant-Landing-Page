@@ -76,6 +76,9 @@ export function McaBankAccountFrozenPage() {
           <p className="page-lead">
             If a merchant cash advance lender has served a restraining notice on your bank account, you have hours — not days — to protect your operating cash and begin the negotiation that releases the freeze. This guide covers the exact steps in the order that matters.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-12">Updated: May 12, 2026</time>
+          </div>
 
           <section className="prose-block">
             <div className="alert-callout">

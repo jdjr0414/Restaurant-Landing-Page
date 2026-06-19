@@ -63,6 +63,9 @@ export function MerchantCashAdvanceSettlementPage() {
           <p className="page-lead">
             MCA settlement is the process of negotiating a reduced payoff — a lump sum or modified payment arrangement — that closes a merchant cash advance position for less than the full remaining balance. For restaurants facing unsustainable MCA debt, settlement is often the fastest path to real financial relief.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-02">Updated: May 2, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>What MCA Settlement Actually Means</h2>

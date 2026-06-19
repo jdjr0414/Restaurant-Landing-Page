@@ -55,6 +55,9 @@ export function RestaurantMcaStackingPage() {
           <p className="page-lead">
             MCA stacking — carrying two, three, or more active merchant cash advances simultaneously — is the single fastest path to unsustainable MCA debt for restaurants. Here is how it happens, what it costs, and how to get out.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-16">Updated: May 16, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>How Restaurant MCA Stacking Happens</h2>

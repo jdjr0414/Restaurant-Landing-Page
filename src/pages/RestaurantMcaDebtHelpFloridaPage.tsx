@@ -63,6 +63,9 @@ export function RestaurantMcaDebtHelpFloridaPage() {
           <p className="page-lead">
             Florida restaurant owners with MCA debt have significant legal protections: an unlimited homestead exemption for their primary residence, strong wage garnishment protections for heads of household, and a 30-day window to contest enforcement of New York judgments in Florida courts. This guide explains how to use these protections in MCA negotiations.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-03-20">Updated: March 20, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>Florida's Constitutional Homestead Exemption</h2>

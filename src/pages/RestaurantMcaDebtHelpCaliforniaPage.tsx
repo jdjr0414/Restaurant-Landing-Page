@@ -63,6 +63,9 @@ export function RestaurantMcaDebtHelpCaliforniaPage() {
           <p className="page-lead">
             California restaurant owners with MCA debt have legal protections that do not exist in most other states — including an explicit prohibition on confessed judgments, a commercial financing disclosure law, and court precedents that have questioned the enforceability of certain New York MCA judgments. This guide explains what those protections mean practically.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-03-26">Updated: March 26, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>California's COJ Prohibition: The Strongest in the Country</h2>
