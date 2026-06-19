@@ -63,6 +63,9 @@ export function RestaurantMcaDebtAfterClosingPage() {
           <p className="page-lead">
             One of the most dangerous assumptions restaurant owners make is that closing their business will make MCA debt disappear. It won't. This guide explains exactly what survives closure, why the debt follows you personally, and why negotiating before closing almost always produces better outcomes than closing first.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-05-07">Updated: May 7, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>The Myth: "Closing My Restaurant Will Make the Debt Go Away"</h2>

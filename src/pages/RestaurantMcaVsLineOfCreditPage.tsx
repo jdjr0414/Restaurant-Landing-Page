@@ -46,6 +46,9 @@ export function RestaurantMcaVsLineOfCreditPage() {
             useful, but they solve different cash flow timing problems. The right choice depends on urgency, approval
             profile, repayment preference, and how predictable your incoming sales are.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-03-13">Updated: March 13, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>Quick Definition: MCA vs Line of Credit</h2>

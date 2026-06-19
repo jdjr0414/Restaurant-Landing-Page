@@ -63,6 +63,9 @@ export function RestaurantMcaDebtReliefPage() {
           <p className="page-lead">
             MCA debt relief is a real process — not a government program, not a scam, not bankruptcy. It is a professional negotiation that reduces what your restaurant owes on merchant cash advances and brings daily payments to a level the business can actually sustain. Here is exactly what it means and how to know if it applies to your situation.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-06-12">Updated: June 12, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>What MCA Debt Relief Is (and What It Is Not)</h2>

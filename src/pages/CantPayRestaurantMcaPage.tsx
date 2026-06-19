@@ -67,6 +67,9 @@ export function CantPayRestaurantMcaPage() {
           <p className="page-lead">
             Missing an MCA payment — or being days away from missing one — triggers a fast-moving set of consequences. Here is the priority order for the next 72 hours and what your actual options are.
           </p>
+          <div className="article__meta">
+            <time className="article__date" dateTime="2026-06-02">Updated: June 2, 2026</time>
+          </div>
 
           <section className="prose-block">
             <h2>The Next 72 Hours: What to Do First</h2>
