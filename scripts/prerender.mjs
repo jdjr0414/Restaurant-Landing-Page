@@ -161,7 +161,7 @@ async function main() {
     const meta = getMeta(path);
     if (!meta) continue;
 
-    const { html } = render(path);
+    const { html } = await render(path);
     let pageHtml = injectMeta(template, meta, path, blogTotalPages);
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${html}</div>`);
 

@@ -55,6 +55,11 @@ export function RestaurantWorkingCapitalPage() {
           </section>
 
           <section className="prose-block">
+            <h2>Working Capital for Busy Season</h2>
+            <p>Using working capital for busy season is one of the most common reasons restaurant owners seek funding. Before a holiday rush, festival, sports season, or summer peak, you often need to buy inventory, add staff, and prepay vendors—weeks before the extra revenue actually lands. Busy-season working capital bridges that gap: you get the cash to stock up and staff up now, then repay as the higher sales come in. Because repayment is often tied to daily card sales, payments scale with the season instead of locking you into a fixed bill before the rush pays off. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for how to plan a seasonal buy.</p>
+          </section>
+
+          <section className="prose-block">
             <h2>Restaurant Working Capital vs Loans</h2>
             <p>Traditional restaurant loans typically offer fixed monthly payments and longer terms. They can be a good fit for large, long-term investments when you qualify. Working capital products like a restaurant cash advance often offer faster decisions and funding, and repayment that flexes with your sales. Choosing between them depends on your timeline, how you prefer to repay, and what you qualify for. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> and <Link to="/restaurant-working-capital-guide">restaurant working capital guide</Link> for more context. For a focused overview, <Link to="/working-capital-for-restaurants">working capital for restaurants</Link>. <Link to="/restaurant-cash-advance">Compare restaurant cash advance and working capital options</Link> to see what fits your situation.</p>
           </section>
