@@ -180,6 +180,14 @@ else {
   if (/^\s*Disallow:\s*\/\s*$/im.test(robots)) robotsIssues.push('robots.txt Disallows entire site');
 }
 if (!fs.existsSync('dist/llms.txt')) robotsIssues.push('llms.txt missing from dist');
+else {
+  const llms = fs.readFileSync('dist/llms.txt', 'utf8');
+  for (const mm of llms.matchAll(/therestaurantownersguide\.com(\/[a-z0-9-]*)/g)) {
+    const lp = norm(mm[1]);
+    if (redSrc.has(lp)) robotsIssues.push(`llms.txt links a redirected URL: ${lp}`);
+    else if (!livePaths.has(lp)) robotsIssues.push(`llms.txt links a dead URL: ${lp}`);
+  }
+}
 R.push(['robots.txt / llms.txt issues', robotsIssues]);
 
 // ---- report ----
