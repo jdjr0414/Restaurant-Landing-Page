@@ -4,7 +4,7 @@ import '../styles/landing.css';
 import { FIND_MATCH_URL, AXIANT_LINK_REL, PHONE_NUMBER, PHONE_HREF } from '../config';
 import { TrustBadge } from './TrustBadge';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95';
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80';
 
 export function Hero() {
   return (

@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import '../styles/landing.css';
 import { FIND_MATCH_URL, AXIANT_LINK_REL, PHONE_NUMBER, PHONE_HREF } from '../config';
 
-const CTA_IMAGE = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=95';
+const CTA_IMAGE = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80';
 
 export function CTA() {
   return (

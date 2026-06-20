@@ -27,6 +27,7 @@ export function PageHero({ image, imageAlt }: PageHeroProps) {
           width={1200}
           height={400}
           loading="eager"
+          fetchPriority="high"
         />
         <div className="page-hero__overlay" aria-hidden />
       </div>
