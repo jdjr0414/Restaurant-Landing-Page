@@ -38,9 +38,9 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Restaurant cash advance explained: how it works, 24–48 hour funding, repayment tied to sales. When to use it for payroll, inventory, or equipment. Compare with working capital and loans.",
   },
   '/restaurant-working-capital': {
-    title: 'Restaurant Working Capital | Payroll, Inventory & Operations',
+    title: 'Restaurant Working Capital | Payroll, Inventory & Busy Season',
     description:
-      "Restaurant working capital for payroll, inventory, and operations. When revenue doesn't line up with bills—what it is, how it works, and what options exist.",
+      "Restaurant working capital for payroll, inventory, and busy-season stocking. When revenue doesn't line up with bills—what it is, how it works, and what options exist.",
   },
   '/restaurant-funding': {
     title: 'Restaurant Funding Options | Working Capital for Restaurant Owners',
@@ -53,9 +53,9 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       'In-depth comparison of restaurant MCA vs line of credit: speed, qualification, repayment flexibility, costs, and practical scenarios so owners can choose the best fit for urgent and planned needs.',
   },
   '/same-day-restaurant-funding': {
-    title: 'Same-Day Restaurant Funding | Fast Cash for Emergencies',
+    title: 'Quick Restaurant Funding | Same-Day & Fast Cash in 24–48 Hours',
     description:
-      'Need same-day restaurant funding? Learn the fastest options, what lenders look at, and how to prepare your application for quick decisions and 24-48 hour funding outcomes.',
+      'Need quick restaurant funding? Learn the fastest same-day options, what lenders look at, and how to prepare your application for quick decisions and 24-48 hour funding.',
   },
   '/bad-credit-restaurant-funding': {
     title: 'Bad Credit Restaurant Funding | Options Beyond Traditional Bank Loans',

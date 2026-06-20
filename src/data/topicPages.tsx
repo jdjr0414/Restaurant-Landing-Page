@@ -280,16 +280,31 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/restaurant-emergency-funding',
-    title: 'Restaurant Emergency Funding | When You Need Money Fast',
-    description: "Restaurant emergency funding for equipment breakdowns, payroll gaps, and urgent expenses. Fast options when you can't wait.",
-    h1: "Restaurant Emergency Funding When You Can't Wait",
-    lead: "Restaurant emergency funding is fast-access capital for urgent expenses: equipment breakdowns, payroll gaps, vendor payments, or time-sensitive opportunities. Restaurant cash advance and working capital products typically offer same-day or next-day decisions and funds in 24–48 hours. Repayment is often tied to daily sales. Speed is the main advantage when you can't wait for a traditional loan.",
+    title: "Restaurant Emergency Funding | Financing Options When You Can't Wait",
+    description: "Restaurant emergency funding and financing options for equipment breakdowns, payroll gaps, and urgent expenses. Compare your fast options when you can't wait.",
+    h1: 'Restaurant Emergency Funding & Financing Options',
+    lead: "Restaurant emergency funding is fast-access capital for urgent expenses: equipment breakdowns, payroll gaps, vendor payments, or time-sensitive opportunities. The main emergency financing options are restaurant cash advance and working capital, which typically offer same-day or next-day decisions and funds in 24–48 hours. Repayment is often tied to daily sales. Speed is the main advantage when you can't wait for a traditional loan.",
     sections: [
       {
         h2: 'What Is Restaurant Emergency Funding?',
         content: (
           <>
             <p>Restaurant emergency funding is capital accessed quickly for urgent business needs. It is not a separate product—it is <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> used when time is critical. These products are flexible-use: you can put funds toward equipment repairs, payroll, vendor payments, or any urgent expense. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for why emergencies create cash gaps.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Restaurant Emergency Financing Options Compared',
+        content: (
+          <>
+            <p>When you need money fast, these are the realistic restaurant emergency financing options, ranked by speed:</p>
+            <ul>
+              <li><strong>Restaurant cash advance / working capital</strong> — fastest. Decisions same-day, funds in 24–48 hours, repayment tied to daily sales. Best when equipment is down or payroll is due tomorrow.</li>
+              <li><strong>Business line of credit</strong> — fast if already open; slow to set up from scratch. Good for recurring short gaps once established.</li>
+              <li><strong>Equipment financing</strong> — 1–5 days, but only for a specific new-equipment purchase, not general emergencies.</li>
+              <li><strong>Traditional bank / SBA loan</strong> — lowest cost but weeks to fund, so rarely an option for a true emergency.</li>
+            </ul>
+            <p>Compare all <Link to="/restaurant-funding-options">restaurant funding options</Link> side by side, or see <Link to="/same-day-restaurant-funding">same-day restaurant funding</Link> when you need cash today.</p>
           </>
         ),
       },
@@ -2370,10 +2385,10 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/restaurant-franchise-financing',
-    title: 'Restaurant Franchise Financing | Fund Franchise Fees and Build-Out',
-    description: 'Restaurant franchise financing: how to fund franchise fees, royalties, and build-out. Options when you\'re buying or opening a franchise.',
-    h1: 'Restaurant Franchise Financing',
-    lead: 'Restaurant franchise financing helps you pay for franchise fees, royalties, build-out, and operating costs when you\'re buying or opening a franchise. Franchise fees can run $25,000–$75,000 or more; build-out adds significantly. Restaurant cash advance and working capital can fund gaps when you have revenue history. SBA and bank loans are common for the initial purchase. This guide covers what franchise financing includes.',
+    title: 'Restaurant Franchise Funding & Financing | Fees, Build-Out, Royalties',
+    description: 'Restaurant franchise funding and financing: how to fund franchise fees, royalties, and build-out. Options when you\'re buying or opening a franchise.',
+    h1: 'Restaurant Franchise Funding and Financing',
+    lead: 'Restaurant franchise funding and financing helps you pay for franchise fees, royalties, build-out, and operating costs when you\'re buying or opening a franchise. Franchise fees can run $25,000–$75,000 or more; build-out adds significantly. Restaurant cash advance and working capital can fund gaps when you have revenue history. SBA and bank loans are common for the initial purchase. This guide covers what restaurant franchise funding includes.',
     datePublished: '2025-03-07',
     dateModified: '2025-03-07',
     sections: [

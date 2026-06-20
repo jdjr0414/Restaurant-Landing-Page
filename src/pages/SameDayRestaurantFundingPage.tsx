@@ -36,11 +36,12 @@ export function SameDayRestaurantFundingPage() {
       <PageHero />
       <main className="page-main supporting-page">
         <div className="page-content">
-          <h1 className="page-title">Same-Day Restaurant Funding: What Is Realistic</h1>
+          <h1 className="page-title">Quick &amp; Same-Day Restaurant Funding: What Is Realistic</h1>
           <p className="page-lead">
-            When owners search same-day restaurant funding, they usually have an immediate problem: payroll, suppliers,
-            equipment, or rent pressure. True same-day outcomes can happen in some cases, but 24-48 hours is more common.
-            The key is submitting complete information fast and choosing structures built for speed.
+            When owners search for quick restaurant funding or same-day funding, they usually have an immediate problem:
+            payroll, suppliers, equipment, or rent pressure. True same-day outcomes can happen in some cases, but 24-48
+            hours is more common. The key to quick restaurant funding is submitting complete information fast and choosing
+            structures built for speed.
           </p>
 
           <section className="prose-block">
