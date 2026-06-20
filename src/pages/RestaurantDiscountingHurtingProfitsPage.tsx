@@ -37,7 +37,7 @@ export function RestaurantDiscountingHurtingProfitsPage() {
           <section className="prose-block">
             <h2>Why Discounting Feels Necessary—and When It Backfires</h2>
             <p>
-              Slow nights, new openings, and competition push owners toward coupons, BOGOs, and happy-hour deals. The idea is to bring people in and hope they return at full price. But when the discount is large or applies to your best-margin items, you can end up with a busy restaurant and no money left for <Link to="/cant-make-restaurant-payroll">payroll</Link>, <Link to="/behind-on-restaurant-vendor-payments">vendors</Link>, or reserves. The <Link to="/busy-but-broke-restaurant">busy but broke</Link> guide covers that trap; here we focus on how to discount smarter so you protect cash flow.
+              Slow nights, new openings, and competition push owners toward coupons, BOGOs, and happy-hour deals. The idea is to bring people in and hope they return at full price. But when the discount is large or applies to your best-margin items, you can end up with a busy restaurant and no money left for <Link to="/cant-make-restaurant-payroll">payroll</Link>, <Link to="/restaurant-emergency-funding">vendors</Link>, or reserves. The <Link to="/busy-but-broke-restaurant">busy but broke</Link> guide covers that trap; here we focus on how to discount smarter so you protect cash flow.
             </p>
             <p>
               The trap is that discounting can become a habit: you run a promo to fill seats, it works, so you run another. Over time, a growing share of your revenue comes from discounted checks, and your average ticket and margin drop. When you try to pull back, you fear empty tables—so you keep discounting. Breaking that cycle requires running the numbers and being willing to test smaller or fewer promotions so you can see what happens to traffic and margin when you are not giving away the house.
@@ -60,7 +60,7 @@ export function RestaurantDiscountingHurtingProfitsPage() {
               Not every promotion has to be a deep discount. Consider add-ons (free dessert with entrée), time-based offers (early-bird or late-night at a smaller discount), or loyalty that rewards repeat visits instead of slashing price for everyone. The goal is to fill seats and build habit without training guests to only show up when there is a coupon.
             </p>
             <p>
-              For more on how menu mix affects cash, see <Link to="/restaurant-menu-engineering-cash-flow">menu engineering and cash flow</Link>. A “buy one get one half off” on a high-margin item can cost you less than “20% off everything,” and a loyalty punch card that rewards the fifth visit at full price can drive repeat business without training guests to wait for a deal. Test one change at a time so you can see what actually moves the needle.
+              For more on how menu mix affects cash, see <Link to="/restaurant-cash-flow-guide">menu engineering and cash flow</Link>. A “buy one get one half off” on a high-margin item can cost you less than “20% off everything,” and a loyalty punch card that rewards the fifth visit at full price can drive repeat business without training guests to wait for a deal. Test one change at a time so you can see what actually moves the needle.
             </p>
           </section>
 

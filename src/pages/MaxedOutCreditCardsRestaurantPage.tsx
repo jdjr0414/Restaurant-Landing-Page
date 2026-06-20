@@ -67,7 +67,7 @@ export function MaxedOutCreditCardsRestaurantPage() {
           <section className="prose-block">
             <h2>Breaking the Cycle</h2>
             <p>
-              Once you have breathing room, build a simple weekly cash forecast so you see gaps before they become emergencies. Reduce reliance on cards for day-to-day operations; use them for planned, short-term needs only if you pay them off quickly. For ongoing cash flow issues, see <Link to="/busy-but-broke-restaurant">why busy restaurants still run out of cash</Link> and <Link to="/restaurant-menu-engineering-cash-flow">menu and labor fixes</Link> so you can free up margin instead of borrowing more.
+              Once you have breathing room, build a simple weekly cash forecast so you see gaps before they become emergencies. Reduce reliance on cards for day-to-day operations; use them for planned, short-term needs only if you pay them off quickly. For ongoing cash flow issues, see <Link to="/busy-but-broke-restaurant">why busy restaurants still run out of cash</Link> and <Link to="/restaurant-cash-flow-guide">menu and labor fixes</Link> so you can free up margin instead of borrowing more.
             </p>
           </section>
 

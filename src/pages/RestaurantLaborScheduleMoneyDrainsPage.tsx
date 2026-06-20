@@ -75,7 +75,7 @@ export function RestaurantLaborScheduleMoneyDrainsPage() {
           <section className="prose-block">
             <h2>5. Training and Ramp-Up That Never Gets Measured</h2>
             <p>
-              New hires and menu changes require training time. That labor is real, but it often is not tracked separately. If you are always “training,” ask whether your onboarding can be tighter and whether you are retaining people long enough to get a return. High turnover makes labor cost soar; see <Link to="/restaurant-manager-quit-now-what">when key staff leave</Link> for how to stabilize during transitions.
+              New hires and menu changes require training time. That labor is real, but it often is not tracked separately. If you are always “training,” ask whether your onboarding can be tighter and whether you are retaining people long enough to get a return. High turnover makes labor cost soar; see <Link to="/restaurant-cash-flow-guide">when key staff leave</Link> for how to stabilize during transitions.
             </p>
           </section>
 

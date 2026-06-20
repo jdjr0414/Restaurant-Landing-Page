@@ -106,7 +106,7 @@ export function CantMakeRestaurantPayrollPage() {
             <p>
               Payroll gaps are one of the most common reasons restaurant owners look for short-term funding. Products
               like a restaurant cash advance or other forms of{' '}
-              <Link to="/working-capital-for-restaurants">working capital for restaurants</Link> are designed for
+              <Link to="/restaurant-working-capital">working capital for restaurants</Link> are designed for
               situations where revenue is coming, but not fast enough to cover near-term obligations.
             </p>
             <p>
@@ -146,7 +146,7 @@ export function CantMakeRestaurantPayrollPage() {
             <p>
               The guides on <Link to="/busy-but-broke-restaurant">busy but broke restaurants</Link>,{' '}
               <Link to="/restaurant-cash-flow-problems">cash flow problems</Link>, and{' '}
-              <Link to="/restaurant-menu-engineering-cash-flow">menu design and cash flow</Link> can help you spot where
+              <Link to="/restaurant-cash-flow-guide">menu design and cash flow</Link> can help you spot where
               money is leaking out so you can rebuild a buffer for future payrolls.
             </p>
           </section>

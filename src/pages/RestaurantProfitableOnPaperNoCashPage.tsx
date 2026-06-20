@@ -64,7 +64,7 @@ export function RestaurantProfitableOnPaperNoCashPage() {
               If the business is genuinely profitable but cash is tied up in timing (e.g., you are waiting on deposits while bills are due), a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-funding-options">other funding</Link> can bridge the gap. Repayment tied to sales can make it easier to manage when revenue is uneven. Use it to smooth cash flow, not to hide ongoing losses.
             </p>
             <p>
-              If you are “profitable” only on paper and actually losing cash over time, the fix is operational and financial structure, not more debt. Look at <Link to="/busy-but-broke-restaurant">why busy restaurants run out of cash</Link>, <Link to="/restaurant-menu-engineering-cash-flow">menu engineering</Link>, and <Link to="/restaurant-labor-schedule-money-drains">labor scheduling</Link> to improve margin and timing. Funding can buy you time to implement those changes, but it cannot replace them.
+              If you are “profitable” only on paper and actually losing cash over time, the fix is operational and financial structure, not more debt. Look at <Link to="/busy-but-broke-restaurant">why busy restaurants run out of cash</Link>, <Link to="/restaurant-cash-flow-guide">menu engineering</Link>, and <Link to="/restaurant-cash-flow-guide">labor scheduling</Link> to improve margin and timing. Funding can buy you time to implement those changes, but it cannot replace them.
             </p>
           </section>
 

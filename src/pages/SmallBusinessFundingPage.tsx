@@ -36,7 +36,7 @@ export function SmallBusinessFundingPage() {
 
           <section className="prose-block">
             <h2>Types of Small Business Funding</h2>
-            <p>Options include cash advances (repayment based on sales), term loans (fixed monthly payments), lines of credit (draw as needed), and equipment financing. Cash advances often offer the fastest approval and funding and may focus on revenue rather than credit. Loans and lines of credit can be better for longer-term or larger needs when you qualify. <Link to="/business-cash-advance">Business cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> are two options that businesses can explore.</p>
+            <p>Options include cash advances (repayment based on sales), term loans (fixed monthly payments), lines of credit (draw as needed), and equipment financing. Cash advances often offer the fastest approval and funding and may focus on revenue rather than credit. Loans and lines of credit can be better for longer-term or larger needs when you qualify. <Link to="/restaurant-cash-advance">Business cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> are two options that businesses can explore.</p>
           </section>
 
           <section className="prose-block">

@@ -292,8 +292,8 @@ export function RestaurantMcaDebtHelpPage() {
               <li><Link to="/restaurant-mca-payments-too-high">Your Restaurant's MCA Payments Are Too High — Here's Why</Link></li>
               <li><Link to="/restaurant-mca-confession-of-judgment">Confession of Judgment in MCAs: What It Means by State</Link></li>
               <li><Link to="/restaurant-mca-calculator">MCA Holdback Calculator: See Your Burden &amp; What You'd Save</Link></li>
-              <li><Link to="/blog/restaurant-mca-debt-restructuring">How Restaurant MCA Debt Restructuring Works</Link></li>
-              <li><Link to="/blog/restaurant-signs-too-much-mca-debt">7 Signs Your Restaurant Has Too Much MCA Debt</Link></li>
+              <li><Link to="/restaurant-mca-debt-help">How Restaurant MCA Debt Restructuring Works</Link></li>
+              <li><Link to="/restaurant-mca-debt-help">7 Signs Your Restaurant Has Too Much MCA Debt</Link></li>
             </ul>
           </section>
 

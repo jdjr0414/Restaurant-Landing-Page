@@ -77,7 +77,7 @@ export function FirstYearCashFlowSurprisesPage() {
             <p>
               Building honest relationships with suppliers early—sharing realistic sales forecasts and paying on time
               whenever possible—gives you more room to negotiate if you hit a rough patch. If you are already behind,
-              see the guide on <Link to="/behind-on-restaurant-vendor-payments">catching up on vendor payments</Link>{' '}
+              see the guide on <Link to="/restaurant-emergency-funding">catching up on vendor payments</Link>{' '}
               for scripts and options.
             </p>
           </section>
@@ -91,7 +91,7 @@ export function FirstYearCashFlowSurprisesPage() {
             </p>
             <p>
               Plan for a higher labor percentage in the first three to six months and revisit the schedule regularly.
-              The page on <Link to="/restaurant-labor-schedule-money-drains">labor scheduling money drains</Link> goes
+              The page on <Link to="/restaurant-cash-flow-guide">labor scheduling money drains</Link> goes
               deeper into how to right-size staffing without hurting guest experience.
             </p>
           </section>

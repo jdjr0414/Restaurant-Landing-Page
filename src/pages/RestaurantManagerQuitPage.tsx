@@ -70,7 +70,7 @@ export function RestaurantManagerQuitPage() {
               You cannot prevent every resignation, but cross-training, clear documentation, and fair pay and treatment reduce the chance that one person’s exit cripples the operation. Cross-training means more than one person can run the shift or execute key tasks; documentation (recipes, procedures, vendor contacts) makes it easier for a replacement to get up to speed.
             </p>
             <p>
-              For more on labor and cost, see <Link to="/restaurant-labor-schedule-money-drains">labor schedule money drains</Link>. Building a small cash reserve also helps so that the next transition does not force you into a funding decision under pressure. Even a few weeks of operating expenses set aside can give you room to hire carefully instead of filling the role in panic.
+              For more on labor and cost, see <Link to="/restaurant-cash-flow-guide">labor schedule money drains</Link>. Building a small cash reserve also helps so that the next transition does not force you into a funding decision under pressure. Even a few weeks of operating expenses set aside can give you room to hire carefully instead of filling the role in panic.
             </p>
           </section>
 

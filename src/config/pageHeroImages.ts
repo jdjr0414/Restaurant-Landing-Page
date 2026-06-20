@@ -1,9 +1,9 @@
 /**
- * Unique hero images per page for tab variety. Use w=1920&q=95 for sharp, high-res display.
+ * Unique hero images per page for tab variety. Use w=1600&q=80 for sharp, high-res display.
  * Theme: restaurant, food service, kitchens, dining, business.
  * Each image is used exactly once across the site.
  */
-const Q = 'w=1920&q=95';
+const Q = 'w=1600&q=80';
 
 export const PAGE_HERO_IMAGES: Record<string, string> = {
   // Main nav tabs

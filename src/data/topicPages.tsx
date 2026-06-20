@@ -373,7 +373,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Examples: When Emergency Funding Helps',
         content: (
           <>
-            <p><strong>Walk-in cooler fails.</strong> You need $10,000–$20,000 for repairs or replacement. Equipment is down; product is at risk. Cash advance or working capital can fund in 24–48 hours. See <Link to="/restaurant-equipment-financing">restaurant equipment financing</Link> for equipment-specific options.</p>
+            <p><strong>Walk-in cooler fails.</strong> You need $10,000–$20,000 for repairs or replacement. Equipment is down; product is at risk. Cash advance or working capital can fund in 24–48 hours. See <Link to="/restaurant-equipment-financing-guide">restaurant equipment financing</Link> for equipment-specific options.</p>
             <p><strong>Payroll due tomorrow.</strong> A slow week or unexpected expense drained your account. Emergency funding can cover wages before payday.</p>
             <p><strong>Vendor cutoff.</strong> You missed a payment; they&apos;ve paused delivery. Fast funding can restore your account and relationship.</p>
           </>
@@ -1093,15 +1093,32 @@ export const topicPagesConfig: TopicPageConfig[] = [
   {
     path: '/restaurant-expansion-funding',
     title: 'Restaurant Expansion Funding | Second Location & Growth',
-    description: 'Restaurant expansion funding for second locations, renovations, and growth. Options when you\'re ready to grow.',
+    description: 'Restaurant expansion funding for second locations, renovations, and growth. Compare working capital, cash advance, and loans, and see what fits.',
     h1: 'Restaurant Expansion Funding',
-    lead: 'Opening a second location, renovating, or scaling up requires capital. Restaurant expansion funding can come from loans, working capital, or other products. This guide explains what options exist and when each might fit.',
+    lead: 'Opening a second location, renovating, or scaling up requires capital. Restaurant expansion funding can come from loans, working capital, or other products. This guide explains what options exist, what expansion typically costs, and when each funding type fits.',
     sections: [
+      {
+        h2: 'What Restaurant Expansion Funding Covers',
+        content: (
+          <>
+            <p>Expansion is rarely a single expense—it&apos;s a stack of them that hit before the new revenue arrives. Restaurant expansion funding is commonly used for a second-location build-out, dining-room or kitchen renovations, new equipment, additional staff and training, expanded inventory, marketing for the launch, and the working capital reserve needed to operate the new space until it stabilizes. Because the first months of a new location often run at a loss, owners usually need more cash than the build-out quote alone suggests.</p>
+            <p>A second location can cost anywhere from $150,000 to $500,000+ depending on size, market, and how much build-out the space needs; a focused renovation might run $20,000–$100,000. The most commonly underestimated line item is the operating reserve—budgeting 60–90 days of payroll, rent, and vendor costs for the new site keeps an opening from draining the cash flow of your existing, profitable location.</p>
+          </>
+        ),
+      },
       {
         h2: 'How to Fund Restaurant Expansion',
         content: (
           <>
-            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs. Larger projects may need traditional loans. See <Link to="/restaurant-funding-options">restaurant funding options</Link> and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for a full comparison.</p>
+            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs and bridge the gap while a new location ramps up—repayment is often tied to sales, so payments flex while revenue is still building. Larger, long-horizon projects may be better suited to traditional or SBA loans, which offer lower rates but slower approval and stricter qualification. Many owners use a mix: a loan for the major build-out and flexible working capital for the operating reserve and unexpected costs. See <Link to="/restaurant-funding-options">restaurant funding options</Link> and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for a full comparison, and <Link to="/opening-second-restaurant-cash-flow">opening a second restaurant cash flow</Link> for the cash-flow risks to plan around.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When to Fund Expansion vs Wait',
+        content: (
+          <>
+            <p>Timing matters as much as the funding itself. Expansion tends to work best when your existing location has consistent, proven cash flow, your systems and management can run without you on site, and you have a clear read on demand in the new market. If your current location still has uneven cash flow or relies on you being there every shift, funding an expansion can stretch both locations thin. Run conservative projections—model a slow first quarter at the new site—and make sure repayment remains comfortable even if the opening ramps slower than hoped. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for how to pressure-test the numbers before you commit.</p>
             <CtaParagraph />
           </>
         ),
@@ -1119,7 +1136,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'How Lenders Typically Calculate Amounts',
         content: (
           <>
-            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for more. For concept-specific guidance, <Link to="/restaurant-funding-by-business-type">restaurant funding by business type</Link>; for location, <Link to="/restaurant-funding-by-state">restaurant funding by state</Link>.</p>
+            <p>Lenders often look at your last several months of revenue or card sales, average that to a monthly figure, and offer a percentage or multiple of that amount. So if your average monthly processing is high and consistent, the amount you may qualify for can be higher. Exact formulas and caps vary by provider. Some products offer amounts from a few thousand dollars into the six figures; others have lower maximums. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> products work similarly for restaurants and <Link to="/food-truck-funding">food trucks</Link>. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for more. For concept-specific guidance, <Link to="/restaurant-funding-by-business-type">restaurant funding by business type</Link>; for location, <Link to="/restaurant-funding">restaurant funding by state</Link>.</p>
             <p>Requirements (e.g. minimum monthly revenue, time in business) also vary. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> explains typical thresholds. <Link to="/blog/restaurant-funding-250000">Restaurant funding $250,000</Link> covers larger amounts. <Link to="/blog/restaurant-funding-amounts-by-state">Restaurant funding amounts by state</Link> explains geographic variation. For <Link to="/blog/restaurant-funding-approval-time">restaurant funding approval time</Link>, that guide covers how long the process typically takes. Not all applicants qualify; funding is not available in all states. Checking with a provider is the way to see what you may qualify for.</p>
             <CtaParagraph />
           </>
@@ -1392,7 +1409,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Restaurant POS financing is funding used to purchase or upgrade your point-of-sale system—the hardware and software that processes orders, tracks sales, and manages inventory. A modern POS often includes register terminals, kitchen display systems (KDS), handheld devices, and integrated online ordering. Costs can run $5,000–$30,000 or more for a full upgrade. Financing spreads that cost over months or years instead of paying upfront.</p>
-            <p>POS financing can be equipment-specific (tied to the purchase) or flexible-use (a lump sum you put toward the POS). Equipment financing and leases are tied to the purchase; <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> are flexible-use and can fund a POS or other needs. See <Link to="/restaurant-equipment-financing">restaurant equipment financing</Link> for the broader picture and <Link to="/blog/restaurant-pos-system-costs">restaurant POS system costs</Link> for typical price ranges.</p>
+            <p>POS financing can be equipment-specific (tied to the purchase) or flexible-use (a lump sum you put toward the POS). Equipment financing and leases are tied to the purchase; <Link to="/restaurant-cash-advance">restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> are flexible-use and can fund a POS or other needs. See <Link to="/restaurant-equipment-financing-guide">restaurant equipment financing</Link> for the broader picture and <Link to="/blog/restaurant-pos-system-costs">restaurant POS system costs</Link> for typical price ranges.</p>
           </>
         ),
       },
@@ -1451,7 +1468,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
                 </tbody>
               </table>
             </div>
-            <p>Not all applicants qualify; terms vary by provider. Equipment financing may offer lower rates for the specific purchase. Flexible-use funding is faster and can cover the POS plus installation, training, or other costs. See <Link to="/restaurant-equipment-financing">restaurant equipment financing</Link> for more.</p>
+            <p>Not all applicants qualify; terms vary by provider. Equipment financing may offer lower rates for the specific purchase. Flexible-use funding is faster and can cover the POS plus installation, training, or other costs. See <Link to="/restaurant-equipment-financing-guide">restaurant equipment financing</Link> for more.</p>
           </>
         ),
       },
@@ -1516,7 +1533,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Restaurant liquor license financing is capital used to pay for a liquor license—either a new license, a renewal, or the purchase of an existing license from another business. In some states, licenses are inexpensive and easy to obtain. In others, they are scarce, transferable, and can cost $100,000 or more. Financing spreads the cost or provides the lump sum when the license fee is due.</p>
-            <p>There is rarely a product specifically labeled &quot;liquor license financing.&quot; Instead, restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link>—flexible-use products—to pay the license fee. These products don&apos;t restrict use; you receive funds and pay the state, city, or license seller. See <Link to="/blog/restaurant-liquor-license-cost">restaurant liquor license cost</Link> for typical ranges by state and type.</p>
+            <p>There is rarely a product specifically labeled &quot;liquor license financing.&quot; Instead, restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link>—flexible-use products—to pay the license fee. These products don&apos;t restrict use; you receive funds and pay the state, city, or license seller. See <Link to="/restaurant-liquor-license-financing">restaurant liquor license cost</Link> for typical ranges by state and type.</p>
           </>
         ),
       },
@@ -1552,7 +1569,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
                 </tbody>
               </table>
             </div>
-            <p>Costs vary dramatically by state. Some states have a quota system where licenses are limited and traded on an open market. Others issue licenses readily for a fee. Renewals are typically cheaper than new or transferred licenses. Check your state alcohol control board and local jurisdiction for exact figures. See <Link to="/restaurant-funding-by-state">restaurant funding by state</Link> for how location affects funding availability.</p>
+            <p>Costs vary dramatically by state. Some states have a quota system where licenses are limited and traded on an open market. Others issue licenses readily for a fee. Renewals are typically cheaper than new or transferred licenses. Check your state alcohol control board and local jurisdiction for exact figures. See <Link to="/restaurant-funding">restaurant funding by state</Link> for how location affects funding availability.</p>
           </>
         ),
       },
@@ -1623,7 +1640,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'What Outdoor Dining and Patio Financing Covers',
         content: (
           <>
-            <p>Outdoor dining financing covers the capital needed to add or upgrade outdoor seating. That includes furniture (tables, chairs, umbrellas), heaters, shade structures, enclosures for year-round use, decking or pavers, fencing, permits, and lighting. There is no dedicated &quot;outdoor dining loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use) or <Link to="/restaurant-equipment-financing">equipment financing</Link> when the work is tied to build-out. For detailed cost planning, see <Link to="/blog/restaurant-outdoor-dining-investment">outdoor dining investment</Link> and <Link to="/blog/restaurant-garden-outdoor-space">garden and outdoor space</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link> for speed and terms.</p>
+            <p>Outdoor dining financing covers the capital needed to add or upgrade outdoor seating. That includes furniture (tables, chairs, umbrellas), heaters, shade structures, enclosures for year-round use, decking or pavers, fencing, permits, and lighting. There is no dedicated &quot;outdoor dining loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use) or <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> when the work is tied to build-out. For detailed cost planning, see <Link to="/blog/restaurant-outdoor-dining-investment">outdoor dining investment</Link> and <Link to="/blog/restaurant-garden-outdoor-space">garden and outdoor space</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link> for speed and terms.</p>
           </>
         ),
       },
@@ -1796,7 +1813,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
           <>
             <p><strong>Inspection finding.</strong> A health inspector notes that your restroom lacks grab bars and proper clear floor space. You have 45 days to fix it. A contractor quotes $4,200. You apply for working capital, receive funds in 48 hours, and complete the work before the deadline.</p>
             <p><strong>Lease requirement.</strong> Your landlord requires ADA upgrades before renewing your lease. A ramp and door modifications cost $12,000. You don&apos;t have that cash on hand. Funding bridges the gap so you can renew and stay in business.</p>
-            <p><strong>Larger remodel.</strong> You&apos;re renovating the dining room and decide to address accessibility at the same time. Compliance work adds $18,000 to the project. Working capital or <Link to="/restaurant-equipment-financing">equipment financing</Link> can fund the full scope. See <Link to="/restaurant-outdoor-dining-financing">outdoor dining financing</Link> when patio access is part of the scope.</p>
+            <p><strong>Larger remodel.</strong> You&apos;re renovating the dining room and decide to address accessibility at the same time. Compliance work adds $18,000 to the project. Working capital or <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> can fund the full scope. See <Link to="/restaurant-outdoor-dining-financing">outdoor dining financing</Link> when patio access is part of the scope.</p>
           </>
         ),
       },
@@ -2178,7 +2195,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'What Restaurant Refrigeration Financing Covers',
         content: (
           <>
-            <p>Refrigeration financing covers the capital needed to purchase, replace, or repair walk-in coolers, reach-in refrigerators, and freezers. Refrigeration is essential—when it fails, product spoils and revenue stops. There is no dedicated &quot;refrigeration loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link> (flexible-use), or <Link to="/restaurant-equipment-financing">equipment financing</Link> (tied to the purchase). For emergency response steps, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link> and <Link to="/blog/restaurant-walk-in-freezer-emergency">restaurant walk-in freezer emergency</Link>. Compare <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> for urgent needs.</p>
+            <p>Refrigeration financing covers the capital needed to purchase, replace, or repair walk-in coolers, reach-in refrigerators, and freezers. Refrigeration is essential—when it fails, product spoils and revenue stops. There is no dedicated &quot;refrigeration loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link> (flexible-use), or <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> (tied to the purchase). For emergency response steps, see <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link> and <Link to="/blog/restaurant-walk-in-freezer-emergency">restaurant walk-in freezer emergency</Link>. Compare <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> for urgent needs.</p>
           </>
         ),
       },
@@ -2220,7 +2237,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
               <li><strong>Receive funds.</strong> Flexible-use funds can arrive in 24–48 hours. Equipment financing may take 1–3 days. Speed matters when product is at risk.</li>
               <li><strong>Repay.</strong> Working capital: percentage of daily sales. Equipment financing: fixed monthly payments.</li>
             </ol>
-            <p>See <Link to="/restaurant-equipment-financing">restaurant equipment financing</Link> for the full comparison of equipment-specific vs flexible-use options.</p>
+            <p>See <Link to="/restaurant-equipment-financing-guide">restaurant equipment financing</Link> for the full comparison of equipment-specific vs flexible-use options.</p>
           </>
         ),
       },
@@ -2864,7 +2881,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Restaurant Funding & Working Capital',
         content: (
           <>
-            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital-guide">Restaurant working capital guide</Link>. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. <Link to="/working-capital-for-restaurants">Working capital for restaurants</Link> gives a focused overview. What options exist? <Link to="/restaurant-funding-options">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained. <Link to="/restaurant-financing-options">Restaurant financing options</Link> compared. New owners: <Link to="/restaurant-startup-funding">restaurant startup funding</Link>. <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link>?</p>
+            <p>What is restaurant working capital? Money for day-to-day operations. <Link to="/restaurant-working-capital-guide">Restaurant working capital guide</Link>. <Link to="/restaurant-working-capital">Working capital when you need it</Link>. <Link to="/restaurant-working-capital">Working capital for restaurants</Link> gives a focused overview. What options exist? <Link to="/restaurant-funding-options">Restaurant funding options</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> explained. <Link to="/restaurant-financing-options">Restaurant financing options</Link> compared. New owners: <Link to="/restaurant-startup-funding">restaurant startup funding</Link>. <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link>?</p>
           </>
         ),
       },
@@ -2960,7 +2977,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Restaurants collect revenue daily, but major obligations land on fixed dates. Vendors can demand payment on delivery or short net terms while payroll must run on schedule. That mismatch creates urgent decisions even when monthly sales look healthy.</p>
-            <p>See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for timing mechanics and <Link to="/behind-on-restaurant-vendor-payments">behind on vendor payments</Link> for deeper vendor strategy.</p>
+            <p>See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for timing mechanics and <Link to="/restaurant-emergency-funding">behind on vendor payments</Link> for deeper vendor strategy.</p>
           </>
         ),
       },
@@ -2993,7 +3010,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Build a short rolling cash forecast (at least 4 weeks), track large due dates, and create a small reserve for vendor+payroll overlap weeks. Even a modest buffer reduces emergency borrowing frequency.</p>
-            <p>For related tactics, see <Link to="/cant-make-restaurant-payroll">can’t make payroll</Link> and <Link to="/restaurant-labor-schedule-money-drains">labor schedule money drains</Link>.</p>
+            <p>For related tactics, see <Link to="/cant-make-restaurant-payroll">can’t make payroll</Link> and <Link to="/restaurant-cash-flow-guide">labor schedule money drains</Link>.</p>
           </>
         ),
       },
@@ -3024,7 +3041,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
           <>
             <p><strong>Working capital</strong> can fit when you need flexible operating cash across payroll and vendors, and you want a structure that maps to real business timing. <strong>Cash advance</strong> can fit when urgency is highest and speed is more important than long-term structure. <strong>Waiting</strong> only fits when the gap is genuinely small and fully covered by near-certain deposits.</p>
             <p>Use a one-page comparison before deciding: required amount, funding speed, total payback, and stress level in your worst sales week. If two offers look similar, choose the one that creates less downside pressure during slow periods. This matters more than headline speed.</p>
-            <p>For deeper comparisons, review <Link to="/restaurant-funding-options">restaurant funding options</Link>, <Link to="/restaurant-cash-advance-vs-loan">cash advance vs loan</Link>, and <Link to="/working-capital-for-restaurants">working capital for restaurants</Link>. The right answer is not universal; it depends on your exact timing gap and repayment tolerance.</p>
+            <p>For deeper comparisons, review <Link to="/restaurant-funding-options">restaurant funding options</Link>, <Link to="/restaurant-cash-advance-vs-loan">cash advance vs loan</Link>, and <Link to="/restaurant-working-capital">working capital for restaurants</Link>. The right answer is not universal; it depends on your exact timing gap and repayment tolerance.</p>
           </>
         ),
       },
@@ -3082,7 +3099,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Card processing delays create an invisible cash lag. You can have strong weekend revenue but still miss Monday or Tuesday obligations if settlement timing is slow.</p>
-            <p>See <Link to="/restaurant-cash-flow-guide">cash flow guide</Link> and <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper, no cash</Link> for the broader timing model.</p>
+            <p>See <Link to="/restaurant-cash-flow-guide">cash flow guide</Link> and <Link to="/restaurant-cash-flow-guide">profitable on paper, no cash</Link> for the broader timing model.</p>
           </>
         ),
       },
@@ -3104,7 +3121,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
           <>
             <p><strong>Working capital:</strong> Bridges recurring timing mismatches.</p>
             <p><strong>Cash advance:</strong> Common for short urgent windows where deposits trail obligations.</p>
-            <p>Compare with <Link to="/working-capital-for-restaurants">working capital for restaurants</Link> and <Link to="/restaurant-cash-advance-vs-loan">cash advance vs loan</Link>.</p>
+            <p>Compare with <Link to="/restaurant-working-capital">working capital for restaurants</Link> and <Link to="/restaurant-cash-advance-vs-loan">cash advance vs loan</Link>.</p>
           </>
         ),
       },
@@ -3151,7 +3168,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>This playbook is especially useful for restaurants with strong card volume, tight fixed due dates, and recurring early-week cash pressure. It is less useful for businesses where core issue is persistent margin loss rather than timing.</p>
-            <p>If margin is the main problem, prioritize <Link to="/restaurant-menu-engineering-cash-flow">menu engineering cash flow</Link> and <Link to="/restaurant-labor-schedule-money-drains">labor schedule money drains</Link> first, then use funding only as bridge support.</p>
+            <p>If margin is the main problem, prioritize <Link to="/restaurant-cash-flow-guide">menu engineering cash flow</Link> and <Link to="/restaurant-cash-flow-guide">labor schedule money drains</Link> first, then use funding only as bridge support.</p>
           </>
         ),
       },
@@ -3252,7 +3269,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>For predictable weekly shortfalls, owners often compare working-capital style options and revenue-aligned repayment structures.</p>
-            <p>Start with <Link to="/restaurant-working-capital">restaurant working capital</Link>, <Link to="/restaurant-funding-options">funding options</Link>, and <Link to="/working-capital-for-restaurants">working capital for restaurants</Link>.</p>
+            <p>Start with <Link to="/restaurant-working-capital">restaurant working capital</Link>, <Link to="/restaurant-funding-options">funding options</Link>, and <Link to="/restaurant-working-capital">working capital for restaurants</Link>.</p>
           </>
         ),
       },
@@ -3261,7 +3278,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Improve contribution margins on high-volume items, reduce avoidable overtime, and avoid front-loading inventory buys before slow weekdays.</p>
-            <p>Related guides: <Link to="/restaurant-labor-schedule-money-drains">labor schedule drains</Link> and <Link to="/restaurant-discounting-hurting-profits">discounting hurting profits</Link>.</p>
+            <p>Related guides: <Link to="/restaurant-cash-flow-guide">labor schedule drains</Link> and <Link to="/restaurant-discounting-hurting-profits">discounting hurting profits</Link>.</p>
           </>
         ),
       },
@@ -3390,7 +3407,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Most restaurants run payroll weekly or biweekly, with labor data flowing from scheduling tools, POS, and time-clock approvals into payroll software. On paper the process looks simple: collect hours, approve shifts, process payroll, fund payroll taxes, and pay employees. In reality, every step is exposed to timing risk. A missed clock correction, a late manager approval, or a card-settlement delay can push payroll day into crisis mode.</p>
-            <p>Operators who stay stable treat payroll as an operating rhythm, not an event. They pre-check labor totals mid-week, compare forecasted cash against payroll burden, and lock in a contingency plan before deadline pressure appears. This is the same discipline covered in <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> and <Link to="/restaurant-labor-schedule-money-drains">labor schedule money drains</Link>.</p>
+            <p>Operators who stay stable treat payroll as an operating rhythm, not an event. They pre-check labor totals mid-week, compare forecasted cash against payroll burden, and lock in a contingency plan before deadline pressure appears. This is the same discipline covered in <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> and <Link to="/restaurant-cash-flow-guide">labor schedule money drains</Link>.</p>
           </>
         ),
       },
@@ -3779,7 +3796,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <p>Include a payroll runway row showing total payroll burden against projected available cash at submission cutoff. If runway dips below threshold, trigger predefined actions immediately. Do not wait until the day before payroll.</p>
-            <p>Pair this with <Link to="/how-restaurants-run-payroll">how restaurants run payroll</Link> and <Link to="/restaurant-funding-options-for-payroll">funding options for payroll</Link> so tactical steps are ready before panic sets in.</p>
+            <p>Pair this with <Link to="/how-restaurants-run-payroll">how restaurants run payroll</Link> and <Link to="/restaurant-payroll-funding">funding options for payroll</Link> so tactical steps are ready before panic sets in.</p>
           </>
         ),
       },

@@ -26,13 +26,13 @@ export const SITE_URL =
   'https://therestaurantownersguide.com';
 
 /** Default OG/Twitter image when page does not set one (1200x630 recommended). */
-export const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=95';
+export const DEFAULT_OG_IMAGE = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80';
 
 /** Publisher logo URL for schema (Organization, Article publisher). */
 export const SITE_LOGO = `${SITE_URL}/logo-horizontal.svg`;
 
 /** Per-page OG images (1200x630). Merges hero images for topic/pillar pages. */
-const Q = 'w=1920&q=95';
+const Q = 'w=1600&q=80';
 const BASE_OG: Record<string, string> = {
   '/': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?' + Q,
   '/restaurant-cash-advance': 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?' + Q,

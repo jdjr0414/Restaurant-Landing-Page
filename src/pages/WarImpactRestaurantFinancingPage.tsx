@@ -138,7 +138,7 @@ export function WarImpactRestaurantFinancingPage() {
               tool when speed and flexible cash-flow alignment matter.
             </p>
             <p>
-              For a detailed baseline, review <Link to="/merchant-cash-advance-for-restaurants">merchant cash advance for restaurants</Link>{' '}
+              For a detailed baseline, review <Link to="/restaurant-cash-advance">merchant cash advance for restaurants</Link>{' '}
               and <Link to="/restaurant-cash-advance">restaurant cash advance</Link>.
             </p>
           </section>
@@ -269,7 +269,7 @@ export function WarImpactRestaurantFinancingPage() {
             <p>
               For adjacent guidance, review <Link to="/restaurant-funding-options">restaurant funding options</Link>,{' '}
               <Link to="/same-day-restaurant-funding">same-day restaurant funding</Link>, and{' '}
-              <Link to="/restaurant-payroll-funding-options">restaurant payroll funding options</Link>.
+              <Link to="/restaurant-payroll-funding">restaurant payroll funding options</Link>.
             </p>
           </section>
 

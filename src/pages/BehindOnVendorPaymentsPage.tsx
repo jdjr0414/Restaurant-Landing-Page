@@ -73,7 +73,7 @@ export function BehindOnVendorPaymentsPage() {
               If the gap is too large to fix with payment plans alone, short-term capital can buy you time. A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> product can provide funds in 24–48 hours, often with repayment tied to your daily sales. That can help you clear the most critical past-due invoices and get back to normal terms.
             </p>
             <p>
-              Use funding to get current, then fix the underlying cause. If you were behind because of a one-time event (equipment failure, slow season), a single bridge may be enough. If you are chronically short, you need to address <Link to="/busy-but-broke-restaurant">margins and costs</Link> or <Link to="/restaurant-labor-schedule-money-drains">labor and scheduling</Link> so the problem does not repeat.
+              Use funding to get current, then fix the underlying cause. If you were behind because of a one-time event (equipment failure, slow season), a single bridge may be enough. If you are chronically short, you need to address <Link to="/busy-but-broke-restaurant">margins and costs</Link> or <Link to="/restaurant-cash-flow-guide">labor and scheduling</Link> so the problem does not repeat.
             </p>
           </section>
 
@@ -83,7 +83,7 @@ export function BehindOnVendorPaymentsPage() {
               Vendors remember who communicated and who disappeared. Even when you cannot pay in full, staying in contact and honoring any agreement you make goes a long way. Once you are current, consider asking for slightly better terms (e.g., net 14 instead of COD) in exchange for consistency—many suppliers will work with you if they see a plan and follow-through.
             </p>
             <p>
-              If you had to make hard choices about who got paid first, do not leave the others in the dark. A brief “we are catching up and you are next on our list” can prevent a good relationship from turning into a collections call. Long-term, the goal is to get back to a rhythm where you pay on time without relying on crisis funding. That may mean building a small reserve during strong months, tightening <Link to="/restaurant-menu-engineering-cash-flow">menu and labor</Link> to improve margin, or using a line of credit or working capital only for planned gaps (e.g., pre-holiday inventory) rather than catch-up.
+              If you had to make hard choices about who got paid first, do not leave the others in the dark. A brief “we are catching up and you are next on our list” can prevent a good relationship from turning into a collections call. Long-term, the goal is to get back to a rhythm where you pay on time without relying on crisis funding. That may mean building a small reserve during strong months, tightening <Link to="/restaurant-cash-flow-guide">menu and labor</Link> to improve margin, or using a line of credit or working capital only for planned gaps (e.g., pre-holiday inventory) rather than catch-up.
             </p>
           </section>
 
