@@ -421,31 +421,56 @@ export function getAllPaths(): string[] {
 }
 
 const META_DESC_MAX = 155;
+const TITLE_MAX = 65;
+const DESC_MAX = 160;
+const BRAND_SUFFIX = ` | ${SITE_NAME}`;
+
+/**
+ * Keep titles within ~65 chars so Google doesn't truncate them in the SERP. Only titles that
+ * actually exceed the limit are touched: first drop the " | Brand" suffix, and if the core is
+ * still too long, truncate at a word boundary.
+ */
+function formatTitle(raw: string): string {
+  if (raw.length <= TITLE_MAX) return raw;
+  const bare = raw.endsWith(BRAND_SUFFIX) ? raw.slice(0, -BRAND_SUFFIX.length) : raw;
+  if (bare.length <= TITLE_MAX) return bare;
+  return bare.slice(0, TITLE_MAX - 3).replace(/\s+\S*$/, '').trim();
+}
+
+/** Keep meta descriptions within ~160 chars (truncate at a word boundary with an ellipsis). */
+function clampDesc(raw: string): string {
+  if (raw.length <= DESC_MAX) return raw;
+  return raw.slice(0, DESC_MAX - 3).trim().replace(/\s+\S*$/, '') + '…';
+}
+
+function normalize(m: PageMeta): PageMeta {
+  return { ...m, title: formatTitle(m.title), description: clampDesc(m.description) };
+}
 
 export function getMeta(path: string): PageMeta | null {
   const canonicalPath = path || '/';
   const staticEntry = STATIC_META[path];
   if (staticEntry) {
     const image = PAGE_OG_IMAGES[path];
-    return { ...staticEntry, canonicalPath, ...(image && { image }) };
+    return normalize({ ...staticEntry, canonicalPath, ...(image && { image }) });
   }
   const topic = topicPagesConfig.find((p) => p.path === path);
   if (topic) {
     const title = topic.title.includes(SITE_NAME) ? topic.title : `${topic.title} | ${SITE_NAME}`;
     const image = PAGE_OG_IMAGES[path];
-    return { title, description: topic.description, canonicalPath: topic.path, ...(image && { image }) };
+    return normalize({ title, description: topic.description, canonicalPath: topic.path, ...(image && { image }) });
   }
   const blogPageMatch = path.match(/^\/blog\/page\/(\d+)$/);
   if (blogPageMatch) {
     const pageNum = parseInt(blogPageMatch[1], 10);
     const totalPages = getBlogTotalPages();
     if (pageNum < 1 || pageNum > totalPages) return null;
-    return {
+    return normalize({
       title: `Blog Page ${pageNum} | Restaurant Cash Flow & Funding Guides`,
       description:
         'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
       canonicalPath: path,
-    };
+    });
   }
   const blogMatch = path.match(/^\/blog\/(.+)$/);
   if (blogMatch) {
@@ -458,7 +483,7 @@ export function getMeta(path: string): PageMeta | null {
         : post.description;
     const image = PAGE_OG_IMAGES[path];
     const dateModified = post.dateModified ?? post.publishedDate;
-    return {
+    return normalize({
       title,
       description,
       canonicalPath: path,
@@ -466,7 +491,7 @@ export function getMeta(path: string): PageMeta | null {
       dateModified,
       ...(image && { image }),
       ...(post.hasCustomContent !== true && { noindex: true }),
-    };
+    });
   }
   return null;
 }

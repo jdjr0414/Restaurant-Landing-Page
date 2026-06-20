@@ -67,7 +67,7 @@ export function RestaurantMenuEngineeringPage() {
           <section className="prose-block">
             <h2>When You Need Cash Before the Menu Changes Pay Off</h2>
             <p>
-              Improving your menu mix takes time. If you need cash now—for <Link to="/cant-make-restaurant-payroll">payroll</Link>, <Link to="/behind-on-restaurant-vendor-payments">vendors</Link>, or <Link to="/restaurant-equipment-broke-no-money">equipment</Link>—short-term <Link to="/restaurant-funding">restaurant funding</Link> can bridge the gap. Use the breathing room to implement the menu and pricing changes, then use the improved margin to repay and build a reserve. <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>Review restaurant financing options</a> to see what might fit. Not all applicants qualify; terms vary by provider.
+              Improving your menu mix takes time. If you need cash now—for <Link to="/cant-make-restaurant-payroll">payroll</Link>, <Link to="/restaurant-emergency-funding">vendors</Link>, or <Link to="/restaurant-equipment-broke-no-money">equipment</Link>—short-term <Link to="/restaurant-funding">restaurant funding</Link> can bridge the gap. Use the breathing room to implement the menu and pricing changes, then use the improved margin to repay and build a reserve. <a href={FIND_MATCH_URL} target="_blank" rel={AXIANT_LINK_REL}>Review restaurant financing options</a> to see what might fit. Not all applicants qualify; terms vary by provider.
             </p>
           </section>
         </div>

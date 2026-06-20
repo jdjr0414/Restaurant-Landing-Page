@@ -38,7 +38,7 @@ export function RestaurantTaxBillCantPayPage() {
           <section className="prose-block">
             <h2>Why Restaurant Tax Bills Surprise Owners</h2>
             <p>
-              You collect sales tax from guests and hold payroll taxes from wages—but that money is not yours. If you use it for operations and do not set it aside, the tax due date can hit with no cash to pay. Estimated income taxes work the same way: you owe based on profit, but the cash may have gone to vendors, payroll, or equipment. The <Link to="/restaurant-first-year-cash-flow-surprises">first-year cash flow surprises</Link> guide mentions this; here we focus on what to do when the bill is already in front of you and you cannot pay in full.
+              You collect sales tax from guests and hold payroll taxes from wages—but that money is not yours. If you use it for operations and do not set it aside, the tax due date can hit with no cash to pay. Estimated income taxes work the same way: you owe based on profit, but the cash may have gone to vendors, payroll, or equipment. The <Link to="/restaurant-cash-flow-guide">first-year cash flow surprises</Link> guide mentions this; here we focus on what to do when the bill is already in front of you and you cannot pay in full.
             </p>
             <p>
               The surprise is often a timing issue: you had the cash earlier in the month or the quarter but used it for something else. Or your profit was higher than expected and you did not set aside enough for estimated taxes. Whatever the reason, the bill is real—and ignoring it leads to penalties, interest, and in the case of payroll taxes, potential personal liability. Acting quickly gives you more options than waiting until the account is in collections.
@@ -64,7 +64,7 @@ export function RestaurantTaxBillCantPayPage() {
           <section className="prose-block">
             <h2>Income Tax: Estimated Payments and Catch-Up</h2>
             <p>
-              If you did not pay estimated taxes during the year, the full bill at filing time can be a shock. The IRS allows payment plans; you can request one online or by phone. Penalties and interest will apply, but a plan gives you time. Going forward, set aside a percentage of profit (or revenue) each month so you are not surprised at tax time. The <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper but no cash</Link> guide explains how to align profit with cash; use that to build a tax reserve.
+              If you did not pay estimated taxes during the year, the full bill at filing time can be a shock. The IRS allows payment plans; you can request one online or by phone. Penalties and interest will apply, but a plan gives you time. Going forward, set aside a percentage of profit (or revenue) each month so you are not surprised at tax time. The <Link to="/restaurant-cash-flow-guide">profitable on paper but no cash</Link> guide explains how to align profit with cash; use that to build a tax reserve.
             </p>
           </section>
 
@@ -74,7 +74,7 @@ export function RestaurantTaxBillCantPayPage() {
               If you need to get current on taxes and do not have the cash, a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> product can provide funds quickly. Use it to pay the tax (or the first installment of a plan) and then fix the underlying habit: separate accounts for sales and payroll tax, and monthly set-asides for income tax. Funding is a bridge, not a substitute for tax planning.
             </p>
             <p>
-              Once you are on a payment plan or have paid the balance, set up a system so it does not happen again. For sales tax: move a percentage of each day’s or week’s sales into a separate account and do not touch it. For payroll tax: the same—withhold and set aside before you spend anything else. For income tax: work with your accountant to estimate what you will owe and transfer a monthly amount into a tax reserve. Many owners find that automating the transfer (e.g., right after payday) is the only way to stay consistent. See <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper but no cash</Link> for how to align your P&amp;L with actual cash so you can build those reserves.
+              Once you are on a payment plan or have paid the balance, set up a system so it does not happen again. For sales tax: move a percentage of each day’s or week’s sales into a separate account and do not touch it. For payroll tax: the same—withhold and set aside before you spend anything else. For income tax: work with your accountant to estimate what you will owe and transfer a monthly amount into a tax reserve. Many owners find that automating the transfer (e.g., right after payday) is the only way to stay consistent. See <Link to="/restaurant-cash-flow-guide">profitable on paper but no cash</Link> for how to align your P&amp;L with actual cash so you can build those reserves.
             </p>
           </section>
 

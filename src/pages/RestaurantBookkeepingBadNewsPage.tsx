@@ -37,7 +37,7 @@ export function RestaurantBookkeepingBadNewsPage() {
           <section className="prose-block">
             <h2>First: Separate Panic from Facts</h2>
             <p>
-              Bad news from the bookkeeper might mean true losses, or it might mean a timing issue, a miscategorized expense, or a one-time hit you had forgotten. Before you make big decisions, get a clear picture: What period are we looking at? Are there one-time items (equipment, repairs, taxes) that skewed the result? Is cash flow different from profit? The <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper but no cash</Link> guide explains how P&amp;L and bank balance can tell different stories. Here we focus on what to do when the report in front of you is ugly.
+              Bad news from the bookkeeper might mean true losses, or it might mean a timing issue, a miscategorized expense, or a one-time hit you had forgotten. Before you make big decisions, get a clear picture: What period are we looking at? Are there one-time items (equipment, repairs, taxes) that skewed the result? Is cash flow different from profit? The <Link to="/restaurant-cash-flow-guide">profitable on paper but no cash</Link> guide explains how P&amp;L and bank balance can tell different stories. Here we focus on what to do when the report in front of you is ugly.
             </p>
             <p>
               Take a breath and schedule a follow-up with your bookkeeper or accountant to walk through the report line by line. Write down every question: “Why did labor jump in this month?” “Is this repair in the right category?” “Did we miss recording any deposits?” Getting answers before you act prevents you from “fixing” something that was never broken—or missing the real problem because it was buried in a single line item.
@@ -57,7 +57,7 @@ export function RestaurantBookkeepingBadNewsPage() {
           <section className="prose-block">
             <h2>When the Numbers Are Correct: Facing Real Losses</h2>
             <p>
-              If the triage shows that the numbers are right and the business really lost money, the next step is to pinpoint why. Compare the bad period to a stronger one: what changed? Labor hours, labor rate, food cost percentage, sales mix, or occupancy cost? Often one or two drivers explain most of the gap. For example, if food cost jumped and sales stayed flat, the issue may be waste, portion creep, or supplier price increases. If labor spiked, look at <Link to="/restaurant-labor-schedule-money-drains">scheduling and labor drains</Link>. If sales dropped, the cause may be seasonal—see <Link to="/restaurant-slow-season-cash-flow">slow season cash flow</Link>—or something else entirely, like a key staff departure or a drop in marketing.
+              If the triage shows that the numbers are right and the business really lost money, the next step is to pinpoint why. Compare the bad period to a stronger one: what changed? Labor hours, labor rate, food cost percentage, sales mix, or occupancy cost? Often one or two drivers explain most of the gap. For example, if food cost jumped and sales stayed flat, the issue may be waste, portion creep, or supplier price increases. If labor spiked, look at <Link to="/restaurant-cash-flow-guide">scheduling and labor drains</Link>. If sales dropped, the cause may be seasonal—see <Link to="/restaurant-slow-season-cash-flow">slow season cash flow</Link>—or something else entirely, like a key staff departure or a drop in marketing.
             </p>
           </section>
 

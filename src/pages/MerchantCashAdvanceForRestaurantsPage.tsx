@@ -54,7 +54,7 @@ export function MerchantCashAdvanceForRestaurantsPage() {
               A merchant cash advance is a revenue-based funding product, not a traditional installment loan. You receive
               a lump sum now and repay through a percentage of daily or weekly sales. This is why many owners use MCA
               options during high-pressure cash timing gaps. For category context, see{' '}
-              <Link to="/business-cash-advance">business cash advance</Link> and{' '}
+              <Link to="/restaurant-cash-advance">business cash advance</Link> and{' '}
               <Link to="/restaurant-cash-advance">restaurant cash advance</Link>.
             </p>
             <p>

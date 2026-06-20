@@ -37,10 +37,10 @@ export function RestaurantBarProfitableNotPage() {
           <section className="prose-block">
             <h2>Bar vs Kitchen: Different Margins, One P&amp;L</h2>
             <p>
-              Beverage margins are often higher than food: less labor per dollar of sales, lower food cost. So when the bar is doing well, it can look like you are in good shape. But if the kitchen is losing money or barely breaking even, the combined result can still be weak. Rent, utilities, and labor are shared—so the real question is whether total revenue, after all costs, leaves enough cash. The <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper but no cash</Link> guide touches on this; here we focus on bar vs restaurant mix and allocation.
+              Beverage margins are often higher than food: less labor per dollar of sales, lower food cost. So when the bar is doing well, it can look like you are in good shape. But if the kitchen is losing money or barely breaking even, the combined result can still be weak. Rent, utilities, and labor are shared—so the real question is whether total revenue, after all costs, leaves enough cash. The <Link to="/restaurant-cash-flow-guide">profitable on paper but no cash</Link> guide touches on this; here we focus on bar vs restaurant mix and allocation.
             </p>
             <p>
-              Many full-service restaurants see 25–35% of revenue from the bar. If that segment is profitable but the overall P&amp;L is thin or negative, the kitchen side is consuming more than it contributes. That does not mean you should shut the kitchen—it means you need to either improve food contribution (through <Link to="/restaurant-menu-engineering-cash-flow">menu engineering</Link>, pricing, or cost control) or accept that the bar is subsidizing the dining room and decide whether that is sustainable. Getting clear on the numbers is the first step.
+              Many full-service restaurants see 25–35% of revenue from the bar. If that segment is profitable but the overall P&amp;L is thin or negative, the kitchen side is consuming more than it contributes. That does not mean you should shut the kitchen—it means you need to either improve food contribution (through <Link to="/restaurant-cash-flow-guide">menu engineering</Link>, pricing, or cost control) or accept that the bar is subsidizing the dining room and decide whether that is sustainable. Getting clear on the numbers is the first step.
             </p>
           </section>
 
@@ -50,7 +50,7 @@ export function RestaurantBarProfitableNotPage() {
               Common issues: kitchen food cost or labor is too high for the food revenue; bar is carrying the P&amp;L but not enough to cover fixed costs; or spillage, comps, and pour variance are eating bar margin without showing up clearly. Run separate contribution margins for bar and kitchen (even if rough) so you see which side is pulling its weight.
             </p>
             <p>
-              Then look at allocation of rent and utilities—some operators split by square footage or revenue. The goal is to know whether the problem is the kitchen, the bar, or the way costs are assigned. If the bar is truly profitable and the kitchen is not, focus on food cost and labor in the kitchen before cutting bar hours or inventory. If both are marginal and fixed costs are the issue, see <Link to="/restaurant-lease-too-expensive">lease and rent</Link> and <Link to="/restaurant-labor-schedule-money-drains">labor scheduling</Link> for ways to reduce overhead.
+              Then look at allocation of rent and utilities—some operators split by square footage or revenue. The goal is to know whether the problem is the kitchen, the bar, or the way costs are assigned. If the bar is truly profitable and the kitchen is not, focus on food cost and labor in the kitchen before cutting bar hours or inventory. If both are marginal and fixed costs are the issue, see <Link to="/restaurant-lease-too-expensive">lease and rent</Link> and <Link to="/restaurant-cash-flow-guide">labor scheduling</Link> for ways to reduce overhead.
             </p>
           </section>
 

@@ -31,7 +31,17 @@ redLines.forEach((l) => {
 const sm = fs.readFileSync('dist/sitemap.xml', 'utf8');
 const smUrls = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => norm(m[1].replace('https://therestaurantownersguide.com', '')));
 
-const get = (h, re) => { const m = h.match(re); return m ? m[1] : null; };
+const decode = (s) =>
+  s == null
+    ? s
+    : s
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&#x27;/g, "'")
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>');
+const get = (h, re) => { const m = h.match(re); return m ? decode(m[1]) : null; };
 const pages = {};
 for (const f of files) {
   const h = fs.readFileSync(f, 'utf8');

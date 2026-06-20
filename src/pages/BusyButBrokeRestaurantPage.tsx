@@ -162,7 +162,7 @@ export function BusyButBrokeRestaurantPage() {
           <section className="prose-block">
             <h2>Why “Just Working Harder” Does Not Fix It</h2>
             <p>
-              It is tempting to think that more hours or more promotions will solve a busy-but-broke situation. But if the problem is margin (your best-sellers do not contribute enough) or timing (money comes in after bills are due), working harder often just burns you out without fixing the bank balance. The fix is usually structural: change what you sell, how you schedule, or how you capture and hold cash. That can feel harder than “just grinding,” but it is what actually moves the needle. See <Link to="/restaurant-menu-engineering-cash-flow">menu engineering</Link> and <Link to="/restaurant-labor-schedule-money-drains">labor schedule money drains</Link> for concrete levers.
+              It is tempting to think that more hours or more promotions will solve a busy-but-broke situation. But if the problem is margin (your best-sellers do not contribute enough) or timing (money comes in after bills are due), working harder often just burns you out without fixing the bank balance. The fix is usually structural: change what you sell, how you schedule, or how you capture and hold cash. That can feel harder than “just grinding,” but it is what actually moves the needle. See <Link to="/restaurant-cash-flow-guide">menu engineering</Link> and <Link to="/restaurant-cash-flow-guide">labor schedule money drains</Link> for concrete levers.
             </p>
           </section>
 

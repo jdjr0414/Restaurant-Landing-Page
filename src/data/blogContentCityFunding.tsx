@@ -37,7 +37,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Pennsylvania context</h2>
       <p>
-        For statewide rules of thumb and how funding conversations usually flow across the commonwealth, start with our guide to <Link to="/blog/restaurant-funding-pennsylvania">restaurant funding in Pennsylvania</Link>—then return here for block-by-block reality in Philly&apos;s corridors.
+        For statewide rules of thumb and how funding conversations usually flow across the commonwealth, start with our guide to <Link to="/restaurant-funding">restaurant funding in Pennsylvania</Link>—then return here for block-by-block reality in Philly&apos;s corridors.
       </p>
       <p>
         Tourism helps Old City and Independence Mall-adjacent spots when conventions land, but it can also train staff for volume swings you do not see every week. Penn, Drexel, and Temple students fill seats nine months a year—then summer can feel like someone dimmed the house lights. Operators who do not model that student dip into cash planning get surprised when July payroll hits the same account that felt flush in April. Independent owners also compete with fast-casual chains that negotiate national supply contracts; when your broadliner tightens terms, you need a plan that is not &quot;hope Saturday is huge.&quot;
@@ -84,7 +84,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Illinois-wide context</h2>
       <p>
-        See <Link to="/blog/restaurant-funding-illinois">restaurant funding in Illinois</Link> for statewide framing—then return here for how Chicago&apos;s weather and corporate catering mix show up in bank statements.
+        See <Link to="/restaurant-funding">restaurant funding in Illinois</Link> for statewide framing—then return here for how Chicago&apos;s weather and corporate catering mix show up in bank statements.
       </p>
       <p>
         Operators along Randolph and Fulton Market built brands on reservation demand and influencer traffic—both can move faster than your payroll schedule. Neighborhood spots far from the L may trade lower rent for lower walk-in velocity, which changes how much cash you keep on hand for repairs. Wherever you sit, the underwriting question is the same: do recent deposits support the remittance you are agreeing to? Answer that honestly before you sign.
@@ -124,7 +124,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Statewide California guide</h2>
       <p>
-        For broader context outside LA County quirks, read <Link to="/blog/restaurant-funding-california">restaurant funding in California</Link>—then come back here for how coastal rent and labor interact in practice.
+        For broader context outside LA County quirks, read <Link to="/restaurant-funding">restaurant funding in California</Link>—then come back here for how coastal rent and labor interact in practice.
       </p>
       <p>
         Event-driven traffic—from premiers to conventions—can spike revenue without warning; wildfire smoke or heat waves can crater patio covers overnight. That volatility is why operators keep short-term options on speed dial—not because they are &quot;bad at business,&quot; but because LA punishes slow cash responses.
@@ -160,7 +160,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Texas and Gulf realities</h2>
       <p>
-        No state income tax helps household math for owners, but property taxes and insurance still climb. Hurricane Harvey proved how fast Houston service businesses can face spoilage, closure, and re-buy costs—funding can bridge insurance lag. For statewide framing, see <Link to="/blog/restaurant-funding-texas">restaurant funding in Texas</Link>.
+        No state income tax helps household math for owners, but property taxes and insurance still climb. Hurricane Harvey proved how fast Houston service businesses can face spoilage, closure, and re-buy costs—funding can bridge insurance lag. For statewide framing, see <Link to="/restaurant-funding">restaurant funding in Texas</Link>.
       </p>
       <p>
         Summer slowdowns on patios, post-storm recovery, and payroll when travel dips all push owners toward short-term products—used responsibly as bridges, not bandages on broken unit economics.
@@ -196,7 +196,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>State guide + local use cases</h2>
       <p>
-        Read <Link to="/blog/restaurant-funding-florida">restaurant funding in Florida</Link> for statewide context—then return here for Miami&apos;s tourist curve. Common uses: bridging summer-to-season gaps, generator and shutter investments, replacing spoiled inventory, and payroll when Amex batches lag holiday weekends.
+        Read <Link to="/restaurant-funding">restaurant funding in Florida</Link> for statewide context—then return here for Miami&apos;s tourist curve. Common uses: bridging summer-to-season gaps, generator and shutter investments, replacing spoiled inventory, and payroll when Amex batches lag holiday weekends.
       </p>
       <p>
         Seasonal businesses can still qualify when trailing revenue shows capacity—underwriters understand snowbird markets if your statements tell a coherent story.
@@ -232,7 +232,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Georgia statewide</h2>
       <p>
-        See <Link to="/blog/restaurant-funding-georgia">restaurant funding in Georgia</Link> for the big picture—then use this page for how Atlanta&apos;s sprawl and production-adjacent catering change weekly cash.
+        See <Link to="/restaurant-funding">restaurant funding in Georgia</Link> for the big picture—then use this page for how Atlanta&apos;s sprawl and production-adjacent catering change weekly cash.
       </p>
       <p>
         Chains negotiate media and supply advantages; indies respond with experience and speed—sometimes speed requires capital when the market moves faster than your rainy-day fund.
@@ -272,7 +272,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Texas guide</h2>
       <p>
-        See <Link to="/blog/restaurant-funding-texas">restaurant funding in Texas</Link>—we link Houston and Dallas operators to the same statewide resource because eligibility rules do not change at city limits, even when heat and rent do.
+        See <Link to="/restaurant-funding">restaurant funding in Texas</Link>—we link Houston and Dallas operators to the same statewide resource because eligibility rules do not change at city limits, even when heat and rent do.
       </p>
       <p>
         Whether you are in Frisco or Fort Worth, the underwriting question stays: can recent deposits support the repayment rhythm you are signing up for?
@@ -316,7 +316,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Colorado statewide context</h2>
       <p>
-        For ski-town comparisons, mountain-seasonality extremes, and Front Range patterns beyond the capital, read <Link to="/blog/restaurant-funding-colorado">restaurant funding in Colorado</Link>—then return here for Denver&apos;s urban competition and migration-driven rent pressure. Eligibility for most commercial products does not change when you cross city limits; your deposits and consistency do.
+        For ski-town comparisons, mountain-seasonality extremes, and Front Range patterns beyond the capital, read <Link to="/restaurant-funding">restaurant funding in Colorado</Link>—then return here for Denver&apos;s urban competition and migration-driven rent pressure. Eligibility for most commercial products does not change when you cross city limits; your deposits and consistency do.
       </p>
       <h2>Common uses we see from Denver operators</h2>
       <p>
@@ -365,7 +365,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Washington state resource in our blog library</h2>
       <p>
-        For statewide wage rules, B&amp;O tax context, and how Seattle compares to Spokane and Tacoma, read <Link to="/blog/restaurant-funding-washington">restaurant funding in Washington State</Link>. You can also cross-check nationwide patterns in <Link to="/blog/restaurant-funding-all-states">restaurant funding in all 50 states</Link>—then apply Seattle&apos;s labor, rent, and weather realities as the local layer. Your underwriting story will still be your deposits, your lease timing, and your seasonality.
+        For statewide wage rules, B&amp;O tax context, and how Seattle compares to Spokane and Tacoma, read <Link to="/restaurant-funding">restaurant funding in Washington State</Link>. You can also cross-check nationwide patterns in <Link to="/blog/restaurant-funding-all-states">restaurant funding in all 50 states</Link>—then apply Seattle&apos;s labor, rent, and weather realities as the local layer. Your underwriting story will still be your deposits, your lease timing, and your seasonality.
       </p>
       <h2>Common uses we hear in King County</h2>
       <p>
@@ -414,7 +414,7 @@ export const cityFundingPostsContent: Record<string, ReactNode> = {
       </p>
       <h2>Northeast and national context</h2>
       <p>
-        For Massachusetts-wide licensing, college-town seasonality, and how Boston compares to Worcester and Springfield, read <Link to="/blog/restaurant-funding-massachusetts">restaurant funding in Massachusetts</Link>. For regional parallels on other high-rent coastal markets, see <Link to="/blog/restaurant-funding-new-york">restaurant funding in New York</Link>. You can also cross-check <Link to="/blog/restaurant-funding-all-states">restaurant funding in all 50 states</Link> for nationwide eligibility patterns, then apply Boston&apos;s academic calendar and winter severity as your local filter.
+        For Massachusetts-wide licensing, college-town seasonality, and how Boston compares to Worcester and Springfield, read <Link to="/restaurant-funding">restaurant funding in Massachusetts</Link>. For regional parallels on other high-rent coastal markets, see <Link to="/blog/restaurant-funding-new-york">restaurant funding in New York</Link>. You can also cross-check <Link to="/blog/restaurant-funding-all-states">restaurant funding in all 50 states</Link> for nationwide eligibility patterns, then apply Boston&apos;s academic calendar and winter severity as your local filter.
       </p>
       <h2>Winter operations: heat, salt, and the hidden bills</h2>
       <p>

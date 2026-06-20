@@ -74,7 +74,7 @@ export function RestaurantSlowSeasonPage() {
           <section className="prose-block">
             <h2>Learning for Next Year</h2>
             <p>
-              Once you are through, build a slow-season reserve. Set aside a percentage of strong-month revenue so that next year you have a cushion. If you run a seasonal business, see <Link to="/restaurant-first-year-cash-flow-surprises">first-year cash flow surprises</Link> and <Link to="/restaurant-profitable-on-paper-no-cash">profitable on paper but no cash</Link> for more on timing and reserves.
+              Once you are through, build a slow-season reserve. Set aside a percentage of strong-month revenue so that next year you have a cushion. If you run a seasonal business, see <Link to="/restaurant-cash-flow-guide">first-year cash flow surprises</Link> and <Link to="/restaurant-cash-flow-guide">profitable on paper but no cash</Link> for more on timing and reserves.
             </p>
             <p>
               Many owners target 4–8 weeks of fixed costs in reserve before the slow period begins. That may sound like a lot, but it is the difference between riding out a bad stretch and going into crisis mode. Automate the save if you can: a weekly or monthly transfer from operating to a reserve account right after payday makes it easier to stick to the plan. When the slow season arrives, you will have options—trim labor and nonessentials by choice, not because the account is empty.
