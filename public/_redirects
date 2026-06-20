@@ -2,6 +2,17 @@
 /small-business-funding /restaurant-funding 301
 /war-impact-restaurant-financing /restaurant-funding 301
 
+# Pruned blog posts that were 404ing (soft 404 / noindex) - redirect to closest live page
+/blog/restaurant-funding-maryland /restaurant-funding 301
+/blog/restaurant-startup-funding-guide /restaurant-funding 301
+/blog/restaurant-funding-options-compared /restaurant-funding-options 301
+/blog/restaurant-cross-training /restaurant-staff-training-funding 301
+/blog/restaurant-financing-second-locations /restaurant-expansion-funding 301
+/blog/restaurant-supplier-payment-problems /restaurant-emergency-funding 301
+/blog/working-capital-for-restaurant-owners /restaurant-working-capital 301
+/blog/restaurant-catering-cash-flow /restaurant-catering-funding 301
+/blog/pay-restaurant-staff-during-slow-seasons /restaurant-payroll-funding 301
+
 # State-level funding pages - too broad/competitive, consolidate authority
 /blog/restaurant-funding-texas /restaurant-funding 301
 /blog/restaurant-funding-california /restaurant-funding 301
@@ -68,3 +79,34 @@
 /restaurant-menu-engineering-cash-flow /restaurant-cash-flow-guide 301
 /restaurant-manager-quit-now-what /restaurant-cash-flow-guide 301
 /restaurant-profitable-on-paper-no-cash /restaurant-cash-flow-guide 301
+
+# Bucket 3 - thin/low-value posts consolidated into stronger hubs (GSC crawled-not-indexed cleanup)
+/blog/restaurant-cash-management-guide /restaurant-cash-flow-guide 301
+/blog/restaurant-cash-flow-timing-mismatch /restaurant-cash-flow-guide 301
+/blog/restaurant-slow-tuesday-cash-flow /restaurant-cash-flow-guide 301
+/blog/restaurant-bills-due-before-revenue /restaurant-cash-flow-guide 301
+/blog/restaurant-january-slow /restaurant-cash-flow-guide 301
+/blog/why-profitable-restaurants-struggle-cash /restaurant-cash-flow-guide 301
+/blog/restaurant-budgeting-for-owners /restaurant-cash-flow-guide 301
+/blog/restaurant-revenue-optimization /restaurant-cash-flow-guide 301
+/blog/restaurant-sports-season /restaurant-cash-flow-guide 301
+/blog/restaurant-festival-event /restaurant-cash-flow-guide 301
+/blog/restaurant-prime-cost /restaurant-cash-flow-guide 301
+/blog/restaurant-waste-reduction /restaurant-cash-flow-guide 301
+/blog/restaurant-happy-hour /restaurant-cash-flow-guide 301
+/blog/restaurant-food-cost-spike /restaurant-cash-flow-guide 301
+/blog/restaurant-plumbing-emergency /restaurant-emergency-funding 301
+/blog/restaurant-grease-trap-compliance /restaurant-emergency-funding 301
+/blog/restaurant-health-department /restaurant-emergency-funding 301
+/blog/food-truck-emergency-repairs /food-truck-funding 301
+/blog/food-truck-equipment-financing /food-truck-funding 301
+/blog/food-truck-location-expansion /food-truck-funding 301
+/blog/restaurant-holdback-percentage /restaurant-cash-advance 301
+/blog/restaurant-funding-multiple-advances /restaurant-cash-advance 301
+/blog/restaurant-manager-salary /restaurant-payroll-funding 301
+/blog/restaurant-benefits-offering /restaurant-payroll-funding 301
+/blog/restaurant-credit-line-vs-advance /restaurant-cash-advance-vs-loan 301
+/blog/restaurant-funding-48-hours /same-day-restaurant-funding 301
+/blog/restaurant-funding-new-jersey /restaurant-funding 301
+/blog/restaurant-inventory-financing-guide /restaurant-working-capital 301
+/blog/restaurant-online-ordering-investment /restaurant-delivery-app-funding 301

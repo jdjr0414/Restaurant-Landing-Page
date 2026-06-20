@@ -1050,7 +1050,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Understanding Terms and Requirements',
         content: (
           <>
-            <p>Requirements vary by product. <Link to="/blog/restaurant-repayment-term-length">Restaurant repayment term length</Link> explains how long you have to repay. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> covers typical revenue thresholds. <Link to="/blog/restaurant-credit-line-vs-advance">Restaurant credit line vs advance</Link> compares revolving vs lump-sum products.</p>
+            <p>Requirements vary by product. <Link to="/blog/restaurant-repayment-term-length">Restaurant repayment term length</Link> explains how long you have to repay. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> covers typical revenue thresholds. <Link to="/restaurant-cash-advance-vs-loan">Restaurant credit line vs advance</Link> compares revolving vs lump-sum products.</p>
           </>
         ),
       },
@@ -1140,7 +1140,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
               <li><strong>Receive funds.</strong> Funds can arrive in 24–48 hours. You receive a lump sum to use for payroll, inventory, equipment, or other needs.</li>
               <li><strong>Repay.</strong> A percentage of daily card sales (or weekly revenue) is withheld until the advance is paid. The holdback percentage is fixed; the dollar amount varies with sales.</li>
             </ol>
-            <p>Because repayment is tied to sales, a slow month means lower total payments that month. A busy month means you pay off the balance faster. There is no fixed payoff date—the term depends on your sales volume. See <Link to="/blog/restaurant-holdback-percentage">restaurant holdback percentage</Link> for how the daily withholding works.</p>
+            <p>Because repayment is tied to sales, a slow month means lower total payments that month. A busy month means you pay off the balance faster. There is no fixed payoff date—the term depends on your sales volume. See <Link to="/restaurant-cash-advance">restaurant holdback percentage</Link> for how the daily withholding works.</p>
           </>
         ),
       },
@@ -1454,7 +1454,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
           <>
             <p><strong>Financing:</strong> Spread cost over time. Preserve cash for payroll, inventory, emergencies. May include interest or fees. Requires qualification.</p>
             <p><strong>Paying upfront:</strong> No financing cost. Requires cash on hand. May deplete reserves needed for other needs.</p>
-            <p>When a POS upgrade is necessary—old system failing, need for online ordering, or compliance—financing lets you proceed without a large one-time outlay. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for why preserving cash matters. For related tech investments, see <Link to="/blog/restaurant-online-ordering-investment">restaurant online ordering investment</Link>.</p>
+            <p>When a POS upgrade is necessary—old system failing, need for online ordering, or compliance—financing lets you proceed without a large one-time outlay. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for why preserving cash matters. For related tech investments, see <Link to="/restaurant-delivery-app-funding">restaurant online ordering investment</Link>.</p>
           </>
         ),
       },
@@ -2279,7 +2279,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'What Restaurant Catering Funding Covers',
         content: (
           <>
-            <p>Catering funding covers the capital needed to fulfill large catering orders and events before payment arrives. That includes inventory (food, supplies), additional staff, rental equipment (tents, tables, chafers), and sometimes deposits or prepayments to vendors. A large catering order might require $10,000–$50,000 or more upfront—and you may not get paid until after the event. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> can fund that gap. For deposit and cash flow strategies, see <Link to="/blog/restaurant-event-catering-capital">restaurant event catering capital</Link>, <Link to="/blog/restaurant-catering-deposit-funding">restaurant catering deposit funding</Link>, and <Link to="/blog/restaurant-festival-event">restaurant festival and event funding</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+            <p>Catering funding covers the capital needed to fulfill large catering orders and events before payment arrives. That includes inventory (food, supplies), additional staff, rental equipment (tents, tables, chafers), and sometimes deposits or prepayments to vendors. A large catering order might require $10,000–$50,000 or more upfront—and you may not get paid until after the event. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link> can fund that gap. For deposit and cash flow strategies, see <Link to="/blog/restaurant-event-catering-capital">restaurant event catering capital</Link>, <Link to="/blog/restaurant-catering-deposit-funding">restaurant catering deposit funding</Link>, and <Link to="/restaurant-cash-flow-guide">restaurant festival and event funding</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
           </>
         ),
       },
@@ -2523,7 +2523,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
               <li><strong>Receive funds.</strong> Funds can arrive in 24–48 hours. Use them for payroll, inventory, and operating costs while you wait for app payouts.</li>
               <li><strong>Repay.</strong> Repayment is typically a percentage of daily card sales. App payouts may be part of your bank deposits; repayment is based on total revenue. You repay as delivery and dine-in revenue arrives.</li>
             </ol>
-            <p>Funding doesn&apos;t solve high fees—it bridges the timing gap. Long-term, consider your own online ordering or delivery to reduce third-party dependence. See <Link to="/blog/restaurant-online-ordering-investment">restaurant online ordering investment</Link>.</p>
+            <p>Funding doesn&apos;t solve high fees—it bridges the timing gap. Long-term, consider your own online ordering or delivery to reduce third-party dependence. See <Link to="/restaurant-delivery-app-funding">restaurant online ordering investment</Link>.</p>
           </>
         ),
       },
