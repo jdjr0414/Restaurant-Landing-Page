@@ -1093,15 +1093,32 @@ export const topicPagesConfig: TopicPageConfig[] = [
   {
     path: '/restaurant-expansion-funding',
     title: 'Restaurant Expansion Funding | Second Location & Growth',
-    description: 'Restaurant expansion funding for second locations, renovations, and growth. Options when you\'re ready to grow.',
+    description: 'Restaurant expansion funding for second locations, renovations, and growth. Compare working capital, cash advance, and loans, and see what fits.',
     h1: 'Restaurant Expansion Funding',
-    lead: 'Opening a second location, renovating, or scaling up requires capital. Restaurant expansion funding can come from loans, working capital, or other products. This guide explains what options exist and when each might fit.',
+    lead: 'Opening a second location, renovating, or scaling up requires capital. Restaurant expansion funding can come from loans, working capital, or other products. This guide explains what options exist, what expansion typically costs, and when each funding type fits.',
     sections: [
+      {
+        h2: 'What Restaurant Expansion Funding Covers',
+        content: (
+          <>
+            <p>Expansion is rarely a single expense—it&apos;s a stack of them that hit before the new revenue arrives. Restaurant expansion funding is commonly used for a second-location build-out, dining-room or kitchen renovations, new equipment, additional staff and training, expanded inventory, marketing for the launch, and the working capital reserve needed to operate the new space until it stabilizes. Because the first months of a new location often run at a loss, owners usually need more cash than the build-out quote alone suggests.</p>
+            <p>A second location can cost anywhere from $150,000 to $500,000+ depending on size, market, and how much build-out the space needs; a focused renovation might run $20,000–$100,000. The most commonly underestimated line item is the operating reserve—budgeting 60–90 days of payroll, rent, and vendor costs for the new site keeps an opening from draining the cash flow of your existing, profitable location.</p>
+          </>
+        ),
+      },
       {
         h2: 'How to Fund Restaurant Expansion',
         content: (
           <>
-            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs. Larger projects may need traditional loans. See <Link to="/restaurant-funding-options">restaurant funding options</Link> and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for a full comparison.</p>
+            <p><Link to="/restaurant-working-capital">Working capital</Link> and <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can fund short-term expansion needs and bridge the gap while a new location ramps up—repayment is often tied to sales, so payments flex while revenue is still building. Larger, long-horizon projects may be better suited to traditional or SBA loans, which offer lower rates but slower approval and stricter qualification. Many owners use a mix: a loan for the major build-out and flexible working capital for the operating reserve and unexpected costs. See <Link to="/restaurant-funding-options">restaurant funding options</Link> and <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for a full comparison, and <Link to="/opening-second-restaurant-cash-flow">opening a second restaurant cash flow</Link> for the cash-flow risks to plan around.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When to Fund Expansion vs Wait',
+        content: (
+          <>
+            <p>Timing matters as much as the funding itself. Expansion tends to work best when your existing location has consistent, proven cash flow, your systems and management can run without you on site, and you have a clear read on demand in the new market. If your current location still has uneven cash flow or relies on you being there every shift, funding an expansion can stretch both locations thin. Run conservative projections—model a slow first quarter at the new site—and make sure repayment remains comfortable even if the opening ramps slower than hoped. See the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for how to pressure-test the numbers before you commit.</p>
             <CtaParagraph />
           </>
         ),

@@ -61,7 +61,7 @@ export function RestaurantFundingPage() {
 
           <section className="prose-block">
             <h2>Funding for Specific Situations</h2>
-            <p>Restaurant funding isn’t one-size-fits-all. Depending on your timing and goal, explore <Link to="/same-day-restaurant-funding">quick restaurant funding</Link> when you need cash in 24–48 hours, <Link to="/restaurant-emergency-funding">restaurant emergency financing options</Link> when equipment fails or payroll is due, <Link to="/restaurant-working-capital">working capital for busy season</Link> to stock up before a rush, or <Link to="/restaurant-franchise-financing">restaurant franchise funding</Link> for fees, royalties, and build-out.</p>
+            <p>Restaurant funding isn’t one-size-fits-all. Depending on your timing and goal, explore <Link to="/same-day-restaurant-funding">quick restaurant funding</Link> when you need cash in 24–48 hours, <Link to="/restaurant-emergency-funding">restaurant emergency financing options</Link> when equipment fails or payroll is due, <Link to="/restaurant-working-capital">working capital for busy season</Link> to stock up before a rush, or <Link to="/restaurant-franchise-financing">restaurant franchise funding</Link> for fees, royalties, and build-out. Worried about your credit? See <Link to="/bad-credit-restaurant-funding">bad credit restaurant funding</Link> options. Stocking up before a rush? <Link to="/restaurant-inventory-financing-fast">Fast restaurant inventory financing</Link> can bridge the gap.</p>
           </section>
 
           <section className="prose-block">

@@ -468,7 +468,7 @@ export function getMeta(path: string): PageMeta | null {
     return normalize({
       title: `Blog Page ${pageNum} | Restaurant Cash Flow & Funding Guides`,
       description:
-        'Articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and what options exist. Practical guides for restaurant owners.',
+        `Page ${pageNum} of ${totalPages}: articles on restaurant cash flow problems, payroll gaps, seasonal slumps, equipment costs, and funding options for restaurant owners.`,
       canonicalPath: path,
     });
   }
