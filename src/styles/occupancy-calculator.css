@@ -1,0 +1,44 @@
+/* Occupancy Cost Ratio Calculator — scoped styles, uses the site's design tokens */
+.occ-hero { max-width: 760px; margin: 0 auto; text-align: center; padding: 8px 0 4px; }
+.occ-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-amber, #c17f3a); margin: 0 0 8px; }
+.occ-hero h1 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); line-height: 1.15; color: var(--color-ink, #1a1a1c); margin: 0 0 12px; }
+.occ-lede { color: var(--color-ink-muted, #4a4a4e); font-size: 1.05rem; line-height: 1.65; margin: 0; }
+
+.occ-section { padding: 8px 0; }
+.occ-card { max-width: 820px; margin: 24px auto 0; background: var(--color-white, #fff); border: 1px solid var(--color-cream-dark, #ebe8e0); border-radius: 16px; padding: 26px; box-shadow: 0 16px 44px -24px rgba(26,26,28,.35); }
+.occ-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 640px) { .occ-grid { grid-template-columns: 1fr; } }
+.occ-field label { display: block; font-weight: 600; font-size: 0.92rem; color: var(--color-ink, #1a1a1c); margin-bottom: 6px; }
+.occ-field input { width: 100%; min-height: 48px; padding: 11px 13px; border: 1.5px solid var(--color-cream-dark, #ebe8e0); border-radius: 10px; font-size: 1rem; color: var(--color-ink, #1a1a1c); background: var(--color-cream, #f8f6f1); }
+.occ-field input:focus { outline: none; border-color: var(--color-amber, #c17f3a); }
+.occ-field small { display: block; color: var(--color-ink-muted, #4a4a4e); font-size: 0.8rem; margin-top: 5px; }
+.occ-field-full { grid-column: 1 / -1; }
+.occ-btn { width: 100%; min-height: 52px; font-size: 1.05rem; font-weight: 700; color: #fff; background: var(--color-amber, #c17f3a); border: none; border-radius: 10px; cursor: pointer; }
+.occ-btn:hover { background: var(--color-amber-dark, #8b5a28); }
+
+.occ-results { margin-top: 24px; }
+.occ-headline { background: var(--color-ink, #1a1a1c); color: #fff; border-radius: 12px; padding: 24px; text-align: center; }
+.occ-headline.occ-good { background: var(--color-success, #2d6a4f); }
+.occ-headline.occ-mid { background: var(--color-amber-dark, #8b5a28); }
+.occ-headline.occ-bad { background: #9b2c2c; }
+.occ-ratio { font-size: 2.9rem; font-weight: 800; line-height: 1.05; }
+.occ-ratio-l { font-size: 0.9rem; opacity: 0.88; margin-top: 4px; }
+.occ-verdict { margin: 16px 0 0; background: var(--color-cream, #f8f6f1); border-left: 4px solid var(--color-amber, #c17f3a); padding: 14px 18px; border-radius: 0 8px 8px 0; font-size: 1.02rem; line-height: 1.6; color: var(--color-ink, #1a1a1c); }
+.occ-rows { margin-top: 16px; border: 1px solid var(--color-cream-dark, #ebe8e0); border-radius: 12px; overflow: hidden; }
+.occ-row { display: flex; justify-content: space-between; gap: 14px; padding: 12px 18px; border-bottom: 1px solid var(--color-cream-dark, #ebe8e0); font-size: 0.96rem; color: var(--color-ink, #1a1a1c); }
+.occ-row:last-child { border-bottom: 0; }
+.occ-row span:last-child { font-weight: 700; }
+
+.occ-content { max-width: 760px; margin: 40px auto 0; color: var(--color-ink-muted, #4a4a4e); }
+.occ-content h2 { color: var(--color-ink, #1a1a1c); font-size: clamp(1.4rem, 2.3vw, 1.9rem); margin: 28px 0 10px; }
+.occ-content p { font-size: 1.05rem; line-height: 1.75; margin: 0 0 14px; }
+.occ-content ul { margin: 0 0 16px 22px; }
+.occ-content li { font-size: 1.05rem; line-height: 1.7; margin-bottom: 7px; }
+.occ-content a { color: var(--color-trust, #2c5282); font-weight: 600; }
+.occ-disclaim { font-size: 0.84rem; color: var(--color-ink-muted, #4a4a4e); margin-top: 16px; }
+
+.occ-cta { max-width: 760px; margin: 40px auto 0; text-align: center; background: var(--color-cream, #f8f6f1); border: 1px solid var(--color-cream-dark, #ebe8e0); border-radius: 16px; padding: 30px 24px; }
+.occ-cta h2 { color: var(--color-ink, #1a1a1c); font-size: 1.5rem; margin: 0 0 8px; }
+.occ-cta p { color: var(--color-ink-muted, #4a4a4e); max-width: 56ch; margin: 0 auto 16px; }
+.occ-cta-alt { margin-top: 14px; }
+.occ-cta-link { color: var(--color-trust, #2c5282); font-weight: 600; }

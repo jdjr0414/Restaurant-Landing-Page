@@ -207,6 +207,11 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Free restaurant MCA calculator. Enter your daily or weekly deductions and card revenue to instantly see your holdback rate, monthly MCA cost, and how much restructuring could save you.",
   },
+  '/restaurant-occupancy-cost-calculator': {
+    title: "Restaurant Occupancy Cost Ratio Calculator | What % of Sales Is Your Rent?",
+    description:
+      "Free restaurant occupancy cost calculator. Enter your monthly sales, rent, and occupancy costs to see your occupancy cost ratio, whether it's in the healthy range, and the maximum rent your sales can support.",
+  },
   '/restaurant-mca-confession-of-judgment': {
     title: "Confession of Judgment in MCAs: What It Means by State",
     description:
@@ -386,6 +391,7 @@ export function getAllPaths(): string[] {
     '/restaurant-mca-payments-too-high',
     '/restaurant-mca-stacking',
     '/restaurant-mca-calculator',
+    '/restaurant-occupancy-cost-calculator',
     '/restaurant-mca-confession-of-judgment',
     '/faq',
     '/how-to-get-out-of-merchant-cash-advance',

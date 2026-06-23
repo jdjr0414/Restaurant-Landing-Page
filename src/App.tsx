@@ -12,6 +12,9 @@ const RestaurantCashAdvancePage = lazy(() =>
 const RestaurantWorkingCapitalPage = lazy(() =>
   import('./pages/RestaurantWorkingCapitalPage').then((m) => ({ default: m.RestaurantWorkingCapitalPage }))
 );
+const OccupancyCostCalculatorPage = lazy(() =>
+  import('./pages/OccupancyCostCalculatorPage').then((m) => ({ default: m.OccupancyCostCalculatorPage }))
+);
 const RestaurantFundingPage = lazy(() =>
   import('./pages/RestaurantFundingPage').then((m) => ({ default: m.RestaurantFundingPage }))
 );
@@ -224,6 +227,7 @@ function App() {
             <Route path="/restaurant-mca-payments-too-high" element={<RestaurantMcaPaymentsTooHighPage />} />
             <Route path="/restaurant-mca-stacking" element={<RestaurantMcaStackingPage />} />
             <Route path="/restaurant-mca-calculator" element={<McaCalculatorPage />} />
+            <Route path="/restaurant-occupancy-cost-calculator" element={<OccupancyCostCalculatorPage />} />
             <Route path="/restaurant-mca-confession-of-judgment" element={<RestaurantMcaCoJStatePage />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/how-to-get-out-of-merchant-cash-advance" element={<HowToGetOutOfMcaPage />} />
