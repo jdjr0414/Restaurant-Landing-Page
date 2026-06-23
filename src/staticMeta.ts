@@ -496,7 +496,7 @@ export function getMeta(path: string): PageMeta | null {
       datePublished: post.publishedDate,
       dateModified,
       ...(image && { image }),
-      ...(post.hasCustomContent !== true && { noindex: true }),
+      ...((post.noindex === true || post.hasCustomContent !== true) && { noindex: true }),
     });
   }
   return null;
