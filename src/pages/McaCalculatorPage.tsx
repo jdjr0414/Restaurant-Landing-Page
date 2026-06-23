@@ -605,6 +605,7 @@ export function McaCalculatorPage() {
               <li><Link to="/restaurant-mca-default">Restaurant MCA Default: What Happens and What to Do</Link></li>
               <li><Link to="/restaurant-mca-payments-too-high">Your Restaurant MCA Payments Are Too High — Here's Why</Link></li>
               <li><Link to="/mca-bank-account-frozen">MCA Froze My Bank Account: Emergency Steps</Link></li>
+              <li><Link to="/restaurant-mca-vs-line-of-credit">Restaurant MCA vs Line of Credit: Which Costs Less?</Link></li>
             </ul>
           </section>
         </div>
