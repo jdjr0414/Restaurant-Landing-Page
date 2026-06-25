@@ -39,4 +39,6 @@ export const TOPIC_ROUTE_PATHS: string[] = [
   '/how-restaurants-run-payroll',
   '/restaurant-cash-management-checklist',
   '/restaurant-weekly-cash-flow-template',
+  '/restaurant-term-loans',
+  '/sba-loans-for-restaurants',
 ];
