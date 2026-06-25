@@ -1,4 +1,4 @@
-import { useLocation, Navigate } from 'react-router-dom';
+import { useLocation, Navigate, Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { WebPageSchema } from '../components/WebPageSchema';
@@ -6,8 +6,9 @@ import { FaqSchema } from '../components/FaqSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { TopicFaqBlock } from '../components/TopicFaqBlock';
 import { CTA } from '../components/CTA';
+import { FundingEstimator } from '../components/FundingEstimator';
 import { PageHero } from '../components/PageHero';
-import { getTopicPage } from '../data/topicPages';
+import { getTopicPage, topicPagesConfig } from '../data/topicPages';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -23,6 +24,8 @@ export function TopicPage() {
   }
 
   const meta = getMeta(pathname);
+  const idx = topicPagesConfig.findIndex((p) => p.path === page.path);
+  const relatedTopics = [...topicPagesConfig.slice(idx + 1), ...topicPagesConfig.slice(0, idx)].slice(0, 6);
   return (
     <>
       <SeoHead
@@ -52,6 +55,17 @@ export function TopicPage() {
               <TopicFaqBlock items={page.faqItems} />
             </section>
           ) : null}
+          <FundingEstimator />
+          <section className="prose-block">
+            <h2>Related restaurant funding topics</h2>
+            <ul>
+              {relatedTopics.map((p) => (
+                <li key={p.path}>
+                  <Link to={p.path}>{p.h1}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </main>
       <CTA />

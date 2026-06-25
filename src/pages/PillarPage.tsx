@@ -1,10 +1,11 @@
-import { useLocation, Navigate } from 'react-router-dom';
+import { useLocation, Navigate, Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { CTA } from '../components/CTA';
+import { FundingEstimator } from '../components/FundingEstimator';
 import { PageHero } from '../components/PageHero';
 import { WebPageSchema } from '../components/WebPageSchema';
-import { getPillarPage } from '../data/pillarPages';
+import { getPillarPage, pillarPagesConfig } from '../data/pillarPages';
 import { getMeta } from '../staticMeta';
 import '../styles/globals.css';
 import '../styles/landing.css';
@@ -20,6 +21,8 @@ export function PillarPage() {
   }
 
   const meta = getMeta(pathname);
+  const idx = pillarPagesConfig.findIndex((p) => p.path === page.path);
+  const relatedPillars = [...pillarPagesConfig.slice(idx + 1), ...pillarPagesConfig.slice(0, idx)].slice(0, 6);
   return (
     <>
       <SeoHead
@@ -40,6 +43,17 @@ export function PillarPage() {
               {section.content}
             </section>
           ))}
+          <FundingEstimator />
+          <section className="prose-block">
+            <h2>Related restaurant funding guides</h2>
+            <ul>
+              {relatedPillars.map((p) => (
+                <li key={p.path}>
+                  <Link to={p.path}>{p.h1}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         </div>
       </main>
       <CTA />

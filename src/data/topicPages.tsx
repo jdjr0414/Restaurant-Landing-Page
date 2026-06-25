@@ -3936,6 +3936,242 @@ export const topicPagesConfig: TopicPageConfig[] = [
       { q: 'When should I consider funding based on the template?', a: 'When projected Red risk remains after operational actions and obligations are likely to miss without outside cash support.' },
     ],
   },
+  {
+    path: '/restaurant-term-loans',
+    title: 'Restaurant Term Loans | Rates, Terms & How They Work',
+    description: 'Restaurant term loans explained: how a lump-sum loan with fixed monthly payments works, typical rates and terms, what lenders look for, and how it compares to a cash advance or line of credit.',
+    h1: 'Restaurant Term Loans: How They Work and What They Cost',
+    lead: "A restaurant term loan is a lump sum you repay in fixed monthly payments over a set term — typically 1 to 5 years, sometimes longer from a bank. It is the lowest-cost-per-dollar way to fund a planned expense like equipment, a renovation, or a second location, because interest is charged on a declining balance rather than a fixed factor rate. The tradeoffs: payments don't flex when sales dip, and approval takes longer and requires stronger credit and financials than a cash advance.",
+    sections: [
+      {
+        h2: 'What Is a Restaurant Term Loan?',
+        content: (
+          <>
+            <p>A term loan gives you a fixed amount of capital up front, which you repay on a set schedule — usually equal monthly payments — over a defined term. Each payment covers the interest due plus a slice of principal, so the balance falls over time (standard amortization). You can model the exact payment, total interest, and total cost with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link>.</p>
+            <p>Term loans come from banks, credit unions, and online lenders. Banks generally offer the lowest rates and longest terms but the strictest requirements; online lenders are faster and more flexible on credit but cost more. For the lowest-cost government-backed option, see <Link to="/sba-loans-for-restaurants">SBA loans for restaurants</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Typical Rates and Terms',
+        content: (
+          <>
+            <p>Cost varies widely by lender, product, and your qualifications. Typical ranges:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr>
+                    <th>Source</th>
+                    <th>Typical APR</th>
+                    <th>Typical Term</th>
+                    <th>Typical Speed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bank / credit union term loan</td>
+                    <td>~8–25% (qualified borrowers)</td>
+                    <td>1–7 years</td>
+                    <td>1–4 weeks</td>
+                  </tr>
+                  <tr>
+                    <td>SBA 7(a) loan</td>
+                    <td>Prime + lender spread, within SBA caps</td>
+                    <td>Up to 10 yrs (working capital/equipment)</td>
+                    <td>30–90 days</td>
+                  </tr>
+                  <tr>
+                    <td>Online / fintech term loan</td>
+                    <td>Higher; varies by profile</td>
+                    <td>3 months–5 years</td>
+                    <td>1–3 days</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Not all applicants qualify; terms vary by provider and state. A longer term lowers the monthly payment but increases total interest — run both with the calculator before choosing.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What Lenders Look For',
+        content: (
+          <>
+            <ul>
+              <li><strong>Time in business:</strong> banks often want 2+ years; many online lenders accept 6–12 months.</li>
+              <li><strong>Revenue:</strong> consistent sales that comfortably cover the new payment. Lenders may look for the payment to be a manageable share of revenue.</li>
+              <li><strong>Credit:</strong> personal and business credit matter more than for a cash advance. Stronger credit means lower rates.</li>
+              <li><strong>Collateral / guarantee:</strong> larger loans may require collateral, and most small-business term loans require a personal guarantee.</li>
+            </ul>
+            <p>Restaurants run thin margins, so lenders scrutinize cash flow. Having clean books and recent statements ready speeds approval — see <Link to="/restaurant-bookkeeping-bad-news">restaurant bookkeeping</Link> for getting financials in order.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Best Uses for a Restaurant Term Loan',
+        content: (
+          <>
+            <p><strong>Equipment and build-out.</strong> A defined, one-time cost with lasting value is the classic fit. Compare with the <Link to="/restaurant-equipment-financing-guide">restaurant equipment financing guide</Link>, since equipment can also be financed against the asset itself.</p>
+            <p><strong>Expansion or a second location.</strong> A larger, longer-horizon investment where predictable fixed payments help you budget. See <Link to="/opening-second-restaurant-cash-flow">opening a second restaurant</Link>.</p>
+            <p><strong>Refinancing high-cost debt.</strong> Replacing a merchant cash advance or stacked advances with a lower-rate term loan can cut your effective cost and turn a daily drain into a single fixed payment. See <Link to="/merchant-cash-advance-consolidation">MCA consolidation</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Term Loan vs Cash Advance vs Line of Credit',
+        content: (
+          <>
+            <p><strong>Term loan:</strong> lump sum, fixed payments, lower cost per dollar, slower approval. Best for planned, one-time investments. The fixed payment doesn't shrink in a slow month — budget for that.</p>
+            <p><strong>Merchant cash advance:</strong> fast (24–48 hours), repayment flexes with daily sales, but higher cost. Best for urgent, short-term gaps. See <Link to="/restaurant-cash-advance-vs-loan">cash advance vs loan</Link> and the <Link to="/restaurant-mca-calculator">MCA calculator</Link>.</p>
+            <p><strong>Line of credit:</strong> revolving — draw and repay as needed, pay interest only on what you use. Best for recurring or unpredictable gaps. See <Link to="/restaurant-mca-vs-line-of-credit">MCA vs line of credit</Link>.</p>
+            <p>For the full side-by-side, see <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Summary',
+        content: (
+          <>
+            <p>A restaurant term loan is the cheapest-per-dollar way to fund a planned investment, with predictable fixed payments over 1–5 years (longer from a bank or the SBA). The cost of that lower rate is slower approval, stronger credit requirements, and a payment that doesn't flex when sales dip. Model the payment and total cost with the <Link to="/restaurant-loan-calculator">loan calculator</Link>, and check the lowest-cost path via <Link to="/sba-loans-for-restaurants">SBA loans for restaurants</Link>.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'What is a restaurant term loan?', a: 'A term loan is a lump sum of capital repaid in fixed monthly payments over a set term, typically 1 to 5 years (longer from a bank or the SBA). Interest is charged on a declining balance, so it usually costs less per dollar than a merchant cash advance. It is best for planned, one-time investments like equipment, renovation, or expansion.' },
+      { q: 'What APR do restaurant term loans charge?', a: 'It varies by lender and qualifications. Bank and credit union term loans for qualified borrowers often run roughly 8–25% APR; SBA 7(a) loans are tied to the prime rate plus a lender spread within SBA caps; online lenders are higher. Stronger credit, more time in business, and consistent revenue lower the rate. Not all applicants qualify.' },
+      { q: 'How is a term loan different from a merchant cash advance?', a: 'A term loan charges interest on a shrinking balance and has fixed payments, so it is cheaper per dollar but slower to approve and harder to qualify for. A merchant cash advance funds in 24–48 hours and its payment flexes with daily sales, but it costs more. Use a term loan for planned investments and an advance for urgent short-term gaps.' },
+      { q: 'How much can a restaurant borrow with a term loan?', a: 'Amounts range widely — from a few thousand dollars from an online lender to several hundred thousand or more from a bank, and up to $5 million through an SBA 7(a) loan. The amount you qualify for depends on revenue, time in business, credit, and collateral.' },
+      { q: 'Is a term loan a good way to pay off a merchant cash advance?', a: 'Often, yes. Replacing a high-cost advance (or stacked advances) with a lower-rate term loan can reduce your effective cost and convert a daily holdback into one predictable monthly payment. It requires qualifying for the loan, which depends on credit and cash flow. See our pages on MCA consolidation and cash advance vs loan.' },
+      { q: 'How long does it take to get a restaurant term loan?', a: 'Online and fintech term loans can fund in 1–3 days. Bank and credit union loans typically take 1–4 weeks. SBA 7(a) loans usually take 30–90 days. If you need money within 48 hours, a term loan is usually too slow and a cash advance or line of credit may fit better.' },
+    ],
+  },
+  {
+    path: '/sba-loans-for-restaurants',
+    title: 'SBA Loans for Restaurants | 7(a), 504 & How to Qualify',
+    description: 'SBA loans for restaurants explained: how the 7(a) and 504 programs work, loan amounts and terms, typical rates, what it takes to qualify, the 30–90 day timeline, and faster alternatives.',
+    h1: 'SBA Loans for Restaurants: How to Qualify and What to Expect',
+    lead: "SBA loans are government-backed small business loans made by banks and approved lenders, and restaurants are eligible. They offer some of the lowest rates and longest terms available — 7(a) loans up to $5 million, terms up to 10 years for working capital and equipment (25 years for real estate) — in exchange for the most paperwork and the slowest timeline (often 30–90 days). They fit owners with solid credit and financials funding a major, planned investment, not an urgent cash gap.",
+    sections: [
+      {
+        h2: 'What Is an SBA Loan?',
+        content: (
+          <>
+            <p>An SBA loan is not made by the Small Business Administration directly. A bank or approved lender makes the loan, and the SBA guarantees a portion of it, which lowers the lender's risk and lets them offer better rates and longer terms than they otherwise would. Restaurants — including full-service, quick-service, bars, and franchises — are eligible borrowers.</p>
+            <p>The lower cost comes with a tradeoff: more documentation and a longer approval process. If you need money fast, SBA is the wrong tool — see <Link to="/same-day-restaurant-funding">quick restaurant funding</Link> instead. If you're funding a deliberate, larger investment, the rate and term can be worth the wait.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'The Main SBA Programs for Restaurants',
+        content: (
+          <>
+            <p><strong>SBA 7(a)</strong> — the flagship and most flexible program. Up to $5 million for working capital, equipment, build-out, refinancing existing debt, or buying a restaurant. Terms up to 10 years for working capital and equipment, up to 25 years for real estate. Rates are tied to the prime rate plus a lender spread, within SBA maximums.</p>
+            <p><strong>SBA 504</strong> — for major fixed assets: owner-occupied real estate and large equipment. Structured as a bank loan plus a CDC (Certified Development Company) portion, often with a lower down payment and a long, fixed-rate term. Not for working capital.</p>
+            <p><strong>SBA Express</strong> — a faster 7(a) variant up to $500,000 with a quicker turnaround (the SBA responds to the lender within about 36 hours), though smaller and sometimes at a higher rate. <strong>SBA Microloans</strong> go up to $50,000 through nonprofit intermediaries and can suit a small build-out or equipment purchase.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Typical Amounts, Terms, and Rates',
+        content: (
+          <>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr>
+                    <th>Program</th>
+                    <th>Max Amount</th>
+                    <th>Typical Term</th>
+                    <th>Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>7(a)</td>
+                    <td>$5 million</td>
+                    <td>Up to 10 yrs (25 yrs real estate)</td>
+                    <td>Working capital, equipment, acquisition, refi</td>
+                  </tr>
+                  <tr>
+                    <td>504</td>
+                    <td>$5.5 million (CDC portion)</td>
+                    <td>10–25 years</td>
+                    <td>Owner-occupied real estate, large equipment</td>
+                  </tr>
+                  <tr>
+                    <td>Express</td>
+                    <td>$500,000</td>
+                    <td>Up to 10 yrs</td>
+                    <td>Faster, smaller working capital needs</td>
+                  </tr>
+                  <tr>
+                    <td>Microloan</td>
+                    <td>$50,000</td>
+                    <td>Up to 7 years</td>
+                    <td>Small build-out, equipment, startup costs</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Rates on 7(a) loans are variable, set as the prime rate plus a lender spread within SBA caps. Because the term is long, the monthly payment is often far lower than a shorter-term loan or advance for the same amount — model it with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link>. Not all applicants qualify; specifics vary by lender.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What It Takes to Qualify',
+        content: (
+          <>
+            <ul>
+              <li><strong>Credit:</strong> lenders generally want solid personal credit (often around 650–680+); higher scores improve approval odds and terms.</li>
+              <li><strong>Time in business and cash flow:</strong> established restaurants with consistent revenue qualify most easily. Startups are possible but harder and usually need a strong plan and industry experience.</li>
+              <li><strong>Equity injection / down payment:</strong> acquisitions and startups typically require the owner to put in roughly 10% or more.</li>
+              <li><strong>Documentation:</strong> business and personal tax returns, financial statements, a business plan or projections, and details of how funds will be used.</li>
+              <li><strong>Personal guarantee:</strong> owners with 20%+ ownership generally must personally guarantee the loan; collateral may be required.</li>
+            </ul>
+            <p>Clean, current financials are the single biggest factor in a smooth SBA application. If your books need work, fix that first.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'The Timeline — and Why It Matters',
+        content: (
+          <>
+            <p>An SBA loan commonly takes 30–90 days from application to funding (SBA Express is faster but smaller). That timeline is the central reason SBA loans don't work for emergencies: if payroll is due Friday or a cooler just died, you cannot wait a month. Plan SBA financing well ahead of when you need the money.</p>
+            <p>For urgent or short-term needs, a <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> funds in 24–48 hours. Some owners use fast funding to handle an immediate need and pursue an SBA loan in parallel for the larger, planned investment.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'SBA Loan vs Other Restaurant Funding',
+        content: (
+          <>
+            <p><strong>SBA loan:</strong> lowest rate, longest term, largest amounts — but slowest and hardest to qualify for. Best for major planned investments when you have time and strong financials.</p>
+            <p><strong>Conventional term loan:</strong> faster than SBA, still lower-cost than an advance, with moderate requirements. See <Link to="/restaurant-term-loans">restaurant term loans</Link>.</p>
+            <p><strong>Merchant cash advance / working capital:</strong> fastest and most accessible, repayment flexes with sales, but highest cost. Best for urgent short-term gaps. Compare in <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Summary',
+        content: (
+          <>
+            <p>SBA loans give restaurants access to large amounts, low rates, and long terms — ideal for a deliberate investment like real estate, a build-out, or an acquisition. The cost is paperwork, strong-credit requirements, and a 30–90 day timeline, so they are not for emergencies. Get your financials clean, apply early, and use the <Link to="/restaurant-loan-calculator">loan calculator</Link> to see how the long term lowers your monthly payment. For anything urgent, pair it with faster <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'Can a restaurant get an SBA loan?', a: 'Yes. Restaurants — full-service, quick-service, bars, and franchises — are eligible for SBA loans, most commonly the 7(a) program. Approval depends on credit, time in business, cash flow, and documentation. The loan is made by a bank or approved lender and partially guaranteed by the SBA.' },
+      { q: 'How much can a restaurant borrow with an SBA loan?', a: 'The SBA 7(a) program lends up to $5 million for working capital, equipment, build-out, refinancing, or acquisition. The 504 program funds owner-occupied real estate and large equipment. SBA Express goes up to $500,000 with faster turnaround, and Microloans up to $50,000. The amount you qualify for depends on your financials.' },
+      { q: 'What credit score do I need for an SBA restaurant loan?', a: 'There is no single cutoff, but lenders generally look for solid personal credit — often around 650–680 or higher. Stronger credit improves approval odds and rates. Lenders also weigh time in business, revenue consistency, and documentation, so credit is one factor among several.' },
+      { q: 'How long does an SBA loan take for a restaurant?', a: 'Usually 30–90 days from application to funding. SBA Express is faster but smaller (up to $500,000). Because of the timeline, SBA loans are not suited to emergencies — for urgent needs, a cash advance or working capital funds in 24–48 hours. Plan SBA financing ahead of when you need the money.' },
+      { q: 'What can a restaurant use an SBA 7(a) loan for?', a: 'Working capital, kitchen and dining equipment, renovations and build-out, refinancing existing higher-cost debt, buying a restaurant or franchise, and (with longer terms) owner-occupied real estate. The 7(a) program is flexible; the 504 program is specifically for real estate and large fixed assets.' },
+      { q: 'Is an SBA loan or a merchant cash advance better for a restaurant?', a: 'They serve different needs. An SBA loan is far cheaper and offers long terms, but is slow and requires strong credit and financials — best for planned, major investments. A merchant cash advance is fast and accessible with sales-based repayment, but costs more — best for urgent, short-term gaps. Many owners use each for its purpose.' },
+    ],
+  },
 ];
 
 export function getTopicPage(path: string): TopicPageConfig | undefined {

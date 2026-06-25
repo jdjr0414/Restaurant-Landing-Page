@@ -412,6 +412,9 @@ export const pillarPagesConfig: PillarPageConfig[] = [
             <p>
               Many owners first think of bank loans. But banks often require strong credit and a weeks-long process. When you need funds quickly—payroll due in days, equipment down—alternatives like cash advance or working capital can offer same-day or next-day decisions and funds in 24–48 hours.
             </p>
+            <p>
+              For lower-cost, planned investments, a <Link to="/restaurant-term-loans">restaurant term loan</Link> or an <Link to="/sba-loans-for-restaurants">SBA loan for restaurants</Link> charges interest on a declining balance rather than a fixed factor rate—cheaper per dollar, but slower to approve. Before you sign anything, run the numbers with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> to see the monthly payment, total interest, and how much of your sales the payment would use.
+            </p>
           </>
         ),
       },

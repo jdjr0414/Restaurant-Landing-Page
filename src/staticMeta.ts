@@ -212,6 +212,11 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
     description:
       "Free restaurant occupancy cost calculator. Enter your monthly sales, rent, and occupancy costs to see your occupancy cost ratio, whether it's in the healthy range, and the maximum rent your sales can support.",
   },
+  '/restaurant-loan-calculator': {
+    title: "Restaurant Loan Calculator | Monthly Payment & Affordability",
+    description:
+      "Free restaurant loan calculator. Enter loan amount, APR, and term to see your monthly payment, total interest, and total cost — plus how much of your sales the payment uses.",
+  },
   '/restaurant-mca-confession-of-judgment': {
     title: "Confession of Judgment in MCAs: What It Means by State",
     description:
@@ -392,6 +397,7 @@ export function getAllPaths(): string[] {
     '/restaurant-mca-stacking',
     '/restaurant-mca-calculator',
     '/restaurant-occupancy-cost-calculator',
+    '/restaurant-loan-calculator',
     '/restaurant-mca-confession-of-judgment',
     '/faq',
     '/how-to-get-out-of-merchant-cash-advance',
