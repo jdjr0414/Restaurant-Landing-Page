@@ -33,6 +33,99 @@ function CtaParagraph() {
 
 export const topicPagesConfig: TopicPageConfig[] = [
   {
+    path: '/restaurant-business-loan',
+    title: 'Business Loan for a Restaurant | Options, Rates & How to Qualify',
+    description: 'A business loan for a restaurant comes in several forms — term loans, SBA loans, cash advance, and working capital. Compare what each costs, how fast you can get funded, what lenders look at, and how to choose the right one.',
+    h1: 'Business Loan for a Restaurant: How to Choose the Right One',
+    lead: 'A restaurant business loan is not one product — it is a category. A bank term loan, an SBA loan, a working capital advance, and a merchant cash advance all get capital into a restaurant, but they differ sharply in cost, speed, and what it takes to qualify. This guide compares them so you can match the right loan to what you actually need the money for.',
+    datePublished: '2026-06-26',
+    dateModified: '2026-06-26',
+    sections: [
+      {
+        h2: 'What Counts as a Restaurant Business Loan',
+        content: (
+          <>
+            <p>When owners search for a "business loan for a restaurant," they are usually shopping for one of four very different things. Picking the wrong one is the most common and most expensive mistake:</p>
+            <ul>
+              <li><strong>Bank or online term loan.</strong> A lump sum repaid in fixed monthly payments over 1–5 years. Lowest cost per dollar for a planned expense. See <Link to="/restaurant-term-loans">restaurant term loans</Link>.</li>
+              <li><strong>SBA loan.</strong> Government-backed, the lowest rates and longest terms available, but the slowest to approve and the strictest to qualify for. See <Link to="/sba-loans-for-restaurants">SBA loans for restaurants</Link>.</li>
+              <li><strong><Link to="/restaurant-working-capital">Working capital</Link>.</strong> Flexible-use funds for payroll, inventory, and timing gaps, often funded in 24–48 hours.</li>
+              <li><strong><Link to="/restaurant-cash-advance">Merchant cash advance</Link>.</strong> A lump sum repaid as a percentage of daily card sales — fastest and easiest to qualify for, but the highest cost.</li>
+            </ul>
+            <p>The right answer depends on what you are funding and how fast you need it. A planned renovation and an emergency payroll gap call for opposite ends of this list.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Compare Restaurant Loan Options by Cost and Speed',
+        content: (
+          <>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr>
+                    <th>Loan type</th>
+                    <th>Typical cost</th>
+                    <th>Speed</th>
+                    <th>Best for</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SBA loan</td>
+                    <td>APR ~10–16%</td>
+                    <td>Weeks to months</td>
+                    <td>Lowest-cost expansion or buyout for qualified borrowers</td>
+                  </tr>
+                  <tr>
+                    <td>Bank / online term loan</td>
+                    <td>APR ~6–30%</td>
+                    <td>Days to weeks</td>
+                    <td>Planned, larger purchases with a fixed payment</td>
+                  </tr>
+                  <tr>
+                    <td>Working capital</td>
+                    <td>Factor rate 1.1–1.5</td>
+                    <td>24–48 hours</td>
+                    <td>Payroll, inventory, repairs, timing gaps</td>
+                  </tr>
+                  <tr>
+                    <td>Merchant cash advance</td>
+                    <td>Factor rate 1.2–1.5</td>
+                    <td>24–48 hours</td>
+                    <td>Fast cash when revenue is uneven or credit is thin</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Run the numbers before you sign anything — the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> shows the monthly payment, total interest, and how much of your sales the payment would consume. For a full side-by-side of every funding path, see <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Qualify for a Loan for Your Restaurant Business',
+        content: (
+          <>
+            <p>What lenders look at depends heavily on the loan type:</p>
+            <ol>
+              <li><strong>Term and SBA loans</strong> weigh credit score, time in business (usually 2+ years), profitability, and often collateral and a personal guarantee. Approval is slower because underwriting is thorough.</li>
+              <li><strong>Working capital and cash advance</strong> weigh your monthly card sales and bank deposits over the last 3–6 months. Credit matters less; consistent revenue matters most. This is why owners with strong sales but moderate credit often qualify here when banks say no.</li>
+            </ol>
+            <p>If a bank has already turned you down, that does not mean you are out of options — it usually means you were applying for the wrong product. See <Link to="/restaurant-loan-alternatives">restaurant loan alternatives</Link> for the revenue-based paths, and <Link to="/blog/restaurant-funding-declined">what to do if funding is declined</Link>.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'What is the best business loan for a restaurant?', a: 'There is no single best loan — it depends on what you are funding. For a planned expense like a renovation or second location, an SBA loan or bank term loan offers the lowest cost. For payroll, inventory, or a timing gap you need covered fast, working capital or a merchant cash advance is faster and easier to qualify for, though it costs more.' },
+      { q: 'How do I qualify for a loan for my restaurant business?', a: 'Bank and SBA loans look at credit score, 2+ years in business, profitability, and often collateral. Working capital and cash advance products look mainly at your last 3–6 months of card sales and bank deposits, so consistent revenue matters more than credit. Owners with strong sales but moderate credit usually qualify for revenue-based options even when banks decline them.' },
+      { q: 'How fast can I get a restaurant business loan?', a: 'Working capital and merchant cash advance can fund in 24–48 hours. Bank term loans take days to weeks. SBA loans, which offer the lowest rates, can take weeks to months to close.' },
+      { q: 'Can I get a restaurant loan with bad credit?', a: 'Yes — but not from a bank or SBA lender. Revenue-based products (working capital, cash advance) base approval on your sales history rather than credit, so they are the realistic path when credit is a barrier. The tradeoff is higher cost.' },
+      { q: 'How much can a restaurant borrow?', a: 'Term and SBA loan amounts depend on financials and collateral and can reach six or seven figures for qualified borrowers. Revenue-based amounts are typically a percentage or multiple of average monthly sales, so a restaurant with high, consistent volume can qualify for more. Exact caps vary by lender.' },
+    ],
+  },
+  {
     path: '/restaurant-payroll-funding',
     title: 'Restaurant Payroll Funding | Cover Payroll When Cash Is Short',
     description: "Can't make payroll? Restaurant payroll funding options when revenue is slow but payday isn't. Fast options for restaurant owners.",
@@ -2844,22 +2937,93 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/food-truck-funding',
-    title: 'Food Truck Funding | Working Capital & Cash Advance for Food Trucks',
-    description: 'Food truck funding and working capital for mobile restaurants. Payroll, inventory, equipment, and seasonal cash flow. Options for food truck owners.',
-    h1: 'Food Truck Funding',
-    lead: 'Food truck owners face the same cash flow challenges as brick-and-mortar restaurants—payroll, inventory, equipment, and seasonal dips—but with the added cost of maintaining a truck and often variable locations. Food truck funding and working capital products can help cover gaps when revenue is uneven.',
+    title: 'Food Truck Financing & Funding | Costs, Options & How to Qualify',
+    description: 'Food truck financing explained: what a truck and build-out cost, the financing options that fit (equipment financing, working capital, cash advance), how to qualify, and how to fund startup, repairs, and slow seasons.',
+    h1: 'Food Truck Financing: Options, Costs, and How to Qualify',
+    lead: 'Financing a food truck means matching the right capital to the right expense — a wrapped-and-equipped truck can run $50,000–$175,000, while ongoing needs like inventory, repairs, and payroll are smaller and more frequent. This guide breaks down what food truck financing actually costs, which option fits each situation, and what lenders look at when you apply.',
+    datePublished: '2026-03-19',
+    dateModified: '2026-06-26',
     sections: [
       {
-        h2: 'Why Food Trucks Need Funding',
+        h2: 'What Food Truck Financing Costs to Cover',
         content: (
           <>
-            <p>Food trucks need to pay staff, stock inventory, maintain and repair the truck and kitchen equipment, and cover permits and fuel. When events or weather slow sales, or when you need to invest in a new location or upgrade equipment, <Link to="/restaurant-cash-advance">restaurant and food truck cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> can provide fast access to funds. Many lenders treat food trucks like other restaurant businesses and base qualification on revenue and card sales.</p>
-            <h3>How much can food trucks qualify for?</h3>
-            <p>Amounts are typically based on your average monthly sales or processing volume, similar to other restaurants. Ranges vary by provider and state; checking with a provider is the way to see what you may qualify for.</p>
+            <p>Financing a food truck is rarely one expense. The capital you need depends on the stage you are in:</p>
+            <ul>
+              <li><strong>Buying or building the truck.</strong> A used truck with a basic kitchen starts around $50,000; a new, fully wrapped truck with commercial-grade equipment can reach $150,000–$175,000. This is the single largest financing decision most operators make.</li>
+              <li><strong>Equipment and build-out.</strong> Griddles, fryers, refrigeration, a generator, POS, and the kitchen vent system can add $20,000–$50,000 if the truck does not already have them.</li>
+              <li><strong>Permits, licensing, and commissary rent.</strong> Health permits, fire inspections, parking permits, and a commissary kitchen are recurring costs that hit before revenue is steady.</li>
+              <li><strong>Working capital.</strong> Inventory before a big event weekend, payroll during a slow stretch, fuel, and unexpected truck or equipment repairs — the smaller, frequent costs that keep the truck running.</li>
+            </ul>
+            <p>The right financing product depends on which of these you are funding. A truck purchase and a payroll gap call for very different structures.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Food Truck Financing Options Compared',
+        content: (
+          <>
+            <p>There is no single "food truck loan." Operators typically use one or a mix of these:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr>
+                    <th>Option</th>
+                    <th>Best For</th>
+                    <th>Typical Speed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Equipment financing</td>
+                    <td>Buying the truck or major kitchen equipment (the asset secures the loan)</td>
+                    <td>Days to 2 weeks</td>
+                  </tr>
+                  <tr>
+                    <td><Link to="/restaurant-working-capital">Working capital</Link></td>
+                    <td>Inventory, payroll, repairs, fuel, slow-season gaps</td>
+                    <td>24–48 hours</td>
+                  </tr>
+                  <tr>
+                    <td><Link to="/restaurant-cash-advance">Cash advance</Link></td>
+                    <td>Fast cash repaid as a percentage of daily card sales</td>
+                    <td>24–48 hours</td>
+                  </tr>
+                  <tr>
+                    <td><Link to="/sba-loans-for-restaurants">SBA loan</Link></td>
+                    <td>Lowest-cost startup or expansion capital for qualified borrowers</td>
+                    <td>Weeks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>For buying the truck itself, equipment financing or an SBA loan usually offers the lowest cost per dollar. For the day-to-day — restocking before a festival, covering a repair, bridging a slow week — <Link to="/restaurant-working-capital">working capital</Link> and <Link to="/restaurant-cash-advance">cash advance</Link> are faster and base approval on revenue rather than a long credit process. See <Link to="/restaurant-financing-options">restaurant financing options</Link> for how these compare in detail.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Qualify for Food Truck Financing',
+        content: (
+          <>
+            <p>Most lenders treat a food truck like any other restaurant business and base approval on revenue, not the vehicle. For working capital and cash advance, qualification usually comes down to:</p>
+            <ol>
+              <li><strong>Consistent card sales and bank deposits.</strong> Providers look at your last 3–6 months of statements and average them to a monthly figure. Steady processing volume matters more than perfect credit.</li>
+              <li><strong>Time in business.</strong> Many revenue-based products want at least 4–6 months of operating history. Brand-new trucks with no revenue history usually lean on equipment financing or SBA startup loans instead.</li>
+              <li><strong>Documentation ready.</strong> Bank statements, a voided business check, and basic business details. Having these prepared is the most common factor in how fast you get funded.</li>
+            </ol>
+            <h3>How much can a food truck qualify for?</h3>
+            <p>Revenue-based amounts are typically a percentage or multiple of average monthly sales, so a truck doing high, consistent volume can qualify for more. Equipment financing is sized to the cost of the truck or equipment being purchased. Exact caps vary by provider and state. New owners with no revenue yet should look at <Link to="/restaurant-startup-funding">restaurant startup funding</Link> and <Link to="/funding-for-new-restaurants">funding for new restaurants</Link>.</p>
             <CtaParagraph />
           </>
         ),
       },
+    ],
+    faqItems: [
+      { q: 'How much does it cost to finance a food truck?', a: 'A used food truck with a working kitchen starts around $50,000, while a new, fully equipped and wrapped truck can run $150,000–$175,000. Equipment and build-out can add $20,000–$50,000 on top if the truck is not turnkey. Financing spreads that cost over time rather than paying it all upfront.' },
+      { q: 'What is the best way to finance a food truck?', a: 'For buying the truck or major equipment, equipment financing or an SBA loan usually offers the lowest cost per dollar because the asset secures the loan. For inventory, payroll, repairs, and slow-season gaps, working capital or a cash advance is faster and based on your revenue. Many operators use a mix.' },
+      { q: 'Can I get food truck financing with no revenue history?', a: 'Revenue-based products (working capital, cash advance) generally want 4–6 months of operating history. If your truck is brand new, equipment financing (secured by the truck) and SBA startup loans are the more realistic paths until you have a sales record.' },
+      { q: 'How fast can food truck working capital be funded?', a: 'Working capital and cash advance products often issue same-day or next-day decisions and fund within 24–48 hours when your bank statements are ready. Equipment financing and SBA loans take longer — days to weeks.' },
+      { q: 'Do lenders treat food trucks differently from restaurants?', a: 'For revenue-based funding, most lenders treat a food truck like any other restaurant and base qualification on card sales and bank deposits rather than the vehicle itself. The main difference is that buying the truck is an equipment-financing decision, separate from funding day-to-day operations.' },
     ],
   },
   {
