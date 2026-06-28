@@ -1828,6 +1828,34 @@ export const batch2ContentMap: Record<string, ReactNode> = {
       <p><strong>Quick Answer:</strong> A restaurant monthly P&L review is a 30–60 minute structured analysis of the prior month's financial performance that produces 3–5 specific action items. The review compares actual performance against budget, prior-period, and prior-year benchmarks across revenue, COGS, labor, occupancy, and other costs. It uses the P&L, bank reconciliation, and AP aging report together—not just the income statement alone. Operators who run a consistent monthly review catch cost problems 30 days after they start rather than 90–120 days after they have compounded. That difference is worth hundreds of thousands of dollars over a restaurant's operating life.</p>
       <p>The monthly P&L review is the single most high-leverage financial management habit a restaurant owner can build—and it takes only 30–60 minutes per month. It is not bookkeeping. It is not a tax exercise. It is a structured conversation with your numbers that forces you to ask specific questions, compare against benchmarks, identify what needs to change, and leave with concrete actions. Operators who do this consistently make better staffing decisions, catch food cost drift before it becomes a crisis, and identify cash position problems with enough lead time to address them. This guide covers exactly how to set up and run the monthly review so that it produces actionable insight rather than just confirming numbers you already know.</p>
 
+      <h2>What a Restaurant P&L (Income Statement) Looks Like</h2>
+      <p>A restaurant P&L and a restaurant income statement are the same document—"P&L" (profit and loss) and "income statement" are interchangeable terms for the report that shows revenue, costs, and profit over a period. The profit and loss account of a restaurant is structured top to bottom: revenue at the top, costs subtracted in order, and net profit at the bottom. Restaurant income statements differ from generic ones in two ways: they group cost of goods into food and beverage, and they break out labor and occupancy as their own lines because those are the make-or-break cost categories in food service.</p>
+      <p>A standard monthly restaurant income statement follows this format, with every line shown both as a dollar amount and as a percentage of revenue:</p>
+      <div className="comparison__table-wrap">
+        <table className="comparison__table">
+          <thead>
+            <tr>
+              <th>P&L line item</th>
+              <th>Example</th>
+              <th>% of revenue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Food sales</td><td>$85,000</td><td>85%</td></tr>
+            <tr><td>Beverage sales</td><td>$15,000</td><td>15%</td></tr>
+            <tr><td><strong>Total revenue</strong></td><td><strong>$100,000</strong></td><td><strong>100%</strong></td></tr>
+            <tr><td>Food cost (COGS)</td><td>$29,000</td><td>29%</td></tr>
+            <tr><td>Beverage cost (COGS)</td><td>$3,500</td><td>3.5%</td></tr>
+            <tr><td><strong>Gross profit</strong></td><td><strong>$67,500</strong></td><td><strong>67.5%</strong></td></tr>
+            <tr><td>Labor (hourly + management)</td><td>$32,000</td><td>32%</td></tr>
+            <tr><td>Occupancy (rent + CAM + tax)</td><td>$10,000</td><td>10%</td></tr>
+            <tr><td>Other operating expenses</td><td>$15,000</td><td>15%</td></tr>
+            <tr><td><strong>Net profit</strong></td><td><strong>$10,500</strong></td><td><strong>10.5%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Read top to bottom, the restaurant P&L answers four questions in order: how much did we sell, what did the product cost, what did it cost to operate, and what was left. The percentage column is what makes it useful—dollar amounts tell you the month, but percentages let you compare against benchmarks and prior periods regardless of revenue size. The review process below is how you turn this income statement into decisions. For the metrics that predict where these lines are heading, see the <Link to="/blog/restaurant-kpi-guide">restaurant KPI guide</Link>, and for what each margin should be, see <Link to="/blog/restaurant-gross-profit-guide">restaurant gross profit</Link>.</p>
+
       <h2>The Setup: Documents, Timing, and Participants</h2>
       <p>A monthly P&L review requires four documents, a fixed date, and the right participants.</p>
       <h3>The Four Documents</h3>
@@ -2227,6 +2255,7 @@ export const batch2ContentMap: Record<string, ReactNode> = {
 
   'restaurant-private-events-revenue': (
     <>
+      <p><strong>Quick Answer:</strong> A private events program adds revenue at 2–4x the profitability of normal table service because you sell a guaranteed minimum (room rental plus a food-and-beverage minimum) before service begins—eliminating the cover-count and waste risk of walk-in dining. Typical economics: $50–$150+ per head F&B minimum, often with a $300–$2,000 room rental on top, and a one-time infrastructure investment of $5,000–$30,000 (private or partitionable space, AV, dedicated service). A 40-person event at $80/head is $3,200 from a single booking, frequently on a slow night when the space would otherwise earn far less. Two midweek events a month at a $3,000 minimum is roughly $72,000 in guaranteed annual revenue before any open-dining sales on those days.</p>
       <p>Private dining and events are among the most profitable revenue streams a restaurant can develop. A well-run private events program generates predictable, high-margin revenue, fills the restaurant during quiet periods, and builds relationships with high-value guests who become regulars. A restaurant with a private dining room that generates $5,000–$15,000 per event booking can see private events represent 15–25% of total monthly revenue—at higher margin than open dining service.</p>
 
       <h2>The Financial Case for Private Events</h2>
@@ -2467,6 +2496,7 @@ export const batch2ContentMap: Record<string, ReactNode> = {
 
   'restaurant-cooking-class-revenue': (
     <>
+      <p><strong>Quick Answer:</strong> Restaurant cooking classes typically charge $85–$150 per head and run 70%+ contribution margin, because a 2–3 hour class uses kitchen and dining space during off-hours that would otherwise sit idle. A 12-guest class at $110/head is $1,320 in revenue from a single afternoon, before wine and beverage sales at bar margins on top. The model works best on slow days (Sunday afternoons, Monday/Tuesday nights), monetizes your existing chef and space, and introduces new guests who convert into repeat diners. Startup cost is low if you already have the kitchen — mostly marketing, booking, and a fixed prix-fixe menu.</p>
       <p>Cooking classes are an increasingly profitable restaurant revenue stream—generating high-margin ticket revenue, selling wine and beverages at bar margins, introducing new guests to your restaurant, and building the kind of guest relationship that drives long-term loyalty. Unlike most restaurant revenue, which depends on continuous dining room operation, a cooking class generates significant revenue in 2–3 hours using space and infrastructure that would otherwise sit idle. The contribution margin on a well-run cooking class typically exceeds 70%.</p>
 
       <h2>The Financial Math on Cooking Classes</h2>
@@ -4568,6 +4598,7 @@ export const batch2ContentMap: Record<string, ReactNode> = {
 
   'restaurant-power-outage-loss': (
     <>
+      <p><strong>Quick Answer:</strong> A restaurant power outage costs anywhere from a few hundred dollars to $15,000+, driven by three things: lost revenue (a 6-hour Saturday dinner outage at $300/hour is ~$1,800), inventory spoilage (refrigerated and frozen product is at risk after about 4 hours without power), and the sunk cost of prep already done. What separates a $500 outage from a $15,000 one is preparation and the first 30 minutes: keep cooler and freezer doors closed, log the outage time, move at-risk product to backup cold storage or ice, and document everything for an insurance claim. Generators and a written outage protocol turn a closure into a manageable disruption.</p>
       <p>A power outage closes your restaurant immediately. Even a two-hour outage during peak service can cause significant revenue loss, inventory spoilage, and operational disruption. The difference between an outage that costs you $500 and one that costs you $15,000 is almost entirely preparation and how quickly you respond in the first 30 minutes.</p>
       <h2>The Financial Cost of a Restaurant Power Outage</h2>
       <p>Revenue loss is the most immediate impact: the restaurant cannot operate without power for POS, cooking, lighting, and refrigeration. A 6-hour Saturday dinner service outage, at a restaurant generating $300/hour in revenue, costs $1,800 in lost revenue on top of the food and labor already committed to that service. The prep work done before the outage—the morning's mise en place, the proteins pulled from the freezer, the bread baked—is now a sunk cost with no revenue to recover it.</p>
@@ -4726,6 +4757,7 @@ export const batch2ContentMap: Record<string, ReactNode> = {
 
   'restaurant-food-hall-booth': (
     <>
+      <p><strong>Quick Answer:</strong> A food hall booth costs roughly $15,000–$50,000 to build out and stock, plus monthly rent of $2,000–$8,000+ and often a 5–15% cut of sales to the hall operator. In exchange you get built-in foot traffic, shared seating, and shared marketing — so the buildout is a fraction of a standalone restaurant. The tradeoff is thinner control and a revenue share. Most booths take 3–6 months in a well-trafficked hall to reach break-even, because fixed rent runs from day one while traffic builds. It is the lowest-capital way to test a new concept or enter a new market without a full lease.</p>
       <p>A food hall booth is a lower-capital path to expanding a restaurant brand into new markets—or to launching a new concept with less initial risk than a full restaurant buildout. The economics are structurally different from standalone restaurants: lower startup cost, built-in foot traffic, but also a revenue share structure and operational constraints that require careful modeling before committing.</p>
       <h2>The Food Hall Model: What It Is and How It Works</h2>
       <p>Food halls are curated collections of independent food stalls or concepts operating under a single roof with shared seating, common infrastructure, and centralized management. The food hall operator—typically a real estate developer or hospitality company—provides the physical space, shared seating, bar service (in some halls), marketing, and operational management. Individual stall operators provide their concept, staff, and equipment within their designated booth footprint.</p>
