@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { HowToSchema } from '../components/HowToSchema';
@@ -76,6 +77,7 @@ export function MerchantCashAdvanceUccLienPage() {
           <p className="page-lead">
             Every merchant cash advance comes with a UCC lien filed against your business. Most restaurant owners with active MCAs have no idea how many liens are on record, what they cover, or how severely they block future financing. This guide explains the UCC filing system, what your liens actually say, and the proper process for getting them removed.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-04-17">Updated: April 17, 2026</time>
           </div>

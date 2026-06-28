@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -67,6 +68,7 @@ export function RestaurantMcaDebtHelpPage() {
             If your daily MCA holdbacks are consuming 20–40% of your revenue and you can't see a path out, you're not alone — and you're not out of options.
             Merchant cash advance debt has become one of the biggest financial crises for restaurant owners. This guide explains what's happening, what your options are, and when professional help makes sense.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-06-09">Updated: June 9, 2026</time>
           </div>

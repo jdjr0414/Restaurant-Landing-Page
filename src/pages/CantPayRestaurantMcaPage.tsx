@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -67,6 +68,7 @@ export function CantPayRestaurantMcaPage() {
           <p className="page-lead">
             Missing an MCA payment — or being days away from missing one — triggers a fast-moving set of consequences. Here is the priority order for the next 72 hours and what your actual options are.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-06-02">Updated: June 2, 2026</time>
           </div>

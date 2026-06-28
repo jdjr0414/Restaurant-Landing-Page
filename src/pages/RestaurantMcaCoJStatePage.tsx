@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -55,6 +56,7 @@ export function RestaurantMcaCoJStatePage() {
           <p className="page-lead">
             The Confession of Judgment clause in your MCA contract is the reason your bank account can be frozen within days of a missed payment — and the rules vary significantly by state. Here is what restaurant owners need to know.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-04-07">Updated: April 7, 2026</time>
           </div>

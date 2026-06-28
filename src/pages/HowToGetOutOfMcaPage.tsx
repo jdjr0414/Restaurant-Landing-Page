@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { HowToSchema } from '../components/HowToSchema';
@@ -76,6 +77,7 @@ export function HowToGetOutOfMcaPage() {
           <p className="page-lead">
             Whether you are still current on MCA payments or already facing default, there are real ways out. This guide covers every exit path available to restaurant owners — ranked by effectiveness, speed, and risk — so you can make a clear-eyed decision about which one fits your situation.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-06-04">Updated: June 4, 2026</time>
           </div>
