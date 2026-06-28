@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -62,6 +63,7 @@ export function MerchantCashAdvanceConsolidationPage() {
           <p className="page-lead">
             MCA consolidation is frequently marketed as a solution to MCA debt — but in most cases, it is a new debt product that increases your total obligation while reducing payment complexity. This guide shows you the actual math, the red flags in consolidation offers, and the one narrow scenario where consolidation genuinely helps.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-04-28">Updated: April 28, 2026</time>
           </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -143,6 +144,7 @@ export function McaCalculatorPage() {
           <p className="page-lead">
             The free restaurant MCA calculator below computes your effective holdback rate, total monthly MCA cost, and estimated restructuring savings — in seconds. Enter your card revenue and daily or weekly deductions across all active merchant cash advance positions to see whether your payments are sustainable and what relief could look like.
           </p>
+          <AllIndustriesNote />
 
           <section className="prose-block">
             <div style={{ background: 'var(--color-cream-dark)', borderRadius: 'var(--radius-lg)', padding: '2rem', marginBottom: '2rem' }}>

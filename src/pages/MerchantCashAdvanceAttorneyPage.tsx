@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -63,6 +64,7 @@ export function MerchantCashAdvanceAttorneyPage() {
           <p className="page-lead">
             Searching for an MCA attorney is often the right instinct — but not every MCA situation requires litigation. This guide explains the five specific situations where legal representation is genuinely necessary, when professional mediation is faster and more cost-effective, and what MCA attorneys actually do that mediators cannot.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-04-11">Updated: April 11, 2026</time>
           </div>

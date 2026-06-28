@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -14,27 +15,27 @@ import '../styles/blog.css';
 const faqItems = [
   {
     q: 'Does an LLC protect me from a merchant cash advance personal guarantee?',
-    a: 'No. The personal guarantee explicitly bypasses your LLC\'s limited liability protection. An LLC normally separates your personal assets from business debts — but when you sign a personal guarantee, you are agreeing that the MCA lender can pursue you personally if the business cannot pay. The guarantee is a contractual waiver of the LLC protection for this specific obligation. Your home, personal bank accounts, and personal assets can be at risk regardless of your business entity structure.',
+    a: 'No. The personal guarantee deliberately steps around your LLC\'s limited liability. An LLC normally walls off your personal assets from business debts. Sign a personal guarantee, though, and you have told the MCA lender it can come after you personally the day the business stops paying. The guarantee is a contractual waiver of LLC protection for this one obligation. Your home, your personal bank accounts, and your personal assets can all be on the table no matter how the business is structured.',
   },
   {
     q: 'Can my home be seized to satisfy an MCA personal guarantee?',
-    a: 'It depends on your state\'s homestead exemption. Texas and Florida offer unlimited homestead exemptions for primary residences — your home cannot be seized for business debt regardless of equity. Most other states have limited exemptions ($25,000–$500,000 depending on the state). If your home equity exceeds your state\'s exemption amount and there is no federal homestead protection available, a judgment creditor could potentially force a sale — though this is rare and complex in practice. Consult an attorney in your state if your home equity significantly exceeds your state\'s exemption.',
+    a: 'That hinges on your state\'s homestead exemption. Texas and Florida offer unlimited homestead exemptions on a primary residence, so your home stays out of reach for business debt no matter how much equity sits in it. Most other states cap the exemption somewhere between $25,000 and $500,000. If your home equity tops your state\'s exemption and no federal homestead protection applies, a judgment creditor could in theory force a sale, though in practice that path is rare, slow, and expensive. When your equity sits well above the exemption, talk to an attorney in your state before assuming you are safe.',
   },
   {
     q: 'What is the difference between a limited and unlimited personal guarantee?',
-    a: 'An unlimited personal guarantee means you are personally liable for the full amount owed plus any fees, interest, and collection costs — with no cap. A limited personal guarantee caps your personal liability at a specific amount (for example, 50% of the original advance, or a fixed dollar amount). Most MCA agreements use unlimited personal guarantees. Review your contract for "limited guarantee" or "guaranty not to exceed" language — if it is not there, assume it is unlimited.',
+    a: 'An unlimited personal guarantee puts you on the hook for the whole balance owed plus every fee, interest charge, and collection cost, with no ceiling at all. A limited personal guarantee caps what you can owe personally at a set figure, say 50% of the original advance or a flat dollar amount. Most MCA agreements run unlimited. Comb your contract for "limited guarantee" or "guaranty not to exceed" wording. If you don\'t find it, treat the guarantee as unlimited.',
   },
   {
     q: 'Can a personal guarantee be released as part of an MCA settlement?',
-    a: 'Yes — and it should be. A properly structured MCA settlement should explicitly include a release of the personal guarantee as part of the closing documentation. Settlement agreements that reduce the balance but do not release the personal guarantee leave you personally exposed for any disputed amount. Always confirm that the settlement agreement includes: (1) a satisfaction of the judgment, (2) UCC-3 lien termination, and (3) a full release of the personal guarantee. If the lender\'s proposed agreement is missing any of these, do not sign.',
+    a: 'Yes, and it should be. A properly built MCA settlement spells out a release of the personal guarantee right in the closing paperwork. Agreements that knock down the balance but stay silent on the guarantee leave you personally exposed for anything still in dispute. Before you sign, confirm the settlement includes all three of these: (1) a satisfaction of the judgment, (2) UCC-3 lien termination, and (3) a full release of the personal guarantee. Miss any one and you are not done. If the lender\'s draft leaves one out, hold off on signing.',
   },
   {
     q: 'Does the personal guarantee survive if my business closes?',
-    a: 'Yes — this is the most important and most misunderstood fact about personal guarantees. Closing your restaurant, dissolving your LLC, or filing business bankruptcy does not eliminate a personal guarantee. The guarantee is your personal promise to pay, independent of the business entity\'s existence. If the business closes with unsatisfied MCA debt, the lender can still pursue you personally under the guarantee. This is the primary reason why simply closing the restaurant is not a strategy for eliminating MCA debt.',
+    a: 'Yes, and this is the single most misunderstood fact about personal guarantees. Closing the restaurant, dissolving the LLC, or filing business bankruptcy does nothing to erase it. The guarantee is your own promise to pay, and it stands whether or not the business entity still exists. If the doors close with MCA debt still unpaid, the lender can keep coming after you personally under that guarantee. That is exactly why "just close the restaurant" is not a plan for getting rid of MCA debt.',
   },
   {
     q: 'What happens to my personal guarantee if the business files Chapter 7 bankruptcy?',
-    a: 'A business Chapter 7 bankruptcy discharges the business\'s liability for the MCA debt, but it does not discharge your personal guarantee. The lender\'s claim against you personally survives the business bankruptcy. To discharge a personal guarantee, you would need to file a personal bankruptcy — either Chapter 7 (liquidation) or Chapter 13 (reorganization). Personal bankruptcy has significant credit and practical consequences and should only be considered after other options are exhausted.',
+    a: 'A business Chapter 7 wipes out the business\'s liability for the MCA debt, but it leaves your personal guarantee untouched. The lender\'s claim against you personally rides right through the business bankruptcy. To clear a personal guarantee, you would have to file your own bankruptcy, either Chapter 7 (liquidation) or Chapter 13 (reorganization). That carries heavy credit and practical fallout, so it belongs at the bottom of the list, after you have worked through every other option.',
   },
 ];
 
@@ -61,8 +62,9 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
         <div className="page-content">
           <h1 className="page-title">Merchant Cash Advance Personal Guarantee: What It Means for Your Assets</h1>
           <p className="page-lead">
-            Most restaurant owners who signed an MCA agreement also signed a personal guarantee — often without fully understanding that it makes them personally liable for the debt if the business cannot pay. This guide explains exactly what assets are at risk, how homestead laws protect you (or don't), and what happens to a personal guarantee in settlement or bankruptcy.
+            Most restaurant owners who signed an MCA agreement also signed a personal guarantee, usually without grasping that it puts them on the hook for the debt the moment the business can't pay. This guide lays out which assets are actually at risk, how homestead laws protect you (or leave you exposed), and what becomes of a personal guarantee once you reach settlement or bankruptcy.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-04-22">Updated: April 22, 2026</time>
           </div>
@@ -76,7 +78,7 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
               "In consideration of Merchant's execution of this Agreement, the undersigned guarantor(s) hereby unconditionally, absolutely, and irrevocably guarantee the full, prompt and complete payment, performance and fulfillment of all of Merchant's obligations under this Agreement..."
             </div>
             <p>
-              The words "unconditionally," "absolutely," and "irrevocably" are the critical terms. They mean the lender does not have to exhaust remedies against the business first — they can pursue you personally without first proving the business cannot pay. They also mean there are no conditions under which the guarantee is voided: not business closure, not the lender's own behavior, not changes in your personal financial situation.
+              The words "unconditionally," "absolutely," and "irrevocably" are the ones that matter. They mean the lender does not have to chase the business first. It can come straight at you personally without ever proving the business can't pay. They also mean nothing voids the guarantee: not closing your doors, not the lender's own conduct, not a turn in your personal finances.
             </p>
             <p>
               Many restaurant owners sign this page alongside the business entity signatures, not realizing it creates separate personal liability entirely independent of what the business owes.
@@ -86,24 +88,24 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
           <section className="prose-block">
             <h2>What Assets a Personal Guarantee Actually Puts at Risk</h2>
             <p>
-              A personal guarantee means a judgment creditor can pursue your personal assets — not just the business's assets. What is actually at risk depends on your state's exemption laws, but the categories of personal assets that can be pursued include:
+              A personal guarantee opens the door for a judgment creditor to go after your personal assets, not only the business's. What is genuinely at risk turns on your state's exemption laws, but the personal assets a creditor can reach include:
             </p>
             <ul>
-              <li><strong>Personal bank accounts.</strong> Checking, savings, money market accounts in your personal name. Unlike business accounts, which are restrained via a business COJ, personal accounts can be reached through a separate enforcement action against you personally.</li>
-              <li><strong>Personal real estate (beyond homestead exemption).</strong> A primary residence is protected by homestead laws in most states — but investment properties, vacation homes, and second properties typically are not.</li>
-              <li><strong>Personal vehicles</strong> (beyond your state's vehicle exemption, usually $2,500–$10,000).</li>
-              <li><strong>Investment and brokerage accounts</strong> (stocks, mutual funds, bonds in personal accounts).</li>
+              <li><strong>Personal bank accounts.</strong> Checking, savings, and money market accounts in your name. Business accounts get frozen through a business COJ, but personal accounts come under fire in a separate enforcement action aimed at you.</li>
+              <li><strong>Personal real estate beyond the homestead exemption.</strong> Most states shield a primary residence under homestead law. Investment properties, vacation homes, and second properties usually get no such cover.</li>
+              <li><strong>Personal vehicles</strong> above your state's vehicle exemption, which typically runs $2,500 to $10,000.</li>
+              <li><strong>Investment and brokerage accounts</strong> holding stocks, mutual funds, or bonds in your personal name.</li>
               <li><strong>Business interests in other entities</strong> you personally own.</li>
-              <li><strong>Future wages</strong> — though wage garnishment is limited in many states and prohibited for commercial debt in Texas.</li>
+              <li><strong>Future wages,</strong> though garnishment is limited in many states and flat-out banned for commercial debt in Texas.</li>
             </ul>
             <p>
-              Assets that are typically <em>not</em> reachable:
+              Assets that usually stay out of reach:
             </p>
             <ul>
-              <li>Primary residence up to your state's homestead exemption amount</li>
-              <li>Qualified retirement accounts (401k, IRA) — protected under ERISA from most judgment creditors</li>
+              <li>Your primary residence up to the state's homestead exemption amount</li>
+              <li>Qualified retirement accounts like a 401k or IRA, which ERISA shields from most judgment creditors</li>
               <li>Life insurance cash value in many states</li>
-              <li>Assets held in a properly structured irrevocable trust (though transfers made after the guarantee was signed may constitute fraudulent transfer)</li>
+              <li>Assets inside a properly built irrevocable trust, keeping in mind that transfers made after you signed the guarantee can be challenged as fraudulent</li>
             </ul>
           </section>
 
@@ -114,38 +116,38 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
             </p>
             <ul>
               <li><strong>Texas:</strong> Unlimited homestead exemption for primary residence (up to 10 acres in a city, up to 200 acres in a rural area). Among the strongest protections in the country. An MCA judgment cannot force the sale of your Texas primary home regardless of equity. Texas also prohibits wage garnishment for commercial debt. <Link to="/restaurant-mca-debt-help-texas">Full Texas MCA protection guide →</Link></li>
-              <li><strong>Florida:</strong> Unlimited homestead exemption for primary residence (no size or value limit for a 0.5-acre urban parcel). Florida homestead protection is constitutional — some of the most powerful in the US. Florida also has a 30-day UEFJA contest window for foreign judgments. <Link to="/restaurant-mca-debt-help-florida">Full Florida MCA protection guide →</Link></li>
+              <li><strong>Florida:</strong> Unlimited homestead exemption for a primary residence (no size or value limit on a 0.5-acre urban parcel). Florida's homestead protection is written into the state constitution, making it some of the most powerful in the country. Florida also gives you a 30-day UEFJA contest window for foreign judgments. <Link to="/restaurant-mca-debt-help-florida">Full Florida MCA protection guide →</Link></li>
               <li><strong>California:</strong> $300,000–$600,000 depending on county median home price (increased under AB 1885, effective 2021). California also prohibits COJs and has SB 1235 disclosure requirements. <Link to="/restaurant-mca-debt-help-california">Full California MCA protection guide →</Link></li>
-              <li><strong>Georgia:</strong> $21,500 ($43,000 for married couples). Limited — most homes with meaningful equity are partially exposed.</li>
+              <li><strong>Georgia:</strong> $21,500 ($43,000 for married couples). Limited, so most homes with meaningful equity are partially exposed.</li>
               <li><strong>New York:</strong> $89,975–$179,950 depending on county. Limited relative to New York home values.</li>
               <li><strong>Illinois:</strong> $15,000 ($30,000 for married couples). Very limited.</li>
-              <li><strong>Most other states:</strong> Range from $0 (no homestead exemption, like New Jersey and Pennsylvania for judgment creditors) to $500,000+ (Massachusetts). Check your state's specific exemption amount.</li>
+              <li><strong>Most other states:</strong> Anywhere from $0 (no homestead exemption, as in New Jersey and Pennsylvania for judgment creditors) up past $500,000 (Massachusetts). Look up the specific exemption amount for your state.</li>
             </ul>
             <p>
-              The practical reality: most MCA lenders focus on business bank accounts and merchant processing for immediate recovery, not personal real estate — which is difficult and expensive to execute against. But if the business has no assets and the owner has significant unprotected personal equity, the personal guarantee creates meaningful exposure.
+              Here is how it usually plays out. Most MCA lenders chase business bank accounts and merchant processing first, because that is where the fast money is. Personal real estate is a slog to execute against, so they rarely start there. But when the business is stripped of assets and the owner is sitting on a pile of unprotected home equity, the personal guarantee turns into real exposure.
             </p>
           </section>
 
           <section className="prose-block">
             <h2>Does Forming an LLC Actually Protect You?</h2>
             <p>
-              This is the most common misconception among restaurant owners with MCA debt. The answer is no — not from an obligation you personally guaranteed.
+              This is the misconception we hear most often from restaurant owners buried in MCA debt. The honest answer is no, not on an obligation you personally guaranteed.
             </p>
             <p>
-              An LLC's limited liability protection shields members from the business's debts by default. If your restaurant LLC fails to pay a vendor, that vendor cannot come after your personal assets — because the LLC separates them. This protection is real and valuable in general business operations.
+              By default, an LLC's limited liability shields its members from the company's debts. If your restaurant LLC stiffs a vendor, that vendor can't reach into your personal accounts, because the LLC keeps the two sides apart. In day-to-day operations, that protection is real and worth having.
             </p>
             <p>
-              But a personal guarantee is a contractual agreement to waive that protection for a specific obligation. By signing the MCA personal guarantee, you told the lender: "I know I have LLC protection, and I am agreeing not to use it against you." The guarantee is specifically designed to override the entity protection. MCA lenders require personal guarantees precisely because they know restaurant LLCs can dissolve quickly.
+              A personal guarantee is a contract that hands that protection back for one specific debt. When you signed the MCA personal guarantee, you essentially told the lender, "I know I have LLC protection, and I agree not to raise it against you." The whole point of the document is to punch through the entity shield. Lenders insist on personal guarantees because they know a struggling restaurant LLC can be dissolved in an afternoon.
             </p>
             <p>
-              The only way an LLC protects you from MCA debt is if the MCA agreement itself does not include a personal guarantee — which is rare. Review your contract. If there is no separate personal guarantee signature page, confirm in writing with the lender that your liability is limited to the business entity.
+              The one scenario where an LLC actually keeps you safe from MCA debt is when the agreement carries no personal guarantee at all, and that is uncommon. So read your contract. If you find no separate personal guarantee signature page, get written confirmation from the lender that your liability stops at the business entity.
             </p>
           </section>
 
           <section className="prose-block">
             <h2>Can a Personal Guarantee Be Negotiated Away in a Settlement?</h2>
             <p>
-              Yes — and this is one of the most valuable elements of a professionally negotiated MCA settlement. Lenders include personal guarantees as leverage; they use them as negotiating tools as much as enforcement tools. A settlement that resolves the business obligation should also include a full, written release of the personal guarantee.
+              Yes, and it is one of the most valuable pieces of a professionally negotiated MCA settlement. Lenders write in personal guarantees for leverage, and they wield them as bargaining chips just as much as enforcement weapons. Any settlement that clears the business obligation should also carry a full, written release of the personal guarantee.
             </p>
             <p>
               What a full settlement package should include:
@@ -153,14 +155,14 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
             <ul>
               <li><strong>Satisfaction of the business judgment</strong> (if a COJ was filed)</li>
               <li><strong>UCC-3 termination</strong> of all financing statements</li>
-              <li><strong>Written release of the personal guarantee</strong> — the specific document should state that the guarantor (you) is released from all obligations under the guarantee agreement</li>
-              <li><strong>No-deficiency language</strong> — confirming the lender waives any remaining balance above the settled amount</li>
+              <li><strong>Written release of the personal guarantee.</strong> The document should say plainly that the guarantor (you) is released from every obligation under the guarantee agreement.</li>
+              <li><strong>No-deficiency language</strong> confirming the lender waives any balance left above the settled amount.</li>
             </ul>
             <p>
-              Never accept a settlement that reduces the business balance but does not address the personal guarantee. A lender that settles the business MCA for $40,000 but retains the personal guarantee for the remaining $60,000 has not truly settled your liability — they have just shifted the collection target from the business to you personally.
+              Never sign a settlement that trims the business balance but says nothing about the personal guarantee. A lender that settles the business MCA for $40,000 while keeping the personal guarantee alive for the other $60,000 hasn't actually settled your liability. It has just moved the collection target off the business and onto you.
             </p>
             <div className="outcome-callout" style={{ background: 'var(--color-surface)', border: '2px solid var(--color-primary)', borderRadius: '8px', padding: '1.25rem 1.5rem', margin: '1.25rem 0' }}>
-              <strong>What professional mediation achieves on personal guarantees:</strong> Professional MCA mediators routinely negotiate settlements that include full personal guarantee releases as a condition of the agreement — not as a separate negotiation after the fact. This is standard in properly structured settlements and one of the key reasons professional representation produces better outcomes than self-negotiation.
+              <strong>What professional mediation achieves on personal guarantees:</strong> Skilled MCA mediators routinely build full personal guarantee releases right into the settlement as a condition of the deal, rather than circling back to fight for them later. That is the norm in a properly structured settlement, and it is one of the big reasons professional representation tends to beat going it alone.
             </div>
           </section>
 
@@ -184,7 +186,7 @@ export function MerchantCashAdvancePersonalGuaranteePage() {
           <section className="prose-block">
             <h2>Get a Free MCA Contract Review</h2>
             <p>
-              Share your situation and we will help you understand your personal guarantee exposure and what a structured settlement — including personal guarantee release — would look like for your MCA positions.
+              Tell us where things stand and we'll help you size up your personal guarantee exposure and show what a structured settlement, personal guarantee release included, would look like across your MCA positions.
             </p>
             <LeadCaptureForm source="mca-personal-guarantee" submitLabel="Get My Free MCA Contract Review" />
           </section>

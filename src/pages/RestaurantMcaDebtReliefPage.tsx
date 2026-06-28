@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -63,6 +64,7 @@ export function RestaurantMcaDebtReliefPage() {
           <p className="page-lead">
             MCA debt relief is a real process — not a government program, not a scam, not bankruptcy. It is a professional negotiation that reduces what your restaurant owes on merchant cash advances and brings daily payments to a level the business can actually sustain. Here is exactly what it means and how to know if it applies to your situation.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-06-12">Updated: June 12, 2026</time>
           </div>

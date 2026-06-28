@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -67,6 +68,7 @@ export function RestaurantMcaDefaultPage() {
           <p className="page-lead">
             Defaulting on a merchant cash advance triggers consequences that move faster than most restaurant owners expect. Here is exactly what happens at each stage and what your options are at each point in the timeline.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-05-27">Updated: May 27, 2026</time>
           </div>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -55,6 +56,7 @@ export function RestaurantMcaStackingPage() {
           <p className="page-lead">
             MCA stacking — carrying two, three, or more active merchant cash advances simultaneously — is the single fastest path to unsustainable MCA debt for restaurants. Here is how it happens, what it costs, and how to get out.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-05-16">Updated: May 16, 2026</time>
           </div>

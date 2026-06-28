@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SeoHead } from '../components/SeoHead';
+import { AllIndustriesNote } from '../components/AllIndustriesNote';
 import { BreadcrumbSchema } from '../components/BreadcrumbSchema';
 import { BlogFaqSchema } from '../components/BlogFaqSchema';
 import { PageHero } from '../components/PageHero';
@@ -54,6 +55,7 @@ export function RestaurantMcaPaymentsTooHighPage() {
           <p className="page-lead">
             If your merchant cash advance holdback is consuming most of the cash your restaurant generates each day, the math is telling you something important: the payment is not aligned with your actual revenue. Here is what drives holdback to unsustainable levels and what you can do about it.
           </p>
+          <AllIndustriesNote />
           <div className="article__meta">
             <time className="article__date" dateTime="2026-05-21">Updated: May 21, 2026</time>
           </div>
