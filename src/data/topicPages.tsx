@@ -2621,7 +2621,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
     title: 'Restaurant Staff Training Funding | Pay for Training and Development',
     description: 'Restaurant staff training funding: how to fund training, certifications, and development when you want to invest in your team.',
     h1: 'Restaurant Staff Training Funding',
-    lead: 'Restaurant staff training funding helps you pay for training, certifications, and development when you want to invest in your team. Training costs can run $1,000–$10,000 or more—and you pay before you see the return. Restaurant cash advance and working capital can fund training when you have a clear plan. This guide covers what training costs and how to fund it.',
+    lead: 'Want to invest in your team? Training, certifications, and development all cost money up front. Training can run $1,000–$10,000 or more, and you pay before you see any return. That\'s the catch. A restaurant cash advance or working capital can fund it when you have a clear plan. Here\'s what training costs and how to pay for it.',
     datePublished: '2025-03-07',
     dateModified: '2025-03-07',
     sections: [
@@ -2629,7 +2629,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'What Restaurant Staff Training Funding Covers',
         content: (
           <>
-            <p>Training funding covers the capital needed to invest in your team: onboarding programs, certifications (ServSafe, TIPS, allergen training), and ongoing development. There is no dedicated &quot;training loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use). For cost breakdowns, see <Link to="/blog/restaurant-staff-training-cost">restaurant staff training cost</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+            <p>Training funding is just capital you put toward your team: onboarding programs, certifications (ServSafe, TIPS, allergen training), and ongoing development. No bank offers a dedicated &quot;training loan.&quot; Instead, restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use). Want cost breakdowns? See <Link to="/blog/restaurant-staff-training-cost">restaurant staff training cost</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
           </>
         ),
       },
@@ -2655,7 +2655,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
                 </tbody>
               </table>
             </div>
-            <p>Training can reduce turnover, improve consistency, and support compliance. The return often comes over months—reduced hiring costs, fewer mistakes, better reviews. Funding lets you invest upfront when you don&apos;t have cash on hand.</p>
+            <p>Training can cut turnover, improve consistency, and keep you compliant. The payoff shows up over months: lower hiring costs, fewer mistakes, better reviews. Funding lets you spend now when the cash isn&apos;t sitting in your account.</p>
           </>
         ),
       },
@@ -2664,11 +2664,11 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <ol>
-              <li><strong>Apply.</strong> Provide bank statements and card processing data. Funding is flexible-use—no need to specify training. Providers evaluate your revenue history.</li>
-              <li><strong>Receive funds.</strong> Funds can arrive in 24–48 hours. Use them to pay for certifications, training materials, consultants, or program fees.</li>
-              <li><strong>Repay.</strong> Repayment is typically a percentage of daily card sales. You repay as you operate. The return from training—better retention, efficiency—helps over time.</li>
+              <li><strong>Apply.</strong> Hand over bank statements and card processing data. Funding is flexible-use, so you don&apos;t have to say it&apos;s for training. Providers look at your revenue history.</li>
+              <li><strong>Receive funds.</strong> Money can land in 24–48 hours. Put it toward certifications, training materials, consultants, or program fees.</li>
+              <li><strong>Repay.</strong> Repayment is usually a slice of daily card sales. You pay as you go. The gains from training, better retention and efficiency, build over time.</li>
             </ol>
-            <p>Training is an investment with a delayed return. Funding spreads the cost so you don&apos;t have to pay it all upfront from cash flow. See <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link> when payroll is the main pressure.</p>
+            <p>Training pays back slowly. Funding spreads the cost so you aren&apos;t covering it all at once from cash flow. See <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link> when payroll is the bigger pressure.</p>
           </>
         ),
       },
@@ -2676,7 +2676,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'When Training Funding Fits',
         content: (
           <>
-            <p>Funding fits when you have a clear training plan—certifications for a new hire wave, a compliance push, or a structured onboarding program—and need upfront capital. It also fits when you&apos;re scaling and want to invest in training before revenue from the new capacity arrives. Funding may not fit when training is ad hoc and low-cost; in that case, pay from cash flow. It also may not fit when cash flow is already strained—adding repayment on top of existing pressure can make things worse. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for evaluating your position.</p>
+            <p>Funding makes sense when you have a real plan and need money up front. Maybe it&apos;s certifications for a wave of new hires, a compliance push, or a structured onboarding program. It also works when you&apos;re scaling and want training in place before the new revenue shows up. Skip it when training is ad hoc and cheap; just pay from cash flow. And be careful if money is already tight. Piling repayment on top of existing pressure can make things worse. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> to size up where you stand.</p>
           </>
         ),
       },
@@ -2684,9 +2684,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Examples: When Training Funding Helps',
         content: (
           <>
-            <p><strong>Certification push.</strong> Health department is strict; you need 15 staff ServSafe-certified. Cost is $600 for exams and materials. You don&apos;t have that in the budget this month. Working capital funds it. You repay over the next few months. Compliance is maintained.</p>
-            <p><strong>New concept launch.</strong> You&apos;re opening a second location. You want a structured onboarding program for the new team—$4,000 for materials and trainer time. Funding covers it. You repay from the new location&apos;s revenue. See <Link to="/restaurant-expansion-funding">restaurant expansion funding</Link> for multi-location growth.</p>
-            <p><strong>Retention initiative.</strong> Turnover is high. You want to invest in development—cross-training, leadership modules—to improve retention. Cost is $8,000. Funding lets you invest without draining reserves. The return—lower hiring and training costs—comes over 6–12 months.</p>
+            <p><strong>Certification push.</strong> The health department is strict, and you need 15 staff ServSafe-certified. Exams and materials run $600. It&apos;s not in this month&apos;s budget. Working capital covers it, you repay over the next few months, and you stay compliant.</p>
+            <p><strong>New concept launch.</strong> You&apos;re opening a second location and want a structured onboarding program for the new team. That&apos;s $4,000 for materials and trainer time. Funding covers it, and you repay from the new location&apos;s revenue. See <Link to="/restaurant-expansion-funding">restaurant expansion funding</Link> for multi-location growth.</p>
+            <p><strong>Retention initiative.</strong> Turnover is high. You want to put money into development, things like cross-training and leadership modules, to keep people. The tab is $8,000. Funding lets you do it without draining reserves. The payoff, lower hiring and training costs, lands over 6–12 months.</p>
           </>
         ),
       },
@@ -2694,9 +2694,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Training Funding vs Paying Cash',
         content: (
           <>
-            <p><strong>Funding:</strong> Preserves cash for payroll, inventory, emergencies. Repayment flexes with sales. Qualification required. Best when you have a clear plan and need to invest upfront.</p>
-            <p><strong>Paying cash:</strong> No financing cost. Requires cash on hand. Best when you have reserves and training costs are modest.</p>
-            <p>When training can reduce turnover and improve operations, the investment often pays off. Funding lets you make that investment when cash is tight. When costs are small (e.g., a few certifications), paying cash may be simpler. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
+            <p><strong>Funding:</strong> Keeps cash free for payroll, inventory, and emergencies. Repayment flexes with sales. You do have to qualify. Best when you have a clear plan and need to invest up front.</p>
+            <p><strong>Paying cash:</strong> No financing cost. You need the cash on hand, though. Best when you have reserves and the training bill is modest.</p>
+            <p>If training cuts turnover and smooths operations, it usually pays for itself. Funding lets you make that move when cash is tight. For small costs like a few certifications, paying cash is simpler. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
           </>
         ),
       },
@@ -2705,9 +2705,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <ul>
-              <li>Training costs vary—certifications $15–$60/person; full programs $5,000–$15,000+.</li>
-              <li>Funding is flexible-use—no need to specify training. Use working capital or cash advance.</li>
-              <li>Training can reduce turnover and support compliance; the return often comes over months.</li>
+              <li>Training costs vary. Certifications run $15–$60 per person; full programs run $5,000–$15,000+.</li>
+              <li>Funding is flexible-use, so you don&apos;t have to specify training. Use working capital or cash advance.</li>
+              <li>Training can cut turnover and support compliance, and the return usually comes over months.</li>
             </ul>
           </>
         ),
@@ -2716,17 +2716,17 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Summary',
         content: (
           <>
-            <p>Restaurant staff training funding uses flexible-use working capital or cash advance to pay for onboarding, certifications, and development. Costs range from $500 for certifications to $15,000+ for full programs. Apply with revenue data, receive funds in 24–48 hours, and repay as you operate. Training can reduce turnover and improve operations; funding lets you invest when cash is tight. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
+            <p>Restaurant staff training funding means using flexible-use working capital or a cash advance to pay for onboarding, certifications, and development. Costs run from $500 for certifications to $15,000+ for full programs. Apply with revenue data, get funds in 24–48 hours, and repay as you operate. Training can cut turnover and improve operations, and funding lets you invest when cash is tight. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
             <CtaParagraph />
           </>
         ),
       },
     ],
     faqItems: [
-      { q: 'What is restaurant staff training funding?', a: 'It is capital used to pay for training, certifications, and development. Restaurant owners use flexible-use working capital or cash advance.' },
-      { q: 'Can I use restaurant funding for staff training?', a: 'Yes. Restaurant cash advance and working capital are flexible-use and can fund training. No need to specify the use.' },
-      { q: 'How much does restaurant staff training cost?', a: 'Certifications run $15–$60 per person. Full training programs can exceed $10,000. Costs vary by scope and provider.' },
-      { q: 'When does training funding make sense?', a: 'When you have a clear training plan and need upfront capital. Training can reduce turnover and support compliance—the return often comes over months.' },
+      { q: 'What is restaurant staff training funding?', a: 'It\'s capital you put toward training, certifications, and development. Owners usually tap flexible-use working capital or a cash advance.' },
+      { q: 'Can I use restaurant funding for staff training?', a: 'Yes. Restaurant cash advance and working capital are flexible-use, so they can fund training. You don\'t have to name the use.' },
+      { q: 'How much does restaurant staff training cost?', a: 'Certifications run $15–$60 per person. Full programs can top $10,000. It depends on scope and provider.' },
+      { q: 'When does training funding make sense?', a: 'When you have a clear plan and need money up front. Training can cut turnover and support compliance, and the return usually shows up over months.' },
     ],
   },
   {
@@ -2734,7 +2734,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
     title: 'Restaurant Insurance Premium Funding | When Insurance Costs Spike',
     description: 'Restaurant insurance premium funding: how to fund insurance renewals and premium spikes when cash flow is tight.',
     h1: 'Restaurant Insurance Premium Funding',
-    lead: 'Restaurant insurance premium funding helps you pay for insurance renewals and premium spikes when cash flow is tight. Insurance premiums can jump at renewal—often 10–30% or more—and the bill is due on a fixed date. Restaurant cash advance and working capital can bridge the gap when you need to pay the premium before revenue catches up.',
+    lead: 'Restaurant insurance premium funding helps you cover renewals and premium spikes when cash flow is tight. Premiums can jump at renewal, often 10–30% or more, and the bill lands on a fixed date. A restaurant cash advance or working capital can bridge the gap when you have to pay before revenue catches up.',
     datePublished: '2025-03-07',
     dateModified: '2025-03-07',
     sections: [
@@ -2742,7 +2742,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'What Restaurant Insurance Funding Covers',
         content: (
           <>
-            <p>Insurance funding covers the capital needed to pay insurance premiums when renewal or a spike creates a cash flow gap. Restaurants typically carry general liability, property, workers&apos; comp, and sometimes liquor liability. Premiums can run $3,000–$15,000 or more annually. There is no dedicated &quot;insurance loan&quot;—restaurant owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use). For cost context, see <Link to="/blog/restaurant-insurance-costs">restaurant insurance costs</Link> and <Link to="/blog/restaurant-insurance-premium">restaurant insurance premium</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
+            <p>Insurance funding is the capital you use to pay premiums when a renewal or spike opens up a cash flow gap. Most restaurants carry general liability, property, workers&apos; comp, and sometimes liquor liability. Together those can run $3,000–$15,000 or more a year. No lender offers a dedicated &quot;insurance loan.&quot; Owners use <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> (flexible-use) instead. For cost context, see <Link to="/blog/restaurant-insurance-costs">restaurant insurance costs</Link> and <Link to="/blog/restaurant-insurance-premium">restaurant insurance premium</Link>. Compare <Link to="/restaurant-funding-options">restaurant funding options</Link>.</p>
           </>
         ),
       },
@@ -2768,7 +2768,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
                 </tbody>
               </table>
             </div>
-            <p>Premiums can jump 10–30% or more at renewal—especially after claims or in hard markets. The bill is due on a fixed date; missing it can mean a lapse in coverage. Funding bridges the gap when cash is short. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for why fixed costs create pressure.</p>
+            <p>Premiums can jump 10–30% or more at renewal, especially after claims or in a hard market. The bill is due on a fixed date. Miss it and your coverage can lapse. Funding bridges the gap when cash is short. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link> for why fixed costs squeeze you.</p>
           </>
         ),
       },
@@ -2777,11 +2777,11 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <ol>
-              <li><strong>Apply.</strong> Provide bank statements and card processing data. Funding is flexible-use—no need to specify insurance. Providers evaluate your revenue history.</li>
-              <li><strong>Receive funds.</strong> Funds can arrive in 24–48 hours. Use them to pay the insurance premium. You may fund the full annual premium or a quarterly payment.</li>
-              <li><strong>Repay.</strong> Repayment is typically a percentage of daily card sales. You repay as you operate. Insurance is a fixed cost; repayment flexes with revenue.</li>
+              <li><strong>Apply.</strong> Hand over bank statements and card processing data. Funding is flexible-use, so you don&apos;t have to say it&apos;s for insurance. Providers look at your revenue history.</li>
+              <li><strong>Receive funds.</strong> Money can land in 24–48 hours. Use it to pay the premium. You might cover the full annual bill or just a quarterly payment.</li>
+              <li><strong>Repay.</strong> Repayment is usually a slice of daily card sales. You pay as you operate. Insurance is a fixed cost, but the repayment flexes with revenue.</li>
             </ol>
-            <p>Plan ahead. Renewals come on a schedule—often the same month each year. Know your funding options before the due date. Don&apos;t wait until the day before; application and funding take time. See <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> when timing is critical.</p>
+            <p>Plan ahead. Renewals run on a schedule, often the same month every year. Know your options before the due date. Don&apos;t wait until the day before, since application and funding take time. See <Link to="/restaurant-emergency-funding">restaurant emergency funding</Link> when timing is critical.</p>
           </>
         ),
       },
@@ -2789,7 +2789,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'When Insurance Funding Fits',
         content: (
           <>
-            <p>Funding fits when the premium is due and cash is short. Renewals often hit at a fixed time—you can&apos;t delay the payment without risking a lapse. A 20% premium increase on a $8,000 policy adds $1,600 due at renewal. When that coincides with a slow period or other expenses, funding bridges the gap. It also fits when you&apos;re adding coverage—liquor liability, umbrella—and the new premium creates a one-time spike. Funding may not fit when the premium is sustainable and cash flow is fine; in that case, pay from reserves. See <Link to="/restaurant-rent-increase-funding">restaurant rent increase funding</Link> when multiple fixed costs spike at once.</p>
+            <p>Funding fits when the premium is due and cash is short. Renewals hit at a fixed time, and you can&apos;t push the payment without risking a lapse. A 20% bump on an $8,000 policy adds $1,600 at renewal. If that lands during a slow stretch or alongside other bills, funding bridges the gap. It also helps when you&apos;re adding coverage, say liquor liability or an umbrella policy, and the new premium creates a one-time spike. Skip it when the premium is manageable and cash flow is fine. Just pay from reserves. See <Link to="/restaurant-rent-increase-funding">restaurant rent increase funding</Link> when several fixed costs spike at once.</p>
           </>
         ),
       },
@@ -2797,9 +2797,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Examples: When Insurance Funding Helps',
         content: (
           <>
-            <p><strong>Renewal spike.</strong> Your policy renews in March. The premium went from $6,500 to $8,200—a 26% increase. The insurer cites claims in your area. The full amount is due March 15. You apply for working capital, receive funds in 48 hours, and pay the premium on time. You repay over the next few months.</p>
-            <p><strong>Post-claim increase.</strong> You had a workers&apos; comp claim last year. Your renewal reflects it—premium up 35%. You need to pay the higher amount to stay covered. Funding bridges the gap until revenue catches up.</p>
-            <p><strong>New location.</strong> You&apos;re opening a second unit. Insurance for the new location adds $4,500 to your annual premium. You pay it at opening. Funding covers the addition so you don&apos;t drain reserves needed for operations. See <Link to="/restaurant-expansion-funding">restaurant expansion funding</Link> for multi-location growth.</p>
+            <p><strong>Renewal spike.</strong> Your policy renews in March. The premium jumped from $6,500 to $8,200, a 26% increase, and the insurer blames claims in your area. The full amount is due March 15. You apply for working capital, get funds in 48 hours, and pay on time. Repayment stretches over the next few months.</p>
+            <p><strong>Post-claim increase.</strong> You had a workers&apos; comp claim last year. The renewal reflects it, with the premium up 35%. You have to pay the higher amount to stay covered. Funding bridges the gap until revenue catches up.</p>
+            <p><strong>New location.</strong> You&apos;re opening a second unit. Insurance for it adds $4,500 to your annual premium, due at opening. Funding covers the addition so you don&apos;t drain reserves you need for operations. See <Link to="/restaurant-expansion-funding">restaurant expansion funding</Link> for multi-location growth.</p>
           </>
         ),
       },
@@ -2807,9 +2807,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Insurance Funding vs Premium Financing',
         content: (
           <>
-            <p><strong>Restaurant funding (working capital / cash advance):</strong> Flexible-use. Can fund any expense. Repayment as percentage of sales. Fast approval. Use for insurance or other needs.</p>
-            <p><strong>Premium financing (from insurer or third party):</strong> Tied specifically to the insurance premium. Spreads the premium over installments. May have lower cost for the premium alone. Requires application through insurer or premium finance company.</p>
-            <p>Some insurers offer premium financing—pay the premium over 3–12 months. Compare that with restaurant funding. When you need funds for insurance plus other expenses, flexible-use funding may be simpler. When insurance is the only need and premium financing is available, compare total cost. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
+            <p><strong>Restaurant funding (working capital / cash advance):</strong> Flexible-use, so it can cover any expense. Repayment runs as a percentage of sales. Approval is fast. Use it for insurance or anything else.</p>
+            <p><strong>Premium financing (from insurer or third party):</strong> Tied only to the insurance premium. It spreads that premium over installments. For the premium alone, the cost may be lower. You apply through the insurer or a premium finance company.</p>
+            <p>Some insurers offer premium financing that lets you pay over 3–12 months. Weigh that against restaurant funding. If you need money for insurance plus other expenses, flexible-use funding is often simpler. If insurance is the only need and premium financing is on the table, compare the total cost. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
           </>
         ),
       },
@@ -2818,9 +2818,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
         content: (
           <>
             <ul>
-              <li>Restaurant insurance premiums typically run $5,000–$15,000 annually; can spike 10–30% at renewal.</li>
-              <li>Funding is flexible-use—no need to specify insurance. Use working capital or cash advance.</li>
-              <li>Plan ahead. Renewals come on a schedule. Know your options before the due date.</li>
+              <li>Restaurant insurance premiums usually run $5,000–$15,000 a year and can spike 10–30% at renewal.</li>
+              <li>Funding is flexible-use, so you don&apos;t have to specify insurance. Use working capital or cash advance.</li>
+              <li>Plan ahead. Renewals run on a schedule, so know your options before the due date.</li>
             </ul>
           </>
         ),
@@ -2829,17 +2829,17 @@ export const topicPagesConfig: TopicPageConfig[] = [
         h2: 'Summary',
         content: (
           <>
-            <p>Restaurant insurance funding uses flexible-use working capital or cash advance to pay for insurance premiums when renewal or a spike creates a cash flow gap. Premiums run $5,000–$15,000+ annually and can jump 10–30% at renewal. The bill is due on a fixed date; funding bridges the gap when cash is short. Apply before the due date, receive funds in 24–48 hours, and repay as you operate. Compare with premium financing from your insurer when available. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
+            <p>Restaurant insurance funding uses flexible-use working capital or a cash advance to pay premiums when a renewal or spike opens a cash flow gap. Premiums run $5,000–$15,000+ a year and can jump 10–30% at renewal. The bill is due on a fixed date, and funding bridges the gap when cash is short. Apply before the due date, get funds in 24–48 hours, and repay as you operate. Compare it with premium financing from your insurer when that&apos;s available. See <Link to="/restaurant-funding">restaurant funding</Link> for more.</p>
             <CtaParagraph />
           </>
         ),
       },
     ],
     faqItems: [
-      { q: 'What is restaurant insurance funding?', a: 'It is capital used to pay for insurance premiums when renewal or a spike creates a cash flow gap. Restaurant owners use flexible-use working capital or cash advance.' },
-      { q: 'Can I use restaurant funding for insurance?', a: 'Yes. Restaurant cash advance and working capital are flexible-use and can fund insurance premiums. No need to specify the use.' },
-      { q: 'How much does restaurant insurance cost?', a: 'Premiums typically run $5,000–$15,000 annually depending on size, location, and coverage. Can spike 10–30% at renewal.' },
-      { q: 'When should I apply for insurance funding?', a: 'Before the renewal due date. Application and funding take 1–2 days. Don\'t wait until the last day—a lapse in coverage can create liability.' },
+      { q: 'What is restaurant insurance funding?', a: 'It\'s capital you use to pay premiums when a renewal or spike opens a cash flow gap. Owners usually tap flexible-use working capital or a cash advance.' },
+      { q: 'Can I use restaurant funding for insurance?', a: 'Yes. Restaurant cash advance and working capital are flexible-use, so they can fund premiums. You don\'t have to name the use.' },
+      { q: 'How much does restaurant insurance cost?', a: 'Premiums usually run $5,000–$15,000 a year, depending on size, location, and coverage. They can spike 10–30% at renewal.' },
+      { q: 'When should I apply for insurance funding?', a: 'Before the renewal due date. Application and funding take 1–2 days. Don\'t wait until the last day, since a lapse in coverage can create liability.' },
     ],
   },
   {

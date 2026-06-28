@@ -35,16 +35,16 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              <strong>This page is your hub for understanding restaurant cash flow problems.</strong> Below you&apos;ll find in-depth explanations of why restaurants run out of cash, plus links to detailed guides on payroll gaps, vendor payments, seasonal swings, cost spikes, and planning. Use the &quot;Explore by Topic&quot; section near the bottom to jump directly to the guides that match your situation.
+              <strong>This page is your hub for understanding restaurant cash flow problems.</strong> Below, we dig into why restaurants run out of cash. You&apos;ll also find links to detailed guides on payroll gaps, vendor payments, seasonal swings, cost spikes, and planning. Need something specific? Use the &quot;Explore by Topic&quot; section near the bottom to jump straight to the guides that match your situation.
             </p>
             <p>
-              Restaurant cash flow problems are the number one reason restaurants fail—and often, it&apos;s not because the business is unprofitable. A restaurant can have strong monthly sales and still run out of cash. The core issue is timing: revenue arrives unevenly while expenses hit on a fixed schedule. Understanding why this happens is the first step to managing it.
+              Restaurant cash flow problems are the number one reason restaurants fail. Often it has nothing to do with the business being unprofitable. A restaurant can post strong monthly sales and still run out of cash. The real issue is timing. Revenue arrives unevenly while expenses hit on a fixed schedule. Once you see why that happens, you can start to manage it.
             </p>
             <p>
-              Money comes in from customers—credit card sales, cash, delivery orders—throughout the week. But payroll is due every Friday. Rent is due on the first. Vendors expect payment on net-7, net-15, or net-30 terms. When a slow Tuesday and Wednesday leave your account thin right before payday, you can run short even when your weekend was strong. Credit card processors typically hold funds for 24–48 hours before they hit your account, so Saturday&apos;s sales may not fund Monday&apos;s bills. This timing mismatch is structural to the restaurant business model. See <Link to="/blog/restaurant-credit-card-cash-flow-delay">how the credit card deposit delay affects restaurant cash flow</Link> and <Link to="/blog/restaurant-cash-flow-mistakes">common restaurant cash flow mistakes</Link> that make it worse.
+              Money comes in from customers all week. Credit card sales, cash, delivery orders. But payroll is due every Friday. Rent is due on the first. Vendors expect payment on net-7, net-15, or net-30 terms. A slow Tuesday and Wednesday can leave your account thin right before payday, so you run short even after a strong weekend. Credit card processors usually hold funds for 24–48 hours before they land, which means Saturday&apos;s sales may not cover Monday&apos;s bills. None of this is a fluke. It&apos;s built into how restaurants work. See <Link to="/blog/restaurant-credit-card-cash-flow-delay">how the credit card deposit delay affects restaurant cash flow</Link> and <Link to="/blog/restaurant-cash-flow-mistakes">common restaurant cash flow mistakes</Link> that make it worse.
             </p>
             <p>
-              Restaurants also carry high fixed costs. Rent, insurance, minimum labor, and equipment leases often account for 50–60% of expenses before a single customer walks in. Variable costs—food, packaging, some labor—scale with sales, but the fixed portion stays the same. In a slow week, your food cost might drop, but rent and payroll don&apos;t. A 20% drop in sales for two weeks can create a serious cash crunch because your fixed costs haven&apos;t changed. Many owners run too lean to build reserves during busy periods, leaving them vulnerable when revenue dips. For a broader view of the cash cycle, see the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link>.
+              Restaurants also carry high fixed costs. Rent, insurance, minimum labor, and equipment leases often eat up 50–60% of expenses before a single customer walks in. Variable costs scale with sales. Food, packaging, and some labor rise and fall with the volume. The fixed portion doesn&apos;t budge. In a slow week your food cost might drop, but rent and payroll stay put. Two weeks of sales down 20% can trigger a real cash crunch, because the fixed costs never moved. Plenty of owners run too lean to bank reserves during the busy stretch, which leaves them exposed when revenue dips. For a broader view of the cash cycle, see the <Link to="/restaurant-cash-flow-guide">restaurant cash flow guide</Link>.
             </p>
           </>
         ),
@@ -54,13 +54,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Payroll is one of the largest and most inflexible costs for restaurants. Labor typically runs 25–35% of revenue. Unlike inventory, you can&apos;t delay it without damaging staff trust and potentially violating labor laws. Payday arrives on a fixed schedule—every two weeks or twice a month—regardless of whether last week&apos;s sales were strong or weak.
+              Payroll is one of the biggest costs a restaurant has, and one of the hardest to move. Labor usually runs 25–35% of revenue. You can&apos;t delay it the way you can delay inventory. Push it back and you damage staff trust, maybe break labor laws. Payday lands on a fixed schedule, every two weeks or twice a month, no matter how last week&apos;s sales looked.
             </p>
             <p>
-              The payroll gap happens when revenue doesn&apos;t arrive in time for payday. Weekend sales may not hit your account until Tuesday or Wednesday. If payroll clears Monday, you can overdraw even when your weekend was strong. Seasonal dips make it worse: January and August can be 30–50% slower than December or October for many restaurants. A slow month doesn&apos;t reduce your labor costs—you still need a minimum staff to open the doors. See <Link to="/blog/restaurant-payroll-gap">restaurant payroll gap</Link> for what to do when payroll is due but cash is tight, and <Link to="/blog/manage-restaurant-payroll-during-slow-seasons">managing restaurant payroll during slow seasons</Link>.
+              The payroll gap shows up when revenue doesn&apos;t arrive in time for payday. Weekend sales might not hit your account until Tuesday or Wednesday. If payroll clears Monday, you can overdraw even after a great weekend. Seasonal dips pile on. For a lot of restaurants, January and August run 30–50% slower than December or October. A slow month doesn&apos;t shrink your labor bill. You still need a minimum crew just to open the doors. See <Link to="/blog/restaurant-payroll-gap">restaurant payroll gap</Link> for what to do when payroll is due but cash is tight, and <Link to="/blog/manage-restaurant-payroll-during-slow-seasons">managing restaurant payroll during slow seasons</Link>.
             </p>
             <p>
-              Missing payroll damages morale, makes recruiting harder, and can lead to legal trouble. That&apos;s why many owners treat it as non-negotiable and seek <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link> or working capital when a gap appears. Options like <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can provide same-day or next-day funding when payday is days away—critical when you can&apos;t wait for a traditional loan. Repayment tied to daily sales means your payment flexes when business is slow, which can make it easier to manage than a fixed loan payment.
+              Miss payroll and you hurt morale, make hiring harder, and risk legal trouble. That&apos;s why many owners treat it as non-negotiable and look for <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link> or working capital the moment a gap appears. Something like <Link to="/restaurant-cash-advance">restaurant cash advance</Link> can land same-day or next-day funding when payday is only days off. That speed matters when a traditional loan is too slow. Because repayment is tied to daily sales, your payment eases off when business is slow, which can be gentler than a fixed loan payment.
             </p>
           </>
         ),
@@ -70,13 +70,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Food and beverage costs typically run 28–35% of revenue. Vendors often require payment on net-7, net-15, or net-30 terms. Before a busy weekend or holiday, you may need to stock up—a large upfront purchase that drains cash before the revenue from that busy period arrives. If you fall behind on vendor payments, suppliers may put you on hold, require prepayment, or limit credit. Your supply chain is critical; keeping vendors happy matters for quality, consistency, and your ability to operate.
+              Food and beverage costs usually run 28–35% of revenue. Vendors often want payment on net-7, net-15, or net-30 terms. Before a busy weekend or holiday you may need to stock up, and that big upfront purchase drains cash before the busy period pays you back. Fall behind on vendor payments and suppliers may put you on hold, ask for prepayment, or cut your credit. Your supply chain keeps the kitchen running. Happy vendors mean steady quality, consistency, and the simple ability to keep operating.
             </p>
             <p>
-              Late payments snowball. Once you fall behind with one vendor, others may tighten terms. You might lose net-30 and have to pay on delivery. Some suppliers require prepayment. That ties up more cash and makes it harder to catch up. Getting current often requires a lump sum—which is where <Link to="/restaurant-funding">restaurant funding</Link> can help. See <Link to="/blog/restaurant-late-vendor-payments">what happens when restaurants fall behind on vendor payments</Link> and <Link to="/blog/restaurant-overdraft-problems">restaurant overdraft problems</Link> when timing mismatches lead to bounced payments.
+              Late payments snowball. Fall behind with one vendor and others may tighten their terms too. You might lose net-30 and get stuck paying on delivery. Some suppliers will want prepayment. That ties up even more cash and makes catching up harder. Getting current usually takes a lump sum, and that&apos;s where <Link to="/restaurant-funding">restaurant funding</Link> can help. See <Link to="/blog/restaurant-late-vendor-payments">what happens when restaurants fall behind on vendor payments</Link> and <Link to="/blog/restaurant-overdraft-problems">restaurant overdraft problems</Link> when timing mismatches lead to bounced payments.
             </p>
             <p>
-              Communicating early with vendors and proposing a payment plan can help preserve relationships. When you need a lump sum to get current, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">restaurant working capital</Link> can provide funds in 24–48 hours. Repayment tied to sales can make it easier to manage than a fixed loan when revenue is uneven. For large catering or B2B receivables, <Link to="/blog/restaurant-invoice-factoring">restaurant invoice factoring</Link> may offer another option.
+              Reach out to vendors early and offer a payment plan. It goes a long way toward keeping the relationship intact. When you need a lump sum to get current, <Link to="/restaurant-cash-advance">restaurant cash advance</Link> or <Link to="/restaurant-working-capital">restaurant working capital</Link> can put funds in your account in 24–48 hours. With repayment tied to sales, it can be easier to handle than a fixed loan when revenue is uneven. Got large catering or B2B receivables? <Link to="/blog/restaurant-invoice-factoring">restaurant invoice factoring</Link> may be another route.
             </p>
           </>
         ),
@@ -86,13 +86,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Many restaurants see 30–50% revenue swings between peak and off-peak seasons. Post-holiday January, slow summer months, and quiet weekdays create periods when cash flow drops while fixed costs stay the same. Restaurants in tourist areas, college towns, or seasonal markets feel this especially hard—see <Link to="/blog/restaurant-tourism-seasonal">restaurant tourism and seasonal traffic</Link>. Rent, payroll, and utilities don&apos;t scale down when traffic drops.
+              Plenty of restaurants see revenue swing 30–50% between peak and off-peak. Post-holiday January, the slow summer stretch, quiet weekdays. Cash flow drops in all of them while fixed costs hold steady. Restaurants in tourist areas, college towns, or seasonal markets feel it the most. See <Link to="/blog/restaurant-tourism-seasonal">restaurant tourism and seasonal traffic</Link>. Rent, payroll, and utilities don&apos;t scale down just because traffic did.
             </p>
             <p>
-              Surviving slow seasons requires planning: build reserves during busy months, trim non-essential costs, and know your funding options before you need them. See <Link to="/blog/restaurant-slow-season-survival">restaurant slow season survival</Link> for a complete strategy, <Link to="/blog/how-restaurants-handle-seasonal-cash-flow">how restaurants handle seasonal cash flow</Link>, and <Link to="/restaurant-cash-flow-guide">restaurant January slow</Link> for the post-holiday crunch. In worst cases, <Link to="/blog/restaurant-closing-due-to-cash-flow">restaurant closing due to cash flow</Link> can result when gaps persist. The flip side—<Link to="/blog/restaurant-busy-season-preparation">busy season preparation</Link>—requires cash upfront to stock inventory and add staff before the rush generates revenue.
+              Getting through a slow season takes planning. Build reserves during the busy months, trim what you don&apos;t need, and line up your funding options before the dip hits. See <Link to="/blog/restaurant-slow-season-survival">restaurant slow season survival</Link> for a complete strategy, <Link to="/blog/how-restaurants-handle-seasonal-cash-flow">how restaurants handle seasonal cash flow</Link>, and <Link to="/restaurant-cash-flow-guide">restaurant January slow</Link> for the post-holiday crunch. When gaps drag on, the worst case is <Link to="/blog/restaurant-closing-due-to-cash-flow">restaurant closing due to cash flow</Link>. There&apos;s a flip side too. <Link to="/blog/restaurant-busy-season-preparation">busy season preparation</Link> takes cash upfront to stock inventory and add staff before the rush ever pays off.
             </p>
             <p>
-              <Link to="/restaurant-seasonal-cash-flow">Restaurant seasonal cash flow</Link> strategies and working capital can bridge the gap until traffic returns. Some providers specialize in restaurants and understand that a slow month doesn&apos;t mean a failing business—they look at your revenue history over several months, not just the current dip. Repayment tied to daily sales means your payment flexes when revenue is low, which can make it easier to manage than a fixed loan during slow seasons.
+              <Link to="/restaurant-seasonal-cash-flow">Restaurant seasonal cash flow</Link> strategies and working capital can bridge the gap until traffic comes back. Some providers focus on restaurants and get that a slow month isn&apos;t a failing business. They look at your revenue history across several months, not just the current dip. Repayment tied to daily sales means your payment drops when revenue does, which can beat a fixed loan during the slow stretch.
             </p>
           </>
         ),
@@ -102,13 +102,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Restaurants face cost spikes from multiple directions. Food costs can jump when supply chain disruptions, weather events, or commodity swings push ingredient prices up. A drought can double produce costs. A disease outbreak can send protein prices soaring. You may get 30 days&apos; notice—or none. When your food cost jumps before you can adjust menus or pricing, cash flow suffers. See <Link to="/restaurant-cash-flow-guide">when restaurant food costs spike</Link> and <Link to="/blog/restaurant-supplier-price-increase">restaurant supplier price increase</Link> for how to respond.
+              Cost spikes hit restaurants from every direction. Food costs jump when supply chains break down, weather turns, or commodity prices swing. A drought can double what you pay for produce. A disease outbreak can send protein prices through the roof. Sometimes you get 30 days&apos; notice. Sometimes you get none. When your food cost climbs before you can rework menus or pricing, cash flow takes the hit. See <Link to="/restaurant-cash-flow-guide">when restaurant food costs spike</Link> and <Link to="/blog/restaurant-supplier-price-increase">restaurant supplier price increase</Link> for how to respond.
             </p>
             <p>
-              Equipment failures create another type of cost spike. Walk-in coolers, ovens, HVAC systems, and POS equipment all fail eventually—often at the worst possible time. A broken refrigeration unit can cost thousands to repair and may require immediate action to avoid losing product. These expenses are hard to predict and can&apos;t be delayed. See <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>, <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>, <Link to="/blog/restaurant-hvac-restaurant">restaurant HVAC</Link>, <Link to="/restaurant-emergency-funding">plumbing emergencies</Link>, <Link to="/blog/restaurant-electrical-upgrade">electrical upgrades</Link>, <Link to="/blog/restaurant-roof-repair">roof repair</Link>, and <Link to="/blog/restaurant-utility-bills-spike">restaurant utility bills spike</Link> for specific scenarios. For <Link to="/blog/restaurant-kitchen-remodel">kitchen remodels</Link> or <Link to="/blog/restaurant-expense-reduction-strategies">expense reduction strategies</Link>, those guides can help.
+              Equipment failures are another kind of spike. Walk-in coolers, ovens, HVAC systems, POS terminals. They all break eventually, usually at the worst possible moment. A dead refrigeration unit can run thousands to fix and may need action right away before you lose product. These costs are hard to see coming and impossible to put off. See <Link to="/blog/restaurant-equipment-repair-cost">restaurant equipment repair costs</Link>, <Link to="/blog/restaurant-refrigeration-emergency">restaurant refrigeration emergency</Link>, <Link to="/blog/restaurant-hvac-restaurant">restaurant HVAC</Link>, <Link to="/restaurant-emergency-funding">plumbing emergencies</Link>, <Link to="/blog/restaurant-electrical-upgrade">electrical upgrades</Link>, <Link to="/blog/restaurant-roof-repair">roof repair</Link>, and <Link to="/blog/restaurant-utility-bills-spike">restaurant utility bills spike</Link> for specific scenarios. For <Link to="/blog/restaurant-kitchen-remodel">kitchen remodels</Link> or <Link to="/blog/restaurant-expense-reduction-strategies">expense reduction strategies</Link>, those guides can help.
             </p>
             <p>
-              When revenue is down and costs are up simultaneously, the squeeze is especially tight. Rent increases, minimum wage changes, insurance renewals, and tax season can all hit at once. See <Link to="/blog/restaurant-revenue-down-costs-up">when restaurant revenue is down and costs are up</Link> for how to think about your options. <Link to="/restaurant-emergency-funding">Restaurant emergency funding</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> can bridge short-term gaps while you adjust menus, trim costs, or renegotiate with suppliers.
+              When revenue drops and costs climb at the same time, the squeeze gets tight fast. Rent increases, minimum wage changes, insurance renewals, and tax season can all land in the same month. See <Link to="/blog/restaurant-revenue-down-costs-up">when restaurant revenue is down and costs are up</Link> for how to think it through. <Link to="/restaurant-emergency-funding">Restaurant emergency funding</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> can bridge a short-term gap while you rework menus, trim costs, or renegotiate with suppliers.
             </p>
           </>
         ),
@@ -118,10 +118,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              When a customer pays with a card, the money doesn&apos;t hit your account immediately. It typically takes 2–3 business days. You&apos;ve made the sale—but the cash isn&apos;t yours yet. Card sales often represent 70% or more of restaurant revenue. <Link to="/blog/restaurant-gift-card-sales">Gift card sales</Link> create their own timing: cash at sale, liability at redemption. When most of your income is delayed by 2–3 days, your cash flow is inherently lumpy. A strong weekend can still leave you short on Monday if payroll or a large vendor payment clears before Tuesday&apos;s deposit.
+              When a customer pays with a card, the money doesn&apos;t show up right away. It usually takes 2–3 business days. The sale is done, but the cash isn&apos;t yours yet. Card sales often make up 70% or more of restaurant revenue. <Link to="/blog/restaurant-gift-card-sales">Gift card sales</Link> add their own twist: cash at the sale, a liability at redemption. When most of your income runs 2–3 days behind, cash flow gets lumpy by default. A strong weekend can still leave you short on Monday if payroll or a big vendor payment clears before Tuesday&apos;s deposit.
             </p>
             <p>
-              Understanding this pattern helps you plan—and know when to use funding to smooth the gap. Many restaurant funding providers use your card processing or bank statements to assess your business; they understand the delay you face. They can fund you based on your sales history, and repayment is typically a percentage of daily card sales. That means when deposits are slow, your payment is lower. When business picks up, it scales. See <Link to="/blog/restaurant-credit-card-deposits-delayed">restaurant credit card deposit delays</Link> for a deeper look.
+              Once you know the pattern, you can plan around it and spot when funding will smooth the gap. A lot of restaurant funding providers read your card processing or bank statements to size up the business, so they already get the delay you&apos;re dealing with. They fund you on your sales history, and repayment is usually a percentage of daily card sales. Slow deposits, lower payment. Business picks up, it scales right back. See <Link to="/blog/restaurant-credit-card-deposits-delayed">restaurant credit card deposit delays</Link> for a deeper look.
             </p>
           </>
         ),
@@ -131,10 +131,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              A simple cash flow forecast helps you see gaps before they hit. List your fixed expenses by due date—rent, payroll, loan payments, insurance—and compare them to when you expect revenue to arrive. Use last year&apos;s data to estimate seasonal patterns. If you see a risky week coming—payday right after a slow period—you have time to plan.
+              A simple cash flow forecast lets you spot gaps before they hit. List your fixed expenses by due date, like rent, payroll, loan payments, and insurance. Then line them up against when you expect revenue to arrive. Last year&apos;s numbers give you a feel for the seasonal patterns. Spot a risky week ahead, say payday right after a slow stretch, and you&apos;ve got time to plan.
             </p>
             <p>
-              Many owners run a 13-week rolling forecast, updating it weekly with actuals. The goal isn&apos;t perfection; it&apos;s visibility. When you know a gap is likely, you can cut costs, negotiate with vendors, or explore funding before you&apos;re in crisis. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow forecasting</Link>, <Link to="/blog/restaurant-seasonal-budget-planning">restaurant seasonal budget planning</Link>, and <Link to="/blog/restaurant-financial-planning-guide">restaurant financial planning</Link> for practical approaches. For day-to-day operations, <Link to="/blog/restaurant-operational-finance-guide">restaurant operational finance</Link> and <Link to="/restaurant-cash-flow-guide">restaurant cash management</Link> offer deeper guidance.
+              Many owners keep a 13-week rolling forecast and update it every week with actuals. The point isn&apos;t to be perfect. It&apos;s to see what&apos;s coming. When you know a gap is likely, you can cut costs, talk to vendors, or look into funding well before a crisis. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow forecasting</Link>, <Link to="/blog/restaurant-seasonal-budget-planning">restaurant seasonal budget planning</Link>, and <Link to="/blog/restaurant-financial-planning-guide">restaurant financial planning</Link> for practical approaches. For the day-to-day, <Link to="/blog/restaurant-operational-finance-guide">restaurant operational finance</Link> and <Link to="/restaurant-cash-flow-guide">restaurant cash management</Link> go deeper.
             </p>
           </>
         ),
@@ -144,10 +144,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              When operational improvements and reserves aren&apos;t enough, <Link to="/restaurant-funding">restaurant funding</Link> options can bridge the gap. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> products often focus on revenue history rather than credit, offer fast approval and funding (often 24–48 hours), and use repayment tied to daily sales—so your payment flexes when business is slow. Compare <Link to="/restaurant-financing-options">restaurant financing options</Link> in detail. For day-to-day operating capital, see <Link to="/restaurant-working-capital">working capital for restaurants</Link>. Just opening? <Link to="/restaurant-startup-funding">Restaurant startup funding</Link> covers what&apos;s available. Wondering about amounts? <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link> explains typical ranges.
+              When better operations and reserves still aren&apos;t enough, <Link to="/restaurant-funding">restaurant funding</Link> options can bridge the gap. <Link to="/restaurant-cash-advance">Restaurant cash advance</Link> and <Link to="/restaurant-working-capital">restaurant working capital</Link> products tend to weigh revenue history over credit, approve and fund fast (often 24–48 hours), and tie repayment to daily sales, so your payment flexes when business is slow. Compare <Link to="/restaurant-financing-options">restaurant financing options</Link> in detail. For day-to-day operating capital, see <Link to="/restaurant-working-capital">working capital for restaurants</Link>. Just opening? <Link to="/restaurant-startup-funding">Restaurant startup funding</Link> covers what&apos;s out there. Wondering about amounts? <Link to="/how-much-can-you-qualify-for">How much can you qualify for</Link> explains the typical ranges.
             </p>
             <p>
-              These options aren&apos;t right for every situation. Terms and costs vary by provider. But when you need to make payroll, cover an emergency repair, pay vendors, or stock up before a busy season, knowing what&apos;s available puts you in a better position to act. Don&apos;t wait until the day before payday to explore; funding that takes 24–48 hours won&apos;t help if you start too late. Plan ahead when you can. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.
+              These options aren&apos;t right for everyone. Terms and costs swing from provider to provider. Still, when you have to make payroll, cover an emergency repair, pay vendors, or stock up before a busy season, knowing your options puts you in a far better spot to act. Don&apos;t wait until the day before payday. Funding that takes 24–48 hours won&apos;t save you if you start too late. Plan ahead when you can. See <Link to="/restaurant-funding-options">restaurant funding options</Link> for a full comparison.
             </p>
             <CtaParagraph />
           </>
@@ -158,59 +158,59 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              This hub connects you to detailed guides on each type of cash flow challenge. Use the sections below to find the specific scenario you&apos;re facing—payroll, seasonal swings, vendors, equipment, cost spikes, or planning—and jump to the guide that fits.
+              This hub links out to detailed guides for each kind of cash flow challenge. Find the scenario you&apos;re facing in the sections below, whether that&apos;s payroll, seasonal swings, vendors, equipment, cost spikes, or planning, then jump to the guide that fits.
             </p>
             <h3>Payroll and Labor</h3>
             <ul>
-              <li><Link to="/blog/restaurant-payroll-gap">Restaurant payroll gap</Link>—What to do when payroll is due but cash is tight.</li>
-              <li><Link to="/blog/manage-restaurant-payroll-during-slow-seasons">Managing restaurant payroll during slow seasons</Link>—Strategies for covering wages when revenue dips.</li>
-              <li><Link to="/blog/restaurant-payroll-stress">Restaurant payroll stress</Link>—When labor costs squeeze margins and how funding can help.</li>
-              <li><Link to="/blog/restaurant-labor-cost-increase">Restaurant labor cost increase</Link>—Managing minimum wage hikes and competition for staff.</li>
-              <li><Link to="/blog/restaurant-tipped-minimum">Restaurant tipped minimum</Link>—How tipped wage rules affect your labor costs.</li>
-              <li><Link to="/restaurant-payroll-funding">Restaurant benefits offering</Link>—The cost of benefits and retention strategies.</li>
+              <li><Link to="/blog/restaurant-payroll-gap">Restaurant payroll gap</Link>. What to do when payroll is due but cash is tight.</li>
+              <li><Link to="/blog/manage-restaurant-payroll-during-slow-seasons">Managing restaurant payroll during slow seasons</Link>. How to cover wages when revenue dips.</li>
+              <li><Link to="/blog/restaurant-payroll-stress">Restaurant payroll stress</Link>. When labor costs squeeze margins, and how funding can help.</li>
+              <li><Link to="/blog/restaurant-labor-cost-increase">Restaurant labor cost increase</Link>. Handling minimum wage hikes and the fight for staff.</li>
+              <li><Link to="/blog/restaurant-tipped-minimum">Restaurant tipped minimum</Link>. How tipped wage rules affect your labor costs.</li>
+              <li><Link to="/restaurant-payroll-funding">Restaurant benefits offering</Link>. What benefits cost, plus retention strategies.</li>
             </ul>
             <h3>Seasonal and Slow Periods</h3>
             <ul>
-              <li><Link to="/blog/restaurant-slow-season-survival">Restaurant slow season survival</Link>—A complete strategy for surviving revenue dips.</li>
-              <li><Link to="/blog/how-restaurants-handle-seasonal-cash-flow">How restaurants handle seasonal cash flow</Link>—Practical approaches to uneven revenue.</li>
-              <li><Link to="/blog/restaurant-tourism-seasonal">Restaurant tourism and seasonal traffic</Link>—Managing tourist-driven and college-town swings.</li>
-              <li><Link to="/restaurant-cash-flow-guide">Restaurant January slow</Link>—The post-holiday crunch and how to prepare.</li>
-              <li><Link to="/blog/restaurant-busy-season-preparation">Restaurant busy season preparation</Link>—Stocking up and staffing before the rush.</li>
-              <li><Link to="/blog/restaurant-closing-due-to-cash-flow">Restaurant closing due to cash flow</Link>—When gaps persist and what options remain.</li>
+              <li><Link to="/blog/restaurant-slow-season-survival">Restaurant slow season survival</Link>. A full strategy for getting through revenue dips.</li>
+              <li><Link to="/blog/how-restaurants-handle-seasonal-cash-flow">How restaurants handle seasonal cash flow</Link>. Practical ways to deal with uneven revenue.</li>
+              <li><Link to="/blog/restaurant-tourism-seasonal">Restaurant tourism and seasonal traffic</Link>. Handling tourist-driven and college-town swings.</li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant January slow</Link>. The post-holiday crunch, and how to prepare.</li>
+              <li><Link to="/blog/restaurant-busy-season-preparation">Restaurant busy season preparation</Link>. Stocking up and staffing before the rush.</li>
+              <li><Link to="/blog/restaurant-closing-due-to-cash-flow">Restaurant closing due to cash flow</Link>. When gaps drag on, and what options are left.</li>
             </ul>
             <h3>Vendors, Inventory, and Receivables</h3>
             <ul>
-              <li><Link to="/blog/restaurant-late-vendor-payments">What happens when restaurants fall behind on vendor payments</Link>—Consequences and how to get current.</li>
-              <li><Link to="/blog/restaurant-overdraft-problems">Restaurant overdraft problems</Link>—When timing mismatches lead to bounced payments.</li>
-              <li><Link to="/blog/restaurant-invoice-factoring">Restaurant invoice factoring</Link>—Using B2B receivables to fund operations.</li>
+              <li><Link to="/blog/restaurant-late-vendor-payments">What happens when restaurants fall behind on vendor payments</Link>. The fallout, and how to get current.</li>
+              <li><Link to="/blog/restaurant-overdraft-problems">Restaurant overdraft problems</Link>. When timing mismatches lead to bounced payments.</li>
+              <li><Link to="/blog/restaurant-invoice-factoring">Restaurant invoice factoring</Link>. Using B2B receivables to fund operations.</li>
             </ul>
             <h3>Equipment and Facility Emergencies</h3>
             <ul>
-              <li><Link to="/blog/restaurant-equipment-repair-cost">Restaurant equipment repair costs</Link>—What repairs cost and how to fund them.</li>
-              <li><Link to="/blog/restaurant-refrigeration-emergency">Restaurant refrigeration emergency</Link>—When the walk-in goes down.</li>
-              <li><Link to="/blog/restaurant-hvac-restaurant">Restaurant HVAC</Link>—Cooling and heating failures.</li>
-              <li><Link to="/restaurant-emergency-funding">Restaurant plumbing emergencies</Link>—Urgent repairs and funding.</li>
-              <li><Link to="/blog/restaurant-electrical-upgrade">Restaurant electrical upgrades</Link>—When electrical work is required.</li>
-              <li><Link to="/blog/restaurant-roof-repair">Restaurant roof repair</Link>—Leaks and structural issues.</li>
-              <li><Link to="/blog/restaurant-repair-reserve">Restaurant repair reserve</Link>—Building a reserve for future repairs.</li>
+              <li><Link to="/blog/restaurant-equipment-repair-cost">Restaurant equipment repair costs</Link>. What repairs run, and how to fund them.</li>
+              <li><Link to="/blog/restaurant-refrigeration-emergency">Restaurant refrigeration emergency</Link>. When the walk-in goes down.</li>
+              <li><Link to="/blog/restaurant-hvac-restaurant">Restaurant HVAC</Link>. Cooling and heating failures.</li>
+              <li><Link to="/restaurant-emergency-funding">Restaurant plumbing emergencies</Link>. Urgent repairs and funding.</li>
+              <li><Link to="/blog/restaurant-electrical-upgrade">Restaurant electrical upgrades</Link>. When electrical work can&apos;t wait.</li>
+              <li><Link to="/blog/restaurant-roof-repair">Restaurant roof repair</Link>. Leaks and structural issues.</li>
+              <li><Link to="/blog/restaurant-repair-reserve">Restaurant repair reserve</Link>. Building a cushion for future repairs.</li>
             </ul>
             <h3>Cost Spikes and Revenue Pressure</h3>
             <ul>
-              <li><Link to="/restaurant-cash-flow-guide">When restaurant food costs spike</Link>—Responding to ingredient price jumps.</li>
-              <li><Link to="/blog/restaurant-supplier-price-increase">Restaurant supplier price increase</Link>—When vendors raise prices.</li>
-              <li><Link to="/blog/restaurant-revenue-down-costs-up">When restaurant revenue is down and costs are up</Link>—The squeeze and your options.</li>
-              <li><Link to="/blog/restaurant-utility-bills-spike">Restaurant utility bills spike</Link>—Managing energy cost increases.</li>
-              <li><Link to="/blog/restaurant-gift-card-sales">Restaurant gift card sales</Link>—How gift card timing affects cash flow.</li>
+              <li><Link to="/restaurant-cash-flow-guide">When restaurant food costs spike</Link>. Responding to ingredient price jumps.</li>
+              <li><Link to="/blog/restaurant-supplier-price-increase">Restaurant supplier price increase</Link>. When vendors raise their prices.</li>
+              <li><Link to="/blog/restaurant-revenue-down-costs-up">When restaurant revenue is down and costs are up</Link>. The squeeze, and your options.</li>
+              <li><Link to="/blog/restaurant-utility-bills-spike">Restaurant utility bills spike</Link>. Coping with rising energy costs.</li>
+              <li><Link to="/blog/restaurant-gift-card-sales">Restaurant gift card sales</Link>. How gift card timing affects cash flow.</li>
             </ul>
             <h3>Planning, Forecasting, and Financial Health</h3>
             <ul>
-              <li><Link to="/restaurant-cash-flow-guide">Restaurant cash flow forecasting</Link>—Building a forecast to see gaps before they hit.</li>
-              <li><Link to="/blog/restaurant-seasonal-budget-planning">Restaurant seasonal budget planning</Link>—Budgeting for uneven revenue.</li>
-              <li><Link to="/blog/restaurant-financial-planning-guide">Restaurant financial planning</Link>—Revenue forecasting, cost tracking, and capital planning.</li>
-              <li><Link to="/blog/restaurant-operational-finance-guide">Restaurant operational finance</Link>—Day-to-day finance and cash management.</li>
-              <li><Link to="/restaurant-cash-flow-guide">Restaurant cash management</Link>—Best practices for managing cash day to day.</li>
-              <li><Link to="/blog/restaurant-credit-card-cash-flow-delay">Credit card deposit delay</Link>—How the 2–3 day hold affects your cash flow.</li>
-              <li><Link to="/blog/restaurant-cash-flow-mistakes">Restaurant cash flow mistakes</Link>—Common errors that make timing worse.</li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant cash flow forecasting</Link>. Building a forecast to catch gaps early.</li>
+              <li><Link to="/blog/restaurant-seasonal-budget-planning">Restaurant seasonal budget planning</Link>. Budgeting for uneven revenue.</li>
+              <li><Link to="/blog/restaurant-financial-planning-guide">Restaurant financial planning</Link>. Revenue forecasting, cost tracking, and capital planning.</li>
+              <li><Link to="/blog/restaurant-operational-finance-guide">Restaurant operational finance</Link>. Day-to-day finance and cash management.</li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant cash management</Link>. How to manage cash day to day.</li>
+              <li><Link to="/blog/restaurant-credit-card-cash-flow-delay">Credit card deposit delay</Link>. How the 2–3 day hold hits your cash flow.</li>
+              <li><Link to="/blog/restaurant-cash-flow-mistakes">Restaurant cash flow mistakes</Link>. Common slip-ups that make timing worse.</li>
             </ul>
           </>
         ),
@@ -219,11 +219,11 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         h2: 'FAQ',
         content: (
           <>
-            <p><strong>Why do restaurants run out of cash?</strong> Usually a timing mismatch: revenue comes in unevenly (daily sales, weekend rushes) while rent, payroll, and vendors are due on fixed schedules. Credit card deposits take 2–3 days to hit your account. Seasonal dips, cost spikes, and equipment emergencies add pressure.</p>
-            <p><strong>What causes restaurant payroll gaps?</strong> Payday arrives on a fixed schedule regardless of whether last week&apos;s sales were strong or weak. Weekend sales may not hit until Tuesday. A slow week or seasonal dip can leave you short before payday.</p>
-            <p><strong>What happens when restaurants fall behind on vendor payments?</strong> Suppliers may put you on hold, require prepayment, or limit credit. Late payments can snowball—other vendors may tighten terms. Getting current often requires a lump sum; restaurant funding can help.</p>
-            <p><strong>How do restaurants survive slow seasons?</strong> Build reserves during busy months, trim non-essential costs, and know your funding options before you need them. Many providers look at revenue history over several months, not just the current slow period.</p>
-            <p><strong>When should I consider restaurant funding?</strong> When operational improvements and reserves aren&apos;t enough—payroll due in days, equipment down, vendors past due, or a seasonal gap before the next busy period. <Link to="/restaurant-funding-options">Restaurant funding options</Link> can provide fast access when you need it.</p>
+            <p><strong>Why do restaurants run out of cash?</strong> It&apos;s usually a timing mismatch. Revenue comes in unevenly (daily sales, weekend rushes) while rent, payroll, and vendors are due on fixed schedules. Credit card deposits take 2–3 days to land. Then seasonal dips, cost spikes, and equipment emergencies pile on.</p>
+            <p><strong>What causes restaurant payroll gaps?</strong> Payday comes on a fixed schedule no matter how last week&apos;s sales went. Weekend sales might not hit until Tuesday. A slow week or a seasonal dip can leave you short right before payday.</p>
+            <p><strong>What happens when restaurants fall behind on vendor payments?</strong> Suppliers may put you on hold, ask for prepayment, or cut your credit. Late payments snowball, and other vendors may tighten terms too. Getting current usually takes a lump sum, which is where restaurant funding can help.</p>
+            <p><strong>How do restaurants survive slow seasons?</strong> Build reserves during the busy months, trim what you don&apos;t need, and line up your funding options ahead of time. Many providers look at revenue history across several months, not just the current slow period.</p>
+            <p><strong>When should I consider restaurant funding?</strong> When better operations and reserves still aren&apos;t enough. Think payroll due in days, equipment down, vendors past due, or a seasonal gap before the next busy period. <Link to="/restaurant-funding-options">Restaurant funding options</Link> can give you fast access when you need it.</p>
           </>
         ),
       },
@@ -622,13 +622,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              <strong>This page is your hub for restaurant funding by concept.</strong> Whether you run a food truck, pizzeria, bar, bakery, full-service restaurant, franchise, or pop-up, the same core products—<Link to="/restaurant-cash-advance">cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link>—apply. But each concept has different cash flow patterns, seasonal swings, and capital needs. Use the sections below to find your concept and jump to the guides that fit. For the broader picture of why restaurants need funding, see <Link to="/restaurant-cash-flow-problems">restaurant cash flow problems</Link>. Funding by location? <Link to="/restaurant-funding">Restaurant funding by state</Link>. New to the industry? <Link to="/restaurant-startup-funding">Restaurant startup funding</Link> and <Link to="/how-much-can-you-qualify-for">how much you can qualify for</Link>.
+              <strong>This page is your hub for restaurant funding by concept.</strong> Food truck, pizzeria, bar, bakery, full-service, franchise, pop-up. Whatever you run, the same core products apply: <Link to="/restaurant-cash-advance">cash advance</Link> and <Link to="/restaurant-working-capital">working capital</Link>. What changes is the rest. Each concept has its own cash flow patterns, seasonal swings, and capital needs. Find yours in the sections below and jump to the guides that fit. For the bigger picture on why restaurants need funding, see <Link to="/restaurant-cash-flow-problems">restaurant cash flow problems</Link>. Funding by location? <Link to="/restaurant-funding">Restaurant funding by state</Link>. New to the industry? <Link to="/restaurant-startup-funding">Restaurant startup funding</Link> and <Link to="/how-much-can-you-qualify-for">how much you can qualify for</Link>.
             </p>
             <p>
-              Full-service restaurants carry higher labor costs and more complex inventory. Food trucks deal with permits, fuel, and equipment repairs. Bars and breweries have beverage inventory and licensing. Pizzerias and bakeries have predictable ingredient costs but equipment-intensive operations. Each concept can qualify for the same core products—but the way you use funding and the timing of your needs often differ. This guide covers funding by business type and links to detailed guides for each.
+              Full-service restaurants carry higher labor costs and trickier inventory. Food trucks juggle permits, fuel, and equipment repairs. Bars and breweries deal with beverage inventory and licensing. Pizzerias and bakeries have predictable ingredient costs but lean hard on expensive equipment. Any of them can qualify for the same core products. What differs is how you use the funding and when you need it. This page walks through funding by business type and points to detailed guides for each.
             </p>
             <p>
-              The products themselves—cash advance and working capital—are typically flexible-use. You can put funds toward payroll, inventory, equipment, permits, or seasonal build-up. Repayment is often tied to a percentage of daily card sales, so when revenue dips, your payment flexes down. That structure can work well for concepts with uneven revenue. Speed matters too: many providers offer same-day or next-day decisions and funds in 24–48 hours, which helps when payday or an emergency is approaching.
+              The products themselves, cash advance and working capital, are usually flexible-use. Put the funds toward payroll, inventory, equipment, permits, or seasonal build-up. Repayment often runs as a percentage of daily card sales, so when revenue dips, your payment eases down with it. That setup fits concepts with uneven revenue. Speed helps too. A lot of providers give same-day or next-day decisions and funds in 24–48 hours, which matters when payday or an emergency is bearing down.
             </p>
           </>
         ),
@@ -638,13 +638,13 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Food trucks face unique challenges: permits, fuel, equipment repairs, seasonal events, and location-dependent revenue. When the truck breaks down or you need to stock up before a festival, funding can bridge the gap. <Link to="/blog/restaurant-food-truck-funding">Restaurant food truck funding</Link> works the same as for brick-and-mortar—providers look at your card sales and revenue history. See <Link to="/blog/food-truck-working-capital">food truck working capital</Link>, <Link to="/blog/food-truck-payroll-funding">food truck payroll funding</Link>, and <Link to="/food-truck-funding">food truck equipment financing</Link> for concept-specific guidance.
+              Food trucks have their own headaches. Permits, fuel, equipment repairs, seasonal events, and revenue that swings with location. When the truck breaks down or you need to stock up before a festival, funding can bridge the gap. <Link to="/blog/restaurant-food-truck-funding">Restaurant food truck funding</Link> works just like it does for brick-and-mortar. Providers look at your card sales and revenue history. See <Link to="/blog/food-truck-working-capital">food truck working capital</Link>, <Link to="/blog/food-truck-payroll-funding">food truck payroll funding</Link>, and <Link to="/food-truck-funding">food truck equipment financing</Link> for concept-specific guidance.
             </p>
             <p>
-              Seasonal cash flow is especially pronounced for food trucks—events, weather, and location drive revenue. See <Link to="/blog/food-truck-seasonal-cash-flow">food truck seasonal cash flow</Link> for managing slow and busy periods. When equipment fails, <Link to="/food-truck-funding">food truck emergency repairs and funding</Link> can help. Inventory build-up before busy weekends or events often requires upfront cash—<Link to="/blog/food-truck-inventory-funding">food truck inventory funding</Link> covers that need.
+              Seasonal swings hit food trucks hard. Events, weather, and location all drive the numbers. See <Link to="/blog/food-truck-seasonal-cash-flow">food truck seasonal cash flow</Link> for handling the slow and busy stretches. When equipment fails, <Link to="/food-truck-funding">food truck emergency repairs and funding</Link> can help. Stocking up before a busy weekend or event usually takes upfront cash, and <Link to="/blog/food-truck-inventory-funding">food truck inventory funding</Link> covers that.
             </p>
             <p>
-              Food truck operators often need funds for permits, commissary fees, and fuel before they can operate. A second truck or location expansion requires capital for the vehicle, equipment, and initial inventory. Many providers that work with restaurants extend the same products to food trucks—the key is having card sales and revenue history to show. If you&apos;re just starting, see <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link> for what may be available with limited history.
+              Food truck operators often need cash for permits, commissary fees, and fuel just to get rolling. A second truck or a new location means paying for the vehicle, the equipment, and the first round of inventory. Plenty of providers that fund restaurants offer the same products to food trucks. The main thing is having card sales and revenue history to show. Just starting out? See <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link> for what may be available with limited history.
             </p>
           </>
         ),
@@ -654,10 +654,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Bars and breweries have high-margin beverage sales but also face licensing costs, inventory build-up, and equipment for tap systems and refrigeration. When you need to fund a liquor license renewal, expand your beer list, or cover a slow winter, <Link to="/blog/bar-and-brewery-funding">bar and brewery funding</Link> options exist. The same products—cash advance and working capital—apply; providers evaluate your revenue and card processing volume. Beverage inventory can tie up capital before sales—funding can help you stock up for busy seasons or new offerings.
+              Bars and breweries sell high-margin drinks, but they also carry licensing costs, inventory build-up, and gear for tap systems and refrigeration. When you need to renew a liquor license, grow the beer list, or get through a slow winter, <Link to="/blog/bar-and-brewery-funding">bar and brewery funding</Link> options are out there. The same products apply, cash advance and working capital, and providers look at your revenue and card processing volume. Beverage inventory ties up cash before it sells, so funding can help you stock up for a busy season or a new lineup.
             </p>
             <p>
-              Licensing and compliance add to the cost structure. See <Link to="/restaurant-liquor-license-financing">restaurant liquor license cost</Link>, <Link to="/blog/restaurant-bar-inventory-funding">restaurant bar inventory funding</Link>, and <Link to="/blog/restaurant-wine-beer-program">restaurant wine and beer program funding</Link> for related topics. Many providers that work with restaurants also work with bars and breweries—qualification focuses on revenue history rather than concept type.
+              Licensing and compliance pile onto the cost structure. See <Link to="/restaurant-liquor-license-financing">restaurant liquor license cost</Link>, <Link to="/blog/restaurant-bar-inventory-funding">restaurant bar inventory funding</Link>, and <Link to="/blog/restaurant-wine-beer-program">restaurant wine and beer program funding</Link> for related topics. Many providers that fund restaurants fund bars and breweries too. Qualification rests on revenue history, not the type of concept.
             </p>
           </>
         ),
@@ -667,10 +667,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Pizzerias have predictable costs—flour, cheese, toppings—but equipment like ovens and dough mixers is expensive. Cash flow can still be lumpy from payroll, repairs, and seasonal swings. <Link to="/blog/pizzeria-funding-options">Pizzeria funding options</Link> cover payroll, inventory, equipment, and expansion. Bakeries and bakery cafés face similar patterns: flour and butter costs, expensive mixers and ovens, and seasonal holiday rushes. <Link to="/blog/restaurant-bakery-funding">Restaurant and bakery funding</Link> works the same way—flexible-use products based on revenue history.
+              Pizzerias have predictable costs. Flour, cheese, toppings. The equipment is the expensive part, though, with ovens and dough mixers running high. Cash flow can still get lumpy from payroll, repairs, and seasonal swings. <Link to="/blog/pizzeria-funding-options">Pizzeria funding options</Link> cover payroll, inventory, equipment, and expansion. Bakeries and bakery cafés look similar: flour and butter costs, pricey mixers and ovens, and holiday rushes. <Link to="/blog/restaurant-bakery-funding">Restaurant and bakery funding</Link> works the same way, flexible-use products based on revenue history.
             </p>
             <p>
-              Quick-service and fast-casual restaurants often have lower labor costs per dollar of revenue but high throughput and equipment needs. <Link to="/blog/quick-service-restaurant-funding">Quick-service restaurant funding</Link> covers payroll, equipment, and inventory. Compare with <Link to="/blog/full-service-restaurant-cash-flow">full-service restaurant cash flow</Link> for how labor and cost structures differ between concepts.
+              Quick-service and fast-casual spots tend to spend less on labor per dollar of revenue, but they push high volume and need solid equipment. <Link to="/blog/quick-service-restaurant-funding">Quick-service restaurant funding</Link> covers payroll, equipment, and inventory. Compare it with <Link to="/blog/full-service-restaurant-cash-flow">full-service restaurant cash flow</Link> to see how labor and cost structures shift between concepts.
             </p>
           </>
         ),
@@ -680,10 +680,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Full-service restaurants carry higher labor costs—often 30–35% of revenue—and more complex inventory. Revenue depends on table turns, check averages, and reservations. When rent, payroll, and vendors are due and revenue is uneven, funding can bridge the gap. <Link to="/blog/full-service-restaurant-cash-flow">Full-service restaurant cash flow</Link> explains the challenges and options. Fine dining concepts may have different seasonal patterns and higher per-check revenue—see <Link to="/blog/restaurant-fine-dining-cash-flow">restaurant fine dining cash flow</Link> for that segment.
+              Full-service restaurants carry higher labor costs, often 30–35% of revenue, plus more complicated inventory. Revenue rides on table turns, check averages, and reservations. When rent, payroll, and vendors come due and revenue is uneven, funding can bridge the gap. <Link to="/blog/full-service-restaurant-cash-flow">Full-service restaurant cash flow</Link> lays out the challenges and the options. Fine dining runs on its own seasonal patterns and a higher per-check average. See <Link to="/blog/restaurant-fine-dining-cash-flow">restaurant fine dining cash flow</Link> for that segment.
             </p>
             <p>
-              Many full-service operators use funding for payroll during slow weeks, inventory before busy periods, or equipment repairs. Repayment tied to daily sales can align with revenue—when business is slow, your payment is lower. For <Link to="/blog/restaurant-payroll-stress">payroll stress</Link> and <Link to="/blog/restaurant-staff-training-cost">staff training costs</Link>, those guides cover labor-related cash flow. Compare <Link to="/restaurant-funding">restaurant funding options</Link> to see what fits.
+              A lot of full-service operators tap funding for payroll in slow weeks, inventory ahead of busy ones, or equipment repairs. With repayment tied to daily sales, your payment tracks revenue. Slow business, smaller payment. For <Link to="/blog/restaurant-payroll-stress">payroll stress</Link> and <Link to="/blog/restaurant-staff-training-cost">staff training costs</Link>, those guides dig into labor-related cash flow. Compare <Link to="/restaurant-funding">restaurant funding options</Link> to see what fits.
             </p>
           </>
         ),
@@ -693,10 +693,10 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Franchise restaurants face royalty payments, marketing fund contributions, and renewal fees—all on a schedule. When those obligations come due before revenue, <Link to="/blog/restaurant-franchise-fees">restaurant franchise fees and working capital</Link> can help. Pop-ups and temporary concepts need funding for build-out, permits, and operating costs before they generate revenue. <Link to="/blog/restaurant-pop-up-funding">Restaurant pop-up funding</Link> covers short-term or mobile concepts. New restaurants often struggle to qualify for traditional loans—see <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link> for what exists when you&apos;re just opening. For <Link to="/blog/restaurant-soft-opening">soft openings</Link> or <Link to="/blog/restaurant-pre-opening-costs">pre-opening costs</Link>, those guides cover the early stages.
+              Franchise restaurants owe royalty payments, marketing fund contributions, and renewal fees, all on a set schedule. When those bills land before the revenue does, <Link to="/blog/restaurant-franchise-fees">restaurant franchise fees and working capital</Link> can help. Pop-ups and temporary concepts need money for build-out, permits, and operating costs before they earn a dime. <Link to="/blog/restaurant-pop-up-funding">Restaurant pop-up funding</Link> covers short-term and mobile concepts. New restaurants often can&apos;t qualify for traditional loans. See <Link to="/blog/funding-options-for-new-restaurants">funding options for new restaurants</Link> for what exists when you&apos;re just opening. For <Link to="/blog/restaurant-soft-opening">soft openings</Link> or <Link to="/blog/restaurant-pre-opening-costs">pre-opening costs</Link>, those guides cover the early stages.
             </p>
             <p>
-              Mobile catering and event-driven concepts have their own cash flow patterns. See <Link to="/blog/mobile-catering-funding">mobile catering funding</Link> for that segment. Regardless of concept, providers typically focus on revenue history—if you have card sales and consistent deposits, you may qualify for the same products. Compare options before you need them.
+              Mobile catering and event-driven concepts run on their own cash flow rhythm. See <Link to="/blog/mobile-catering-funding">mobile catering funding</Link> for that segment. Whatever the concept, providers mostly care about revenue history. If you have card sales and steady deposits, you may qualify for the same products. Compare your options before you need them.
             </p>
           </>
         ),
@@ -720,38 +720,38 @@ export const pillarPagesConfig: PillarPageConfig[] = [
         content: (
           <>
             <p>
-              Beyond concept-specific funding, these guides cover operational costs, labor, and growth—topics that affect every restaurant type. Use them to understand cash flow drivers and when funding fits.
+              Past the concept-specific stuff, these guides dig into operational costs, labor, and growth. Those topics touch every restaurant type. Use them to understand what drives cash flow and when funding makes sense.
             </p>
             <h3>Labor and Staff</h3>
             <ul>
-              <li><Link to="/blog/restaurant-payroll-stress">Restaurant payroll stress</Link>—When labor costs squeeze margins.</li>
-              <li><Link to="/blog/restaurant-staff-training-cost">Restaurant staff training cost</Link>—Funding training and development.</li>
-              <li><Link to="/blog/restaurant-labor-shortage-funding">Restaurant labor shortage funding</Link>—When you can&apos;t find enough staff.</li>
+              <li><Link to="/blog/restaurant-payroll-stress">Restaurant payroll stress</Link>. When labor costs squeeze margins.</li>
+              <li><Link to="/blog/restaurant-staff-training-cost">Restaurant staff training cost</Link>. Funding training and development.</li>
+              <li><Link to="/blog/restaurant-labor-shortage-funding">Restaurant labor shortage funding</Link>. When you can&apos;t find enough staff.</li>
             </ul>
             <h3>Operations and Revenue</h3>
             <ul>
-              <li><Link to="/blog/restaurant-gift-card-sales">Restaurant gift card sales</Link>—How gift card timing affects cash flow.</li>
-              <li><Link to="/blog/restaurant-delivery-fleet">Restaurant delivery fleet</Link>—Funding in-house delivery and drivers.</li>
-              <li><Link to="/blog/restaurant-third-party-delivery">Restaurant third-party delivery</Link>—Delivery app fees and payout delays.</li>
-              <li><Link to="/restaurant-cash-flow-guide">Restaurant revenue optimization</Link>—Improving revenue without more capital.</li>
-              <li><Link to="/blog/restaurant-expense-reduction-strategies">Restaurant expense reduction strategies</Link>—When costs need to come down.</li>
+              <li><Link to="/blog/restaurant-gift-card-sales">Restaurant gift card sales</Link>. How gift card timing affects cash flow.</li>
+              <li><Link to="/blog/restaurant-delivery-fleet">Restaurant delivery fleet</Link>. Funding in-house delivery and drivers.</li>
+              <li><Link to="/blog/restaurant-third-party-delivery">Restaurant third-party delivery</Link>. Delivery app fees and payout delays.</li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant revenue optimization</Link>. Lifting revenue without more capital.</li>
+              <li><Link to="/blog/restaurant-expense-reduction-strategies">Restaurant expense reduction strategies</Link>. When costs need to come down.</li>
             </ul>
             <h3>Build-Out, Compliance, and Upgrades</h3>
             <ul>
-              <li><Link to="/blog/restaurant-loyalty-program-cost">Restaurant loyalty program cost</Link>—Investing in retention programs.</li>
-              <li><Link to="/blog/restaurant-sustainability-upgrades">Restaurant sustainability upgrades</Link>—Green and eco-friendly improvements.</li>
-              <li><Link to="/blog/restaurant-takeout-packaging">Restaurant takeout packaging</Link>—When packaging costs add up.</li>
+              <li><Link to="/blog/restaurant-loyalty-program-cost">Restaurant loyalty program cost</Link>. Investing in retention programs.</li>
+              <li><Link to="/blog/restaurant-sustainability-upgrades">Restaurant sustainability upgrades</Link>. Green and eco-friendly improvements.</li>
+              <li><Link to="/blog/restaurant-takeout-packaging">Restaurant takeout packaging</Link>. When packaging costs add up.</li>
             </ul>
             <h3>Events and Catering</h3>
             <ul>
-              <li><Link to="/blog/mobile-catering-funding">Mobile catering funding</Link>—Event-driven concepts and cash flow.</li>
-              <li><Link to="/blog/restaurant-event-catering-capital">Restaurant event catering capital</Link>—Funding large events and catering orders.</li>
-              <li><Link to="/restaurant-cash-flow-guide">Restaurant festival and event funding</Link>—When you need capital for festivals and events.</li>
+              <li><Link to="/blog/mobile-catering-funding">Mobile catering funding</Link>. Event-driven concepts and cash flow.</li>
+              <li><Link to="/blog/restaurant-event-catering-capital">Restaurant event catering capital</Link>. Funding large events and catering orders.</li>
+              <li><Link to="/restaurant-cash-flow-guide">Restaurant festival and event funding</Link>. When you need capital for festivals and events.</li>
             </ul>
             <h3>Fine Dining and Specialized Concepts</h3>
             <ul>
-              <li><Link to="/blog/restaurant-fine-dining-cash-flow">Restaurant fine dining cash flow</Link>—Higher per-check, different seasonal patterns.</li>
-              <li><Link to="/blog/restaurant-private-dining">Restaurant private dining</Link>—Funding private dining or event space upgrades.</li>
+              <li><Link to="/blog/restaurant-fine-dining-cash-flow">Restaurant fine dining cash flow</Link>. Higher per-check, different seasonal patterns.</li>
+              <li><Link to="/blog/restaurant-private-dining">Restaurant private dining</Link>. Funding private dining or event space upgrades.</li>
             </ul>
           </>
         ),
