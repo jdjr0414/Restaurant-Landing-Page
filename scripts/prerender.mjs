@@ -172,7 +172,20 @@ async function main() {
     written++;
   }
 
-  console.log(`Prerendered ${written} pages to dist/`);
+  // Emit a flat dist/404.html so Cloudflare Pages (not_found_handling: "404-page")
+  // serves a branded, noindex 404 with a real 404 status for unknown URLs.
+  const notFoundMeta = getMeta('/404') || {
+    title: 'Page Not Found | The Restaurant Owners Guide',
+    description: "The page you're looking for could not be found.",
+    canonicalPath: '/404',
+    noindex: true,
+  };
+  const { html: notFoundBody } = await render('/404');
+  let notFoundHtml = injectMeta(template, notFoundMeta, '/404', blogTotalPages);
+  notFoundHtml = notFoundHtml.replace('<div id="root"></div>', `<div id="root">${notFoundBody}</div>`);
+  writeFileSync(join(distDir, '404.html'), notFoundHtml, 'utf8');
+
+  console.log(`Prerendered ${written} pages to dist/ (+ dist/404.html)`);
 }
 
 main().catch((err) => {

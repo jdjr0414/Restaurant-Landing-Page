@@ -7,6 +7,10 @@
     // /foo/ 308-redirects to /foo). Matches the canonical tags + sitemap, which use
     // the non-slash form; the prior default 307-redirected /foo -> /foo/.
     "html_handling": "drop-trailing-slash",
-    "not_found_handling": "single-page-application"
+    // Every real route is prerendered to its own HTML file, so unknown URLs are
+    // genuine 404s. Serve the branded dist/404.html with a real 404 status instead
+    // of the old "single-page-application" mode, which returned 200 + the homepage
+    // for every unknown URL (a soft-404 that Google penalizes).
+    "not_found_handling": "404-page"
   }
 }
