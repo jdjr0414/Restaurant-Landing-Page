@@ -3,6 +3,10 @@
   "compatibility_date": "2024-12-01",
   "assets": {
     "directory": "./dist",
+    // Serve pages at their non-trailing-slash canonical URL (e.g. /foo returns 200,
+    // /foo/ 308-redirects to /foo). Matches the canonical tags + sitemap, which use
+    // the non-slash form; the prior default 307-redirected /foo -> /foo/.
+    "html_handling": "drop-trailing-slash",
     "not_found_handling": "single-page-application"
   }
 }
