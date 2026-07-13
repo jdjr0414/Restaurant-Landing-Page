@@ -116,8 +116,54 @@ export const topicPagesConfig: TopicPageConfig[] = [
           </>
         ),
       },
+      {
+        h2: 'What Restaurants Use a Business Loan For',
+        content: (
+          <>
+            <p>A restaurant business loan funds almost any major need beyond day-to-day operating cash. The most common uses:</p>
+            <ul>
+              <li><strong>Opening or expanding.</strong> Build-out for a first location or a second, funded with an <Link to="/sba-loans-for-restaurants">SBA</Link> or <Link to="/restaurant-term-loans">term loan</Link>. See <Link to="/restaurant-expansion-funding">restaurant expansion funding</Link>.</li>
+              <li><strong>Equipment.</strong> Ovens, refrigeration, and kitchen gear, usually cheaper through <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> where the asset is collateral.</li>
+              <li><strong>Renovation and remodels.</strong> Refreshing the dining room or kitchen to lift revenue.</li>
+              <li><strong>Working capital.</strong> Covering payroll, inventory, and seasonal gaps with <Link to="/restaurant-working-capital">working capital</Link> or a <Link to="/restaurant-line-of-credit">line of credit</Link>.</li>
+              <li><strong>Refinancing or consolidating debt.</strong> Replacing high-cost advances with a lower-cost loan to free up cash flow.</li>
+            </ul>
+            <p>Matching the loan to the use is the whole game: a long-lived asset deserves a longer-term loan, while a short-term gap should be covered by short-term, flexible capital.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How Much Can a Restaurant Borrow?',
+        content: (
+          <>
+            <p>The amount depends on the loan type and your numbers:</p>
+            <ul>
+              <li><strong>SBA and term loans</strong> are sized to your financials, collateral, and the project, and can reach six or seven figures for qualified, established restaurants.</li>
+              <li><strong>Revenue-based products</strong> (working capital, cash advance) are typically a percentage or multiple of your average monthly card sales, so higher, steadier volume supports a larger amount.</li>
+              <li><strong>Equipment financing</strong> is sized to the cost of the equipment being purchased, often with little or no money down on new gear.</li>
+            </ul>
+            <p>A useful gut check: lenders want your existing cash flow to comfortably cover the new payment, so the realistic ceiling is usually what your revenue can service, not just what you request. See <Link to="/how-much-can-you-qualify-for">how much you can qualify for</Link> for how the math typically works.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Restaurant Business Loan Example',
+        content: (
+          <>
+            <p>Say an established restaurant wants <strong>$120,000</strong> to remodel the dining room and add a patio, expecting the work to lift revenue. A term loan might structure it as:</p>
+            <ul>
+              <li><strong>Amount:</strong> $120,000 over five years at a fixed monthly payment.</li>
+              <li><strong>Qualification:</strong> two-plus years in business, steady profitability, and card sales that comfortably cover the new payment.</li>
+              <li><strong>The test:</strong> before signing, confirm the projected revenue lift covers the payment even in a conservative, slow-quarter scenario.</li>
+            </ul>
+            <p>Run your own figures on the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> to see the monthly payment and how much of your sales it would consume. If the payment looks tight, a smaller loan, a longer term, or a phased project usually beats stretching the budget.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
     ],
     faqItems: [
+      { q: 'What can a restaurant business loan be used for?', a: 'Common uses include opening or expanding to a second location, buying equipment, renovating the dining room or kitchen, covering working capital gaps like payroll and inventory, and refinancing higher-cost debt. The best loan type depends on the use — a long-lived asset suits a longer-term loan, while a short-term gap suits fast, flexible capital.' },
       { q: 'What is the best business loan for a restaurant?', a: 'There is no single best loan — it depends on what you are funding. For a planned expense like a renovation or second location, an SBA loan or bank term loan offers the lowest cost. For payroll, inventory, or a timing gap you need covered fast, working capital or a merchant cash advance is faster and easier to qualify for, though it costs more.' },
       { q: 'How do I qualify for a loan for my restaurant business?', a: 'Bank and SBA loans look at credit score, 2+ years in business, profitability, and often collateral. Working capital and cash advance products look mainly at your last 3–6 months of card sales and bank deposits, so consistent revenue matters more than credit. Owners with strong sales but moderate credit usually qualify for revenue-based options even when banks decline them.' },
       { q: 'How fast can I get a restaurant business loan?', a: 'Working capital and merchant cash advance can fund in 24–48 hours. Bank term loans take days to weeks. SBA loans, which offer the lowest rates, can take weeks to months to close.' },
@@ -1142,26 +1188,109 @@ export const topicPagesConfig: TopicPageConfig[] = [
     title: 'Restaurant Financing Options | Loans, Cash Advance & Equipment | The Restaurant Owners Guide',
     description: 'Restaurant financing options: term loans, cash advance, working capital, equipment financing. Compare speed, cost, and use cases to find what fits.',
     h1: 'Restaurant Financing Options Compared',
-    lead: 'Restaurant financing options include traditional loans, restaurant cash advance, working capital products, and equipment financing. Each has different speed, cost, and use. This guide helps you compare so you can choose.',
+    lead: 'Restaurant financing comes in several forms — term loans, SBA loans, a cash advance, working capital, a line of credit, and equipment financing — and each differs in speed, cost, and what it is built for. The right choice depends on what you are funding and how fast you need it. This guide compares every option side by side so you can match the product to the need.',
+    datePublished: '2026-03-19',
+    dateModified: '2026-07-13',
     sections: [
       {
-        h2: 'Types of Restaurant Financing',
+        h2: 'The Main Restaurant Financing Options',
         content: (
           <>
-            <p><Link to="/restaurant-cash-advance">Restaurant cash advance</Link>, <Link to="/restaurant-working-capital">working capital</Link>, term loans, and equipment financing each suit different needs. See the <Link to="/restaurant-funding-options">restaurant funding options</Link> pillar for a full comparison.</p>
-            <p>When banks aren&apos;t an option, <Link to="/blog/restaurant-business-loan-alternatives">restaurant business loan alternatives</Link> and <Link to="/blog/restaurant-bridge-loan-alternative">restaurant bridge loan alternative</Link> cover other paths. For how costs work, see <Link to="/blog/restaurant-factor-rate-explained">restaurant factor rate explained</Link>. If you&apos;ve been <Link to="/blog/restaurant-funding-declined">declined for funding</Link>, that guide explains next steps.</p>
+            <p>There is no single &ldquo;restaurant loan.&rdquo; Owners choose among a handful of products, each with its own speed, cost, and best use:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr><th>Option</th><th>Best For</th><th>Typical Speed</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><Link to="/sba-loans-for-restaurants">SBA loan</Link></td><td>Buying, opening, or major expansion; lowest cost for qualified borrowers</td><td>Weeks</td></tr>
+                  <tr><td><Link to="/restaurant-term-loans">Term loan</Link></td><td>One-time projects and larger purchases with fixed payments</td><td>Days to weeks</td></tr>
+                  <tr><td><Link to="/restaurant-line-of-credit">Line of credit</Link></td><td>Recurring, unpredictable gaps; pay only for what you draw</td><td>Days</td></tr>
+                  <tr><td><Link to="/restaurant-cash-advance">Cash advance</Link></td><td>Fast cash repaid as a percentage of daily card sales</td><td>24–48 hours</td></tr>
+                  <tr><td><Link to="/restaurant-working-capital">Working capital</Link></td><td>Inventory, payroll, and short-term operating gaps</td><td>24–48 hours</td></tr>
+                  <tr><td><Link to="/restaurant-equipment-financing-guide">Equipment financing</Link></td><td>Ovens, refrigeration, and kitchen gear (the asset is collateral)</td><td>Days to 2 weeks</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The pattern to remember: <strong>the cheaper products are slower and stricter; the faster products cost more and approve on revenue.</strong> Most restaurants end up using a mix — a lower-cost loan for the big planned purchases and a fast, flexible product for the day-to-day.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Loans: SBA and Term Loans',
+        content: (
+          <>
+            <p>Loans deliver a lump sum you repay in fixed installments, and they are usually the lowest-cost way to fund a large, planned expense.</p>
+            <p>An <Link to="/sba-loans-for-restaurants">SBA loan</Link> offers among the lowest rates and the longest repayment for qualified borrowers, which makes it a strong fit for buying a restaurant, opening a new location, or a major renovation. The trade-off is paperwork and time — SBA underwriting takes weeks. A conventional <Link to="/restaurant-term-loans">term loan</Link> closes faster with less documentation when your credit and financials are strong, and suits one-time projects that do not justify the SBA process. Both reward established restaurants with steady revenue and clean books; brand-new owners often lean on <Link to="/restaurant-startup-funding">startup funding</Link> instead.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Fast, Revenue-Based Options: Cash Advance and Working Capital',
+        content: (
+          <>
+            <p>When speed matters more than the lowest rate, revenue-based products fund in a day or two and approve on your card sales rather than a long credit process.</p>
+            <p>A <Link to="/restaurant-cash-advance">restaurant cash advance</Link> gives you a lump sum repaid as a percentage of daily card sales, so the payment eases when business is slow — useful for uneven restaurant revenue. <Link to="/restaurant-working-capital">Working capital</Link> covers the same short-term needs: inventory before a busy weekend, payroll during a slow stretch, an urgent repair. Both cost more per dollar than a loan, which is the price of speed and flexible qualification. They are built for short-term gaps, not for buying a building or a five-year piece of equipment. To see how the amount is set, review <Link to="/how-much-can-you-qualify-for">how much you can qualify for</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Flexible and Asset-Based: Line of Credit and Equipment Financing',
+        content: (
+          <>
+            <p>Two products sit between the extremes. A <Link to="/restaurant-line-of-credit">restaurant line of credit</Link> is revolving — you draw what you need, pay interest only on the drawn balance, and the credit replenishes as you repay. That makes it ideal for <em>recurring</em> gaps you cannot predict, without re-applying each time.</p>
+            <p><Link to="/restaurant-equipment-financing-guide">Equipment financing</Link> is tied to a specific purchase, with the equipment itself as collateral. Because the asset secures the loan, it prices lower than unsecured funding and is the natural choice for ovens, walk-ins, and other durable gear. For a quick side-by-side of revolving versus lump-sum products, see <Link to="/restaurant-cash-advance-vs-loan">cash advance vs. loan</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Choose the Right Restaurant Financing',
+        content: (
+          <>
+            <p>The best option follows from two questions: <strong>what are you funding, and how fast do you need it?</strong></p>
+            <ul>
+              <li><strong>Buying, opening, or a major build-out?</strong> Start with an <Link to="/sba-loans-for-restaurants">SBA</Link> or <Link to="/restaurant-term-loans">term loan</Link> for the lowest cost, if you can wait to close.</li>
+              <li><strong>A specific piece of equipment?</strong> <Link to="/restaurant-equipment-financing-guide">Equipment financing</Link> secured by the gear is usually cheapest.</li>
+              <li><strong>Recurring, unpredictable gaps?</strong> A <Link to="/restaurant-line-of-credit">line of credit</Link> lets you draw and repay without re-applying.</li>
+              <li><strong>An urgent, one-time need — payroll, a repair, inventory?</strong> A <Link to="/restaurant-cash-advance">cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link> funds fastest.</li>
+            </ul>
+            <p>Match the term to the life of what you are buying — finance a five-year asset over years, and cover a two-week gap with a short-term product, not the reverse. That single rule prevents the most expensive financing mistakes restaurants make.</p>
             <CtaParagraph />
           </>
         ),
       },
       {
-        h2: 'Understanding Terms and Requirements',
+        h2: 'What Restaurant Financing Costs — and How to Compare',
         content: (
           <>
-            <p>Requirements vary by product. <Link to="/blog/restaurant-repayment-term-length">Restaurant repayment term length</Link> explains how long you have to repay. <Link to="/blog/restaurant-minimum-monthly-revenue">Restaurant minimum monthly revenue</Link> covers typical revenue thresholds. <Link to="/restaurant-cash-advance-vs-loan">Restaurant credit line vs advance</Link> compares revolving vs lump-sum products.</p>
+            <p>Costs are quoted differently across products, which makes apples-to-apples comparison the hard part. Loans quote an interest rate and term; a cash advance often quotes a factor rate (a multiple of the amount advanced) rather than an APR; equipment financing bundles the rate into a fixed monthly payment. To compare fairly, convert everything to <strong>total dollars repaid</strong> and the effective cost over the same period, not just the headline number.</p>
+            <p>Also weigh the non-price terms: how fast you get funded, how repayment flexes if sales dip, whether there is a prepayment benefit, and what happens in a slow month. Model any option against your actual sales with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you commit, and see the full menu on the <Link to="/restaurant-funding-options">restaurant funding options</Link> hub.</p>
           </>
         ),
       },
+      {
+        h2: 'How to Qualify for Restaurant Financing',
+        content: (
+          <>
+            <p>Qualification varies by product, but lenders generally look at the same core factors:</p>
+            <ol>
+              <li><strong>Card sales and bank deposits.</strong> For revenue-based products, your last few months of statements drive both approval and the amount. Steady volume matters more than perfect credit.</li>
+              <li><strong>Time in business.</strong> Loans and lines of credit typically want at least several months to a year of history; newer restaurants often start with a cash advance or working capital.</li>
+              <li><strong>Credit.</strong> Loans and equipment financing weigh credit more; revenue-based products are more forgiving when sales are strong.</li>
+              <li><strong>Documentation ready.</strong> Bank statements, a voided business check, and basic business details — having them prepared is the biggest factor in how fast you fund.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'What are the main restaurant financing options?', a: 'The main options are SBA loans and term loans (lowest cost, slower to close), a line of credit (revolving, flexible), a cash advance and working capital (fastest, approved on card sales), and equipment financing (secured by the gear). Each differs in speed, cost, and best use, and most restaurants use a mix.' },
+      { q: 'What is the cheapest way to finance a restaurant?', a: 'For a large planned expense like buying or building, an SBA loan usually offers the lowest cost per dollar for qualified borrowers, followed by a conventional term loan. Equipment financing is the cheapest route for buying specific gear because the equipment secures the loan. The trade-off is that the cheapest options are slower and stricter to qualify for.' },
+      { q: 'What is the fastest restaurant financing?', a: 'A restaurant cash advance and working capital are the fastest, often funding within 24 to 48 hours because they approve on your card sales rather than a long credit process. They cost more per dollar than a loan, which is the price of speed and flexible qualification.' },
+      { q: 'How do you choose the right restaurant financing?', a: 'Start with two questions: what are you funding, and how fast do you need it? Use an SBA or term loan for buying or building, equipment financing for specific gear, a line of credit for recurring gaps, and a cash advance or working capital for urgent one-time needs. Match the repayment term to the life of what you are buying.' },
+      { q: 'How do you compare restaurant financing costs?', a: 'Convert every offer to total dollars repaid over the same period, since products quote differently — loans use an interest rate, cash advances often use a factor rate, and equipment financing bundles cost into a monthly payment. Then weigh the non-price terms: funding speed, how repayment flexes when sales dip, and prepayment treatment.' },
+      { q: 'What do you need to qualify for restaurant financing?', a: 'Lenders look at your card sales and bank deposits, time in business, and credit — with revenue-based products leaning on steady sales more than credit score. Having bank statements, a voided business check, and basic business details ready is the biggest factor in how quickly you get funded.' },
     ],
   },
   {
