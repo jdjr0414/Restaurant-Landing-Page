@@ -108,9 +108,9 @@ const STATIC_META: Record<string, Omit<PageMeta, 'canonicalPath'>> = {
       "Restaurant loan alternatives: cash advance, working capital, and other options when a bank loan isn't right or available.",
   },
   '/restaurant-equipment-financing-guide': {
-    title: 'Restaurant Equipment Financing | Loans, Leases & Working Capital',
+    title: 'Restaurant Equipment Financing & Loans | Rates & Terms',
     description:
-      'In-depth guide to restaurant equipment financing: loans vs leases, costs, requirements. When to use equipment financing vs flexible working capital for ovens, coolers, and kitchen gear.',
+      'Restaurant equipment financing and loans explained: what you can finance (ovens, walk-ins, fryers, POS), typical rates and terms, financing vs leasing, new vs used, how to qualify, and a worked example.',
   },
   '/restaurant-funding-by-business-type': {
     title: 'Restaurant Funding by Business Type | Food Trucks, Pizzerias, Bars & More',

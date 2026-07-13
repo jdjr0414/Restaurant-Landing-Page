@@ -8,6 +8,5 @@ export const PILLAR_ROUTE_PATHS: string[] = [
   '/restaurant-funding-options',
   '/restaurant-working-capital-guide',
   '/restaurant-loan-alternatives',
-  '/restaurant-equipment-financing-guide',
   '/restaurant-funding-by-business-type',
 ];

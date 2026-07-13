@@ -3,6 +3,7 @@
  * Used by App.tsx for <Route> definitions without importing the heavy topic content module.
  */
 export const TOPIC_ROUTE_PATHS: string[] = [
+  '/restaurant-equipment-financing-guide',
   '/restaurant-business-loan',
   '/restaurant-payroll-funding',
   '/restaurant-seasonal-cash-flow',

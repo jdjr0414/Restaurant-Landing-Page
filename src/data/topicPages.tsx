@@ -3100,6 +3100,158 @@ export const topicPagesConfig: TopicPageConfig[] = [
     ],
   },
   {
+    path: '/restaurant-equipment-financing-guide',
+    title: 'Restaurant Equipment Financing & Loans | Rates & Terms',
+    description: 'Restaurant equipment financing and loans explained: what you can finance (ovens, walk-ins, fryers, POS), typical rates and terms, financing vs leasing, new vs used, how to qualify, and a worked example.',
+    h1: 'Restaurant Equipment Financing & Loans: Rates, Terms, and How to Qualify',
+    lead: 'A restaurant equipment loan spreads the cost of ovens, refrigeration, fryers, and POS systems over the life of the gear instead of draining your cash all at once — with the equipment itself usually serving as the collateral. This guide covers what you can finance and what it costs, the rates and terms to expect, when to finance versus lease, how lenders decide, and a worked example.',
+    datePublished: '2026-03-19',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'What Restaurant Equipment Financing Is',
+        content: (
+          <>
+            <p><strong>Restaurant equipment financing is a loan or lease used to buy or replace kitchen and front-of-house equipment, where the equipment itself secures the debt.</strong> Because the asset is the collateral, this is usually the lowest-cost way to pay for a big piece of gear — rates run lower than unsecured <Link to="/restaurant-working-capital">working capital</Link>, and terms are matched to how long the equipment lasts.</p>
+            <p>Equipment fails at the worst times. A walk-in cooler going down or an oven dying during a Friday rush means lost revenue and an urgent bill. Financing lets you replace the gear without draining the cash you need for payroll and inventory, spreading a large one-time cost across two to five years of manageable payments.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What You Can Finance — and What It Costs',
+        content: (
+          <>
+            <p>Almost any durable, revenue-producing equipment in a restaurant can be financed. Typical line items and price ranges:</p>
+            <ul>
+              <li><strong>Cooking equipment</strong> — commercial range or oven ($5,000–$25,000), fryers, griddles, and char-broilers.</li>
+              <li><strong>Refrigeration</strong> — walk-in cooler or freezer ($8,000–$20,000), reach-ins, and prep tables.</li>
+              <li><strong>Dishwashing and ventilation</strong> — commercial dishwasher ($3,000–$15,000) and the hood/exhaust system.</li>
+              <li><strong>POS and technology</strong> — a <Link to="/restaurant-pos-financing">POS system</Link> ($2,000–$8,000 plus monthly fees), kitchen display screens, and online-ordering hardware.</li>
+              <li><strong>Furniture, signage, and build-out</strong> — dining furniture, exterior signage, and bar equipment.</li>
+            </ul>
+            <p>Because the gear is the collateral, financing works for a single large purchase (a new walk-in) or a full kitchen build-out. For repairs and smaller, urgent fixes that are not a clean equipment purchase, a faster <Link to="/restaurant-cash-advance">cash advance</Link> or <Link to="/restaurant-equipment-repair-funding-options">equipment repair funding</Link> is often the better tool.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Equipment Financing vs. Leasing vs. Working Capital',
+        content: (
+          <>
+            <p>There is more than one way to pay for equipment, and the right choice depends on the purchase:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr>
+                    <th>Option</th>
+                    <th>Best For</th>
+                    <th>Trade-off</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Equipment loan (financing)</td>
+                    <td>Buying gear you will keep for years; the asset secures the loan</td>
+                    <td>You own it, but a down payment may be required</td>
+                  </tr>
+                  <tr>
+                    <td>Equipment lease</td>
+                    <td>Gear that dates quickly (POS, tech) or lower upfront cost</td>
+                    <td>Lower payments, but you may not own it at the end</td>
+                  </tr>
+                  <tr>
+                    <td><Link to="/restaurant-working-capital">Working capital</Link></td>
+                    <td>Repairs, mixed costs, or when speed beats lowest rate</td>
+                    <td>Faster and flexible, but costs more per dollar</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The rule of thumb: <strong>finance or lease the asset, and use working capital for everything around it.</strong> Buying a $15,000 walk-in is an equipment-financing decision; covering the repair bill when it fails mid-shift is a working-capital one. See <Link to="/restaurant-financing-options">restaurant financing options</Link> for how the products compare in detail.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Restaurant Equipment Loan Rates and Terms',
+        content: (
+          <>
+            <p>A restaurant equipment loan is priced on the asset and your business profile, so terms track the useful life of the gear:</p>
+            <ul>
+              <li><strong>Term length.</strong> Most equipment loans run 24 to 60 months, matched to how long the equipment will last. A long-lived walk-in can carry a longer term than a POS system that dates in a few years.</li>
+              <li><strong>Collateral.</strong> The equipment usually secures the loan, which keeps the rate lower than unsecured borrowing and can reduce the down payment.</li>
+              <li><strong>Down payment.</strong> Some lenders finance 100% of the cost; others want 10–20% down, especially on used gear or for newer businesses.</li>
+              <li><strong>Speed.</strong> Equipment financing typically funds in a few days to two weeks — slower than a cash advance, but cheaper for a planned purchase.</li>
+            </ul>
+            <p>Match the term to the asset: financing a five-year oven over five years keeps the payment low and predictable, while stretching a short-term product to buy long-lived gear costs far more. Run the numbers on the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you commit.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'New vs. Used Restaurant Equipment Financing',
+        content: (
+          <>
+            <p>Lenders treat new and used equipment differently, and it affects your options:</p>
+            <ul>
+              <li><strong>New equipment</strong> finances most easily — it has a clear value, a warranty, and a predictable useful life, so lenders offer the best terms and often 100% financing.</li>
+              <li><strong>Used equipment</strong> is cheaper up front and still financeable, but lenders weigh its age and condition. Expect a shorter term, a possible down payment, and a value based on the resale market rather than the sticker price.</li>
+            </ul>
+            <p>Used gear from a reputable dealer with service records finances far more smoothly than an as-is auction find. Either way, buying quality used equipment and financing it can be the most cash-efficient path for a newer restaurant — you preserve <Link to="/restaurant-working-capital">working capital</Link> for the day-to-day while still getting the kitchen you need.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Qualify for Restaurant Equipment Financing',
+        content: (
+          <>
+            <p>Because the equipment secures the loan, qualifying is often more accessible than for unsecured funding. Lenders generally look at:</p>
+            <ol>
+              <li><strong>The equipment itself.</strong> New, standard, resaleable gear is easiest to finance because it holds value as collateral.</li>
+              <li><strong>Time in business and revenue.</strong> Established restaurants with steady card sales get the best terms; newer owners can still qualify, sometimes with a down payment or by leaning on <Link to="/restaurant-startup-funding">startup funding</Link>.</li>
+              <li><strong>Credit.</strong> Equipment financing weighs credit more than a revenue-based cash advance does, but the collateral makes approval more forgiving than an unsecured loan.</li>
+              <li><strong>Documentation.</strong> The equipment quote or invoice, recent bank statements, and basic business details. Having these ready is the biggest factor in how fast you fund.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Equipment Financing Example',
+        content: (
+          <>
+            <p>Say your walk-in cooler dies and a replacement plus install runs <strong>$16,000</strong>. A typical equipment-financing structure might look like this:</p>
+            <ul>
+              <li><strong>Amount financed:</strong> $16,000, secured by the new walk-in, little or no money down.</li>
+              <li><strong>Term:</strong> 48 months, matched to the unit&apos;s expected life.</li>
+              <li><strong>Payment:</strong> a fixed monthly amount you can test against your average monthly sales before signing.</li>
+            </ul>
+            <p>Financing the unit instead of paying $16,000 in cash keeps that money available for payroll and inventory through the next slow stretch. If the cooler had failed mid-service and you needed it running that day, a faster <Link to="/restaurant-cash-advance">cash advance</Link> would bridge the gap while the equipment loan is arranged — two products doing two jobs.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'When to Finance vs. Pay Cash or Use a Cash Advance',
+        content: (
+          <>
+            <ul>
+              <li><strong>Finance it</strong> when the purchase is large, planned, and long-lived — an oven, a walk-in, a full build-out. Spreading the cost protects your cash cushion.</li>
+              <li><strong>Pay cash</strong> only for small items where financing fees would outweigh the benefit of keeping the cash.</li>
+              <li><strong>Use a <Link to="/restaurant-cash-advance">cash advance</Link> or <Link to="/restaurant-working-capital">working capital</Link></strong> when it is an emergency repair or a mixed expense that is not a clean equipment purchase, and speed matters more than the lowest rate.</li>
+            </ul>
+            <p>Most restaurants end up using a mix: equipment financing for the big planned purchases and a working-capital cushion for the repairs and surprises that a kitchen inevitably throws at you.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'What is restaurant equipment financing?', a: 'It is a loan or lease used to buy or replace restaurant equipment — ovens, refrigeration, fryers, POS systems — where the equipment itself serves as collateral. Because the asset secures the debt, it usually costs less than unsecured working capital, and terms are matched to the useful life of the gear, commonly 24 to 60 months.' },
+      { q: 'What credit score do you need for restaurant equipment financing?', a: 'Equipment financing weighs credit more than a revenue-based cash advance, but the collateral makes it more forgiving than an unsecured loan. Established restaurants with steady sales get the best terms; newer owners or those with lower credit can often still qualify, sometimes with a down payment or by financing new, easily resaleable equipment.' },
+      { q: 'Can you finance used restaurant equipment?', a: 'Yes. Used equipment is financeable and cheaper up front, but lenders weigh its age and condition and may offer a shorter term or ask for a down payment. Used gear from a reputable dealer with service records finances much more easily than an as-is auction purchase.' },
+      { q: 'What are typical restaurant equipment loan rates and terms?', a: 'Terms usually run 24 to 60 months, matched to how long the equipment lasts, and the gear secures the loan so rates are lower than unsecured funding. Some lenders finance 100% of the cost while others want 10 to 20 percent down, especially on used equipment or for newer businesses. Exact pricing depends on the equipment and your business profile.' },
+      { q: 'Is it better to lease or finance restaurant equipment?', a: 'Finance gear you will keep for years — you own it at the end and build equity in the asset. Lease equipment that dates quickly, like POS and technology, or when you want lower upfront cost and the flexibility to upgrade. Many restaurants finance the big long-lived items and lease the fast-changing tech.' },
+      { q: 'How fast can restaurant equipment financing fund?', a: 'Equipment financing typically funds within a few days to two weeks, since the lender verifies the equipment and your business. That is slower than a cash advance, which can fund in 24 to 48 hours — so for a true mid-shift emergency, a cash advance often bridges the gap while the equipment loan is arranged.' },
+    ],
+  },
+  {
     path: '/faq',
     title: 'Restaurant Cash Flow & Funding FAQ | Common Questions',
     description: 'FAQ: restaurant cash flow problems, working capital, funding options, payroll, and equipment. Answers for restaurant owners.',

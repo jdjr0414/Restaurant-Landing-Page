@@ -571,49 +571,6 @@ export const pillarPagesConfig: PillarPageConfig[] = [
     ],
   },
   {
-    path: '/restaurant-equipment-financing-guide',
-    title: 'Restaurant Equipment Financing Guide | Ovens, Coolers & Kitchen Gear',
-    description:
-      'Restaurant equipment financing guide: options for ovens, refrigeration, and kitchen equipment when you need to buy or replace.',
-    h1: 'Restaurant Equipment Financing Guide',
-    sections: [
-      {
-        h2: 'Why Restaurants Need Equipment Financing',
-        content: (
-          <>
-            <p>
-              Restaurant equipment—ovens, walk-ins, fryers, POS systems—is expensive. <Link to="/restaurant-equipment-financing-guide">Restaurant equipment financing</Link> and <Link to="/restaurant-cash-advance">restaurant funding</Link> options let you repair or replace without draining cash. Some products are tied to the equipment; others are flexible-use working capital.
-            </p>
-            <p>
-              Equipment can fail or break down unexpectedly. A walk-in cooler going down or an oven failing during a busy shift can mean lost revenue and costly repairs. When you need equipment quickly—and don&apos;t have cash on hand—financing or working capital can help you get back up and running.
-            </p>
-          </>
-        ),
-      },
-      {
-        h2: 'Equipment Financing vs. Flexible Use',
-        content: (
-          <>
-            <p>
-              Equipment financing is tied to a specific purchase—the equipment often serves as collateral. When you need funds for repairs or replacement that aren&apos;t tied to a single purchase, <Link to="/restaurant-working-capital-guide">restaurant working capital</Link> or <Link to="/restaurant-cash-advance">restaurant cash advance</Link> may be flexible use. See <Link to="/restaurant-cash-flow-guide">restaurant cash flow</Link> for context on why owners need funding.
-            </p>
-          </>
-        ),
-      },
-      {
-        h2: 'What You Can Finance',
-        content: (
-          <>
-            <p>
-              Common equipment: kitchen equipment (ovens, ranges, fryers), refrigeration (walk-ins, reach-ins), POS systems, furniture, and signage. Some providers offer financing for used equipment; others require new purchases. Compare terms and costs before committing.
-            </p>
-            <CtaParagraph />
-          </>
-        ),
-      },
-    ],
-  },
-  {
     path: '/restaurant-funding-by-business-type',
     title: 'Restaurant Funding by Business Type | Food Trucks, Pizzerias, Bars & More',
     description:

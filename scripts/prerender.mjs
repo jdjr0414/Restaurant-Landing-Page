@@ -40,8 +40,11 @@ function injectMeta(template, meta, path, blogTotalPages = 1) {
     `<meta name="description" content="${escapeHtml(description)}" />`
   );
 
-  // 2b. Robots meta: noindex for generated-content blog posts; index,follow for indexable pages
-  const robotsTag = meta.noindex
+  // 2b. Robots meta: noindex for generated-content blog posts AND blog pagination
+  // (page 2+), which are navigational and should stay out of the index + sitemap;
+  // index,follow for indexable pages.
+  const isBlogPagination = /^\/blog\/page\/\d+$/.test(path);
+  const robotsTag = (meta.noindex || isBlogPagination)
     ? '<meta name="robots" content="noindex, nofollow" />'
     : '<meta name="robots" content="index, follow" />';
   if (out.includes('name="robots"')) {
