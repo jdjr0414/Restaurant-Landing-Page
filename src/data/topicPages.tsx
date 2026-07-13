@@ -2937,12 +2937,12 @@ export const topicPagesConfig: TopicPageConfig[] = [
   },
   {
     path: '/food-truck-funding',
-    title: 'Food Truck Financing & Funding | Costs, Options & How to Qualify',
-    description: 'Food truck financing explained: what a truck and build-out cost, the financing options that fit (equipment financing, working capital, cash advance), how to qualify, and how to fund startup, repairs, and slow seasons.',
-    h1: 'Food Truck Financing: Options, Costs, and How to Qualify',
-    lead: 'Financing a food truck means matching the right capital to the right expense — a wrapped-and-equipped truck can run $50,000–$175,000, while ongoing needs like inventory, repairs, and payroll are smaller and more frequent. This guide breaks down what food truck financing actually costs, which option fits each situation, and what lenders look at when you apply.',
+    title: 'Food Truck Financing & Loans | Costs, Rates & How to Qualify',
+    description: 'Food truck financing and loans explained: what a truck and build-out cost, the loan options that fit (equipment financing, working capital, cash advance, SBA), typical rates and terms, how to qualify, and how to fund a startup, repairs, or slow seasons.',
+    h1: 'Food Truck Financing & Loans: Costs, Options, and How to Qualify',
+    lead: 'A food truck loan can cover the truck itself, the kitchen build-out, or the day-to-day — and each calls for a different structure. A wrapped-and-equipped truck can run $50,000–$175,000, while ongoing needs like inventory, repairs, and payroll are smaller and more frequent. This guide breaks down what food truck financing actually costs, the loan options and typical terms, which one fits each situation, and what lenders look at when you apply.',
     datePublished: '2026-03-19',
-    dateModified: '2026-06-26',
+    dateModified: '2026-07-13',
     sections: [
       {
         h2: 'What Food Truck Financing Costs to Cover',
@@ -3017,6 +3017,76 @@ export const topicPagesConfig: TopicPageConfig[] = [
           </>
         ),
       },
+      {
+        h2: 'Food Truck Loan Rates and Terms',
+        content: (
+          <>
+            <p>A &ldquo;food truck loan&rdquo; is not one product, so there is no single rate. What you pay depends on which structure you use and how the lender prices the risk:</p>
+            <ul>
+              <li><strong>Equipment financing for the truck.</strong> Because the truck and kitchen secure the loan, this is usually the lowest-cost way to borrow for the asset itself. Terms commonly run three to seven years, and the truck often serves as most or all of the collateral.</li>
+              <li><strong>SBA loans.</strong> For qualified borrowers, an <Link to="/sba-loans-for-restaurants">SBA loan</Link> offers among the lowest rates and the longest repayment, but it takes the most paperwork and the longest to close. It fits a startup or a larger expansion more than an urgent gap.</li>
+              <li><strong>Working capital and cash advance.</strong> These are priced on your revenue rather than the truck, so they cost more per dollar but fund in a day or two. They are meant for short-term needs, not for buying the truck.</li>
+            </ul>
+            <p>The practical rule: match the term to the life of what you are buying. Finance a five-year truck over several years with equipment financing, and cover a two-week inventory gap with short-term <Link to="/restaurant-working-capital">working capital</Link> — not the other way around. Stretching a short-term advance to buy a truck is the most common and most expensive mistake food truck owners make.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Financing a New vs. a Used Food Truck',
+        content: (
+          <>
+            <p>Lenders look at a new build and a used truck differently, and it shapes your best option:</p>
+            <ul>
+              <li><strong>A new, custom-built truck</strong> ($120,000–$175,000) is a large, single purchase. Equipment financing or an SBA loan spreads it over years so the payment fits your monthly revenue. Build time matters too — many builders want deposits months before delivery, which financing can cover.</li>
+              <li><strong>A used truck</strong> ($50,000–$95,000) is cheaper and faster to finance, but lenders weigh its age, mileage, and kitchen condition. A well-maintained truck with service records finances more easily than a bargain that needs work.</li>
+            </ul>
+            <p>Either way, brand-new operators without a sales history usually lean on equipment financing (secured by the truck) or an SBA startup loan, because revenue-based products want a few months of card sales first. Once the truck is earning, you can layer in <Link to="/restaurant-working-capital">working capital</Link> for the day-to-day. New owners should also review <Link to="/restaurant-startup-funding">restaurant startup funding</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Food Truck Financing Example',
+        content: (
+          <>
+            <p>Say you are buying a used, fully equipped taco truck for <strong>$90,000</strong> and have <strong>$15,000</strong> to put down. A typical equipment-financing structure might look like this:</p>
+            <ul>
+              <li><strong>Amount financed:</strong> $75,000 after your down payment, secured by the truck.</li>
+              <li><strong>Term:</strong> five years (60 months), matched to how long you expect to run the truck.</li>
+              <li><strong>Payment:</strong> a fixed monthly amount you can test against your average monthly sales before you commit.</li>
+            </ul>
+            <p>Then, once the truck is booking events, a separate short-term <Link to="/restaurant-working-capital">working capital</Link> line covers the $3,000–$8,000 you might need to stock up before a festival weekend, repaid quickly out of that weekend&rsquo;s sales. Two products, two jobs: one buys the asset, the other smooths the cash flow. Run your own numbers with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you sign anything.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Where to Get a Food Truck Loan',
+        content: (
+          <>
+            <p>Food truck financing comes from several types of lenders, and the right one depends on what you are funding:</p>
+            <ul>
+              <li><strong>Equipment finance companies</strong> — the usual home for buying the truck or major kitchen gear.</li>
+              <li><strong>SBA lenders</strong> — lowest cost for qualified startups and expansions, if you can wait weeks to close.</li>
+              <li><strong>Revenue-based and online lenders</strong> — fastest for working capital and cash advance, approved on your sales rather than the truck.</li>
+              <li><strong>Banks and credit unions</strong> — competitive for established owners with strong credit and time in business.</li>
+            </ul>
+            <p>Rather than apply to each one by one, you can compare food truck financing options across lenders from a single application and see which structure and terms actually fit your truck and your revenue. See <Link to="/restaurant-financing-options">restaurant financing options</Link> for how the products compare.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'Common Food Truck Financing Mistakes to Avoid',
+        content: (
+          <>
+            <ul>
+              <li><strong>Using a short-term advance to buy the truck.</strong> Paying for a five-year asset with capital meant to be repaid in months wrecks your cash flow. Match the term to the asset.</li>
+              <li><strong>Financing only the truck.</strong> Owners often forget the build-out, permits, and first months of inventory and payroll. Line those up before revenue is steady, not after.</li>
+              <li><strong>Skipping the working-capital cushion.</strong> Trucks live and die by events and weather. A small <Link to="/restaurant-working-capital">working capital</Link> reserve keeps a slow stretch or a breakdown from becoming a crisis.</li>
+              <li><strong>Applying everywhere at once.</strong> Scattershot applications can ding your credit and slow you down. Compare options from one place instead.</li>
+            </ul>
+          </>
+        ),
+      },
     ],
     faqItems: [
       { q: 'How much does it cost to finance a food truck?', a: 'A used food truck with a working kitchen starts around $50,000, while a new, fully equipped and wrapped truck can run $150,000–$175,000. Equipment and build-out can add $20,000–$50,000 on top if the truck is not turnkey. Financing spreads that cost over time rather than paying it all upfront.' },
@@ -3024,6 +3094,9 @@ export const topicPagesConfig: TopicPageConfig[] = [
       { q: 'Can I get food truck financing with no revenue history?', a: 'Revenue-based products (working capital, cash advance) generally want 4–6 months of operating history. If your truck is brand new, equipment financing (secured by the truck) and SBA startup loans are the more realistic paths until you have a sales record.' },
       { q: 'How fast can food truck working capital be funded?', a: 'Working capital and cash advance products often issue same-day or next-day decisions and fund within 24–48 hours when your bank statements are ready. Equipment financing and SBA loans take longer — days to weeks.' },
       { q: 'Do lenders treat food trucks differently from restaurants?', a: 'For revenue-based funding, most lenders treat a food truck like any other restaurant and base qualification on card sales and bank deposits rather than the vehicle itself. The main difference is that buying the truck is an equipment-financing decision, separate from funding day-to-day operations.' },
+      { q: 'What credit score do you need for a food truck loan?', a: 'It depends on the product. Equipment financing and SBA loans weigh credit more heavily and generally want fair-to-good credit, while revenue-based working capital and cash advance products place more weight on consistent card sales and bank deposits than on your score. Owners with lower credit often still qualify for revenue-based funding if the sales are steady.' },
+      { q: 'What are typical food truck loan terms?', a: 'Equipment financing for the truck commonly runs three to seven years, matched to the life of the asset. SBA loans stretch longer with the lowest rates but take weeks to close. Working capital and cash advance are short-term by design, repaid over months and priced on revenue rather than the truck.' },
+      { q: 'Can you get a food truck loan to start a business?', a: 'Yes, but a brand-new truck with no sales history usually relies on equipment financing (secured by the truck) or an SBA startup loan rather than revenue-based products, which want a few months of card sales first. Once the truck is generating consistent revenue, working capital and cash advance options open up.' },
     ],
   },
   {
