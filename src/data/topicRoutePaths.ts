@@ -7,6 +7,8 @@ export const TOPIC_ROUTE_PATHS: string[] = [
   '/bar-financing',
   '/coffee-shop-financing',
   '/restaurant-line-of-credit',
+  '/how-to-buy-a-food-truck',
+  '/how-to-buy-a-restaurant',
   '/restaurant-business-loan',
   '/restaurant-payroll-funding',
   '/restaurant-seasonal-cash-flow',

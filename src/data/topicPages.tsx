@@ -3079,7 +3079,7 @@ export const topicPagesConfig: TopicPageConfig[] = [
           <>
             <p>Financing a food truck is rarely one expense. The capital you need depends on the stage you are in:</p>
             <ul>
-              <li><strong>Buying or building the truck.</strong> A used truck with a basic kitchen starts around $50,000; a new, fully wrapped truck with commercial-grade equipment can reach $150,000–$175,000. This is the single largest financing decision most operators make.</li>
+              <li><strong>Buying or building the truck.</strong> A used truck with a basic kitchen starts around $50,000; a new, fully wrapped truck with commercial-grade equipment can reach $150,000–$175,000. This is the single largest financing decision most operators make — see <Link to="/how-to-buy-a-food-truck">how to buy a food truck</Link> for the full buying guide.</li>
               <li><strong>Equipment and build-out.</strong> Griddles, fryers, refrigeration, a generator, POS, and the kitchen vent system can add $20,000–$50,000 if the truck does not already have them.</li>
               <li><strong>Permits, licensing, and commissary rent.</strong> Health permits, fire inspections, parking permits, and a commissary kitchen are recurring costs that hit before revenue is steady.</li>
               <li><strong>Working capital.</strong> Inventory before a big event weekend, payroll during a slow stretch, fuel, and unexpected truck or equipment repairs — the smaller, frequent costs that keep the truck running.</li>
@@ -3704,6 +3704,210 @@ export const topicPagesConfig: TopicPageConfig[] = [
       { q: 'Line of credit or cash advance for a restaurant?', a: 'A line of credit is better for recurring, unpredictable gaps because you draw and repay repeatedly without re-applying, and pay only for what you use. A cash advance delivers a lump sum fast, repaid as a percentage of daily card sales, and suits one-time needs where speed matters most.' },
       { q: 'How do you qualify for a restaurant line of credit?', a: 'Lenders focus on consistent card sales and bank deposits, averaged over the last few months, plus time in business and overall cash-flow health. Steady revenue matters more than perfect credit, and higher, more consistent sales support a larger limit. Newer restaurants may start with working capital or a cash advance.' },
       { q: 'What are typical restaurant line of credit rates?', a: 'Rates and limits vary by lender and your revenue, but the defining feature is that you pay interest only on what you draw, not the full limit. Because the value is flexibility for recurring needs, a line is best judged on fit rather than the headline rate alone.' },
+    ],
+  },
+  {
+    path: '/how-to-buy-a-food-truck',
+    title: 'How to Buy a Food Truck | Costs, New vs Used & Financing',
+    description: 'How to buy a food truck: what a new or used truck costs, where to buy, what to inspect, turnkey vs building your own, how to finance the purchase, and the step-by-step process to get on the road.',
+    h1: 'How to Buy a Food Truck: Costs, New vs. Used, and Financing',
+    lead: 'Buying a food truck is the biggest single decision most mobile-food owners make — a used truck with a working kitchen starts around $50,000, while a new, custom-wrapped truck can reach $175,000. This guide walks through what a food truck costs, whether to buy new or used, where to find one, what to inspect before you sign, and how to finance the purchase so the payment fits your revenue.',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'What It Costs to Buy a Food Truck',
+        content: (
+          <>
+            <p>Food truck prices vary widely with age, condition, and how the kitchen is built out:</p>
+            <ul>
+              <li><strong>Used truck, basic kitchen:</strong> $50,000–$90,000. The fastest, lowest-cost way in if the truck and equipment are sound.</li>
+              <li><strong>Used truck, fully equipped:</strong> $80,000–$120,000. A turnkey truck you can run almost immediately.</li>
+              <li><strong>New, custom-built and wrapped:</strong> $120,000–$175,000. Built to your menu and brand, but with a long build lead time.</li>
+              <li><strong>Trailer instead of a truck:</strong> often cheaper than a self-propelled truck, though you need a vehicle to tow it.</li>
+            </ul>
+            <p>Beyond the truck itself, budget for permits, a commissary kitchen, initial inventory, and a working-capital cushion for the first slow stretch. Many buyers underestimate these, so plan for more than the sticker price alone.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Buying New vs. Used',
+        content: (
+          <>
+            <p>The new-versus-used decision shapes your cost, your timeline, and how you finance it:</p>
+            <ul>
+              <li><strong>A used food truck</strong> is cheaper and available now, but you inherit its wear — mileage, an aging kitchen, and whatever the last owner skipped on maintenance. A well-documented used truck from a reputable seller is often the smartest first-truck buy.</li>
+              <li><strong>A new, custom truck</strong> is built to your exact menu and brand with fresh equipment and a warranty, but costs the most and can take months to build. Deposits often come due long before delivery.</li>
+            </ul>
+            <p>For most first-time owners, a quality used truck balances cost and speed; established operators expanding a fleet more often justify a new build. Either way, the purchase can be financed so you are not paying the full amount in cash.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Where to Buy a Food Truck',
+        content: (
+          <>
+            <p>Trucks come from several sources, each with trade-offs:</p>
+            <ul>
+              <li><strong>Specialized food-truck builders</strong> — new custom builds to your spec; highest cost, best fit.</li>
+              <li><strong>Used-truck dealers and marketplaces</strong> — the most common source for used trucks; inventory varies widely in condition.</li>
+              <li><strong>Direct from an owner</strong> — often the best price, but you take on more inspection risk without a dealer standing behind it.</li>
+              <li><strong>Auctions</strong> — potential bargains, but usually sold as-is with little recourse.</li>
+            </ul>
+            <p>Wherever you buy, insist on a full inspection and service history before you commit — a cheap truck that needs a new generator or kitchen is not cheap.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What to Inspect Before You Buy a Used Truck',
+        content: (
+          <>
+            <p>A used food truck is two purchases in one — a vehicle and a commercial kitchen — so check both:</p>
+            <ol>
+              <li><strong>The vehicle.</strong> Engine, transmission, mileage, brakes, tires, and rust. A truck that will not run reliably cannot earn.</li>
+              <li><strong>The generator and power.</strong> Often the most expensive component to replace; confirm it runs the full kitchen under load.</li>
+              <li><strong>Kitchen equipment.</strong> Griddles, fryers, refrigeration, and the hood/vent system — test that each works and check its age.</li>
+              <li><strong>Plumbing, propane, and electrical.</strong> Leaks and code issues here can block your permits.</li>
+              <li><strong>Permit and code compliance.</strong> Confirm the truck can pass inspection in the city where you will operate; standards differ by market.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'How to Finance a Food Truck Purchase',
+        content: (
+          <>
+            <p>You rarely need to pay for a truck in cash. The most common ways to finance the purchase:</p>
+            <ul>
+              <li><strong>Equipment financing</strong> — the truck and kitchen secure the loan, usually the lowest-cost route, with terms of three to seven years matched to the truck&apos;s life.</li>
+              <li><strong>An SBA loan</strong> — the lowest rates and longest terms for qualified buyers, better for a larger purchase or a startup that can wait weeks to close.</li>
+              <li><strong>Working capital</strong> — once the truck is earning, a short-term line covers inventory and slow-season gaps, separate from the purchase loan.</li>
+            </ul>
+            <p>For the full breakdown of rates, terms, and how to qualify, see our guide to <Link to="/food-truck-funding">food truck financing and loans</Link>. A brand-new truck with no sales history usually leans on equipment financing or an SBA startup loan; check <Link to="/restaurant-startup-funding">restaurant startup funding</Link> if you are just getting going.</p>
+            <div className="callout"><p>Compare food truck financing options across lenders from one application, and see the monthly payment before you buy with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link>.</p></div>
+          </>
+        ),
+      },
+      {
+        h2: 'Steps to Buy a Food Truck',
+        content: (
+          <>
+            <ol>
+              <li><strong>Set your budget and financing.</strong> Know what you can put down and get pre-qualified so you can move when the right truck appears.</li>
+              <li><strong>Decide new vs. used</strong> based on your budget, timeline, and menu.</li>
+              <li><strong>Shop and shortlist</strong> trucks that fit your concept and local permit requirements.</li>
+              <li><strong>Inspect thoroughly</strong> — vehicle, generator, kitchen, and compliance.</li>
+              <li><strong>Finance and close</strong>, then handle permits, the commissary agreement, and insurance.</li>
+              <li><strong>Stock and launch</strong>, keeping a working-capital cushion for the ramp-up.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'How much does it cost to buy a food truck?', a: 'A used food truck with a working kitchen starts around $50,000, a fully equipped used truck runs $80,000 to $120,000, and a new, custom-built and wrapped truck can reach $120,000 to $175,000. Beyond the truck, budget for permits, a commissary, initial inventory, and a working-capital cushion for the first slow stretch.' },
+      { q: 'Is it better to buy a new or used food truck?', a: 'For most first-time owners, a quality used truck balances cost and speed — it is cheaper and available now, though you inherit its wear. A new custom truck is built to your menu with fresh equipment and a warranty but costs the most and takes months to build. Established operators expanding a fleet more often justify a new build.' },
+      { q: 'Can you finance buying a food truck?', a: 'Yes. Most buyers finance the purchase rather than paying cash. Equipment financing (secured by the truck) is usually the lowest-cost route, an SBA loan offers the lowest rates for qualified buyers, and working capital covers inventory and slow seasons once the truck is earning. A brand-new truck with no revenue usually relies on equipment financing or an SBA startup loan.' },
+      { q: 'What should you check before buying a used food truck?', a: 'Inspect it as both a vehicle and a commercial kitchen: engine, transmission, mileage, and brakes; the generator (often the costliest part to replace); all kitchen equipment and the hood system; plumbing, propane, and electrical; and whether the truck can pass inspection in the city where you will operate. Always get service history.' },
+      { q: 'Where is the best place to buy a food truck?', a: 'Options include specialized food-truck builders for new custom trucks, used-truck dealers and online marketplaces, buying directly from an owner, and auctions. Dealers and builders cost more but offer more recourse; direct-from-owner and auctions can be cheaper but carry more inspection risk. Insist on a full inspection wherever you buy.' },
+      { q: 'How long does it take to buy a food truck?', a: 'A used, turnkey truck can be bought and on the road in weeks once financing and permits are in place. A new custom build typically takes several months, since the truck is built to your specifications and deposits often come due before delivery.' },
+    ],
+  },
+  {
+    path: '/how-to-buy-a-restaurant',
+    title: 'How to Buy a Restaurant | Steps, Costs, Valuation & Financing',
+    description: 'How to buy a restaurant: whether to buy or start one, what it costs, how restaurants are valued, the due diligence to do before you sign, and how to finance the purchase with an SBA or acquisition loan.',
+    h1: 'How to Buy a Restaurant: Steps, Costs, and Financing',
+    lead: 'Buying an existing restaurant means stepping into a business that already has a location, equipment, staff, and customers — a faster path than starting from scratch, if you buy the right one at the right price. This guide covers whether to buy or start, what a restaurant costs, how they are valued, the due diligence that protects you, and how to finance the purchase.',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'Should You Buy or Start a Restaurant?',
+        content: (
+          <>
+            <p><strong>Buying an existing restaurant trades a higher upfront price for lower risk.</strong> You inherit a working kitchen, a trained staff, an established location, and — crucially — existing revenue and a customer base, instead of building all of it from zero. That existing cash flow is also what makes an acquisition financeable: lenders can underwrite a business with a track record far more readily than an idea.</p>
+            <p>Starting from scratch gives you full control of the concept and can cost less upfront, but it carries the full risk of an unproven location and the long ramp to profitability. For many buyers, acquiring a profitable restaurant with room to improve is the lower-risk route — provided the price and the books hold up.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'What It Costs to Buy a Restaurant',
+        content: (
+          <>
+            <p>Purchase prices range widely with size, location, profitability, and whether real estate is included:</p>
+            <ul>
+              <li><strong>Small or independent restaurants</strong> often sell in the low-to-mid six figures, priced on their earnings and assets.</li>
+              <li><strong>Larger or highly profitable restaurants</strong> command more, especially with strong, verifiable cash flow.</li>
+              <li><strong>Deals that include the building</strong> add commercial real estate to the price, often financed separately or through an SBA loan that bundles both.</li>
+            </ul>
+            <p>Beyond the purchase price, budget for the down payment, working capital for the transition, and any immediate improvements. A smart buyer keeps a reserve so the first few months under new ownership are not a cash-flow scramble.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How Restaurants Are Valued',
+        content: (
+          <>
+            <p>Most small restaurants are priced on their earnings, not just their assets. The key number is <strong>seller&apos;s discretionary earnings (SDE)</strong> — the profit plus the owner&apos;s salary and add-backs — and the price is typically a multiple of that figure. A restaurant with clean, verifiable books that shows steady SDE supports a higher, more defensible price than one whose numbers do not reconcile.</p>
+            <p>Watch for a price that outruns the earnings: if the multiple is high relative to comparable sales, the deal may be hard to finance and slow to pay back. A fair valuation is one where the business&apos;s cash flow comfortably covers the loan payment and still leaves you a living. Insist on tax returns and financials that tie out before you agree to a number.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Due Diligence Before You Buy',
+        content: (
+          <>
+            <p>Due diligence is where good deals are confirmed and bad ones are caught. Before you sign:</p>
+            <ol>
+              <li><strong>Verify the financials.</strong> Tax returns, P&amp;Ls, and bank statements should reconcile. Unverifiable books are the most common reason acquisitions fall apart.</li>
+              <li><strong>Review the lease.</strong> Term, rent, renewal options, and whether it transfers — a great restaurant with a bad or expiring lease is a risk.</li>
+              <li><strong>Inspect the equipment and space.</strong> Aging kitchen equipment is a near-term cost you should price into the deal.</li>
+              <li><strong>Understand why it is selling</strong> and check licenses, permits, and any liens on the business.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'How to Finance Buying a Restaurant',
+        content: (
+          <>
+            <p>Most restaurant purchases are financed rather than paid in cash, and a few structures do the heavy lifting:</p>
+            <ul>
+              <li><strong>SBA 7(a) loan</strong> — the most common way to finance a restaurant acquisition. It offers low rates, long repayment, and a relatively low down payment for qualified buyers, because the SBA guarantee lets lenders bet on a cash-flowing business. See <Link to="/sba-loans-for-restaurants">SBA loans for restaurants</Link>.</li>
+              <li><strong>Seller financing</strong> — the seller carries part of the price as a note, which bridges valuation gaps and signals their confidence in the business.</li>
+              <li><strong>Conventional term loan</strong> — faster to close for strong-credit buyers, usually with a larger down payment.</li>
+              <li><strong>Working capital</strong> — a separate cushion for the transition once you take over.</li>
+            </ul>
+            <p>Because acquisition lenders underwrite the target&apos;s cash flow, a profitable restaurant with clean books is very financeable — they want the earnings to cover the new payment with room to spare. Compare acquisition financing options from one application, and model the payment with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you commit.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Buying a Franchise vs. an Independent Restaurant',
+        content: (
+          <>
+            <p>Your path differs depending on what you buy:</p>
+            <ul>
+              <li><strong>An independent restaurant</strong> gives you full control of the concept and menu, and the price is negotiated directly on the business&apos;s earnings.</li>
+              <li><strong>A franchise</strong> comes with a proven system, brand, and support, but adds franchise fees and ongoing royalties — see <Link to="/restaurant-franchise-financing">restaurant franchise financing</Link> for how those costs are funded.</li>
+            </ul>
+            <p>Franchises can be easier to finance because lenders know the brand&apos;s track record, while independents offer more upside if you can improve the operation. Either way, the acquisition itself is financeable when the numbers hold up.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'How much does it cost to buy a restaurant?', a: 'Prices range widely with size, location, and profitability. Small independent restaurants often sell in the low-to-mid six figures, priced on their earnings and assets, while larger or highly profitable restaurants command more. Deals that include the building add commercial real estate to the price. Budget also for the down payment, transition working capital, and immediate improvements.' },
+      { q: 'How are restaurants valued when buying?', a: 'Most small restaurants are priced as a multiple of seller\'s discretionary earnings (SDE) — profit plus the owner\'s salary and add-backs — rather than on assets alone. Clean, verifiable books that show steady earnings support a higher, more defensible price. A fair valuation is one where the cash flow comfortably covers the loan payment.' },
+      { q: 'How do you finance buying a restaurant?', a: 'The most common route is an SBA 7(a) loan, which offers low rates, long repayment, and a relatively low down payment for qualified buyers of a cash-flowing business. Seller financing can bridge valuation gaps, a conventional term loan closes faster for strong-credit buyers, and working capital covers the transition. Acquisition lenders underwrite the target\'s cash flow, so a profitable restaurant with clean books is very financeable.' },
+      { q: 'Is it better to buy or start a restaurant?', a: 'Buying an existing restaurant costs more upfront but carries lower risk — you inherit a working kitchen, trained staff, an established location, and existing revenue, which also makes the purchase easier to finance. Starting from scratch gives full control of the concept and can cost less upfront but carries the risk of an unproven location and a long ramp to profitability.' },
+      { q: 'What due diligence should you do before buying a restaurant?', a: 'Verify the financials (tax returns, P&Ls, and bank statements should reconcile), review the lease term and whether it transfers, inspect the equipment and space, understand why the owner is selling, and check licenses, permits, and any liens. Unverifiable books are the most common reason acquisitions fall apart.' },
+      { q: 'Can you buy a restaurant with an SBA loan?', a: 'Yes. The SBA 7(a) program is the most common way to finance a restaurant acquisition. It funds the purchase with low rates, long repayment, and a relatively low down payment for qualified buyers, because the SBA guarantee lets lenders underwrite a cash-flowing business with a track record. Allow several weeks for SBA underwriting.' },
     ],
   },
   {
