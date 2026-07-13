@@ -3252,6 +3252,332 @@ export const topicPagesConfig: TopicPageConfig[] = [
     ],
   },
   {
+    path: '/bar-financing',
+    title: 'Bar Financing & Loans | Fund a Bar, Brewery or Nightclub',
+    description: 'Bar financing and loans explained: what you can fund (build-out, liquor license, equipment, inventory), the loan options that fit, typical rates and terms, how to qualify, and a worked example for bars, breweries, and nightclubs.',
+    h1: 'Bar Financing: Loans and Funding to Open or Grow a Bar',
+    lead: 'A bar loan can cover the build-out, the liquor license, the equipment behind the bar, or the inventory that fills it — and each calls for a different structure. Bars carry high margins but heavy upfront and licensing costs, plus revenue that swings with nights, seasons, and events. This guide breaks down what bar financing covers, the loan options and typical terms, how lenders evaluate a bar, and a worked example.',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'What Bar Financing Covers',
+        content: (
+          <>
+            <p><strong>Bar financing is funding used to open, buy, or grow a bar, brewery, taproom, or nightclub.</strong> Like any hospitality business, a bar rarely needs just one kind of capital — the right product depends on what you are paying for:</p>
+            <ul>
+              <li><strong>Build-out and opening costs.</strong> Bar construction, seating, and design are a large one-time spend, often financed with a term loan or an <Link to="/sba-loans-for-restaurants">SBA loan</Link>.</li>
+              <li><strong>Liquor license.</strong> In many markets a license is expensive and can be financed on its own — see <Link to="/restaurant-liquor-license-financing">liquor license financing</Link>.</li>
+              <li><strong>Equipment.</strong> Draft systems, coolers, glasswashers, and POS are an <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> decision, with the gear as collateral.</li>
+              <li><strong>Inventory and working capital.</strong> Stocking beverage inventory before a big weekend, covering payroll on a slow Tuesday, and bridging seasonal swings are jobs for <Link to="/restaurant-working-capital">working capital</Link> or a <Link to="/restaurant-cash-advance">cash advance</Link>.</li>
+            </ul>
+            <p>Match the product to the expense and the bar funds cleanly. Mismatch them — paying for a build-out with a short-term advance — and the cost balloons.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Bar Loan Options Compared',
+        content: (
+          <>
+            <p>There is no single &ldquo;bar loan.&rdquo; Owners typically use one or a mix of these:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr><th>Option</th><th>Best For</th><th>Typical Speed</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><Link to="/sba-loans-for-restaurants">SBA loan</Link></td><td>Buying or opening a bar; lowest cost for qualified borrowers</td><td>Weeks</td></tr>
+                  <tr><td><Link to="/restaurant-term-loans">Term loan</Link></td><td>Build-out and larger one-time projects</td><td>Days to weeks</td></tr>
+                  <tr><td><Link to="/restaurant-equipment-financing-guide">Equipment financing</Link></td><td>Draft systems, coolers, and bar equipment</td><td>Days to 2 weeks</td></tr>
+                  <tr><td><Link to="/restaurant-working-capital">Working capital</Link> / <Link to="/restaurant-cash-advance">cash advance</Link></td><td>Inventory, payroll, slow-night gaps</td><td>24–48 hours</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>For buying an existing bar or funding a full build-out, an SBA or term loan usually offers the lowest cost per dollar. For the day-to-day — restocking before a holiday weekend, covering a slow stretch — working capital and cash advance are faster and approve on revenue rather than a long credit process. See <Link to="/restaurant-financing-options">restaurant financing options</Link> for the full comparison.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Bar Loan Rates and Terms',
+        content: (
+          <>
+            <p>What a bar pays depends on the structure and how the lender reads the risk:</p>
+            <ul>
+              <li><strong>SBA and term loans</strong> carry the lowest rates and the longest repayment, but take the most paperwork and time to close. Best for buying or building.</li>
+              <li><strong>Equipment financing</strong> is secured by the gear, so it prices lower than unsecured funding, with terms of two to five years matched to the equipment.</li>
+              <li><strong>Working capital and cash advance</strong> cost more per dollar but fund in a day or two and flex repayment with your card sales — a fit for a business with uneven nightly revenue.</li>
+            </ul>
+            <p>Because bar revenue swings with nights, seasons, and events, revenue-based repayment that eases when sales dip can be a practical fit for short-term needs. Run the numbers on the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you commit, and keep the term matched to what you are buying.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How Lenders Evaluate a Bar',
+        content: (
+          <>
+            <p>Bars are seen as higher-risk than many restaurants, so lenders look closely at:</p>
+            <ol>
+              <li><strong>Revenue and card sales.</strong> Consistent processing volume is the biggest factor for revenue-based funding. Steady sales matter more than perfect credit.</li>
+              <li><strong>Time in business.</strong> An established bar with a track record gets the best terms; a brand-new concept usually leans on an SBA startup loan or <Link to="/restaurant-startup-funding">startup funding</Link>.</li>
+              <li><strong>Licensing and compliance.</strong> A current liquor license and clean compliance history reassure lenders that the doors stay open.</li>
+              <li><strong>The concept and location.</strong> A neighborhood bar, a brewery taproom, and a late-night club have different risk profiles and cash-flow patterns.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Bar Financing Example',
+        content: (
+          <>
+            <p>Say you are buying an established neighborhood bar for <strong>$320,000</strong> with <strong>$50,000</strong> to put down. A common structure blends two products:</p>
+            <ul>
+              <li><strong>SBA or term loan</strong> for the purchase — spread over several years so the payment fits monthly revenue.</li>
+              <li><strong>A working-capital cushion</strong> layered in once you take over, to cover inventory and payroll through the first slow season while you settle in.</li>
+            </ul>
+            <p>The purchase loan buys the business; the working-capital line smooths the cash flow. Test the combined monthly payment against the bar&apos;s average monthly sales before you sign, and keep a reserve for the seasonal swings every bar sees.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Bars, Breweries, and Nightclubs',
+        content: (
+          <>
+            <p>The same core products fund every beverage-led concept, but the details differ:</p>
+            <ul>
+              <li><strong>Bars</strong> lean on inventory and payroll timing, so working capital and cash advance see heavy use.</li>
+              <li><strong>Breweries and taprooms</strong> add production equipment — tanks, kegs, canning lines — which is an equipment-financing decision on top of the taproom build-out.</li>
+              <li><strong>Nightclubs</strong> carry the most seasonal and event-driven swings, making flexible revenue-based repayment especially useful.</li>
+            </ul>
+            <p>Whatever the concept, one application can compare bar financing options across lenders so you see which structure and terms actually fit your revenue. See funding by concept on the <Link to="/restaurant-funding-by-business-type">restaurant funding by business type</Link> hub.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'How do you finance a bar?', a: 'Bars are funded with a mix of products: an SBA or term loan for buying or building the bar, equipment financing for draft systems and coolers, and working capital or a cash advance for inventory, payroll, and seasonal gaps. The right mix depends on what you are paying for and how much you can put down.' },
+      { q: 'Can you get a loan to open a bar?', a: 'Yes. Opening a bar is usually financed with an SBA loan or a term loan for the build-out and licensing, since a brand-new bar has no revenue history for revenue-based products. Once the bar is open and generating card sales, working capital and cash advance options become available.' },
+      { q: 'How much does it cost to finance a bar?', a: 'It varies widely by market and concept. Build-out, a liquor license, equipment, and opening inventory can run from the low six figures for a small bar to much more for a large venue. Financing spreads that cost over time; the license and equipment can often be financed separately from the build-out.' },
+      { q: 'What credit score do you need for bar financing?', a: 'SBA and term loans weigh credit more heavily and generally want fair-to-good credit, while revenue-based working capital and cash advance products place more weight on consistent card sales than on your score. Bars are viewed as higher risk, so steady revenue and a clean licensing history help.' },
+      { q: 'Can you finance a brewery or nightclub the same way?', a: 'Mostly yes. The same core products apply, but breweries add production equipment (tanks, canning lines) that is financed as equipment, and nightclubs have larger seasonal and event-driven swings that make flexible revenue-based repayment especially useful.' },
+    ],
+  },
+  {
+    path: '/coffee-shop-financing',
+    title: 'Coffee Shop Financing & Loans | Fund or Buy a Cafe',
+    description: 'Coffee shop financing and loans explained: what you can fund (espresso machines, build-out, inventory), the loan options that fit, typical rates and terms, how to qualify, and a worked example for cafes and coffee shops.',
+    h1: 'Coffee Shop Financing: Loans to Open or Grow a Cafe',
+    lead: 'A coffee shop loan can cover the espresso machines, the build-out, the first months of beans and supplies, or the working capital that carries you between busy mornings and slow afternoons. Cafes have lower entry costs than full restaurants but lean hard on a few expensive machines. This guide breaks down what coffee shop financing covers, the loan options and typical terms, how lenders evaluate a cafe, and a worked example.',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'What Coffee Shop Financing Covers',
+        content: (
+          <>
+            <p><strong>Coffee shop financing is funding used to open, buy, or grow a cafe or coffee shop.</strong> The capital you need depends on the stage and the expense:</p>
+            <ul>
+              <li><strong>Build-out and opening.</strong> Counter, seating, plumbing for the espresso station, and design — a one-time spend usually funded with a term loan or an <Link to="/sba-loans-for-restaurants">SBA loan</Link>.</li>
+              <li><strong>Equipment.</strong> A commercial espresso machine ($5,000–$25,000), grinders, brewers, refrigeration, and a POS — an <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> decision, with the machines as collateral.</li>
+              <li><strong>Inventory and working capital.</strong> Beans, milk, cups, and syrups, plus payroll during slow afternoons — a job for <Link to="/restaurant-working-capital">working capital</Link> or a <Link to="/restaurant-cash-advance">cash advance</Link>.</li>
+              <li><strong>Roasting equipment.</strong> If you roast in-house, a roaster is a larger equipment purchase financed on its own.</li>
+            </ul>
+            <p>Because a cafe&apos;s biggest fixed costs are a handful of machines, equipment financing tends to do more of the heavy lifting than it does for a full restaurant.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Coffee Shop Loan Options Compared',
+        content: (
+          <>
+            <p>Most cafes use one or a mix of these:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr><th>Option</th><th>Best For</th><th>Typical Speed</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><Link to="/sba-loans-for-restaurants">SBA loan</Link></td><td>Opening or buying a cafe; lowest cost for qualified borrowers</td><td>Weeks</td></tr>
+                  <tr><td><Link to="/restaurant-equipment-financing-guide">Equipment financing</Link></td><td>Espresso machines, grinders, roasters, refrigeration</td><td>Days to 2 weeks</td></tr>
+                  <tr><td><Link to="/restaurant-term-loans">Term loan</Link></td><td>Build-out and larger one-time projects</td><td>Days to weeks</td></tr>
+                  <tr><td><Link to="/restaurant-working-capital">Working capital</Link> / <Link to="/restaurant-cash-advance">cash advance</Link></td><td>Inventory, payroll, slow-season gaps</td><td>24–48 hours</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>For the espresso machine and major equipment, financing secured by the gear is usually the lowest-cost route. For beans, milk, and payroll between busy mornings, working capital and cash advance are faster and approve on revenue. See <Link to="/restaurant-financing-options">restaurant financing options</Link> for how they compare.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Coffee Shop Loan Rates and Terms',
+        content: (
+          <>
+            <p>Terms track the structure and the asset:</p>
+            <ul>
+              <li><strong>Equipment financing</strong> for machines runs two to five years, secured by the equipment, so it prices lower than unsecured funding — often with little or no money down on new gear.</li>
+              <li><strong>SBA and term loans</strong> offer the lowest rates and longest repayment for buying or building, in exchange for more paperwork and a longer close.</li>
+              <li><strong>Working capital and cash advance</strong> cost more per dollar but fund in a day or two and flex with your sales.</li>
+            </ul>
+            <p>A practical approach for a new cafe: finance the espresso machine and build-out over their useful life, then keep a small <Link to="/restaurant-working-capital">working capital</Link> cushion for the day-to-day. Run the numbers on the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> first.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Qualify for Coffee Shop Financing',
+        content: (
+          <>
+            <p>Qualifying depends on the product:</p>
+            <ol>
+              <li><strong>Revenue and card sales.</strong> For working capital and cash advance, lenders average your last few months of sales — steady volume matters more than perfect credit.</li>
+              <li><strong>Time in business.</strong> An operating cafe with a sales record gets the best terms; a brand-new shop leans on equipment financing (secured by the machines) or an SBA startup loan.</li>
+              <li><strong>The equipment.</strong> New, standard espresso and brewing equipment is easy to finance because it holds value as collateral.</li>
+              <li><strong>Documentation.</strong> Bank statements, the equipment quote, and basic business details — having them ready is the biggest factor in funding speed.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Coffee Shop Financing Example',
+        content: (
+          <>
+            <p>Say you are opening a cafe and need <strong>$45,000</strong> — a $15,000 espresso setup, $20,000 of build-out, and $10,000 of opening inventory and supplies. A common structure splits it:</p>
+            <ul>
+              <li><strong>Equipment financing</strong> covers the $15,000 espresso and brewing setup, secured by the machines over a few years.</li>
+              <li><strong>An SBA or term loan</strong> covers the $20,000 build-out on a longer schedule.</li>
+              <li><strong>A working-capital cushion</strong> covers the opening inventory and the first slow weeks until morning regulars build up.</li>
+            </ul>
+            <p>Splitting the raise this way keeps each payment matched to what it funds, and preserves cash for the ramp-up period every new cafe goes through. New owners should also review <Link to="/restaurant-startup-funding">restaurant startup funding</Link>.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'New vs. Existing Coffee Shop',
+        content: (
+          <>
+            <p>Your best option shifts depending on whether you are starting or buying:</p>
+            <ul>
+              <li><strong>A new cafe</strong> with no sales history usually relies on equipment financing (secured by the machines) and an SBA startup loan, since revenue-based products want a few months of card sales first.</li>
+              <li><strong>Buying an existing coffee shop</strong> that already has revenue opens up more options — an SBA acquisition loan for the purchase, plus working capital once you take over.</li>
+            </ul>
+            <p>Either way, one application can compare coffee shop financing options across lenders so you see which structure fits your cafe and your revenue. For funding by concept, see the <Link to="/restaurant-funding-by-business-type">restaurant funding by business type</Link> hub.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'How do you finance a coffee shop?', a: 'Coffee shops are funded with a mix: equipment financing for the espresso machine and brewing gear, an SBA or term loan for the build-out or to buy an existing cafe, and working capital or a cash advance for beans, milk, payroll, and slow-afternoon gaps. The right mix depends on the expense and your stage.' },
+      { q: 'How much does it cost to open a coffee shop?', a: 'A small cafe can open for the low tens of thousands if you keep the build-out modest, while a larger shop with extensive seating and in-house roasting costs more. The espresso machine alone runs $5,000 to $25,000. Financing spreads these costs so you preserve cash for the ramp-up.' },
+      { q: 'Can you get a loan to open a coffee shop with no revenue?', a: 'Yes, but a brand-new cafe usually relies on equipment financing (secured by the machines) or an SBA startup loan rather than revenue-based products, which want a few months of card sales first. Once the shop is generating consistent sales, working capital and cash advance options open up.' },
+      { q: 'Can you finance an espresso machine?', a: 'Yes. A commercial espresso machine is a classic equipment-financing purchase — the machine secures the loan, terms run two to five years, and new equipment often finances with little or no money down. The same applies to grinders, brewers, and roasters.' },
+      { q: 'What credit score do you need for coffee shop financing?', a: 'Equipment financing and SBA loans weigh credit more, and generally want fair-to-good credit, while revenue-based working capital and cash advance products place more weight on consistent card sales. Because the equipment secures an equipment loan, approval is often more forgiving than for unsecured funding.' },
+    ],
+  },
+  {
+    path: '/restaurant-line-of-credit',
+    title: 'Restaurant Line of Credit | How It Works, Rates & How to Qualify',
+    description: 'Restaurant line of credit explained: how a revolving line works, line of credit vs term loan vs cash advance, typical rates and terms, how to qualify, and when a line of credit is the right tool for a restaurant.',
+    h1: 'Restaurant Line of Credit: How It Works and How to Qualify',
+    lead: 'A restaurant line of credit is revolving capital you can draw on as needed, repay, and draw again — a flexible cushion for the uneven cash flow every restaurant lives with. Unlike a lump-sum loan, you only pay for what you use, which makes a line of credit a natural fit for recurring gaps like payroll, inventory, and seasonal swings. This guide covers how a restaurant line of credit works, how it compares to other funding, typical terms, and how to qualify.',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    sections: [
+      {
+        h2: 'What a Restaurant Line of Credit Is',
+        content: (
+          <>
+            <p><strong>A restaurant line of credit is a revolving credit facility: you are approved for a limit, draw what you need, pay interest only on the amount drawn, and the credit replenishes as you repay.</strong> It works like a flexible reserve rather than a one-time loan. When a slow week squeezes payroll or you need to stock up before a busy season, you draw on the line; when sales recover, you pay it down and the room comes back.</p>
+            <p>That flexibility is the point. A restaurant&apos;s revenue is uneven while rent, payroll, and vendors are due on a schedule — a line of credit smooths that mismatch without forcing you to take a large lump sum you do not need yet.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Line of Credit vs. Term Loan vs. Cash Advance',
+        content: (
+          <>
+            <p>Each product solves a different problem:</p>
+            <div className="comparison__table-wrap">
+              <table className="comparison__table">
+                <thead>
+                  <tr><th>Product</th><th>Structure</th><th>Best For</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Line of credit</td><td>Revolving; draw, repay, redraw; pay for what you use</td><td>Recurring, unpredictable gaps</td></tr>
+                  <tr><td><Link to="/restaurant-term-loans">Term loan</Link></td><td>Lump sum, fixed payments over a set term</td><td>One-time projects and purchases</td></tr>
+                  <tr><td><Link to="/restaurant-cash-advance">Cash advance</Link></td><td>Lump sum repaid as a percentage of daily card sales</td><td>Fast cash when speed beats cost</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>A line of credit shines for <em>recurring</em> needs because you are not re-applying every time. For a single large purchase, a term loan is usually cheaper; for the fastest possible cash, a cash advance funds in a day or two. Weighing a line against an advance specifically? See <Link to="/restaurant-mca-vs-line-of-credit">restaurant MCA vs. line of credit</Link>, and <Link to="/restaurant-financing-options">restaurant financing options</Link> for the full picture.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'Restaurant Line of Credit Rates and Terms',
+        content: (
+          <>
+            <p>Terms vary by lender and your business profile, but a few patterns hold:</p>
+            <ul>
+              <li><strong>You pay for what you draw.</strong> Interest accrues only on the drawn balance, not the full limit — the core advantage over a lump-sum loan.</li>
+              <li><strong>Revolving access.</strong> As you repay, the available credit replenishes, so the line is there the next time a gap opens.</li>
+              <li><strong>Qualification leans on revenue.</strong> Steady card sales and time in business drive both the limit and the rate.</li>
+              <li><strong>Limits scale with sales.</strong> A restaurant with higher, more consistent revenue qualifies for a larger line.</li>
+            </ul>
+            <p>Because the value is flexibility rather than the lowest headline rate, a line of credit is best judged on how well it fits your recurring needs. Model a draw against your sales with the <Link to="/restaurant-loan-calculator">restaurant loan calculator</Link> before you rely on it.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'How to Qualify for a Restaurant Line of Credit',
+        content: (
+          <>
+            <p>Lenders generally look at:</p>
+            <ol>
+              <li><strong>Consistent card sales and deposits.</strong> Your last few months of statements, averaged to a monthly figure, drive the limit. Steady volume matters more than perfect credit.</li>
+              <li><strong>Time in business.</strong> Many revolving products want at least several months of operating history; newer restaurants may start with <Link to="/restaurant-working-capital">working capital</Link> or a cash advance instead.</li>
+              <li><strong>Cash-flow health.</strong> Lenders want to see that the business can service draws — positive trends help more than a single strong month.</li>
+              <li><strong>Documentation ready.</strong> Bank statements, a voided business check, and basic business details speed the process.</li>
+            </ol>
+            <CtaParagraph />
+          </>
+        ),
+      },
+      {
+        h2: 'When a Line of Credit Is the Right Tool',
+        content: (
+          <>
+            <p>A restaurant line of credit is the right choice when the need is recurring and unpredictable rather than a single event:</p>
+            <ul>
+              <li><strong>Payroll timing.</strong> Cover a slow week&apos;s payroll, then repay when sales recover — see <Link to="/restaurant-payroll-funding">restaurant payroll funding</Link>.</li>
+              <li><strong>Seasonal swings.</strong> Draw to stock up before a busy stretch, pay down after — see <Link to="/restaurant-seasonal-cash-flow">restaurant seasonal cash flow</Link>.</li>
+              <li><strong>Inventory timing.</strong> Bridge the gap between paying vendors and the sales those goods generate.</li>
+            </ul>
+            <p>For a one-time purchase like equipment or a build-out, a <Link to="/restaurant-term-loans">term loan</Link> or <Link to="/restaurant-equipment-financing-guide">equipment financing</Link> is usually the better fit. Match the tool to whether the need repeats.</p>
+          </>
+        ),
+      },
+      {
+        h2: 'A Real Line of Credit Example',
+        content: (
+          <>
+            <p>Say a restaurant is approved for a <strong>$40,000</strong> line of credit. In January, a slow stretch, the owner draws <strong>$12,000</strong> to cover payroll and a vendor bill, paying interest only on that $12,000 — not the full $40,000. As sales pick up in February and March, they repay the balance, and the full $40,000 is available again before the summer rush.</p>
+            <p>That is the pattern a line of credit is built for: draw when there is a gap, repay when there is not, and keep the cushion ready for next time — without re-applying at every turn.</p>
+            <CtaParagraph />
+          </>
+        ),
+      },
+    ],
+    faqItems: [
+      { q: 'What is a restaurant line of credit?', a: 'A restaurant line of credit is revolving capital: you are approved for a limit, draw what you need, pay interest only on the amount drawn, and the available credit replenishes as you repay. It works like a flexible reserve for uneven cash flow, rather than a one-time lump-sum loan.' },
+      { q: 'How does a restaurant line of credit work?', a: 'You draw funds up to your limit when you need them — for payroll, inventory, or a seasonal gap — and pay interest only on the drawn balance. As you repay, the credit replenishes and is available again, so you do not re-apply each time a gap opens.' },
+      { q: 'Line of credit or cash advance for a restaurant?', a: 'A line of credit is better for recurring, unpredictable gaps because you draw and repay repeatedly without re-applying, and pay only for what you use. A cash advance delivers a lump sum fast, repaid as a percentage of daily card sales, and suits one-time needs where speed matters most.' },
+      { q: 'How do you qualify for a restaurant line of credit?', a: 'Lenders focus on consistent card sales and bank deposits, averaged over the last few months, plus time in business and overall cash-flow health. Steady revenue matters more than perfect credit, and higher, more consistent sales support a larger limit. Newer restaurants may start with working capital or a cash advance.' },
+      { q: 'What are typical restaurant line of credit rates?', a: 'Rates and limits vary by lender and your revenue, but the defining feature is that you pay interest only on what you draw, not the full limit. Because the value is flexibility for recurring needs, a line is best judged on fit rather than the headline rate alone.' },
+    ],
+  },
+  {
     path: '/faq',
     title: 'Restaurant Cash Flow & Funding FAQ | Common Questions',
     description: 'FAQ: restaurant cash flow problems, working capital, funding options, payroll, and equipment. Answers for restaurant owners.',
